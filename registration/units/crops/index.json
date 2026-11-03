@@ -1,0 +1,1094 @@
+{
+ "gse1_110": {
+  "n_slide": 694553,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "slide_shares": {
+   "CRC": 0.0595,
+   "REF": 0.1854,
+   "TVA": 0.7551
+  },
+  "present": [
+   "CRC",
+   "REF",
+   "TVA"
+  ],
+  "whole_slide": false,
+  "centre": [
+   67576.0,
+   30583.384615384617
+  ],
+  "half_side": 15630.615384615383,
+  "crop_shares": {
+   "CRC": 0.3165,
+   "REF": 0.3656,
+   "TVA": 0.3179
+  },
+  "min_share": 0.3165,
+  "meets_min_share": true,
+  "n_unlabelled_in_crop": 8792,
+  "n_crop": 50000,
+  "dataset": "GSE1",
+  "role": "confirmation",
+  "region_key": "typ"
+ },
+ "gse1_120": {
+  "n_slide": 741155,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "slide_shares": {
+   "CRC": 0.7975,
+   "REF": 0.0364,
+   "TVA": 0.166
+  },
+  "present": [
+   "CRC",
+   "REF",
+   "TVA"
+  ],
+  "whole_slide": false,
+  "centre": [
+   94701.0,
+   20459.763076923082
+  ],
+  "half_side": 14646.0,
+  "crop_shares": {
+   "CRC": 0.5311,
+   "REF": 0.2431,
+   "TVA": 0.2258
+  },
+  "min_share": 0.2258,
+  "meets_min_share": true,
+  "n_unlabelled_in_crop": 2637,
+  "n_crop": 50000,
+  "dataset": "GSE1",
+  "role": "confirmation",
+  "region_key": "typ"
+ },
+ "gse1_210": {
+  "n_slide": 617498,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "slide_shares": {
+   "CRC": 0.5951,
+   "REF": 0.0697,
+   "TVA": 0.3353
+  },
+  "present": [
+   "CRC",
+   "REF",
+   "TVA"
+  ],
+  "whole_slide": false,
+  "centre": [
+   86387.07692307692,
+   84321.92307692308
+  ],
+  "half_side": 11567.923076923078,
+  "crop_shares": {
+   "CRC": 0.3013,
+   "REF": 0.3656,
+   "TVA": 0.3331
+  },
+  "min_share": 0.3013,
+  "meets_min_share": true,
+  "n_unlabelled_in_crop": 5820,
+  "n_crop": 50000,
+  "dataset": "GSE1",
+  "role": "confirmation",
+  "region_key": "typ"
+ },
+ "gse1_221": {
+  "n_slide": 370074,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "slide_shares": {
+   "CRC": 0.4032,
+   "REF": 0.0416,
+   "TVA": 0.5552
+  },
+  "present": [
+   "CRC",
+   "REF",
+   "TVA"
+  ],
+  "whole_slide": false,
+  "centre": [
+   78992.19025641025,
+   124192.0
+  ],
+  "half_side": 15126.80974358975,
+  "crop_shares": {
+   "CRC": 0.344,
+   "REF": 0.3222,
+   "TVA": 0.3339
+  },
+  "min_share": 0.3222,
+  "meets_min_share": true,
+  "n_unlabelled_in_crop": 5415,
+  "n_crop": 50000,
+  "dataset": "GSE1",
+  "role": "confirmation",
+  "region_key": "typ"
+ },
+ "gse1_222": {
+  "n_slide": 140542,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "slide_shares": {
+   "REF": 0.2914,
+   "TVA": 0.7086
+  },
+  "present": [
+   "REF",
+   "TVA"
+  ],
+  "whole_slide": false,
+  "centre": [
+   62474.330256410256,
+   7838.333333333333
+  ],
+  "half_side": 25205.669743589744,
+  "crop_shares": {
+   "REF": 0.5006,
+   "TVA": 0.4994
+  },
+  "min_share": 0.4994,
+  "meets_min_share": true,
+  "n_unlabelled_in_crop": 7789,
+  "n_crop": 50000,
+  "dataset": "GSE1",
+  "role": "confirmation",
+  "region_key": "typ"
+ },
+ "gse1_232": {
+  "n_slide": 130814,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "slide_shares": {
+   "CRC": 0.7287,
+   "REF": 0.2713
+  },
+  "present": [
+   "CRC",
+   "REF"
+  ],
+  "whole_slide": false,
+  "centre": [
+   76434.2564102564,
+   74765.41025641025
+  ],
+  "half_side": 15015.58974358975,
+  "crop_shares": {
+   "CRC": 0.4999,
+   "REF": 0.5001
+  },
+  "min_share": 0.4999,
+  "meets_min_share": true,
+  "n_unlabelled_in_crop": 5624,
+  "n_crop": 50000,
+  "dataset": "GSE1",
+  "role": "development",
+  "region_key": "typ"
+ },
+ "gse1_242": {
+  "n_slide": 474471,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "slide_shares": {
+   "CRC": 0.2138,
+   "REF": 0.1051,
+   "TVA": 0.6812
+  },
+  "present": [
+   "CRC",
+   "REF",
+   "TVA"
+  ],
+  "whole_slide": false,
+  "centre": [
+   36419.969230769224,
+   49184.14358974356
+  ],
+  "half_side": 10063.856410256441,
+  "crop_shares": {
+   "CRC": 0.3294,
+   "REF": 0.3147,
+   "TVA": 0.356
+  },
+  "min_share": 0.3147,
+  "meets_min_share": true,
+  "n_unlabelled_in_crop": 5450,
+  "n_crop": 50000,
+  "dataset": "GSE1",
+  "role": "confirmation",
+  "region_key": "typ"
+ },
+ "gse0_S0": {
+  "n_slide": 493834,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": false,
+  "centre": [
+   11303.846153846154,
+   84556.34871794871
+  ],
+  "half_side": 10537.153846153846,
+  "n_crop": 50000,
+  "dataset": "GSE0",
+  "role": "development",
+  "region_key": null
+ },
+ "gse303070_10501A_130T": {
+  "n_slide": 32803,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "n_crop": 32803,
+  "dataset": "GSE303070",
+  "role": "confirmation",
+  "donor": "Donor130",
+  "region_key": null
+ },
+ "gse303070_10501A_74T": {
+  "n_slide": 27445,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "n_crop": 27445,
+  "dataset": "GSE303070",
+  "role": "confirmation",
+  "donor": "Donor74",
+  "region_key": null
+ },
+ "gse303070_10501A_92T": {
+  "n_slide": 39144,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "n_crop": 39144,
+  "dataset": "GSE303070",
+  "role": "confirmation",
+  "donor": "Donor92",
+  "region_key": null
+ },
+ "gse303070_120131_170T": {
+  "n_slide": 39545,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "n_crop": 39545,
+  "dataset": "GSE303070",
+  "role": "confirmation",
+  "donor": "Donor170",
+  "region_key": null
+ },
+ "gse303070_120131_280N": {
+  "n_slide": 17132,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "n_crop": 17132,
+  "dataset": "GSE303070",
+  "role": "confirmation",
+  "donor": "Donor280",
+  "region_key": null
+ },
+ "gse303070_120131_280T": {
+  "n_slide": 26488,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "n_crop": 26488,
+  "dataset": "GSE303070",
+  "role": "confirmation",
+  "donor": "Donor280",
+  "region_key": null
+ },
+ "gse303070_148191A_118N": {
+  "n_slide": 25280,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "n_crop": 25280,
+  "dataset": "GSE303070",
+  "role": "development",
+  "donor": "Donor118",
+  "region_key": null
+ },
+ "gse303070_148191A_278N": {
+  "n_slide": 18901,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "n_crop": 18901,
+  "dataset": "GSE303070",
+  "role": "development",
+  "donor": "Donor278",
+  "region_key": null
+ },
+ "gse303070_148191A_278T": {
+  "n_slide": 37862,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "n_crop": 37862,
+  "dataset": "GSE303070",
+  "role": "development",
+  "donor": "Donor278",
+  "region_key": null
+ },
+ "gse303070_148191A_46T": {
+  "n_slide": 31848,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "n_crop": 31848,
+  "dataset": "GSE303070",
+  "role": "development",
+  "donor": "Donor46",
+  "region_key": null
+ },
+ "gse303070_3461G_137T": {
+  "n_slide": 53726,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "n_crop": 53726,
+  "dataset": "GSE303070",
+  "role": "confirmation",
+  "donor": "Donor137",
+  "region_key": null
+ },
+ "gse303070_3461G_142T": {
+  "n_slide": 49918,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "n_crop": 49918,
+  "dataset": "GSE303070",
+  "role": "confirmation",
+  "donor": "Donor142",
+  "region_key": null
+ },
+ "gse303070_3461G_7T": {
+  "n_slide": 32299,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "n_crop": 32299,
+  "dataset": "GSE303070",
+  "role": "confirmation",
+  "donor": "Donor7",
+  "region_key": null
+ },
+ "gse303070_Tumour_A_150T": {
+  "n_slide": 28236,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "n_crop": 28236,
+  "dataset": "GSE303070",
+  "role": "confirmation",
+  "donor": "Donor150",
+  "region_key": null
+ },
+ "gse303070_Tumour_B_64T": {
+  "n_slide": 59019,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": false,
+  "centre": [
+   84814.95018315014,
+   -22924.395604395588
+  ],
+  "half_side": 20789.52161172154,
+  "n_crop": 50000,
+  "dataset": "GSE303070",
+  "role": "confirmation",
+  "donor": "Donor64",
+  "region_key": null
+ },
+ "gse303070_Tumour_B_73T": {
+  "n_slide": 13611,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "n_crop": 13611,
+  "dataset": "GSE303070",
+  "role": "confirmation",
+  "donor": "Donor73",
+  "region_key": null
+ },
+ "spatch_xenium5k": {
+  "n_slide": 405927,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": false,
+  "centre": [
+   6710.672419871795,
+   2657.0256217447914
+  ],
+  "half_side": 1167.1635611979164,
+  "n_crop": 50000,
+  "dataset": "SPATCH",
+  "role": "confirmation_F1",
+  "region_key": null
+ },
+ "allen2_C57BL6J-2.036": {
+  "n_slide": 48221,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "slide_shares": {
+   "Cortical_subplate": 0.0383,
+   "Fiber_tracts": 0.1165,
+   "Hippocampus": 0.061,
+   "Hypothalamus": 0.0879,
+   "Isocortex": 0.32,
+   "Olfactory": 0.0561,
+   "Pallidum": 0.0256,
+   "Striatum": 0.1118,
+   "Thalamus": 0.1568,
+   "Ventricular_systems": 0.0259
+  },
+  "present": [
+   "Cortical_subplate",
+   "Fiber_tracts",
+   "Hippocampus",
+   "Hypothalamus",
+   "Isocortex",
+   "Olfactory",
+   "Pallidum",
+   "Striatum",
+   "Thalamus",
+   "Ventricular_systems"
+  ],
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "crop_shares": {
+   "Cortical_subplate": 0.0383,
+   "Fiber_tracts": 0.1165,
+   "Hippocampus": 0.061,
+   "Hypothalamus": 0.0879,
+   "Isocortex": 0.32,
+   "Olfactory": 0.0561,
+   "Pallidum": 0.0256,
+   "Striatum": 0.1118,
+   "Thalamus": 0.1568,
+   "Ventricular_systems": 0.0259
+  },
+  "min_share": 0.0256,
+  "meets_min_share": false,
+  "n_unlabelled_in_crop": 1681,
+  "n_crop": 48221,
+  "dataset": "Allen Zhuang animal 2",
+  "role": "retrospective",
+  "region_key": "major_brain_region"
+ },
+ "allen2_C57BL6J-2.039": {
+  "n_slide": 51545,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "slide_shares": {
+   "Cortical_subplate": 0.0594,
+   "Fiber_tracts": 0.1226,
+   "Hippocampus": 0.1437,
+   "Hypothalamus": 0.0986,
+   "Isocortex": 0.2696,
+   "Olfactory": 0.0389,
+   "Striatum": 0.0514,
+   "Thalamus": 0.1815,
+   "Ventricular_systems": 0.0342
+  },
+  "present": [
+   "Cortical_subplate",
+   "Fiber_tracts",
+   "Hippocampus",
+   "Hypothalamus",
+   "Isocortex",
+   "Olfactory",
+   "Striatum",
+   "Thalamus",
+   "Ventricular_systems"
+  ],
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "crop_shares": {
+   "Cortical_subplate": 0.0594,
+   "Fiber_tracts": 0.1226,
+   "Hippocampus": 0.1437,
+   "Hypothalamus": 0.0986,
+   "Isocortex": 0.2696,
+   "Olfactory": 0.0389,
+   "Striatum": 0.0514,
+   "Thalamus": 0.1815,
+   "Ventricular_systems": 0.0342
+  },
+  "min_share": 0.0342,
+  "meets_min_share": false,
+  "n_unlabelled_in_crop": 2166,
+  "n_crop": 51545,
+  "dataset": "Allen Zhuang animal 2",
+  "role": "retrospective",
+  "region_key": "major_brain_region"
+ },
+ "allen2_C57BL6J-2.041": {
+  "n_slide": 46938,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "slide_shares": {
+   "Cortical_subplate": 0.064,
+   "Fiber_tracts": 0.1123,
+   "Hippocampus": 0.2008,
+   "Hypothalamus": 0.1,
+   "Isocortex": 0.2599,
+   "Midbrain": 0.018,
+   "Olfactory": 0.0488,
+   "Striatum": 0.0005,
+   "Thalamus": 0.1541,
+   "Ventricular_systems": 0.0416
+  },
+  "present": [
+   "Cortical_subplate",
+   "Fiber_tracts",
+   "Hippocampus",
+   "Hypothalamus",
+   "Isocortex",
+   "Olfactory",
+   "Thalamus",
+   "Ventricular_systems"
+  ],
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "crop_shares": {
+   "Cortical_subplate": 0.064,
+   "Fiber_tracts": 0.1123,
+   "Hippocampus": 0.2008,
+   "Hypothalamus": 0.1,
+   "Isocortex": 0.2599,
+   "Olfactory": 0.0488,
+   "Thalamus": 0.1541,
+   "Ventricular_systems": 0.0416
+  },
+  "min_share": 0.0416,
+  "meets_min_share": false,
+  "n_unlabelled_in_crop": 1368,
+  "n_crop": 46938,
+  "dataset": "Allen Zhuang animal 2",
+  "role": "retrospective",
+  "region_key": "major_brain_region"
+ },
+ "spatialfloors_commit": "32e8524197c583ccf966ac5be1f68b3b0facd4b6-dirty",
+ "allen_animal1_C57BL6J-1.086": {
+  "n_slide": 47266,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "slide_shares": {
+   "Cortical_subplate": 0.0577,
+   "Fiber_tracts": 0.1367,
+   "Hippocampus": 0.1425,
+   "Hypothalamus": 0.1052,
+   "Isocortex": 0.2736,
+   "Midbrain": 0.0067,
+   "Olfactory": 0.0311,
+   "Striatum": 0.05,
+   "Thalamus": 0.1591,
+   "Ventricular_systems": 0.0374
+  },
+  "present": [
+   "Cortical_subplate",
+   "Fiber_tracts",
+   "Hippocampus",
+   "Hypothalamus",
+   "Isocortex",
+   "Olfactory",
+   "Striatum",
+   "Thalamus",
+   "Ventricular_systems"
+  ],
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "crop_shares": {
+   "Cortical_subplate": 0.0577,
+   "Fiber_tracts": 0.1367,
+   "Hippocampus": 0.1425,
+   "Hypothalamus": 0.1052,
+   "Isocortex": 0.2736,
+   "Olfactory": 0.0311,
+   "Striatum": 0.05,
+   "Thalamus": 0.1591,
+   "Ventricular_systems": 0.0374
+  },
+  "min_share": 0.0311,
+  "meets_min_share": false,
+  "n_unlabelled_in_crop": 1515,
+  "n_crop": 47266,
+  "dataset": "Allen Zhuang animal1",
+  "role": "F1-F3",
+  "region_key": "major_brain_region"
+ },
+ "allen_animal2_C57BL6J-2.039": {
+  "n_slide": 51545,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "slide_shares": {
+   "Cortical_subplate": 0.0594,
+   "Fiber_tracts": 0.1226,
+   "Hippocampus": 0.1437,
+   "Hypothalamus": 0.0986,
+   "Isocortex": 0.2696,
+   "Olfactory": 0.0389,
+   "Striatum": 0.0514,
+   "Thalamus": 0.1815,
+   "Ventricular_systems": 0.0342
+  },
+  "present": [
+   "Cortical_subplate",
+   "Fiber_tracts",
+   "Hippocampus",
+   "Hypothalamus",
+   "Isocortex",
+   "Olfactory",
+   "Striatum",
+   "Thalamus",
+   "Ventricular_systems"
+  ],
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "crop_shares": {
+   "Cortical_subplate": 0.0594,
+   "Fiber_tracts": 0.1226,
+   "Hippocampus": 0.1437,
+   "Hypothalamus": 0.0986,
+   "Isocortex": 0.2696,
+   "Olfactory": 0.0389,
+   "Striatum": 0.0514,
+   "Thalamus": 0.1815,
+   "Ventricular_systems": 0.0342
+  },
+  "min_share": 0.0342,
+  "meets_min_share": false,
+  "n_unlabelled_in_crop": 2166,
+  "n_crop": 51545,
+  "dataset": "Allen Zhuang animal2",
+  "role": "F1-F3",
+  "region_key": "major_brain_region"
+ },
+ "allen_animal3_C57BL6J-3.003": {
+  "n_slide": 146832,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "slide_shares": {
+   "Cerebellum": 0.16,
+   "Fiber_tracts": 0.0702,
+   "Hippocampus": 0.0228,
+   "Hypothalamus": 0.0517,
+   "Isocortex": 0.1592,
+   "Medulla": 0.0674,
+   "Midbrain": 0.1234,
+   "Olfactory": 0.161,
+   "Pallidum": 0.0116,
+   "Pons": 0.04,
+   "Striatum": 0.0527,
+   "Thalamus": 0.0438,
+   "Ventricular_systems": 0.0077,
+   "n/a": 0.0285
+  },
+  "present": [
+   "Cerebellum",
+   "Fiber_tracts",
+   "Hippocampus",
+   "Hypothalamus",
+   "Isocortex",
+   "Medulla",
+   "Midbrain",
+   "Olfactory",
+   "Pons",
+   "Striatum",
+   "Thalamus",
+   "n/a"
+  ],
+  "whole_slide": false,
+  "centre": [
+   33659.2031670327,
+   -2519.0760486876966
+  ],
+  "half_side": 3572.0623327425124,
+  "crop_shares": {
+   "Cerebellum": 0.0387,
+   "Fiber_tracts": 0.0789,
+   "Hippocampus": 0.0381,
+   "Hypothalamus": 0.1519,
+   "Isocortex": 0.0229,
+   "Medulla": 0.0071,
+   "Midbrain": 0.1914,
+   "Olfactory": 0.0113,
+   "Pons": 0.115,
+   "Striatum": 0.1495,
+   "Thalamus": 0.1285,
+   "n/a": 0.0222
+  },
+  "min_share": 0.0071,
+  "meets_min_share": false,
+  "n_unlabelled_in_crop": 0,
+  "n_crop": 50000,
+  "dataset": "Allen Zhuang animal3",
+  "role": "F1-F3",
+  "region_key": "major_brain_region"
+ },
+ "allen_yao638850_C57BL6J-638850.36": {
+  "n_slide": 115779,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "slide_shares": {
+   "CTXsp": 0.0591,
+   "Fiber_tracts": 0.129,
+   "HPF": 0.1109,
+   "HY": 0.1336,
+   "Isocortex": 0.2758,
+   "MB": 0.0397,
+   "OLF": 0.0384,
+   "STR": 0.0596,
+   "Thalamus": 0.1186,
+   "V3": 0.0084,
+   "VL": 0.0151,
+   "brain-unassigned": 0.0086,
+   "unassigned": 0.0032
+  },
+  "present": [
+   "CTXsp",
+   "Fiber_tracts",
+   "HPF",
+   "HY",
+   "Isocortex",
+   "MB",
+   "OLF",
+   "STR",
+   "Thalamus"
+  ],
+  "whole_slide": false,
+  "centre": [
+   7.720825615540079,
+   6.058876295013125
+  ],
+  "half_side": 2.5453231226088526,
+  "crop_shares": {
+   "CTXsp": 0.072,
+   "Fiber_tracts": 0.1221,
+   "HPF": 0.1213,
+   "HY": 0.201,
+   "Isocortex": 0.1126,
+   "MB": 0.0592,
+   "OLF": 0.0555,
+   "STR": 0.0669,
+   "Thalamus": 0.144
+  },
+  "min_share": 0.0555,
+  "meets_min_share": false,
+  "n_unlabelled_in_crop": 0,
+  "n_crop": 50000,
+  "dataset": "Allen Yao 638850",
+  "role": "F1-F3",
+  "region_key": "CCF parcellation"
+ },
+ "allen_animal4_C57BL6J-4.003": {
+  "n_slide": 95104,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "slide_shares": {
+   "Cerebellum": 0.2567,
+   "Cortical_subplate": 0.0317,
+   "Fiber_tracts": 0.128,
+   "Hippocampus": 0.1517,
+   "Isocortex": 0.2105,
+   "Medulla": 0.0124,
+   "Olfactory": 0.0485,
+   "Pallidum": 0.0095,
+   "Pons": 0.0001,
+   "Striatum": 0.1121,
+   "Thalamus": 0.0012,
+   "Ventricular_systems": 0.018,
+   "n/a": 0.0196
+  },
+  "present": [
+   "Cerebellum",
+   "Cortical_subplate",
+   "Fiber_tracts",
+   "Hippocampus",
+   "Isocortex",
+   "Olfactory",
+   "Striatum"
+  ],
+  "whole_slide": false,
+  "centre": [
+   22745.690587383233,
+   -1939.4338423224867
+  ],
+  "half_side": 3096.710554909217,
+  "crop_shares": {
+   "Cerebellum": 0.0841,
+   "Cortical_subplate": 0.0603,
+   "Fiber_tracts": 0.1171,
+   "Hippocampus": 0.2755,
+   "Isocortex": 0.0983,
+   "Olfactory": 0.0778,
+   "Striatum": 0.2132
+  },
+  "min_share": 0.0603,
+  "meets_min_share": false,
+  "n_unlabelled_in_crop": 0,
+  "n_crop": 50000,
+  "dataset": "Allen Zhuang animal 4",
+  "role": "development",
+  "region_key": "major_brain_region",
+  "spatialfloors_commit": "b1af7bbe1006ca15676beac2362ee25ac8e625ce-dirty"
+ },
+ "gse1_231": {
+  "n_slide": 298151,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "slide_shares": {
+   "CRC": 0.2812,
+   "REF": 0.2394,
+   "TVA": 0.4794
+  },
+  "present": [
+   "CRC",
+   "REF",
+   "TVA"
+  ],
+  "whole_slide": false,
+  "centre": [
+   26831.53846153846,
+   111292.84615384616
+  ],
+  "half_side": 10525.461538461539,
+  "crop_shares": {
+   "CRC": 0.3483,
+   "REF": 0.3148,
+   "TVA": 0.3369
+  },
+  "min_share": 0.3148,
+  "meets_min_share": true,
+  "n_unlabelled_in_crop": 4788,
+  "n_crop": 50000,
+  "dataset": "GSE1",
+  "role": "validation",
+  "region_key": "typ",
+  "note": "same patient as development gse1_232"
+ },
+ "gse1_231w": {
+  "n_slide": 298151,
+  "n_crop": 298151,
+  "whole_slide": true,
+  "slide_shares": {
+   "TVA": 0.4794,
+   "CRC": 0.2812,
+   "REF": 0.2394
+  },
+  "present": [
+   "CRC",
+   "REF",
+   "TVA"
+  ],
+  "dataset": "GSE1",
+  "role": "validation",
+  "region_key": "typ",
+  "note": "crop check: whole slide of gse1_231"
+ },
+ "bruker_breast": {
+  "n_slide": 645251,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": false,
+  "centre": [
+   19567.71794871795,
+   34798.5641025641
+  ],
+  "half_side": 10357.435897435898,
+  "n_crop": 50000,
+  "dataset": "Bruker CosMx WTx",
+  "role": "validation",
+  "region_key": null
+ },
+ "bruker_mobreast": {
+  "n_slide": 152451,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": false,
+  "centre": [
+   26787.30769230769,
+   96226.2564102564
+  ],
+  "half_side": 10589.307692307691,
+  "n_crop": 50000,
+  "dataset": "Bruker CosMx WTx",
+  "role": "confirmation",
+  "region_key": null,
+  "note": "role fixed 2026-11-02 (audit): confirmation per manifests/roles_v2.json; v_crops.py had written validation"
+ },
+ "bruker_skin": {
+  "n_slide": 555820,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": false,
+  "centre": [
+   93057.86923076923,
+   53230.33333333333
+  ],
+  "half_side": 10799.333333333328,
+  "n_crop": 50000,
+  "dataset": "Bruker CosMx WTx",
+  "role": "confirmation",
+  "region_key": null,
+  "note": "role fixed 2026-11-02 (audit): confirmation per manifests/roles_v2.json; v_crops.py had written validation"
+ },
+ "bruker_kidney": {
+  "n_slide": 436787,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "whole_slide": false,
+  "centre": [
+   24807.30769230769,
+   101789.48717948717
+  ],
+  "half_side": 9705.487179487172,
+  "n_crop": 50000,
+  "dataset": "Bruker CosMx WTx",
+  "role": "confirmation",
+  "region_key": null,
+  "note": "role fixed 2026-11-02 (audit): confirmation per manifests/roles_v2.json; v_crops.py had written validation"
+ },
+ "allen_animal4_C57BL6J-4.001": {
+  "n_slide": 53701,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "slide_shares": {
+   "Cerebellum": 0.1737,
+   "Cortical_subplate": 0.0341,
+   "Fiber_tracts": 0.0515,
+   "Hippocampus": 0.18,
+   "Isocortex": 0.4417,
+   "Olfactory": 0.0788,
+   "Striatum": 0.0006,
+   "Ventricular_systems": 0.0065,
+   "n/a": 0.0331
+  },
+  "present": [
+   "Cerebellum",
+   "Cortical_subplate",
+   "Fiber_tracts",
+   "Hippocampus",
+   "Isocortex",
+   "Olfactory",
+   "n/a"
+  ],
+  "whole_slide": true,
+  "centre": null,
+  "half_side": null,
+  "crop_shares": {
+   "Cerebellum": 0.1737,
+   "Cortical_subplate": 0.0341,
+   "Fiber_tracts": 0.0515,
+   "Hippocampus": 0.18,
+   "Isocortex": 0.4417,
+   "Olfactory": 0.0788,
+   "n/a": 0.0331
+  },
+  "min_share": 0.0331,
+  "meets_min_share": false,
+  "n_unlabelled_in_crop": 0,
+  "n_crop": 53701,
+  "dataset": "Allen Zhuang animal 4",
+  "role": "development",
+  "region_key": "major_brain_region",
+  "note": "PLAN \u00a719: F2 v3 selection only",
+  "spatialfloors_commit": "a3697ddc34035de1d69f495fdf0a971b966f45a5-dirty"
+ },
+ "allen_animal4_C57BL6J-4.002": {
+  "n_slide": 66473,
+  "n_target": 50000,
+  "rule": "grid 40x40, L-inf square, present >= 0.02, min share 0.2",
+  "slide_shares": {
+   "Cerebellum": 0.2717,
+   "Cortical_subplate": 0.0468,
+   "Fiber_tracts": 0.0624,
+   "Hippocampus": 0.1378,
+   "Isocortex": 0.3362,
+   "Olfactory": 0.0663,
+   "Striatum": 0.0506,
+   "Ventricular_systems": 0.0052,
+   "n/a": 0.0229
+  },
+  "present": [
+   "Cerebellum",
+   "Cortical_subplate",
+   "Fiber_tracts",
+   "Hippocampus",
+   "Isocortex",
+   "Olfactory",
+   "Striatum",
+   "n/a"
+  ],
+  "whole_slide": false,
+  "centre": [
+   13042.691527052237,
+   -2227.428738045692
+  ],
+  "half_side": 3760.1785446323456,
+  "crop_shares": {
+   "Cerebellum": 0.3612,
+   "Cortical_subplate": 0.0601,
+   "Fiber_tracts": 0.083,
+   "Hippocampus": 0.1832,
+   "Isocortex": 0.1499,
+   "Olfactory": 0.0608,
+   "Striatum": 0.0673,
+   "n/a": 0.0275
+  },
+  "min_share": 0.0275,
+  "meets_min_share": false,
+  "n_unlabelled_in_crop": 0,
+  "n_crop": 50000,
+  "dataset": "Allen Zhuang animal 4",
+  "role": "development",
+  "region_key": "major_brain_region",
+  "note": "PLAN \u00a719: F2 v3 selection only",
+  "spatialfloors_commit": "a3697ddc34035de1d69f495fdf0a971b966f45a5-dirty"
+ }
+}

@@ -1,0 +1,481 @@
+{
+ "gse1_232": {
+  "mode": "wtx_hvg",
+  "n_input": 18936,
+  "n_panel": 2000,
+  "removed": {
+   "ribosomal": 88,
+   "pseudogene": 3
+  },
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 356.7
+ },
+ "gse303070_Tumour_A_150T": {
+  "mode": "targeted_all",
+  "n_input": 979,
+  "n_panel": 952,
+  "removed": {
+   "probe": 19,
+   "ribosomal": 6,
+   "unannotated_lncRNA": 1,
+   "pseudogene": 1
+  },
+  "n_cells": 28236,
+  "counts_per_cell_Xa": 79.8
+ },
+ "spatch_xenium5k": {
+  "mode": "targeted_all",
+  "n_input": 5001,
+  "n_panel": 5000,
+  "removed": {
+   "unannotated_lncRNA": 1
+  },
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 182.1
+ },
+ "allen2_C57BL6J-2.039": {
+  "mode": "targeted_all",
+  "n_input": 1120,
+  "n_panel": 1120,
+  "removed": {},
+  "n_cells": 51545,
+  "counts_per_cell_Xa": 169.3
+ },
+ "f5_heldout_markers": {
+  "epithelial": [
+   "EPCAM",
+   "KRT8",
+   "KRT18",
+   "KRT19",
+   "CDH1"
+  ],
+  "immune_nonmyeloid": [
+   "CD3E",
+   "CD2",
+   "MS4A1",
+   "CD79A",
+   "MZB1"
+  ],
+  "myeloid": [
+   "CD68",
+   "CD163",
+   "C1QC",
+   "CD14",
+   "LYZ"
+  ]
+ },
+ "spatialfloors_commit": "8658f9a81c4c3db495b9f0a5d8462aebc333ba08-dirty",
+ "gse1_110": {
+  "mode": "wtx_hvg",
+  "n_input": 18878,
+  "n_panel": 2000,
+  "removed": {
+   "ribosomal": 88,
+   "pseudogene": 3
+  },
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 598.4
+ },
+ "gse1_120": {
+  "mode": "wtx_hvg",
+  "n_input": 18878,
+  "n_panel": 2000,
+  "removed": {
+   "ribosomal": 88,
+   "pseudogene": 3
+  },
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 905.2
+ },
+ "gse1_210": {
+  "mode": "wtx_hvg",
+  "n_input": 18936,
+  "n_panel": 2000,
+  "removed": {
+   "ribosomal": 88,
+   "pseudogene": 3
+  },
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 321.1
+ },
+ "gse1_221": {
+  "mode": "wtx_hvg",
+  "n_input": 18936,
+  "n_panel": 2000,
+  "removed": {
+   "ribosomal": 88,
+   "pseudogene": 3
+  },
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 281.8
+ },
+ "gse1_222": {
+  "mode": "wtx_hvg",
+  "n_input": 18936,
+  "n_panel": 2000,
+  "removed": {
+   "ribosomal": 88,
+   "pseudogene": 3
+  },
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 313.6
+ },
+ "gse1_242": {
+  "mode": "wtx_hvg",
+  "n_input": 18936,
+  "n_panel": 2000,
+  "removed": {
+   "ribosomal": 88,
+   "pseudogene": 3
+  },
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 587.0
+ },
+ "gse0_S0": {
+  "mode": "wtx_hvg",
+  "n_input": 20378,
+  "n_panel": 2000,
+  "removed": {
+   "probe": 1443,
+   "ribosomal": 88,
+   "pseudogene": 2
+  },
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 915.3
+ },
+ "gse303070_10501A_130T": {
+  "mode": "targeted_all",
+  "n_input": 1207,
+  "n_panel": 989,
+  "removed": {
+   "probe": 207,
+   "ribosomal": 8,
+   "unannotated_lncRNA": 3
+  },
+  "n_cells": 32803,
+  "counts_per_cell_Xa": 321.0
+ },
+ "gse303070_10501A_74T": {
+  "mode": "targeted_all",
+  "n_input": 1207,
+  "n_panel": 989,
+  "removed": {
+   "probe": 207,
+   "ribosomal": 8,
+   "unannotated_lncRNA": 3
+  },
+  "n_cells": 27445,
+  "counts_per_cell_Xa": 184.9
+ },
+ "gse303070_10501A_92T": {
+  "mode": "targeted_all",
+  "n_input": 1207,
+  "n_panel": 989,
+  "removed": {
+   "probe": 207,
+   "ribosomal": 8,
+   "unannotated_lncRNA": 3
+  },
+  "n_cells": 39144,
+  "counts_per_cell_Xa": 156.6
+ },
+ "gse303070_120131_170T": {
+  "mode": "targeted_all",
+  "n_input": 1207,
+  "n_panel": 989,
+  "removed": {
+   "probe": 207,
+   "ribosomal": 8,
+   "unannotated_lncRNA": 3
+  },
+  "n_cells": 39545,
+  "counts_per_cell_Xa": 205.5
+ },
+ "gse303070_120131_280N": {
+  "mode": "targeted_all",
+  "n_input": 1207,
+  "n_panel": 989,
+  "removed": {
+   "probe": 207,
+   "ribosomal": 8,
+   "unannotated_lncRNA": 3
+  },
+  "n_cells": 17132,
+  "counts_per_cell_Xa": 62.3
+ },
+ "gse303070_120131_280T": {
+  "mode": "targeted_all",
+  "n_input": 1207,
+  "n_panel": 989,
+  "removed": {
+   "probe": 207,
+   "ribosomal": 8,
+   "unannotated_lncRNA": 3
+  },
+  "n_cells": 26488,
+  "counts_per_cell_Xa": 341.9
+ },
+ "gse303070_148191A_118N": {
+  "mode": "targeted_all",
+  "n_input": 1207,
+  "n_panel": 989,
+  "removed": {
+   "probe": 207,
+   "ribosomal": 8,
+   "unannotated_lncRNA": 3
+  },
+  "n_cells": 25280,
+  "counts_per_cell_Xa": 80.1
+ },
+ "gse303070_148191A_278N": {
+  "mode": "targeted_all",
+  "n_input": 1207,
+  "n_panel": 989,
+  "removed": {
+   "probe": 207,
+   "ribosomal": 8,
+   "unannotated_lncRNA": 3
+  },
+  "n_cells": 18901,
+  "counts_per_cell_Xa": 149.7
+ },
+ "gse303070_148191A_278T": {
+  "mode": "targeted_all",
+  "n_input": 1207,
+  "n_panel": 989,
+  "removed": {
+   "probe": 207,
+   "ribosomal": 8,
+   "unannotated_lncRNA": 3
+  },
+  "n_cells": 37862,
+  "counts_per_cell_Xa": 267.8
+ },
+ "gse303070_148191A_46T": {
+  "mode": "targeted_all",
+  "n_input": 1207,
+  "n_panel": 989,
+  "removed": {
+   "probe": 207,
+   "ribosomal": 8,
+   "unannotated_lncRNA": 3
+  },
+  "n_cells": 31848,
+  "counts_per_cell_Xa": 173.3
+ },
+ "gse303070_3461G_137T": {
+  "mode": "targeted_all",
+  "n_input": 1207,
+  "n_panel": 989,
+  "removed": {
+   "probe": 207,
+   "ribosomal": 8,
+   "unannotated_lncRNA": 3
+  },
+  "n_cells": 53726,
+  "counts_per_cell_Xa": 69.8
+ },
+ "gse303070_3461G_142T": {
+  "mode": "targeted_all",
+  "n_input": 1207,
+  "n_panel": 989,
+  "removed": {
+   "probe": 207,
+   "ribosomal": 8,
+   "unannotated_lncRNA": 3
+  },
+  "n_cells": 49918,
+  "counts_per_cell_Xa": 54.7
+ },
+ "gse303070_3461G_7T": {
+  "mode": "targeted_all",
+  "n_input": 1207,
+  "n_panel": 989,
+  "removed": {
+   "probe": 207,
+   "ribosomal": 8,
+   "unannotated_lncRNA": 3
+  },
+  "n_cells": 32299,
+  "counts_per_cell_Xa": 194.5
+ },
+ "gse303070_Tumour_B_64T": {
+  "mode": "targeted_all",
+  "n_input": 979,
+  "n_panel": 952,
+  "removed": {
+   "probe": 19,
+   "ribosomal": 6,
+   "unannotated_lncRNA": 1,
+   "pseudogene": 1
+  },
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 59.1
+ },
+ "gse303070_Tumour_B_73T": {
+  "mode": "targeted_all",
+  "n_input": 979,
+  "n_panel": 952,
+  "removed": {
+   "probe": 19,
+   "ribosomal": 6,
+   "unannotated_lncRNA": 1,
+   "pseudogene": 1
+  },
+  "n_cells": 13611,
+  "counts_per_cell_Xa": 26.1
+ },
+ "allen2_C57BL6J-2.036": {
+  "mode": "targeted_all",
+  "n_input": 1120,
+  "n_panel": 1120,
+  "removed": {},
+  "n_cells": 48221,
+  "counts_per_cell_Xa": 159.4
+ },
+ "allen2_C57BL6J-2.041": {
+  "mode": "targeted_all",
+  "n_input": 1120,
+  "n_panel": 1120,
+  "removed": {},
+  "n_cells": 46938,
+  "counts_per_cell_Xa": 136.5
+ },
+ "allen_animal1_C57BL6J-1.086": {
+  "mode": "targeted_all",
+  "n_input": 1120,
+  "n_panel": 1120,
+  "removed": {},
+  "n_cells": 47266,
+  "counts_per_cell_Xa": 120.9
+ },
+ "allen_animal2_C57BL6J-2.039": {
+  "mode": "targeted_all",
+  "n_input": 1120,
+  "n_panel": 1120,
+  "removed": {},
+  "n_cells": 51545,
+  "counts_per_cell_Xa": 169.3
+ },
+ "allen_animal3_C57BL6J-3.003": {
+  "mode": "targeted_all",
+  "n_input": 1120,
+  "n_panel": 1120,
+  "removed": {},
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 120.5
+ },
+ "allen_yao638850_C57BL6J-638850.36": {
+  "mode": "targeted_all",
+  "n_input": 550,
+  "n_panel": 500,
+  "removed": {
+   "probe": 50
+  },
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 398.4
+ },
+ "allen_animal4_C57BL6J-4.003": {
+  "mode": "targeted_all",
+  "n_input": 1120,
+  "n_panel": 1120,
+  "removed": {},
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 182.3,
+  "spatialfloors_commit": "b1af7bbe1006ca15676beac2362ee25ac8e625ce-dirty"
+ },
+ "gse1_231": {
+  "mode": "wtx_hvg",
+  "n_input": 18936,
+  "n_panel": 2000,
+  "removed": {
+   "ribosomal": 88,
+   "pseudogene": 3
+  },
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 517.3,
+  "spatialfloors_commit": "8b737d9c2cdbf719c802bbf5e6fb18dbcd1edf60-dirty"
+ },
+ "gse1_231w": {
+  "mode": "wtx_hvg",
+  "n_input": 18936,
+  "n_panel": 2000,
+  "removed": {
+   "ribosomal": 88,
+   "pseudogene": 3
+  },
+  "n_cells": 298151,
+  "counts_per_cell_Xa": 415.1,
+  "spatialfloors_commit": "15b43abafaa074845dbe05ca938d17b1e8b6a8f8-dirty"
+ },
+ "bruker_breast": {
+  "mode": "wtx_hvg",
+  "n_input": 20378,
+  "n_panel": 2000,
+  "removed": {
+   "probe": 1443,
+   "ribosomal": 88,
+   "pseudogene": 3
+  },
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 1068.5,
+  "spatialfloors_commit": "3c35f70481cc14025306557475fc3f19f01ff8fa"
+ },
+ "bruker_mobreast": {
+  "mode": "wtx_hvg",
+  "n_input": 20385,
+  "n_panel": 2000,
+  "removed": {
+   "probe": 1443,
+   "ribosomal": 88,
+   "pseudogene": 3
+  },
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 1164.2,
+  "spatialfloors_commit": "79e3861e49bd6c34dc0acceb630d1218e380077f-dirty"
+ },
+ "bruker_kidney": {
+  "mode": "wtx_hvg",
+  "n_input": 20378,
+  "n_panel": 2000,
+  "removed": {
+   "probe": 1443,
+   "ribosomal": 88,
+   "pseudogene": 3
+  },
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 583.9,
+  "spatialfloors_commit": "defffdd4b90c5b8d88213bb2af160c6253013829-dirty"
+ },
+ "bruker_skin": {
+  "mode": "wtx_hvg",
+  "n_input": 20378,
+  "n_panel": 2000,
+  "removed": {
+   "probe": 1443,
+   "ribosomal": 88,
+   "pseudogene": 3
+  },
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 1489.8,
+  "spatialfloors_commit": "32e8524197c583ccf966ac5be1f68b3b0facd4b6-dirty"
+ },
+ "allen_animal4_C57BL6J-4.001": {
+  "mode": "targeted_all",
+  "n_input": 1120,
+  "n_panel": 1120,
+  "removed": {},
+  "n_cells": 53701,
+  "counts_per_cell_Xa": 82.1,
+  "spatialfloors_commit": "a3697ddc34035de1d69f495fdf0a971b966f45a5-dirty"
+ },
+ "allen_animal4_C57BL6J-4.002": {
+  "mode": "targeted_all",
+  "n_input": 1120,
+  "n_panel": 1120,
+  "removed": {},
+  "n_cells": 50000,
+  "counts_per_cell_Xa": 121.1,
+  "spatialfloors_commit": "a3697ddc34035de1d69f495fdf0a971b966f45a5-dirty"
+ }
+}

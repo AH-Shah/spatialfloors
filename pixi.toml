@@ -1,0 +1,222 @@
+# spatialfloors environments (osx-arm64, MPS). One locked workspace, one env per tool family.
+# Tools exchange h5ad / parquet; every env installs this package (editable) and runs the shared pytest subset.
+[workspace]
+name = "spatialfloors"
+channels = ["conda-forge"]
+platforms = ["osx-arm64"]
+
+[system-requirements]
+macos = "14.0"  # PyPI numpy/scipy macosx_14 wheels use Accelerate (as in the base env that produced row 323)
+
+[activation.env]
+PYTORCH_ENABLE_MPS_FALLBACK = "1"
+
+# ---- floors: CPU floors + metrics. Numerics = the PyPI wheels (Accelerate BLAS) of the miniforge base env that produced
+#      row 323: conda numpy/OpenBLAS differs at 1e-15..1e-3 (P0 check), so floors take numpy/scipy/sklearn/pandas from PyPI.
+[feature.floors.dependencies]
+python = "3.11.15.*"
+pytest = "*"
+[feature.floors.pypi-dependencies]
+numpy = { url = "https://files.pythonhosted.org/packages/ad/40/40a40ee0ddf7ceb782c49af278894b686e586d65d8c1889c8b5da01a3d7d/numpy-2.4.6-cp311-cp311-macosx_14_0_arm64.whl" }
+scipy = { url = "https://files.pythonhosted.org/packages/6d/ee/18146b7757ed4976276b9c9819108adbc73c5aad636e5353e20746b73069/scipy-1.17.1-cp311-cp311-macosx_14_0_arm64.whl" }
+scikit-learn = "==1.9.0"
+pandas = "==2.3.3"
+h5py = "==3.16.0"
+pyarrow = "*"
+igraph = "*"
+leidenalg = "==0.10.2"
+scanpy = "==1.11.5"
+anndata = "==0.12.19"
+scikit-misc = "==0.5.2"
+spatialfloors = { path = ".", editable = true }
+
+# ---- stack: conda python stack for the torch envs (portable; not used for bit-identical floors)
+[feature.stack.dependencies]
+python = "3.11.*"
+pytest = "*"
+numpy = "2.*"
+scipy = "*"
+scikit-learn = "*"
+pandas = "*"
+h5py = "*"
+python-igraph = "*"
+leidenalg = "*"
+[feature.stack.pypi-dependencies]
+scanpy = "==1.11.5"
+anndata = "==0.12.19"
+scikit-misc = "==0.5.2"
+spatialfloors = { path = ".", editable = true }
+
+# ---- scvi: scVI / scANVI, Tangram, LightGBM, GAT (PyG); same python stack as floors + torch (MPS)
+[feature.scvi.dependencies]
+pytorch = "2.10.0.*"
+lightgbm = "4.6.0.*"
+[feature.scvi.pypi-dependencies]
+scvi-tools = "==1.4.2"
+tangram-sc = "==1.0.4"
+torch-geometric = "==2.8.0"
+
+# ---- cellcharter (scVI representation -> Delaunay -> aggregate_neighbors -> GMM)
+[feature.cellcharter.pypi-dependencies]
+cellcharter = "==0.3.7"
+squidpy = "==1.8.2"
+
+# ---- novae (pinned; checkpoint hash recorded in manifests/models.json)
+[feature.novae.pypi-dependencies]
+novae = "==1.1.1"
+
+# ---- nicheformer: HF theislab/Nicheformer (remote code, sha pinned in models.json); transformers 4.x era of the upload
+[feature.nicheformer.dependencies]
+python = "3.11.*"
+pytest = "*"
+[feature.nicheformer.pypi-dependencies]
+torch = "==2.5.1"
+transformers = "==4.49.0"
+safetensors = "*"
+numpy = "==1.26.4"
+pandas = "==2.2.3"
+scipy = "==1.14.1"
+scikit-learn = "==1.5.2"
+anndata = "==0.10.9"
+scanpy = "==1.10.3"
+huggingface-hub = "<1.0"
+scikit-misc = "*"
+spatialfloors = { path = ".", editable = true }
+
+# ---- cellina: PMBio/cellina v1.2.0 (dd860d0, the anchor-aligned release before camera-ready 2026-10-13);
+#      pins from cellina-reproducibility/environments/cellina.yml (CUDA -> MPS; pyg cpu wheels for torch 2.4)
+[feature.cellina.dependencies]
+python = "3.10.*"
+pytest = "*"
+packaging = "24.2.*"
+[feature.cellina.pypi-dependencies]
+torch = "==2.4.1"
+torch-scatter = "==2.1.2"
+torch-sparse = "==0.6.18"
+torch-geometric = "==2.7.0"
+scvi-tools = "==1.2.0"
+lightning = "==2.4.0"
+jax = "==0.4.34"
+jaxlib = "==0.4.34"
+numpy = "==1.26.4"
+scipy = "==1.14.1"
+pandas = "==2.2.3"
+scikit-learn = "==1.5.2"
+anndata = "==0.11.4"
+scanpy = "==1.10.3"
+decoupler = "==2.1.1"
+tqdm = "*"
+cellina = { git = "https://github.com/PMBio/cellina", rev = "dd860d03ff72a5f628115cae5be064faacc484a9" }
+scikit-misc = "*"
+spatialfloors = { path = ".", editable = true }
+[feature.cellina.pypi-options]
+index-url = "https://pypi.org/simple"
+find-links = [{ url = "https://data.pyg.org/whl/torch-2.4.0+cpu.html" }]
+index-strategy = "unsafe-best-match"
+no-build-isolation = ["torch-scatter", "torch-sparse"]
+
+# ---- cpa: theislab/cpa fbd7c02 (cpa-tools 0.8.8), pins from cellina-reproducibility/environments/cpa_env.yml
+[feature.cpa.dependencies]
+python = "3.10.*"
+pytest = "*"
+packaging = "24.2.*"
+[feature.cpa.pypi-dependencies]
+torch = "==2.0.0"
+scvi-tools = "==0.20.3"
+lightning = "==2.2.5"
+pytorch-lightning = "==1.9.5"
+jax = "==0.4.23"
+jaxlib = "==0.4.23"
+numpy = "==1.23.5"
+scipy = "==1.12.0"
+pandas = "==2.2.3"
+scikit-learn = "==1.5.2"
+anndata = "==0.9.2"
+scanpy = "==1.10.3"
+decoupler = "==2.1.1"
+llvmlite = "==0.41.1"
+numba = "==0.58.1"
+rdkit-pypi = "==2022.9.5"
+ray = "==2.9.3"
+adjustText = "*"
+gdown = "*"
+seaborn = "*"
+tqdm = "*"
+pyarrow = "==13.0.0"
+cpa-tools = { git = "https://github.com/theislab/cpa", rev = "fbd7c0250edc23eff003a10c99655579c53afd63" }
+scikit-misc = "*"
+spatialfloors = { path = ".", editable = true }
+
+# ---- cpa24: same CPA stack, torch 2.4.1 (torch 2.0.0 MPS nll_loss bus-errors on Darwin 25; P0 diagnosis)
+[feature.cpa24.dependencies]
+setuptools = "70.0.*"
+pip = "*"
+python = "3.10.*"
+pytest = "*"
+packaging = "24.2.*"
+[feature.cpa24.pypi-dependencies]
+torch = "==2.4.1"
+scvi-tools = "==0.20.3"
+lightning = "==2.2.5"
+pytorch-lightning = "==1.9.5"
+jax = "==0.4.23"
+jaxlib = "==0.4.23"
+numpy = "==1.23.5"
+scipy = "==1.12.0"
+pandas = "==2.2.3"
+scikit-learn = "==1.5.2"
+anndata = "==0.9.2"
+scanpy = "==1.10.3"
+decoupler = "==2.1.1"
+llvmlite = "==0.41.1"
+numba = "==0.58.1"
+rdkit-pypi = "==2022.9.5"
+ray = "==2.9.3"
+adjustText = "*"
+gdown = "*"
+seaborn = "*"
+tqdm = "*"
+pyarrow = "==13.0.0"
+scikit-misc = "*"
+spatialfloors = { path = ".", editable = true }
+[feature.cpa24.tasks]
+cpa-setup = "python -m pip install --no-deps 'git+https://github.com/theislab/cpa@fbd7c0250edc23eff003a10c99655579c53afd63'"  # cpa-tools pins torch<=2.0.1; installed without deps
+
+# ---- r: InSituType 2.0 (Nanostring-Biostats, installed by task `r-setup`; commit recorded in manifests/models.json)
+[feature.r]
+channels = ["conda-forge", "bioconda"]
+[feature.r.dependencies]
+r-base = "4.4.*"
+r-dqrng = "*"
+r-bigmemory = "*"
+r-bh = "*"
+r-uwot = "*"
+bioconductor-singlecellexperiment = "*"
+bioconductor-sparsematrixstats = "*"
+bioconductor-summarizedexperiment = "*"
+r-matrix = "*"
+r-remotes = "*"
+r-reticulate = "*"
+"r-data.table" = "*"
+r-lsa = "*"
+r-mclust = "*"
+r-ggplot2 = "*"
+r-umap = "*"
+r-sf = "*"
+r-pbapply = "*"
+r-irlba = "*"
+"r-spatstat.geom" = "*"
+anndata = "*"
+[feature.r.tasks]  # GenomeInfoDbData from Bioconductor 3.20 source (the bioconda data package needs a post-link download pixi does not run)
+r-setup = "Rscript -e 'install.packages(\"https://bioconductor.org/packages/3.20/data/annotation/src/contrib/GenomeInfoDbData_1.2.13.tar.gz\", repos=NULL, type=\"source\"); install.packages(c(\"anndata\", \"fastglm\"), repos=\"https://cloud.r-project.org\"); remotes::install_github(\"Nanostring-Biostats/InSituType\", upgrade=\"never\")'"
+
+[environments]
+floors = { features = ["floors"], no-default-feature = true }
+scvi = { features = ["stack", "scvi"], solve-group = "torch", no-default-feature = true }
+cellcharter = { features = ["stack", "scvi", "cellcharter"], solve-group = "torch", no-default-feature = true }
+novae = { features = ["stack", "scvi", "novae"], solve-group = "torch", no-default-feature = true }
+nicheformer = { features = ["nicheformer"], no-default-feature = true }
+cellina = { features = ["cellina"], no-default-feature = true }
+cpa = { features = ["cpa"], no-default-feature = true }
+cpa24 = { features = ["cpa24"], no-default-feature = true }
+r = { features = ["r"], no-default-feature = true }

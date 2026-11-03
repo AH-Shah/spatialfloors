@@ -1,0 +1,283 @@
+{
+ "rule": "PLAN \u00a719 (2026-11-03): v3 floors chosen on development units only; locked before p4-lock",
+ "locked": {
+  "F1": {
+   "expr_embed": {
+    "human": {
+     "config": "pearson_none_pc50",
+     "dev_mean": 0.12387156500155844,
+     "v1": "pearson_z_pc100"
+    },
+    "mouse": {
+     "config": "pearson_none_pc50",
+     "dev_mean": 0.4170299017601451,
+     "v1": "pearson_z_pc100"
+    },
+    "v3_note": "PLAN \u00a719: v2 kept (no candidate passed); depth-matched reference reported"
+   },
+   "scvi": {
+    "human": {
+     "config": "nl50_nb",
+     "dev_mean": 0.10972678098493922,
+     "grid_means": {
+      "nl10_nb": 0.1044,
+      "nl30_nb": 0.1094,
+      "nl50_nb": 0.10972678098493922,
+      "nl100_nb": 0.10838975139302208
+     }
+    },
+    "mouse": {
+     "config": "nl100_nb",
+     "dev_mean": 0.4161404327220657,
+     "grid_means": {
+      "nl10_nb": 0.412,
+      "nl30_nb": 0.4155,
+      "nl50_nb": 0.4153733373049042,
+      "nl100_nb": 0.4161404327220657
+     }
+    }
+   },
+   "nicheformer": {
+    "human": {
+     "config": "final",
+     "dev_mean": 0.07525892537872604,
+     "grid_means": {
+      "final": 0.0753,
+      "penultimate": 0.0564
+     }
+    },
+    "mouse": {
+     "config": "final",
+     "dev_mean": 0.4126587363873552,
+     "grid_means": {
+      "final": 0.4127,
+      "penultimate": 0.4032
+     }
+    }
+   },
+   "margin": 0.0194878990028946
+  },
+  "F2": {
+   "floor": {
+    "human": {
+     "config": "ell400_lam0.8",
+     "note": "G2 lock v2 (\u00a717 / \u00a718)",
+     "v1": "ell200_lam0.8",
+     "secondary_v3": "v3:ms50_200_800+c200",
+     "v3_note": "PLAN \u00a719: no candidate passed (region-recall rule); best run as a reported secondary floor"
+    },
+    "mouse": {
+     "config": "ell400_lam0.8",
+     "note": "G2 lock v2 (\u00a717 / \u00a718)",
+     "v1": "ell200_lam0.8",
+     "secondary_v3": "v3:ms50_200_800+c200",
+     "v3_note": "PLAN \u00a719: no candidate passed (region-recall rule); best run as a reported secondary floor"
+    }
+   },
+   "cellcharter": {
+    "human": {
+     "config": "nl10_L3",
+     "dev_mean": 0.44205603708205893,
+     "grid_means": {
+      "nl10_L1": 0.1598,
+      "nl10_L3": 0.4421,
+      "nl30_L1": 0.0003,
+      "nl30_L3": 0.4294
+     },
+     "scvi_seeds": [
+      0,
+      1,
+      2
+     ]
+    },
+    "mouse": {
+     "config": "nl30_L3",
+     "dev_mean": 0.39575978054593636,
+     "grid_means": {
+      "nl10_L1": 0.2583,
+      "nl10_L3": 0.3343,
+      "nl30_L1": 0.3688,
+      "nl30_L3": 0.3958
+     },
+     "scvi_seeds": [
+      0,
+      1,
+      2
+     ]
+    }
+   },
+   "novae": {
+    "mouse": {
+     "config": "zero_shot",
+     "dev_mean": 0.2903487371632917,
+     "grid_means": {
+      "zero_shot": 0.2903
+     }
+    }
+   },
+   "margin": 0.05,
+   "primary": "ari_bal"
+  },
+  "F3": {
+   "ridge": {
+    "human": {
+     "config": "v3",
+     "v2": "T+ctx:ell25:pc10:a1000",
+     "design": "v2 lock features + same-lineage rings 50-150 / 150-250 um (receiver's masked genes, 10 SVD), ridge alpha 1000",
+     "dev_mean": 0.06119296296733817,
+     "dev_mean_v2": 0.05178978381055314,
+     "dev_null": 0.045908332337051806,
+     "note": "PLAN \u00a719; scripts/v3_f3_alt.py 'fixed_sf'"
+    },
+    "mouse": {
+     "config": "v3",
+     "v2": "ctx:ell100:pc50:a1000",
+     "design": "v2 lock features + same-lineage rings 50-150 / 150-250 um (receiver's masked genes, 10 SVD), ridge alpha 1000",
+     "dev_mean": 0.1527609175640566,
+     "dev_mean_v2": 0.12466402281583146,
+     "dev_null": 0.11998004649043836,
+     "note": "PLAN \u00a719; scripts/v3_f3_alt.py 'fixed_sf'"
+    }
+   },
+   "gat": {
+    "dropped": "PLAN \u00a718 (user 2026-11-02): not a test pair; P3 / validation results descriptive",
+    "v1": {
+     "human": {
+      "config": "gat_L2",
+      "dev_mean": 0.04204516121623964,
+      "grid_means": {
+       "gat_L1": 0.035,
+       "gat_L2": 0.042
+      }
+     },
+     "mouse": {
+      "config": "gat_L2",
+      "dev_mean": 0.08888556942163485,
+      "grid_means": {
+       "gat_L1": 0.0885,
+       "gat_L2": 0.0889
+      }
+     }
+    }
+   },
+   "lightgbm": {
+    "human": {
+     "config": "leaves15_lr0.05",
+     "features": "v3",
+     "dev_mean": 0.0474091688589325,
+     "grid_means": {
+      "leaves15_lr0.05": 0.0474091688589325,
+      "leaves15_lr0.1": 0.0423025999261456,
+      "leaves63_lr0.05": 0.04256335717991314,
+      "leaves63_lr0.1": 0.03665851702380285
+     },
+     "v2": "leaves15_lr0.05",
+     "note": "v3 feature groups (floors.f3.v3_parts, a superset of the floor's)"
+    },
+    "mouse": {
+     "config": "leaves15_lr0.05",
+     "features": "v3",
+     "dev_mean": 0.12649930986431204,
+     "grid_means": {
+      "leaves15_lr0.05": 0.12649930986431204,
+      "leaves15_lr0.1": 0.12301498943039747,
+      "leaves63_lr0.05": 0.12264788147672546,
+      "leaves63_lr0.1": 0.11691668089429436
+     },
+     "v2": "leaves15_lr0.05",
+     "note": "v3 feature groups (floors.f3.v3_parts, a superset of the floor's)"
+    }
+   },
+   "margin": 0.004331722493616676,
+   "ncem": {
+    "human": {
+     "config": "type+ctx_cd64_z30",
+     "dev_mean": 0.0322549030033962,
+     "grid_means": {
+      "type+ctx_cd64_z30": 0.0322549030033962,
+      "type_cd64_z30": 0.02761379484435167,
+      "type+ctx_cd8_z10": 0.02865643481522383,
+      "type_cd8_z10": 0.029027329497905707
+     },
+     "features": "T+ctx:ell25:pc10"
+    },
+    "mouse": {
+     "config": "type+ctx_cd64_z30",
+     "dev_mean": 0.08836713643717034,
+     "grid_means": {
+      "type+ctx_cd64_z30": 0.08836713643717034,
+      "type_cd64_z30": 0.07059692308880348,
+      "type+ctx_cd8_z10": 0.08045436597739337,
+      "type_cd8_z10": 0.06688067284194885
+     },
+     "features": "ctx:ell100:pc50"
+    }
+   },
+   "lgbm_resid": {
+    "human": {
+     "config": "resid_leaves15_lr0.05_es",
+     "secondary": true,
+     "features": "T+ctx:ell25:pc10",
+     "dev_mean": 0.050764226425560256
+    },
+    "mouse": {
+     "config": "resid_leaves15_lr0.05_es",
+     "secondary": true,
+     "features": "ctx:ell100:pc50",
+     "dev_mean": 0.12514170966058974
+    }
+   },
+   "ncemA": {
+    "human": {
+     "config": "edA_e1_r19,linA_l20_r19",
+     "note": "authors' ED-NCEM + linear NCEM, radius 19 um (row 379; validation row 380)"
+    },
+    "mouse": {
+     "config": "edA_e1_r46,linA_l20_r46",
+     "note": "radius 46 um (row 379)"
+    }
+   }
+  },
+  "F5": {
+   "floors": {
+    "human": {
+     "config": "insitutype_spatial",
+     "v2": "insitutype",
+     "dev_mean": 0.7678311227851361,
+     "dev_mean_v2": 0.7602354986385771,
+     "note": "PLAN \u00a719: InSituType ML + mean-field neighbour prior (beta 1, 15-NN) on its log-likelihoods"
+    }
+   },
+   "scanvi": {
+    "human": {
+     "config": "nl30_nb",
+     "dev_mean": 0.7538281784441289,
+     "grid_means": {
+      "nl10_nb": 0.7422,
+      "nl10_zinb": 0.7394,
+      "nl30_nb": 0.7538,
+      "nl30_zinb": 0.7527
+     }
+    }
+   },
+   "tangram": {
+    "human": {
+     "config": "uniform",
+     "dev_mean": 0.6101476579193035,
+     "grid_means": {
+      "uniform": 0.6101,
+      "rna_count_based": 0.607
+     }
+    }
+   },
+   "margin": 0.025452985695741493
+  },
+  "F4": {
+   "margin": 0.03,
+   "note": "authors' configs; L6 locked (SPEC F4)",
+   "v3_note": "PLAN \u00a719: L6 kept (L7 15/30/100 um, similarity-weighted, EB, rank 1 did not beat L6 on crc_232 whole slide or crop)"
+  }
+ },
+ "v2_file": "manifests/locked_v2.json",
+ "spatialfloors_commit": "a3697ddc34035de1d69f495fdf0a971b966f45a5"
+}

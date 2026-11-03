@@ -1,0 +1,81 @@
+{
+ "tissue": "kidney",
+ "source": "CELLxGENE bd65a70f-b274-4133-b9dd-0d1431b6af34 (Krishna et al. 2021, Cancer Cell)",
+ "ref": "/Users/Hemato/project_3/data/raw/refs/ccrcc_krishna2021/ref.h5ad",
+ "n_cells": 167283,
+ "class_counts": {
+  "epithelial": 29059,
+  "immune_nonmyeloid": 89066,
+  "myeloid": 14011,
+  "other": 35147
+ },
+ "qc_pass": true,
+ "coarse_map": {
+  "CD4-positive, alpha-beta T cell": "immune_nonmyeloid",
+  "naive thymus-derived CD8-positive, alpha-beta T cell": "immune_nonmyeloid",
+  "mature NK T cell": "immune_nonmyeloid",
+  "endothelial cell": "other",
+  "activated CD4-positive, alpha-beta T cell, human": "immune_nonmyeloid",
+  "abnormal cell": "epithelial",
+  "myofibroblast cell": "other",
+  "CD14-positive monocyte": "myeloid",
+  "CD14-positive, CD16-positive monocyte": "myeloid",
+  "naive T cell": "immune_nonmyeloid",
+  "conventional dendritic cell": "other",
+  "unknown": "other",
+  "mast cell": "other",
+  "effector CD4-positive, alpha-beta T cell": "immune_nonmyeloid",
+  "B cell": "immune_nonmyeloid",
+  "regulatory T cell": "immune_nonmyeloid",
+  "megakaryocyte": "other",
+  "dendritic cell, human": "other"
+ },
+ "heldout_markers": {
+  "epithelial": [
+   "CST3",
+   "APOE",
+   "CD68",
+   "C1QC",
+   "C1QA"
+  ],
+  "immune_nonmyeloid": [
+   "PTPRCAP",
+   "CD3E",
+   "B2M",
+   "IL2RG",
+   "RAC2"
+  ],
+  "myeloid": [
+   "FCN1",
+   "CTSS",
+   "S100A9",
+   "AIF1",
+   "LST1"
+  ]
+ },
+ "marker_auroc_in_reference": {
+  "epithelial": {
+   "CST3": 0.857253068244359,
+   "APOE": 0.8416238327829758,
+   "CD68": 0.8392974729407449,
+   "C1QC": 0.8313788364520271,
+   "C1QA": 0.8274505365987892
+  },
+  "immune_nonmyeloid": {
+   "PTPRCAP": 0.9107231619014031,
+   "CD3E": 0.8559658312032523,
+   "B2M": 0.8552197433422822,
+   "IL2RG": 0.846457158358263,
+   "RAC2": 0.8262626891835729
+  },
+  "myeloid": {
+   "FCN1": 0.9726935309839636,
+   "CTSS": 0.9603479954464463,
+   "S100A9": 0.9603044149673331,
+   "AIF1": 0.9563832768263709,
+   "LST1": 0.9506110745396952
+  }
+ },
+ "rule": "F5 references for the new cancers (PLAN \u00a717), standardised to the Pelka layout read by floors.f5.reference:\nX = log1p CP10k (csr), raw.X = integer counts, var.feature_name = gene symbol, obs.ClusterMidway = fine label, obs.coarse.\nClasses (Cell Ontology, CL basic): epithelial = descendant of epithelial cell CL:0000066, or malignant cell CL:0001064 /\nabnormal cell CL:0001061 (carcinoma: tumour cells are epithelial); immune non-myeloid = descendant of lymphocyte\nCL:0000542 (T, B, plasma, NK, ILC); myeloid = descendant of myeloid leukocyte CL:0000766 except mast cells CL:0000097\n(as the locked Pelka map: Macro / Mono / DC / Granulo myeloid, Mast other); everything else other. Ji 2020 (GEO, no CL\nterms): explicit level1 map below, level2 = fine label, Multiplet dropped.\nHeld-out markers per class = top 5 by one-vs-rest AUROC (log1p CP10k, stratified <= 80k / <= 4k per fine type, seed 0)\namong the 200 genes with the largest mean log-fold change, detected in >= 10% of the class's cells, on the CosMx WTx\ngene list (GSE1 panel), not in another class's list. QC: >= 500 cells per class (else the reference fails G5).",
+ "spatialfloors_commit": "79e3861e49bd6c34dc0acceb630d1218e380077f-dirty"
+}

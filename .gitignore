@@ -1,0 +1,8 @@
+external/
+.pixi/
+__pycache__/
+*.egg-info/
+runs/
+.DS_Store
+registration/*.tar.gz
+registration/units/crops/*.csv.gz

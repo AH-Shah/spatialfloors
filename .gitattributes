@@ -1,0 +1,6 @@
+# Excluded from `git archive` (the registered code archive): internal notes, run outputs, development probes.
+runs export-ignore
+dev export-ignore
+registration export-ignore
+scripts/hyp_rows.py export-ignore
+.gitattributes export-ignore

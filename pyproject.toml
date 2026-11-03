@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spatialfloors"
+version = "0.0.1"
+description = "Linear / closed-form floors and a pre-registered benchmark harness for learned spatial-omics models"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+spatialfloors = "spatialfloors.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/spatialfloors"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["data: needs the GSE1 raw h5ads on disk", "slow: minutes on CPU"]

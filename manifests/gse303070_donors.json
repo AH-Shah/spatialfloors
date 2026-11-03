@@ -1,0 +1,713 @@
+{
+ "check_vs_fov_csv": [
+  {
+   "Slide": "10501A",
+   "Sample": "130T",
+   "cells_cells": 32803,
+   "fovs_cells": 15,
+   "donor_cells": "Donor130",
+   "slide": "10501A",
+   "pref": "130T",
+   "cells_fovcsv": 32803,
+   "fovs_fovcsv": 15,
+   "donor_fovcsv": "Donor130",
+   "match": true
+  },
+  {
+   "Slide": "10501A",
+   "Sample": "74T",
+   "cells_cells": 27445,
+   "fovs_cells": 15,
+   "donor_cells": "Donor74",
+   "slide": "10501A",
+   "pref": "74T",
+   "cells_fovcsv": 27445,
+   "fovs_fovcsv": 15,
+   "donor_fovcsv": "Donor74",
+   "match": true
+  },
+  {
+   "Slide": "10501A",
+   "Sample": "92T",
+   "cells_cells": 39144,
+   "fovs_cells": 16,
+   "donor_cells": "Donor92",
+   "slide": "10501A",
+   "pref": "92T",
+   "cells_fovcsv": 39144,
+   "fovs_fovcsv": 16,
+   "donor_fovcsv": "Donor92",
+   "match": true
+  },
+  {
+   "Slide": "120131",
+   "Sample": "170T",
+   "cells_cells": 39545,
+   "fovs_cells": 21,
+   "donor_cells": "Donor170",
+   "slide": "120131",
+   "pref": "170T",
+   "cells_fovcsv": 39545,
+   "fovs_fovcsv": 21,
+   "donor_fovcsv": "Donor170",
+   "match": true
+  },
+  {
+   "Slide": "120131",
+   "Sample": "280N",
+   "cells_cells": 17132,
+   "fovs_cells": 10,
+   "donor_cells": "Donor280",
+   "slide": "120131",
+   "pref": "280N",
+   "cells_fovcsv": 17132,
+   "fovs_fovcsv": 10,
+   "donor_fovcsv": "Donor280",
+   "match": true
+  },
+  {
+   "Slide": "120131",
+   "Sample": "280T",
+   "cells_cells": 26488,
+   "fovs_cells": 13,
+   "donor_cells": "Donor280",
+   "slide": "120131",
+   "pref": "280T",
+   "cells_fovcsv": 26488,
+   "fovs_fovcsv": 13,
+   "donor_fovcsv": "Donor280",
+   "match": true
+  },
+  {
+   "Slide": "120131",
+   "Sample": "NC",
+   "cells_cells": 5046,
+   "fovs_cells": 2,
+   "donor_cells": "",
+   "slide": "120131",
+   "pref": "NC",
+   "cells_fovcsv": 5046,
+   "fovs_fovcsv": 2,
+   "donor_fovcsv": "",
+   "match": true
+  },
+  {
+   "Slide": "148191A",
+   "Sample": "118N",
+   "cells_cells": 25280,
+   "fovs_cells": 9,
+   "donor_cells": "Donor118",
+   "slide": "148191A",
+   "pref": "118N",
+   "cells_fovcsv": 25280,
+   "fovs_fovcsv": 9,
+   "donor_fovcsv": "Donor118",
+   "match": true
+  },
+  {
+   "Slide": "148191A",
+   "Sample": "278N",
+   "cells_cells": 18901,
+   "fovs_cells": 10,
+   "donor_cells": "Donor278",
+   "slide": "148191A",
+   "pref": "278N",
+   "cells_fovcsv": 18901,
+   "fovs_fovcsv": 10,
+   "donor_fovcsv": "Donor278",
+   "match": true
+  },
+  {
+   "Slide": "148191A",
+   "Sample": "278T",
+   "cells_cells": 37862,
+   "fovs_cells": 16,
+   "donor_cells": "Donor278",
+   "slide": "148191A",
+   "pref": "278T",
+   "cells_fovcsv": 37862,
+   "fovs_fovcsv": 16,
+   "donor_fovcsv": "Donor278",
+   "match": true
+  },
+  {
+   "Slide": "148191A",
+   "Sample": "46T",
+   "cells_cells": 31848,
+   "fovs_cells": 14,
+   "donor_cells": "Donor46",
+   "slide": "148191A",
+   "pref": "46T",
+   "cells_fovcsv": 31848,
+   "fovs_fovcsv": 14,
+   "donor_fovcsv": "Donor46",
+   "match": true
+  },
+  {
+   "Slide": "148191A",
+   "Sample": "NC",
+   "cells_cells": 4309,
+   "fovs_cells": 2,
+   "donor_cells": "",
+   "slide": "148191A",
+   "pref": "NC",
+   "cells_fovcsv": 4309,
+   "fovs_fovcsv": 2,
+   "donor_fovcsv": "",
+   "match": true
+  },
+  {
+   "Slide": "3461G",
+   "Sample": "137T",
+   "cells_cells": 53726,
+   "fovs_cells": 17,
+   "donor_cells": "Donor137",
+   "slide": "3461G",
+   "pref": "137T",
+   "cells_fovcsv": 53726,
+   "fovs_fovcsv": 17,
+   "donor_fovcsv": "Donor137",
+   "match": true
+  },
+  {
+   "Slide": "3461G",
+   "Sample": "142T",
+   "cells_cells": 49918,
+   "fovs_cells": 15,
+   "donor_cells": "Donor142",
+   "slide": "3461G",
+   "pref": "142T",
+   "cells_fovcsv": 49918,
+   "fovs_fovcsv": 15,
+   "donor_fovcsv": "Donor142",
+   "match": true
+  },
+  {
+   "Slide": "3461G",
+   "Sample": "7T",
+   "cells_cells": 32299,
+   "fovs_cells": 15,
+   "donor_cells": "Donor7",
+   "slide": "3461G",
+   "pref": "7T",
+   "cells_fovcsv": 32299,
+   "fovs_fovcsv": 15,
+   "donor_fovcsv": "Donor7",
+   "match": true
+  },
+  {
+   "Slide": "3461G",
+   "Sample": "NC",
+   "cells_cells": 2270,
+   "fovs_cells": 1,
+   "donor_cells": "",
+   "slide": "3461G",
+   "pref": "NC",
+   "cells_fovcsv": 2270,
+   "fovs_fovcsv": 1,
+   "donor_fovcsv": "",
+   "match": true
+  },
+  {
+   "Slide": "Normal_A",
+   "Sample": "170N",
+   "cells_cells": 22011,
+   "fovs_cells": 7,
+   "donor_cells": "Donor170",
+   "slide": "Normal_A",
+   "pref": "170N",
+   "cells_fovcsv": 22011,
+   "fovs_fovcsv": 7,
+   "donor_fovcsv": "Donor170",
+   "match": true
+  },
+  {
+   "Slide": "Normal_A",
+   "Sample": "64N",
+   "cells_cells": 39952,
+   "fovs_cells": 9,
+   "donor_cells": "Donor64",
+   "slide": "Normal_A",
+   "pref": "64N",
+   "cells_fovcsv": 39952,
+   "fovs_fovcsv": 9,
+   "donor_fovcsv": "Donor64",
+   "match": true
+  },
+  {
+   "Slide": "Normal_A",
+   "Sample": "73N",
+   "cells_cells": 31268,
+   "fovs_cells": 7,
+   "donor_cells": "Donor73",
+   "slide": "Normal_A",
+   "pref": "73N",
+   "cells_fovcsv": 31268,
+   "fovs_fovcsv": 7,
+   "donor_fovcsv": "Donor73",
+   "match": true
+  },
+  {
+   "Slide": "Normal_A",
+   "Sample": "7N",
+   "cells_cells": 23819,
+   "fovs_cells": 7,
+   "donor_cells": "Donor7",
+   "slide": "Normal_A",
+   "pref": "7N",
+   "cells_fovcsv": 23819,
+   "fovs_fovcsv": 7,
+   "donor_fovcsv": "Donor7",
+   "match": true
+  },
+  {
+   "Slide": "Run5850.2186.1",
+   "Sample": "142N",
+   "cells_cells": 29423,
+   "fovs_cells": 14,
+   "donor_cells": "Donor142",
+   "slide": "Run5850.2186.1",
+   "pref": "142N",
+   "cells_fovcsv": 29423,
+   "fovs_fovcsv": 14,
+   "donor_fovcsv": "Donor142",
+   "match": true
+  },
+  {
+   "Slide": "Run5850.2186.1",
+   "Sample": "67T",
+   "cells_cells": 20231,
+   "fovs_cells": 13,
+   "donor_cells": "Donor67",
+   "slide": "Run5850.2186.1",
+   "pref": "67T",
+   "cells_fovcsv": 20231,
+   "fovs_fovcsv": 13,
+   "donor_fovcsv": "Donor67",
+   "match": true
+  },
+  {
+   "Slide": "Run5850.2186.1",
+   "Sample": "73T",
+   "cells_cells": 21729,
+   "fovs_cells": 13,
+   "donor_cells": "Donor73",
+   "slide": "Run5850.2186.1",
+   "pref": "73T",
+   "cells_fovcsv": 21729,
+   "fovs_fovcsv": 13,
+   "donor_fovcsv": "Donor73",
+   "match": true
+  },
+  {
+   "Slide": "Run5850.2186.2",
+   "Sample": "142N",
+   "cells_cells": 16014,
+   "fovs_cells": 8,
+   "donor_cells": "Donor142",
+   "slide": "Run5850.2186.2",
+   "pref": "142N",
+   "cells_fovcsv": 16014,
+   "fovs_fovcsv": 8,
+   "donor_fovcsv": "Donor142",
+   "match": true
+  },
+  {
+   "Slide": "Run5850.2186.2",
+   "Sample": "67T",
+   "cells_cells": 22851,
+   "fovs_cells": 14,
+   "donor_cells": "Donor67",
+   "slide": "Run5850.2186.2",
+   "pref": "67T",
+   "cells_fovcsv": 22851,
+   "fovs_fovcsv": 14,
+   "donor_fovcsv": "Donor67",
+   "match": true
+  },
+  {
+   "Slide": "Run5850.2186.2",
+   "Sample": "73N",
+   "cells_cells": 8778,
+   "fovs_cells": 4,
+   "donor_cells": "Donor73",
+   "slide": "Run5850.2186.2",
+   "pref": "73N",
+   "cells_fovcsv": 8778,
+   "fovs_fovcsv": 4,
+   "donor_fovcsv": "Donor73",
+   "match": true
+  },
+  {
+   "Slide": "Run5850.2186.2",
+   "Sample": "73T",
+   "cells_cells": 27363,
+   "fovs_cells": 14,
+   "donor_cells": "Donor73",
+   "slide": "Run5850.2186.2",
+   "pref": "73T",
+   "cells_fovcsv": 27363,
+   "fovs_fovcsv": 14,
+   "donor_fovcsv": "Donor73",
+   "match": true
+  },
+  {
+   "Slide": "Tumour_A",
+   "Sample": "118T",
+   "cells_cells": 38148,
+   "fovs_cells": 13,
+   "donor_cells": "Donor118",
+   "slide": "Tumour_A",
+   "pref": "118T",
+   "cells_fovcsv": 38148,
+   "fovs_fovcsv": 13,
+   "donor_fovcsv": "Donor118",
+   "match": true
+  },
+  {
+   "Slide": "Tumour_A",
+   "Sample": "150T",
+   "cells_cells": 28236,
+   "fovs_cells": 14,
+   "donor_cells": "Donor150",
+   "slide": "Tumour_A",
+   "pref": "150T",
+   "cells_fovcsv": 28236,
+   "fovs_fovcsv": 14,
+   "donor_fovcsv": "Donor150",
+   "match": true
+  },
+  {
+   "Slide": "Tumour_B",
+   "Sample": "64T",
+   "cells_cells": 59019,
+   "fovs_cells": 20,
+   "donor_cells": "Donor64",
+   "slide": "Tumour_B",
+   "pref": "64T",
+   "cells_fovcsv": 59019,
+   "fovs_fovcsv": 20,
+   "donor_fovcsv": "Donor64",
+   "match": true
+  },
+  {
+   "Slide": "Tumour_B",
+   "Sample": "73T",
+   "cells_cells": 13611,
+   "fovs_cells": 4,
+   "donor_cells": "Donor73",
+   "slide": "Tumour_B",
+   "pref": "73T",
+   "cells_fovcsv": 13611,
+   "fovs_fovcsv": 4,
+   "donor_fovcsv": "Donor73",
+   "match": true
+  }
+ ],
+ "all_match": true,
+ "dev_slides": [
+  "148191A"
+ ],
+ "dev_donors": [
+  "Donor118",
+  "Donor278",
+  "Donor46"
+ ],
+ "conf_slides": [
+  "10501A",
+  "120131",
+  "3461G",
+  "Tumour_A",
+  "Tumour_B"
+ ],
+ "units": [
+  {
+   "slide": "10501A",
+   "sample": "130T",
+   "donor": "Donor130",
+   "role": "confirmation",
+   "cells": 32803,
+   "fovs": 15,
+   "crop": 32803,
+   "if_available": {
+    "PanCK": true,
+    "CD45": true,
+    "CD68": true,
+    "CD3": false
+   },
+   "niches_labelled": 1.0
+  },
+  {
+   "slide": "10501A",
+   "sample": "74T",
+   "donor": "Donor74",
+   "role": "confirmation",
+   "cells": 27445,
+   "fovs": 15,
+   "crop": 27445,
+   "if_available": {
+    "PanCK": true,
+    "CD45": true,
+    "CD68": true,
+    "CD3": false
+   },
+   "niches_labelled": 1.0
+  },
+  {
+   "slide": "10501A",
+   "sample": "92T",
+   "donor": "Donor92",
+   "role": "confirmation",
+   "cells": 39144,
+   "fovs": 16,
+   "crop": 39144,
+   "if_available": {
+    "PanCK": true,
+    "CD45": true,
+    "CD68": true,
+    "CD3": false
+   },
+   "niches_labelled": 1.0
+  },
+  {
+   "slide": "120131",
+   "sample": "170T",
+   "donor": "Donor170",
+   "role": "confirmation",
+   "cells": 39545,
+   "fovs": 21,
+   "crop": 39545,
+   "if_available": {
+    "PanCK": true,
+    "CD45": true,
+    "CD68": true,
+    "CD3": false
+   },
+   "niches_labelled": 1.0
+  },
+  {
+   "slide": "120131",
+   "sample": "280N",
+   "donor": "Donor280",
+   "role": "confirmation",
+   "cells": 17132,
+   "fovs": 10,
+   "crop": 17132,
+   "if_available": {
+    "PanCK": true,
+    "CD45": true,
+    "CD68": true,
+    "CD3": false
+   },
+   "niches_labelled": 1.0
+  },
+  {
+   "slide": "120131",
+   "sample": "280T",
+   "donor": "Donor280",
+   "role": "confirmation",
+   "cells": 26488,
+   "fovs": 13,
+   "crop": 26488,
+   "if_available": {
+    "PanCK": true,
+    "CD45": true,
+    "CD68": true,
+    "CD3": false
+   },
+   "niches_labelled": 1.0
+  },
+  {
+   "slide": "148191A",
+   "sample": "118N",
+   "donor": "Donor118",
+   "role": "development",
+   "cells": 25280,
+   "fovs": 9,
+   "crop": 25280,
+   "if_available": {
+    "PanCK": true,
+    "CD45": true,
+    "CD68": true,
+    "CD3": false
+   },
+   "niches_labelled": 1.0
+  },
+  {
+   "slide": "148191A",
+   "sample": "278N",
+   "donor": "Donor278",
+   "role": "development",
+   "cells": 18901,
+   "fovs": 10,
+   "crop": 18901,
+   "if_available": {
+    "PanCK": true,
+    "CD45": true,
+    "CD68": true,
+    "CD3": false
+   },
+   "niches_labelled": 1.0
+  },
+  {
+   "slide": "148191A",
+   "sample": "278T",
+   "donor": "Donor278",
+   "role": "development",
+   "cells": 37862,
+   "fovs": 16,
+   "crop": 37862,
+   "if_available": {
+    "PanCK": true,
+    "CD45": true,
+    "CD68": true,
+    "CD3": false
+   },
+   "niches_labelled": 1.0
+  },
+  {
+   "slide": "148191A",
+   "sample": "46T",
+   "donor": "Donor46",
+   "role": "development",
+   "cells": 31848,
+   "fovs": 14,
+   "crop": 31848,
+   "if_available": {
+    "PanCK": true,
+    "CD45": true,
+    "CD68": true,
+    "CD3": false
+   },
+   "niches_labelled": 1.0
+  },
+  {
+   "slide": "3461G",
+   "sample": "137T",
+   "donor": "Donor137",
+   "role": "confirmation",
+   "cells": 53726,
+   "fovs": 17,
+   "crop": 53726,
+   "if_available": {
+    "PanCK": true,
+    "CD45": true,
+    "CD68": true,
+    "CD3": false
+   },
+   "niches_labelled": 1.0
+  },
+  {
+   "slide": "3461G",
+   "sample": "142T",
+   "donor": "Donor142",
+   "role": "confirmation",
+   "cells": 49918,
+   "fovs": 15,
+   "crop": 49918,
+   "if_available": {
+    "PanCK": true,
+    "CD45": true,
+    "CD68": true,
+    "CD3": false
+   },
+   "niches_labelled": 1.0
+  },
+  {
+   "slide": "3461G",
+   "sample": "7T",
+   "donor": "Donor7",
+   "role": "confirmation",
+   "cells": 32299,
+   "fovs": 15,
+   "crop": 32299,
+   "if_available": {
+    "PanCK": true,
+    "CD45": true,
+    "CD68": true,
+    "CD3": false
+   },
+   "niches_labelled": 1.0
+  },
+  {
+   "slide": "Tumour_A",
+   "sample": "118T",
+   "donor": "Donor118",
+   "role": "excluded_dev_donor",
+   "cells": 38148,
+   "fovs": 13,
+   "crop": 38148,
+   "if_available": {
+    "PanCK": true,
+    "CD45": true,
+    "CD68": false,
+    "CD3": true
+   },
+   "niches_labelled": 1.0
+  },
+  {
+   "slide": "Tumour_A",
+   "sample": "150T",
+   "donor": "Donor150",
+   "role": "confirmation",
+   "cells": 28236,
+   "fovs": 14,
+   "crop": 28236,
+   "if_available": {
+    "PanCK": true,
+    "CD45": true,
+    "CD68": false,
+    "CD3": true
+   },
+   "niches_labelled": 1.0
+  },
+  {
+   "slide": "Tumour_B",
+   "sample": "64T",
+   "donor": "Donor64",
+   "role": "confirmation",
+   "cells": 59019,
+   "fovs": 20,
+   "crop": 50000,
+   "if_available": {
+    "PanCK": true,
+    "CD45": true,
+    "CD68": false,
+    "CD3": true
+   },
+   "niches_labelled": 1.0
+  },
+  {
+   "slide": "Tumour_B",
+   "sample": "73T",
+   "donor": "Donor73",
+   "role": "confirmation",
+   "cells": 13611,
+   "fovs": 4,
+   "crop": 13611,
+   "if_available": {
+    "PanCK": true,
+    "CD45": true,
+    "CD68": false,
+    "CD3": true
+   },
+   "niches_labelled": 1.0
+  }
+ ],
+ "confirmation_donors": [
+  "Donor130",
+  "Donor137",
+  "Donor142",
+  "Donor150",
+  "Donor170",
+  "Donor280",
+  "Donor64",
+  "Donor7",
+  "Donor73",
+  "Donor74",
+  "Donor92"
+ ],
+ "n_confirmation_donors": 11,
+ "confirmation_donors_on_several_conf_slides": {},
+ "spatialfloors_commit": "be50182e6d412c0065e721ea1e5f90e7d73a7a4a-dirty"
+}

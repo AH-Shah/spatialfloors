@@ -1,0 +1,54 @@
+{
+ "cellina": {
+  "repo": "https://github.com/PMBio/cellina",
+  "commit": "dd860d03ff72a5f628115cae5be064faacc484a9",
+  "tag": "v1.2.0",
+  "note": "camera-ready env pinned 'cellina==0.7.1' (local, not on PyPI); v1.2.0 = anchor-aligned release before camera-ready 2026-10-13"
+ },
+ "cellina_reproducibility": {
+  "repo": "https://github.com/PMBio/cellina-reproducibility",
+  "commit": "6bb060b67528f68212b4ac76f87ebbab4c8816c0",
+  "note": "scripts identical to N2/trials/perturb/cellina_ref flattened copies (train_loo, eval_loo, counterfactual_analysis, utils, perturb_utils, adata configs)"
+ },
+ "cpa": {
+  "repo": "https://github.com/theislab/cpa",
+  "commit": "fbd7c0250edc23eff003a10c99655579c53afd63",
+  "version": "cpa-tools 0.8.8 (camera-ready cpa_env.yml)"
+ },
+ "nicheformer": {
+  "hf": "theislab/Nicheformer",
+  "revision": "0ba4ba162f9ad3d6c8b713761954c31be2fa69ed",
+  "github_commit": "485cadbc5caa15119adfd54228f8a8af835fcabc",
+  "technology_mean": "external/nicheformer/data/model_means/cosmx_mean_script.npy",
+  "gene_map": "symbol -> Ensembl from Pelka CELLxGENE var (feature_name)",
+  "mouse_orthologs": "Ensembl 116 BioMart mmusculus -> hsapiens homolog, /Users/Hemato/project_3/data/raw/ensembl_orthologs/mouse_human_orthologs.tsv sha256 38d7c752d021d5088ffb2ac4d4dd263fdfda65cfb429522c25ee71c49d022d6f"
+ },
+ "novae": {
+  "package": "novae==1.1.1",
+  "checkpoint": "prism-oncology/novae-human-0",
+  "revision": "b8c0a5d7612bac6bc719ab57ed3cd16ad814728c",
+  "safetensors_sha256": "7d1e4a051469d14e796994faa34a41556183e78757f5dc70a99dbd9f6a19ce87",
+  "note": "MICS-Lab/novae-human-0 redirects here",
+  "checkpoint_mouse": "prism-oncology/novae-mouse-0",
+  "revision_mouse": "3a23be90d5c6d87595ce3d5da522a6854f05564e",
+  "positive_control": "HF dataset prism-oncology/novae human/colon/Xenium_V1_Human_Colon_Cancer_P5_CRC_Add_on_FFPE_outs.h5ad sha256 bacf34609d95bb3aa13334161139382bdfb9ac89c8b9f5973ef24f61c78f7667; annotations parquet sha256 9bc2a9c6f475796ac6c41fd1ca43fa3c03cdb7cd9794e021a869412802f2a2da"
+ },
+ "insitutype": {
+  "repo": "https://github.com/Nanostring-Biostats/InSituType",
+  "commit": "f3ef0dd0814318d74675e6a613fad3ef7f1e23a1",
+  "version": "2.0",
+  "env": "pixi r (r-setup task; GenomeInfoDbData 1.2.13 from Bioconductor 3.20 source)"
+ },
+ "vendored": {
+  "l6": "N2/tools/87_optimal_baselines.py sha256 6509d78eac280a783e2a20bf98547865d4da0bbe6a98da61228e958aa43f67a3",
+  "bleedsafe": "libella/src/libella/niche/core.py sha256 9d8f4a3111947273044e4ecd0cddf651fa9aeb24dc515340ae6d0ae142f4d78a (libella 5ac935a)",
+  "cellina_metrics": "cellina_ref/scripts__counterfactual_analysis.py sha256 107f691c458f425f08f02d713eec1e3d2d40b51cb05b42c7ac3ae8bf8a9dcc5c"
+ },
+ "allen": {
+  "animal2_on_disk": "CELLxGENE dataset version 93c3bb97 (current 979c38f6)",
+  "animal1": "aeaa6e77-7f6e-4d8c-b217-4c1e777cc0be",
+  "animal3": "0cd6f9fe-4054-480e-a4b7-ccce8d67c4cb",
+  "animal4": "4b5c682f-4b5d-4dcb-81c1-606fef2b601e",
+  "yao638850": "ABC atlas expression_matrices/MERFISH-C57BL6J-638850/20230830 raw (md5 9484a3992a4b6d3a7c0281c72e1be522)"
+ }
+}

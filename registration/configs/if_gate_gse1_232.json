@@ -1,0 +1,169 @@
+{
+ "slide": "GSE1 232",
+ "quantiles": {
+  "PanCK": [
+   0.4,
+   0.6
+  ],
+  "CD45": [
+   0.5,
+   0.8
+  ],
+  "CD68_CK8_18": [
+   0.5,
+   0.85
+  ]
+ },
+ "thresholds_log1p": {
+  "PanCK": [
+   5.488937726156687,
+   6.734591659972948
+  ],
+  "CD45": [
+   5.384495062789089,
+   5.700443573390687
+  ],
+  "CD68_CK8_18": [
+   4.2626798770413155,
+   5.497168225293202
+  ]
+ },
+ "three_class": {
+  "classes": {
+   "epithelial": {
+    "n": 20216,
+    "coverage": 0.1545,
+    "mean_cp10k_CD68": 0.419,
+    "mean_cp10k_CD163": 0.175,
+    "mean_cp10k_C1QC": 0.571,
+    "ist_top": {
+     "epi1": 5875,
+     "epi2": 5790,
+     "epi3": 1161,
+     "epi4": 3116,
+     "nan": 2429
+    }
+   },
+   "immune_nonmyeloid": {
+    "n": 1483,
+    "coverage": 0.0113,
+    "mean_cp10k_CD68": 0.405,
+    "mean_cp10k_CD163": 0.11,
+    "mean_cp10k_C1QC": 0.366,
+    "ist_top": {
+     "EC": 124,
+     "PC_IgA": 104,
+     "PC_IgG": 334,
+     "TC": 194,
+     "fib1": 321,
+     "nan": 167
+    }
+   },
+   "myeloid": {
+    "n": 2787,
+    "coverage": 0.0213,
+    "mean_cp10k_CD68": 0.906,
+    "mean_cp10k_CD163": 0.556,
+    "mean_cp10k_C1QC": 4.918,
+    "ist_top": {
+     "EC": 196,
+     "PC_IgA": 205,
+     "PC_IgG": 735,
+     "TC": 368,
+     "fib1": 370,
+     "mye1": 373,
+     "nan": 235
+    }
+   }
+  },
+  "fold_vs_other_max": {
+   "CD68": 2.1622911694510742,
+   "CD163": 3.1771428571428575,
+   "C1QC": 8.612959719789844
+  },
+  "auroc_myeloid_vs_immune": 0.5669203732482063,
+  "auroc_immune_vs_epithelial": 0.5661064648792368,
+  "passed": false
+ },
+ "two_class": {
+  "classes": {
+   "epithelial": {
+    "n": 52360,
+    "coverage": 0.4003,
+    "mean_cp10k_CD68": 0.404,
+    "mean_cp10k_CD163": 0.173,
+    "mean_cp10k_C1QC": 0.635,
+    "ist_top": {
+     "epi1": 15470,
+     "epi2": 14815,
+     "epi3": 3038,
+     "epi4": 9836,
+     "nan": 4486
+    }
+   },
+   "myeloid": {
+    "n": 10053,
+    "coverage": 0.0768,
+    "mean_cp10k_CD68": 1.582,
+    "mean_cp10k_CD163": 0.75,
+    "mean_cp10k_C1QC": 6.882,
+    "ist_top": {
+     "EC": 612,
+     "PC_IgA": 568,
+     "PC_IgG": 1967,
+     "TC": 767,
+     "fib1": 1587,
+     "fib2": 534,
+     "mye1": 2396,
+     "nan": 865
+    }
+   }
+  },
+  "fold_vs_epithelial": {
+   "CD68": 3.9158415841584158,
+   "CD163": 4.335260115606936,
+   "C1QC": 10.837795275590551
+  },
+  "auroc_myeloid_vs_epithelial": 0.596211495232639,
+  "passed": false
+ },
+ "channel_medians_by_insitutype": {
+  "PanCK": {
+   "epi": 7.365,
+   "T": 4.828,
+   "plasma": 5.075,
+   "myeloid": 4.92,
+   "fibro": 4.779
+  },
+  "CD45": {
+   "epi": 5.451,
+   "T": 5.572,
+   "plasma": 5.557,
+   "myeloid": 5.38,
+   "fibro": 5.268
+  },
+  "CD68_CK8_18": {
+   "epi": 4.043,
+   "T": 4.868,
+   "plasma": 5.004,
+   "myeloid": 5.811,
+   "fibro": 4.443
+  }
+ },
+ "decision": "2-class fallback (PLAN \u00a75 pre-registered): GSE1 F5 uses epithelial (PanCK >= q.60) vs myeloid (CD68_CK8_18 >= q.85 & PanCK <= q.40), reported separately from the 3-class GSE303070 units; thresholds NOT re-tuned",
+ "spatialfloors_commit": "be50182e6d412c0065e721ea1e5f90e7d73a7a4a-dirty",
+ "post_hoc_context": {
+  "note": "computed AFTER the pre-specified decision; does not change it",
+  "marker_auroc_ceiling_insitutype_labels": {
+   "mye_vs_epi": 0.669,
+   "mye_vs_immune": 0.649,
+   "frac_mye_with_any_marker_count": 0.4
+  },
+  "if_cd68ck_auroc_insitutype": {
+   "mye_vs_epi": 0.929,
+   "mye_vs_immune": 0.697
+  },
+  "reading": "AUROC>=.75 on held-out marker counts is above the ceiling reachable even by RNA-labelled myeloid cells (WTx sparsity); CD45 IF carries no immune signal on 232 (top gene r=.11)."
+ },
+ "decision_note": "3-class gate failed (myeloid vs immune AUROC .57, immune vs epithelial .57; CD45 IF uninformative). The extra 2-class check written into p0_if_gate.py (AUROC >= .75) also fails (.60; RNA-label ceiling .67) and is reported, but PLAN \u00a75 makes the 2-class gate the fallback without that check. Gated 'myeloid' is impure (24% InSituType mye, 20% PC_IgG): F5-GSE1 is weak evidence."
+}

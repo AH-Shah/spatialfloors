@@ -1,0 +1,341 @@
+{
+ "rule": "PROTOCOL \u00a75 (tier-2 diagnostic); computed only after the tier-1 report (runs/p4/P5.md) is written",
+ "locked_file": "manifests/locked_v3.json",
+ "locked_sha256": "208b31beef52cb58a0b87e6ef88da2e7405073ee674159cd02a78c8d5371ff79",
+ "seed": 545993150,
+ "seed_source": "int(SHA-256(manifests/locked_v3.json)[:8], 16)",
+ "subset_rule": "per dataset ceil(n/2) units, numpy default_rng(seed).choice on the sorted unit list, datasets in sorted order",
+ "units": {
+  "Allen MERFISH": {
+   "allen_animal1": [
+    "allen_animal1_C57BL6J-1.086"
+   ],
+   "allen_animal2": [
+    "allen_animal2_C57BL6J-2.039"
+   ],
+   "allen_animal3": [
+    "allen_animal3_C57BL6J-3.003"
+   ],
+   "allen_yao638850": [
+    "allen_yao638850_C57BL6J-638850.36"
+   ]
+  },
+  "Bruker WTx": {
+   "bruker_kidney": [
+    "bruker_kidney"
+   ],
+   "bruker_mobreast": [
+    "bruker_mobreast"
+   ],
+   "bruker_skin": [
+    "bruker_skin"
+   ]
+  },
+  "GSE1": {
+   "gse1_110": [
+    "gse1_110"
+   ],
+   "gse1_120": [
+    "gse1_120"
+   ],
+   "gse1_210": [
+    "gse1_210"
+   ],
+   "gse1_221": [
+    "gse1_221"
+   ],
+   "gse1_222": [
+    "gse1_222"
+   ],
+   "gse1_242": [
+    "gse1_242"
+   ]
+  },
+  "GSE303070": {
+   "Donor130": [
+    "gse303070_10501A_130T"
+   ],
+   "Donor137": [
+    "gse303070_3461G_137T"
+   ],
+   "Donor142": [
+    "gse303070_3461G_142T"
+   ],
+   "Donor150": [
+    "gse303070_Tumour_A_150T"
+   ],
+   "Donor170": [
+    "gse303070_120131_170T"
+   ],
+   "Donor280": [
+    "gse303070_120131_280N",
+    "gse303070_120131_280T"
+   ],
+   "Donor64": [
+    "gse303070_Tumour_B_64T"
+   ],
+   "Donor7": [
+    "gse303070_3461G_7T"
+   ],
+   "Donor73": [
+    "gse303070_Tumour_B_73T"
+   ],
+   "Donor74": [
+    "gse303070_10501A_74T"
+   ],
+   "Donor92": [
+    "gse303070_10501A_92T"
+   ]
+  },
+  "SPATCH": {
+   "spatch_xenium5k": [
+    "spatch_xenium5k"
+   ]
+  }
+ },
+ "subset": {
+  "Allen MERFISH": [
+   "allen_animal1",
+   "allen_yao638850"
+  ],
+  "Bruker WTx": [
+   "bruker_kidney",
+   "bruker_mobreast"
+  ],
+  "GSE1": [
+   "gse1_210",
+   "gse1_221",
+   "gse1_222"
+  ],
+  "GSE303070": [
+   "Donor130",
+   "Donor170",
+   "Donor280",
+   "Donor64",
+   "Donor7",
+   "Donor92"
+  ],
+  "SPATCH": [
+   "spatch_xenium5k"
+  ]
+ },
+ "subset_crops": [
+  "allen_animal1_C57BL6J-1.086",
+  "allen_yao638850_C57BL6J-638850.36",
+  "bruker_kidney",
+  "bruker_mobreast",
+  "gse1_210",
+  "gse1_221",
+  "gse1_222",
+  "gse303070_10501A_130T",
+  "gse303070_10501A_92T",
+  "gse303070_120131_170T",
+  "gse303070_120131_280N",
+  "gse303070_120131_280T",
+  "gse303070_3461G_7T",
+  "gse303070_Tumour_B_64T",
+  "spatch_xenium5k"
+ ],
+ "families": {
+  "F1": "all F1 crops",
+  "F2": "gse1 + allen",
+  "F3": "gse1 + gse303070 + allen + bruker",
+  "F5": "gse1 + gse303070 + bruker"
+ },
+ "excluded": {
+  "F4": "no learned-model grid (authors' configurations only) and the floor is locked on both sides"
+ },
+ "grids": {
+  "F1": {
+   "floor": {
+    "configs": [
+     "pearson_none_pc50",
+     "pearson_none_pc100",
+     "pearson_z_pc50",
+     "pearson_z_pc100"
+    ],
+    "locked": {
+     "human": "pearson_none_pc50",
+     "mouse": "pearson_none_pc50"
+    },
+    "tier1": {},
+    "units": "all"
+   },
+   "scvi": {
+    "configs": [
+     "nl10_nb",
+     "nl30_nb",
+     "nl50_nb",
+     "nl100_nb"
+    ],
+    "locked": {
+     "human": "nl50_nb",
+     "mouse": "nl100_nb"
+    },
+    "tier1": {},
+    "units": "subset"
+   },
+   "nicheformer": {
+    "configs": [
+     "final",
+     "penultimate"
+    ],
+    "locked": {
+     "human": "final",
+     "mouse": "final"
+    },
+    "tier1": {
+     "human": [
+      "penultimate"
+     ],
+     "mouse": [
+      "penultimate"
+     ]
+    },
+    "units": "all"
+   }
+  },
+  "F2": {
+   "floor": {
+    "configs": [
+     "ell400_lam0.8",
+     "ell400_lam1.0",
+     "ell200_lam0.8",
+     "v3:ms50_200_800+c200"
+    ],
+    "locked": {
+     "human": "ell400_lam0.8",
+     "mouse": "ell400_lam0.8"
+    },
+    "tier1": {
+     "human": [
+      "v3:ms50_200_800+c200"
+     ],
+     "mouse": [
+      "v3:ms50_200_800+c200"
+     ]
+    },
+    "units": "all"
+   },
+   "cellcharter": {
+    "configs": [
+     "nl10_L1",
+     "nl10_L3",
+     "nl30_L1",
+     "nl30_L3"
+    ],
+    "locked": {
+     "human": "nl10_L3",
+     "mouse": "nl30_L3"
+    },
+    "tier1": {},
+    "units": "subset"
+   },
+   "novae": {
+    "configs": [
+     "zero_shot",
+     "fine_tune"
+    ],
+    "locked": {
+     "mouse": "zero_shot"
+    },
+    "tier1": {},
+    "units": "all"
+   }
+  },
+  "F3": {
+   "floor": {
+    "configs": [
+     "v3_a300",
+     "v3",
+     "v3_a3000",
+     "v3_a10000"
+    ],
+    "locked": {
+     "human": "v3",
+     "mouse": "v3"
+    },
+    "tier1": {},
+    "units": "all"
+   },
+   "lightgbm": {
+    "configs": [
+     "leaves15_lr0.05",
+     "leaves15_lr0.1",
+     "leaves63_lr0.05",
+     "leaves63_lr0.1"
+    ],
+    "locked": {
+     "human": "leaves15_lr0.05",
+     "mouse": "leaves15_lr0.05"
+    },
+    "tier1": {},
+    "units": "all"
+   },
+   "ncem": {
+    "configs": [
+     "edA_e1_r19",
+     "linA_l20_r19",
+     "edA_e1_r46",
+     "linA_l20_r46"
+    ],
+    "locked": {
+     "human": "linA_l20_r19",
+     "mouse": "linA_l20_r46"
+    },
+    "tier1": {
+     "human": [
+      "edA_e1_r19"
+     ],
+     "mouse": [
+      "edA_e1_r46"
+     ]
+    },
+    "units": "subset"
+   }
+  },
+  "F5": {
+   "floor": {
+    "configs": [
+     "insitutype",
+     "insitutype_spatial",
+     "prior_b0.5",
+     "prior_b2"
+    ],
+    "locked": {
+     "human": "insitutype_spatial"
+    },
+    "tier1": {
+     "human": [
+      "insitutype"
+     ]
+    },
+    "units": "all"
+   },
+   "scanvi": {
+    "configs": [
+     "nl10_nb",
+     "nl10_zinb",
+     "nl30_nb",
+     "nl30_zinb"
+    ],
+    "locked": {
+     "human": "nl30_nb"
+    },
+    "tier1": {},
+    "units": "subset"
+   },
+   "tangram": {
+    "configs": [
+     "uniform",
+     "rna_count_based"
+    ],
+    "locked": {
+     "human": "uniform"
+    },
+    "tier1": {},
+    "units": "subset"
+   }
+  }
+ }
+}

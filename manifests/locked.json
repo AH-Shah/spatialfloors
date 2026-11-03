@@ -1,0 +1,1951 @@
+{
+ "rule": "highest mean dev score; ties first in grid order; mouse from Allen animal 4 when run",
+ "locked": {
+  "F1": {
+   "expr_embed": {
+    "human": {
+     "config": "pearson_z_pc100",
+     "dev_mean": 0.12136051470671198,
+     "grid_means": {
+      "pearson_z_pc100": 0.1214
+     }
+    },
+    "mouse": {
+     "config": "pearson_z_pc100",
+     "dev_mean": 0.4197090138432497,
+     "grid_means": {
+      "pearson_z_pc100": 0.4197
+     }
+    }
+   },
+   "scvi": {
+    "human": {
+     "config": "nl30_nb",
+     "dev_mean": 0.10937060591054008,
+     "grid_means": {
+      "nl10_nb": 0.1044,
+      "nl10_zinb": 0.1044,
+      "nl30_nb": 0.1094,
+      "nl30_zinb": 0.1087
+     }
+    },
+    "mouse": {
+     "config": "nl30_nb",
+     "dev_mean": 0.4155001077449173,
+     "grid_means": {
+      "nl10_nb": 0.412,
+      "nl10_zinb": 0.4123,
+      "nl30_nb": 0.4155,
+      "nl30_zinb": 0.415
+     }
+    }
+   },
+   "nicheformer": {
+    "human": {
+     "config": "final",
+     "dev_mean": 0.07525892537872604,
+     "grid_means": {
+      "final": 0.0753,
+      "penultimate": 0.0564
+     }
+    },
+    "mouse": {
+     "config": "final",
+     "dev_mean": 0.4126587363873552,
+     "grid_means": {
+      "final": 0.4127,
+      "penultimate": 0.4032
+     }
+    }
+   },
+   "margin": 0.0194878990028946
+  },
+  "F2": {
+   "floor": {
+    "human": {
+     "config": "ell200_lam0.8",
+     "dev_mean": 0.9260619206510675,
+     "grid_means": {
+      "ell100_lam0.8": 0.9253,
+      "ell100_lam1.0": 0.9333,
+      "ell200_lam0.8": 0.9261,
+      "ell200_lam1.0": 0.9347
+     }
+    },
+    "mouse": {
+     "config": "ell200_lam0.8",
+     "dev_mean": 0.4571013049111642,
+     "grid_means": {
+      "ell100_lam0.8": 0.4699,
+      "ell100_lam1.0": 0.4443,
+      "ell200_lam0.8": 0.4571,
+      "ell200_lam1.0": 0.4221
+     }
+    }
+   },
+   "cellcharter": {
+    "human": {
+     "config": "nl10_L3",
+     "dev_mean": 0.44205603708205893,
+     "grid_means": {
+      "nl10_L1": 0.1598,
+      "nl10_L3": 0.4421,
+      "nl30_L1": 0.0003,
+      "nl30_L3": 0.4294
+     }
+    },
+    "mouse": {
+     "config": "nl30_L3",
+     "dev_mean": 0.39575978054593636,
+     "grid_means": {
+      "nl10_L1": 0.2583,
+      "nl10_L3": 0.3343,
+      "nl30_L1": 0.3688,
+      "nl30_L3": 0.3958
+     }
+    }
+   },
+   "novae": {
+    "mouse": {
+     "config": "zero_shot",
+     "dev_mean": 0.2903487371632917,
+     "grid_means": {
+      "zero_shot": 0.2903
+     }
+    }
+   },
+   "margin": 0.05,
+   "primary": "ari_bal"
+  },
+  "F3": {
+   "ridge": {
+    "human": {
+     "config": "ell25_pc50",
+     "dev_mean": 0.04582065169576293,
+     "grid_means": {
+      "ell10_pc30": 0.0425,
+      "ell10_pc50": 0.0402,
+      "ell25_pc30": 0.049,
+      "ell25_pc50": 0.0458
+     }
+    },
+    "mouse": {
+     "config": "ell25_pc50",
+     "dev_mean": 0.09121789323229275,
+     "grid_means": {
+      "ell10_pc30": 0.0776,
+      "ell10_pc50": 0.074,
+      "ell25_pc30": 0.0871,
+      "ell25_pc50": 0.0912
+     }
+    }
+   },
+   "gat": {
+    "human": {
+     "config": "gat_L2",
+     "dev_mean": 0.04204516121623964,
+     "grid_means": {
+      "gat_L1": 0.035,
+      "gat_L2": 0.042
+     }
+    },
+    "mouse": {
+     "config": "gat_L2",
+     "dev_mean": 0.08888556942163485,
+     "grid_means": {
+      "gat_L1": 0.0885,
+      "gat_L2": 0.0889
+     }
+    }
+   },
+   "lightgbm": {
+    "human": {
+     "config": "leaves15_lr0.05",
+     "dev_mean": 0.036278562033972284,
+     "grid_means": {
+      "leaves15_lr0.05": 0.0363,
+      "leaves15_lr0.1": 0.0342,
+      "leaves63_lr0.05": 0.0322,
+      "leaves63_lr0.1": 0.0299
+     }
+    },
+    "mouse": {
+     "config": "leaves15_lr0.05",
+     "dev_mean": 0.09583607581952282,
+     "grid_means": {
+      "leaves15_lr0.05": 0.0958,
+      "leaves15_lr0.1": 0.0925,
+      "leaves63_lr0.05": 0.0911,
+      "leaves63_lr0.1": 0.0891
+     }
+    }
+   },
+   "margin": 0.004331722493616676
+  },
+  "F5": {
+   "floors": {
+    "human": {
+     "config": "insitutype",
+     "dev_mean": 0.7602354986385771,
+     "grid_means": {
+      "insitutype": 0.7602,
+      "logreg_C0.1_own": 0.6435,
+      "logreg_C0.1_ref": 0.6807,
+      "logreg_C1.0_own": 0.6375,
+      "logreg_C1.0_ref": 0.6676
+     }
+    }
+   },
+   "scanvi": {
+    "human": {
+     "config": "nl30_nb",
+     "dev_mean": 0.7538281784441289,
+     "grid_means": {
+      "nl10_nb": 0.7422,
+      "nl10_zinb": 0.7394,
+      "nl30_nb": 0.7538,
+      "nl30_zinb": 0.7527
+     }
+    }
+   },
+   "tangram": {
+    "human": {
+     "config": "uniform",
+     "dev_mean": 0.6101476579193035,
+     "grid_means": {
+      "uniform": 0.6101,
+      "rna_count_based": 0.607
+     }
+    }
+   },
+   "margin": 0.025452985695741493
+  },
+  "F4": {
+   "margin": 0.03,
+   "note": "authors' configs; L6 locked (SPEC F4)"
+  }
+ },
+ "dev_table": [
+  {
+   "fam": "F1",
+   "model": "expr_embed",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "pearson_z_pc100",
+   "score": 0.0669520597703212,
+   "chance": -0.0941701982617673
+  },
+  {
+   "fam": "F1",
+   "model": "expr_embed",
+   "species": "human",
+   "unit": "gse0_S0",
+   "config": "pearson_z_pc100",
+   "score": 0.1728484745338,
+   "chance": -0.0800475266082625
+  },
+  {
+   "fam": "F1",
+   "model": "expr_embed",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "pearson_z_pc100",
+   "score": 0.1238952045381361,
+   "chance": -0.0731214331240692
+  },
+  {
+   "fam": "F1",
+   "model": "expr_embed",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "pearson_z_pc100",
+   "score": 0.1299897524318476,
+   "chance": -0.0627515899638391
+  },
+  {
+   "fam": "F1",
+   "model": "expr_embed",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "pearson_z_pc100",
+   "score": 0.1469875675584272,
+   "chance": -0.0632808389809245
+  },
+  {
+   "fam": "F1",
+   "model": "expr_embed",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "pearson_z_pc100",
+   "score": 0.0874900294077397,
+   "chance": -0.0692025195174088
+  },
+  {
+   "fam": "F1",
+   "model": "expr_embed",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "pearson_z_pc100",
+   "score": 0.4197090138432497,
+   "chance": -0.0508572011991137
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "nl10_nb",
+   "score": 0.0502851853154751,
+   "chance": -0.0953626111944454
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "nl10_zinb",
+   "score": 0.0518957600758698,
+   "chance": -0.0947200797976439
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "nl30_nb",
+   "score": 0.0605352016357737,
+   "chance": -0.0943015996806688
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "nl30_zinb",
+   "score": 0.059393014675834,
+   "chance": -0.0944576586131982
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse0_S0",
+   "config": "nl10_nb",
+   "score": 0.1441783341718977,
+   "chance": -0.0793979077557729
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse0_S0",
+   "config": "nl10_zinb",
+   "score": 0.1463192736012331,
+   "chance": -0.0804357483497777
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse0_S0",
+   "config": "nl30_nb",
+   "score": 0.1517641764142169,
+   "chance": -0.0795902308938931
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse0_S0",
+   "config": "nl30_zinb",
+   "score": 0.1515825306067505,
+   "chance": -0.0793178213127296
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "nl10_nb",
+   "score": 0.1093650310913643,
+   "chance": -0.0729409932124114
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "nl10_zinb",
+   "score": 0.1079270466158038,
+   "chance": -0.073117976196801
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "nl30_nb",
+   "score": 0.1120645180043997,
+   "chance": -0.0735993094449929
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "nl30_zinb",
+   "score": 0.1114594898915251,
+   "chance": -0.0732931815477992
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "nl10_nb",
+   "score": 0.1150480827328482,
+   "chance": -0.0629615767377846
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "nl10_zinb",
+   "score": 0.1122763672060831,
+   "chance": -0.0617905152519606
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "nl30_nb",
+   "score": 0.119500216586754,
+   "chance": -0.0621401038261297
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "nl30_zinb",
+   "score": 0.1185009539387746,
+   "chance": -0.0629702608603108
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "nl10_nb",
+   "score": 0.1306929029127302,
+   "chance": -0.06356357619542
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "nl10_zinb",
+   "score": 0.1307880051273595,
+   "chance": -0.0634065021525915
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "nl30_nb",
+   "score": 0.1332600180075456,
+   "chance": -0.0641080941543976
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "nl30_zinb",
+   "score": 0.1323921573589553,
+   "chance": -0.0631004590931305
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "nl10_nb",
+   "score": 0.0769368069569349,
+   "chance": -0.0696625432892412
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "nl10_zinb",
+   "score": 0.0772418402192173,
+   "chance": -0.070122944998344
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "nl30_nb",
+   "score": 0.0790995048145505,
+   "chance": -0.0697269152203283
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "nl30_zinb",
+   "score": 0.0787677170659613,
+   "chance": -0.0695669319139355
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "nl10_nb",
+   "score": 0.412020277216943,
+   "chance": -0.0502236482322355
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "nl10_zinb",
+   "score": 0.4122751892872691,
+   "chance": -0.0501011719751409
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "nl30_nb",
+   "score": 0.4155001077449173,
+   "chance": -0.0501710439694595
+  },
+  {
+   "fam": "F1",
+   "model": "scvi",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "nl30_zinb",
+   "score": 0.4149594622572397,
+   "chance": -0.0500397113433561
+  },
+  {
+   "fam": "F1",
+   "model": "nicheformer",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "final",
+   "score": 0.0120879510592317,
+   "chance": -0.0942862770324293
+  },
+  {
+   "fam": "F1",
+   "model": "nicheformer",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "penultimate",
+   "score": -0.0108020799351136,
+   "chance": -0.0949931190293955
+  },
+  {
+   "fam": "F1",
+   "model": "nicheformer",
+   "species": "human",
+   "unit": "gse0_S0",
+   "config": "final",
+   "score": 0.098368579520802,
+   "chance": -0.078985898993257
+  },
+  {
+   "fam": "F1",
+   "model": "nicheformer",
+   "species": "human",
+   "unit": "gse0_S0",
+   "config": "penultimate",
+   "score": 0.0456961438771348,
+   "chance": -0.0784646538525859
+  },
+  {
+   "fam": "F1",
+   "model": "nicheformer",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "final",
+   "score": 0.0797642620249921,
+   "chance": -0.0730992389084548
+  },
+  {
+   "fam": "F1",
+   "model": "nicheformer",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "penultimate",
+   "score": 0.070964408375618,
+   "chance": -0.0724197699433177
+  },
+  {
+   "fam": "F1",
+   "model": "nicheformer",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "final",
+   "score": 0.0978595391733067,
+   "chance": -0.0626446805139115
+  },
+  {
+   "fam": "F1",
+   "model": "nicheformer",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "penultimate",
+   "score": 0.087750770829864,
+   "chance": -0.0623161242547052
+  },
+  {
+   "fam": "F1",
+   "model": "nicheformer",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "final",
+   "score": 0.1073191417080168,
+   "chance": -0.0633424951299215
+  },
+  {
+   "fam": "F1",
+   "model": "nicheformer",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "penultimate",
+   "score": 0.1002943653801266,
+   "chance": -0.0639579641723337
+  },
+  {
+   "fam": "F1",
+   "model": "nicheformer",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "final",
+   "score": 0.056154078786007,
+   "chance": -0.0691407574399927
+  },
+  {
+   "fam": "F1",
+   "model": "nicheformer",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "penultimate",
+   "score": 0.0444178040410522,
+   "chance": -0.0687877020742657
+  },
+  {
+   "fam": "F1",
+   "model": "nicheformer",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "final",
+   "score": 0.4126587363873552,
+   "chance": -0.0500644061768476
+  },
+  {
+   "fam": "F1",
+   "model": "nicheformer",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "penultimate",
+   "score": 0.4031755420178726,
+   "chance": -0.0499494214389228
+  },
+  {
+   "fam": "F2",
+   "model": "floor",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "ell100_lam0.8",
+   "score": 0.9252813846212415,
+   "chance": 0.0
+  },
+  {
+   "fam": "F2",
+   "model": "floor",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "ell100_lam1.0",
+   "score": 0.9332757086711215,
+   "chance": 0.0
+  },
+  {
+   "fam": "F2",
+   "model": "floor",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "ell200_lam0.8",
+   "score": 0.9260619206510675,
+   "chance": 0.0
+  },
+  {
+   "fam": "F2",
+   "model": "floor",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "ell200_lam1.0",
+   "score": 0.9346695359297806,
+   "chance": 0.0
+  },
+  {
+   "fam": "F2",
+   "model": "floor",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "ell100_lam0.8",
+   "score": 0.46987415672078825,
+   "chance": 0.0
+  },
+  {
+   "fam": "F2",
+   "model": "floor",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "ell100_lam1.0",
+   "score": 0.444331265096066,
+   "chance": 0.0
+  },
+  {
+   "fam": "F2",
+   "model": "floor",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "ell200_lam0.8",
+   "score": 0.4571013049111642,
+   "chance": 0.0
+  },
+  {
+   "fam": "F2",
+   "model": "floor",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "ell200_lam1.0",
+   "score": 0.42212221621830964,
+   "chance": 0.0
+  },
+  {
+   "fam": "F2",
+   "model": "cellcharter",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "nl10_L1",
+   "score": 0.15977754993597207,
+   "chance": 0.0
+  },
+  {
+   "fam": "F2",
+   "model": "cellcharter",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "nl10_L3",
+   "score": 0.44205603708205893,
+   "chance": 0.0
+  },
+  {
+   "fam": "F2",
+   "model": "cellcharter",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "nl30_L1",
+   "score": 0.00032254187136269215,
+   "chance": 0.0
+  },
+  {
+   "fam": "F2",
+   "model": "cellcharter",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "nl30_L3",
+   "score": 0.42944057108730566,
+   "chance": 0.0
+  },
+  {
+   "fam": "F2",
+   "model": "cellcharter",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "nl10_L1",
+   "score": 0.2583341972838564,
+   "chance": 0.0
+  },
+  {
+   "fam": "F2",
+   "model": "cellcharter",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "nl10_L3",
+   "score": 0.33428351176050874,
+   "chance": 0.0
+  },
+  {
+   "fam": "F2",
+   "model": "cellcharter",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "nl30_L1",
+   "score": 0.3687693583572786,
+   "chance": 0.0
+  },
+  {
+   "fam": "F2",
+   "model": "cellcharter",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "nl30_L3",
+   "score": 0.39575978054593636,
+   "chance": 0.0
+  },
+  {
+   "fam": "F2",
+   "model": "novae",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "zero_shot",
+   "score": 0.2903487371632917,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "ell10_pc30",
+   "score": 0.027136591561373356,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "ell10_pc50",
+   "score": 0.024526223577914157,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "ell25_pc30",
+   "score": 0.02557015755988441,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "ell25_pc50",
+   "score": 0.02586631560723177,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse0_S0",
+   "config": "ell10_pc30",
+   "score": 0.04041720171659465,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse0_S0",
+   "config": "ell10_pc50",
+   "score": 0.0358624412350837,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse0_S0",
+   "config": "ell25_pc30",
+   "score": 0.04842345693544703,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse0_S0",
+   "config": "ell25_pc50",
+   "score": 0.045442585687421023,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "ell10_pc30",
+   "score": 0.05656935394565142,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "ell10_pc50",
+   "score": 0.05149573966254287,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "ell25_pc30",
+   "score": 0.06878822100928808,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "ell25_pc50",
+   "score": 0.061662372999988,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "ell10_pc30",
+   "score": 0.063535346267214,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "ell10_pc50",
+   "score": 0.058799912286659116,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "ell25_pc30",
+   "score": 0.0797450077408188,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "ell25_pc50",
+   "score": 0.07852454031159789,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "ell10_pc30",
+   "score": 0.04189504238383746,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "ell10_pc50",
+   "score": 0.03766681484171532,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "ell25_pc30",
+   "score": 0.04684422501598103,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "ell25_pc50",
+   "score": 0.04119186418491248,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "ell10_pc30",
+   "score": 0.02560503993203892,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "ell10_pc50",
+   "score": 0.03280812188118279,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "ell25_pc30",
+   "score": 0.024872104885846572,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "ell25_pc50",
+   "score": 0.02223623138342641,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "ell10_pc30",
+   "score": 0.07755384637816604,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "ell10_pc50",
+   "score": 0.07402697040714887,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "ell25_pc30",
+   "score": 0.08712440905057763,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "ridge",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "ell25_pc50",
+   "score": 0.09121789323229275,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "gat",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "gat_L1",
+   "score": 0.020743773155891147,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "gat",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "gat_L2",
+   "score": 0.019403873086717628,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "gat",
+   "species": "human",
+   "unit": "gse0_S0",
+   "config": "gat_L1",
+   "score": 0.03403757057601646,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "gat",
+   "species": "human",
+   "unit": "gse0_S0",
+   "config": "gat_L2",
+   "score": 0.032773283118500286,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "gat",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "gat_L1",
+   "score": 0.04336354243358721,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "gat",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "gat_L2",
+   "score": 0.04644181449515038,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "gat",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "gat_L1",
+   "score": 0.0607502319652939,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "gat",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "gat_L2",
+   "score": 0.07744544317910365,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "gat",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "gat_L1",
+   "score": 0.030441445030142664,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "gat",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "gat_L2",
+   "score": 0.05033217447453307,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "gat",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "gat_L1",
+   "score": 0.02039735080360292,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "gat",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "gat_L2",
+   "score": 0.025874378943432846,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "gat",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "gat_L1",
+   "score": 0.08845188651820943,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "gat",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "gat_L2",
+   "score": 0.08888556942163485,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "leaves15_lr0.05",
+   "score": 0.019355410212171124,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "leaves15_lr0.1",
+   "score": 0.021854943054552885,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "leaves63_lr0.05",
+   "score": 0.018596711233291756,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "leaves63_lr0.1",
+   "score": 0.0156398476685279,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse0_S0",
+   "config": "leaves15_lr0.05",
+   "score": 0.03253344588640561,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse0_S0",
+   "config": "leaves15_lr0.1",
+   "score": 0.03140213871119106,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse0_S0",
+   "config": "leaves63_lr0.05",
+   "score": 0.026095720941733395,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse0_S0",
+   "config": "leaves63_lr0.1",
+   "score": 0.023883941136640982,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "leaves15_lr0.05",
+   "score": 0.04199519764008104,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "leaves15_lr0.1",
+   "score": 0.036818633532799946,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "leaves63_lr0.05",
+   "score": 0.04011654418558612,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "leaves63_lr0.1",
+   "score": 0.039041537965585106,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "leaves15_lr0.05",
+   "score": 0.06684618430024356,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "leaves15_lr0.1",
+   "score": 0.059943176083498334,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "leaves63_lr0.05",
+   "score": 0.05489497841052474,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "leaves63_lr0.1",
+   "score": 0.052877246328546366,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "leaves15_lr0.05",
+   "score": 0.038779143698654615,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "leaves15_lr0.1",
+   "score": 0.035930857227355104,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "leaves63_lr0.05",
+   "score": 0.03752644334513116,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "leaves63_lr0.1",
+   "score": 0.03069483540274908,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "leaves15_lr0.05",
+   "score": 0.018161990466277766,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "leaves15_lr0.1",
+   "score": 0.01905610306440001,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "leaves63_lr0.05",
+   "score": 0.015894255277107572,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "leaves63_lr0.1",
+   "score": 0.017181754412326052,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "leaves15_lr0.05",
+   "score": 0.09583607581952282,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "leaves15_lr0.1",
+   "score": 0.09250388711983824,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "leaves63_lr0.05",
+   "score": 0.09105711191051058,
+   "chance": 0.0
+  },
+  {
+   "fam": "F3",
+   "model": "lightgbm",
+   "species": "mouse",
+   "unit": "allen_animal4_C57BL6J-4.003",
+   "config": "leaves63_lr0.1",
+   "score": 0.08914688661192322,
+   "chance": 0.0
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "insitutype",
+   "score": 0.6148579701522215,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "logreg_C0.1_own",
+   "score": 0.618313829602878,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "logreg_C0.1_ref",
+   "score": 0.5608774682171117,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "logreg_C1.0_own",
+   "score": 0.6108156299244142,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "logreg_C1.0_ref",
+   "score": 0.5512191314610441,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "insitutype",
+   "score": 0.7361327625314322,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "logreg_C0.1_own",
+   "score": 0.6649860717666268,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "logreg_C0.1_ref",
+   "score": 0.6700107215986262,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "logreg_C1.0_own",
+   "score": 0.6583611452350754,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "logreg_C1.0_ref",
+   "score": 0.6558625284977345,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "insitutype",
+   "score": 0.8416403192922354,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "logreg_C0.1_own",
+   "score": 0.6683365730394697,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "logreg_C0.1_ref",
+   "score": 0.7441169266536093,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "logreg_C1.0_own",
+   "score": 0.6590254634802926,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "logreg_C1.0_ref",
+   "score": 0.7302802716838447,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "insitutype",
+   "score": 0.8540165842595814,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "logreg_C0.1_own",
+   "score": 0.6688963275617358,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "logreg_C0.1_ref",
+   "score": 0.7608945206802394,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "logreg_C1.0_own",
+   "score": 0.6639216506477544,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "logreg_C1.0_ref",
+   "score": 0.7434572156032515,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "insitutype",
+   "score": 0.7545298569574149,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "logreg_C0.1_own",
+   "score": 0.5970961767002761,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "logreg_C0.1_ref",
+   "score": 0.6675027013598088,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "logreg_C1.0_own",
+   "score": 0.5955346221349619,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "floors",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "logreg_C1.0_ref",
+   "score": 0.6571179560443595,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "nl10_nb",
+   "score": 0.648091495050639,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "nl10_zinb",
+   "score": 0.6450760868486882,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "nl30_nb",
+   "score": 0.6570808186705478,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "nl30_zinb",
+   "score": 0.6543095893464413,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "nl10_nb",
+   "score": 0.7190296613730583,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "nl10_zinb",
+   "score": 0.7171844141502853,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "nl30_nb",
+   "score": 0.7375722125848306,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "nl30_zinb",
+   "score": 0.7422408059225049,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "nl10_nb",
+   "score": 0.801656747131005,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "nl10_zinb",
+   "score": 0.8183580116548885,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "nl30_nb",
+   "score": 0.8168799393161335,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "nl30_zinb",
+   "score": 0.8158678337017591,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "nl10_nb",
+   "score": 0.8069903353963497,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "nl10_zinb",
+   "score": 0.8107573277760259,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "nl30_nb",
+   "score": 0.8293829298509836,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "nl30_zinb",
+   "score": 0.8303282548879629,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "nl10_nb",
+   "score": 0.7350590159580174,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "nl10_zinb",
+   "score": 0.7055378313858326,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "nl30_nb",
+   "score": 0.7282249917981485,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "scanvi",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "nl30_zinb",
+   "score": 0.7206059596212162,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "tangram",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "uniform",
+   "score": 0.5983867301271816,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "tangram",
+   "species": "human",
+   "unit": "gse1_232",
+   "config": "rna_count_based",
+   "score": 0.5322696866614777,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "tangram",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "uniform",
+   "score": 0.6478218284396197,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "tangram",
+   "species": "human",
+   "unit": "gse303070_148191A_118N",
+   "config": "rna_count_based",
+   "score": 0.6508209478101882,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "tangram",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "uniform",
+   "score": 0.6311343852000394,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "tangram",
+   "species": "human",
+   "unit": "gse303070_148191A_278N",
+   "config": "rna_count_based",
+   "score": 0.6618009725647176,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "tangram",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "uniform",
+   "score": 0.6045925123524826,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "tangram",
+   "species": "human",
+   "unit": "gse303070_148191A_278T",
+   "config": "rna_count_based",
+   "score": 0.5991300971493766,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "tangram",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "uniform",
+   "score": 0.5688028334771943,
+   "chance": 0.5
+  },
+  {
+   "fam": "F5",
+   "model": "tangram",
+   "species": "human",
+   "unit": "gse303070_148191A_46T",
+   "config": "rna_count_based",
+   "score": 0.5910593504362793,
+   "chance": 0.5
+  }
+ ],
+ "equivalence": "per (family, learned model) pair, paired per-unit D = learned - floor, margin = locked margin: floor non-inferior if the one-sided 95% upper bound of mean D < margin (pre-registered primary, PLAN \u00a75); equivalent if the 90% CI of mean D lies in (-margin, +margin) (TOST, reported); floor superior if the upper bound < 0; learned superior if the lower bound > 0 (Holm)",
+ "spatialfloors_commit": "3cfa5b371b2fe2be4107213e24b7f64065039c88-dirty"
+}

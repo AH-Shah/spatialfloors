@@ -1,0 +1,168 @@
+{
+ "commit": "7d16113c9804be7b64a2522dda3fb7b5bd3f88d6-dirty",
+ "metric": "pearson, 50 DEG, --use_cf (eval_loo, authors' code)",
+ "cellina_rerun_spread_endothelial": 0.1189813497661496,
+ "rows": [
+  {
+   "run": "cellina_mps",
+   "holdout": "Endothelial",
+   "pearson": 0.7857451247633993,
+   "camready": 0.8494736897866895,
+   "train_s": 167.1,
+   "eval_s": 66.2,
+   "delta": -0.06372856502329016
+  },
+  {
+   "run": "cellina_mps",
+   "holdout": "Epithelial",
+   "pearson": 0.3351968122726754,
+   "camready": 0.4487639561139563,
+   "train_s": 144.0,
+   "eval_s": 52.6,
+   "delta": -0.11356714384128092
+  },
+  {
+   "run": "cellina_mps",
+   "holdout": "Fibroblast",
+   "pearson": 0.8773138108880244,
+   "camready": 0.9118772945339068,
+   "train_s": 140.5,
+   "eval_s": 51.6,
+   "delta": -0.034563483645882354
+  },
+  {
+   "run": "cellina_mps",
+   "holdout": "Myeloid",
+   "pearson": 0.907104125385983,
+   "camready": 0.9378230788014272,
+   "train_s": 116.0,
+   "eval_s": 46.9,
+   "delta": -0.030718953415444283
+  },
+  {
+   "run": "cellina_mps",
+   "holdout": "T_cell",
+   "pearson": 0.9699271418149498,
+   "camready": 0.9515755342586526,
+   "train_s": 128.0,
+   "eval_s": 45.6,
+   "delta": 0.018351607556297167
+  },
+  {
+   "run": "cellina",
+   "holdout": "Endothelial",
+   "pearson": 0.9047264745295489,
+   "camready": 0.8494736897866895,
+   "train_s": 1167.0,
+   "eval_s": 61.4,
+   "delta": 0.05525278474285944
+  },
+  {
+   "run": "cellina",
+   "holdout": "Epithelial",
+   "pearson": 0.08558632286400775,
+   "camready": 0.4487639561139563,
+   "train_s": 235.3,
+   "eval_s": 49.8,
+   "delta": -0.36317763324994856
+  },
+  {
+   "run": "cellina",
+   "holdout": "Fibroblast",
+   "pearson": 0.9406822652802717,
+   "camready": 0.9118772945339068,
+   "train_s": 368.3,
+   "eval_s": 48.5,
+   "delta": 0.0288049707463649
+  },
+  {
+   "run": "cellina",
+   "holdout": "Myeloid",
+   "pearson": 0.9017477049042563,
+   "camready": 0.9378230788014272,
+   "train_s": 260.5,
+   "eval_s": 46.6,
+   "delta": -0.03607537389717097
+  },
+  {
+   "run": "cellina",
+   "holdout": "T_cell",
+   "pearson": 0.9458610968266495,
+   "camready": 0.9515755342586526,
+   "train_s": 1186.9,
+   "eval_s": 45.7,
+   "delta": -0.005714437432003061
+  },
+  {
+   "run": "cpa",
+   "holdout": "Endothelial",
+   "pearson": 0.7491313832907689,
+   "camready": 0.6918778502206681,
+   "train_s": 1468.5,
+   "eval_s": 41.7,
+   "delta": 0.05725353307010084
+  },
+  {
+   "run": "cpa",
+   "holdout": "Epithelial",
+   "pearson": 0.7000054816824832,
+   "camready": 0.688577108265446,
+   "train_s": 933.1,
+   "eval_s": 45.6,
+   "delta": 0.011428373417037174
+  },
+  {
+   "run": "cpa",
+   "holdout": "Fibroblast",
+   "pearson": 0.37284675438555565,
+   "camready": 0.5590495273154826,
+   "train_s": 1090.6,
+   "eval_s": 41.5,
+   "delta": -0.18620277292992699
+  },
+  {
+   "run": "cpa",
+   "holdout": "Myeloid",
+   "pearson": 0.8246692415094409,
+   "camready": 0.8000358689100923,
+   "train_s": NaN,
+   "eval_s": 29.8,
+   "delta": 0.024633372599348613
+  },
+  {
+   "run": "cpa",
+   "holdout": "T_cell",
+   "pearson": 0.9383350903312172,
+   "camready": 0.9211810613161344,
+   "train_s": 947.0,
+   "eval_s": 27.6,
+   "delta": 0.017154029015082783
+  }
+ ],
+ "summary": {
+  "cellina": {
+   "n": 5,
+   "mean": 0.7557207728809467,
+   "camready_mean": 0.8199027106989265,
+   "mean_delta": -0.06418193781797965,
+   "mean_abs_delta": 0.09780504001366938,
+   "train_s_total": 3218.0
+  },
+  "cellina_mps": {
+   "n": 5,
+   "mean": 0.7750574030250064,
+   "camready_mean": 0.8199027106989265,
+   "mean_delta": -0.04484530767392011,
+   "mean_abs_delta": 0.05218595069643898,
+   "train_s_total": 695.6
+  },
+  "cpa": {
+   "n": 5,
+   "mean": 0.7169975902398932,
+   "camready_mean": 0.7321442832055647,
+   "mean_delta": -0.015146692965671515,
+   "mean_abs_delta": 0.05933441620629928,
+   "train_s_total": 4439.2
+  }
+ }
+}

@@ -1,0 +1,115 @@
+{
+ "gse303070_10501A_130T": {
+  "role": "confirmation",
+  "PanCK_epi": 0.5948486001374298,
+  "CD45_immune": 0.5408733335649706,
+  "CD68_macro_mono": 0.599646523342052,
+  "gate_usable": false
+ },
+ "gse303070_10501A_74T": {
+  "role": "confirmation",
+  "PanCK_epi": 0.8225658067117921,
+  "CD45_immune": 0.7165961135021391,
+  "CD68_macro_mono": 0.6973294505273875,
+  "gate_usable": false
+ },
+ "gse303070_10501A_92T": {
+  "role": "confirmation",
+  "PanCK_epi": 0.3471008684327518,
+  "CD45_immune": 0.6663573743594083,
+  "CD68_macro_mono": 0.6536355169898647,
+  "gate_usable": false
+ },
+ "gse303070_120131_170T": {
+  "role": "confirmation",
+  "PanCK_epi": 0.40581934957638177,
+  "CD45_immune": 0.5569646706469688,
+  "CD68_macro_mono": 0.6920407699102787,
+  "gate_usable": false
+ },
+ "gse303070_120131_280N": {
+  "role": "confirmation",
+  "PanCK_epi": 0.6455642968714145,
+  "CD45_immune": 0.5256276296523877,
+  "CD68_macro_mono": 0.595752664311393,
+  "gate_usable": false
+ },
+ "gse303070_120131_280T": {
+  "role": "confirmation",
+  "PanCK_epi": 0.3843753257684999,
+  "CD45_immune": 0.5638303072823118,
+  "CD68_macro_mono": 0.6978865003215872,
+  "gate_usable": false
+ },
+ "gse303070_148191A_118N": {
+  "role": "development",
+  "PanCK_epi": 0.4620474888230036,
+  "CD45_immune": 0.5357718559196971,
+  "CD68_macro_mono": 0.5919817921064398,
+  "gate_usable": false
+ },
+ "gse303070_148191A_278N": {
+  "role": "development",
+  "PanCK_epi": 0.49537957427245666,
+  "CD45_immune": 0.7185747044259037,
+  "CD68_macro_mono": 0.7727797740200797,
+  "gate_usable": false
+ },
+ "gse303070_148191A_278T": {
+  "role": "development",
+  "PanCK_epi": 0.4523029107735523,
+  "CD45_immune": 0.46948044718524556,
+  "CD68_macro_mono": 0.5317197309041338,
+  "gate_usable": false
+ },
+ "gse303070_148191A_46T": {
+  "role": "development",
+  "PanCK_epi": 0.46524920888656957,
+  "CD45_immune": 0.5382960466588137,
+  "CD68_macro_mono": 0.5171660686471828,
+  "gate_usable": false
+ },
+ "gse303070_3461G_137T": {
+  "role": "confirmation",
+  "PanCK_epi": 0.3093185769117771,
+  "CD45_immune": 0.4632473445480468,
+  "CD68_macro_mono": 0.49452436512899245,
+  "gate_usable": false
+ },
+ "gse303070_3461G_142T": {
+  "role": "confirmation",
+  "PanCK_epi": 0.3871282540923693,
+  "CD45_immune": 0.485737173412628,
+  "CD68_macro_mono": 0.5047022729234132,
+  "gate_usable": false
+ },
+ "gse303070_3461G_7T": {
+  "role": "confirmation",
+  "PanCK_epi": 0.480036144675975,
+  "CD45_immune": 0.44598218455622846,
+  "CD68_macro_mono": 0.5536559580150797,
+  "gate_usable": false
+ },
+ "gse303070_Tumour_A_150T": {
+  "role": "confirmation",
+  "PanCK_epi": 0.8291526358915016,
+  "CD45_immune": 0.47197082758391656,
+  "CD68_macro_mono": null,
+  "gate_usable": false
+ },
+ "gse303070_Tumour_B_64T": {
+  "role": "confirmation",
+  "PanCK_epi": 0.8378517698740308,
+  "CD45_immune": 0.6793839851705634,
+  "CD68_macro_mono": null,
+  "gate_usable": false
+ },
+ "gse303070_Tumour_B_73T": {
+  "role": "confirmation",
+  "PanCK_epi": 0.749777036470483,
+  "CD45_immune": 0.6662200720634371,
+  "CD68_macro_mono": null,
+  "gate_usable": false
+ },
+ "spatialfloors_commit": "d4215f0b1ee6825bfadf4c59edfecd4abe70abbb-dirty"
+}

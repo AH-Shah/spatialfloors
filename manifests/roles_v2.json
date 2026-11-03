@@ -1,0 +1,83 @@
+{
+ "plan": "N2/trials/meta/PLAN.md \u00a717",
+ "plan_sha256": "1351ef136226c51da5a329187b5e52ab05d33cf331a91b335da8b6cc2a65f32c",
+ "date": "2026-10-30",
+ "validation": {
+  "gse1_231": {
+   "families": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5"
+   ],
+   "cancer": "CRC",
+   "note": "same patient as dev gse1_232"
+  },
+  "bruker_breast": {
+   "source": "smi-public/wtx_manuscript/breast_discovery",
+   "families": [
+    "F1",
+    "F3",
+    "F5"
+   ],
+   "cancer": "breast IDC"
+  }
+ },
+ "crop_check": {
+  "unit": "gse1_231w",
+  "whole_slide_of": "gse1_231",
+  "models": [
+   "floors",
+   "scvi",
+   "cellcharter",
+   "gat",
+   "lightgbm",
+   "scanvi"
+  ]
+ },
+ "confirmation_added": {
+  "bruker_mobreast": {
+   "source": "smi-public/multiomic_breast",
+   "families": [
+    "F1",
+    "F3",
+    "F5"
+   ],
+   "cancer": "breast"
+  },
+  "bruker_skin": {
+   "source": "smi-public/wtx_manuscript/skin_scc",
+   "families": [
+    "F1",
+    "F3",
+    "F5"
+   ],
+   "cancer": "cutaneous SCC"
+  },
+  "bruker_kidney": {
+   "source": "smi-public/wtx_manuscript/kidney_discovery",
+   "families": [
+    "F1",
+    "F3",
+    "F5"
+   ],
+   "cancer": "RCC"
+  },
+  "bruker_pancreas": {
+   "source": "smi-public/wtx_manuscript/pancreas_discovery",
+   "families": [
+    "F1",
+    "F3",
+    "F5"
+   ],
+   "cancer": "pending: tumour per README/metadata, else excluded"
+  }
+ },
+ "frozen": [
+  "learned configs (manifests/locked.json)",
+  "margins",
+  "metrics"
+ ],
+ "may_change": "floor configs failing gate G2 (lock v2, \u00a714 rule over dev + validation)"
+}

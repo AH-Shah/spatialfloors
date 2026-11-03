@@ -1,0 +1,37 @@
+{
+ "rule": "NCEM test configuration (PROTOCOL \u00a73): the lock rule (highest development mean, ties -> grid order) applied to the",
+ "source": "runs/p3v3/f3_<unit>_ncemA.json",
+ "locked": {
+  "human": {
+   "config": "linA_l20_r19",
+   "dev_mean": 0.03758722635068296,
+   "grid_means": {
+    "edA_e1_r19": 0.03441562755098173,
+    "linA_l20_r19": 0.03758722635068296,
+    "edA_e1_r46": 0.03289898639717817,
+    "linA_l20_r46": 0.03567648963792563
+   },
+   "units": [
+    "gse1_232",
+    "gse0_S0",
+    "gse303070_148191A_118N",
+    "gse303070_148191A_278N",
+    "gse303070_148191A_278T",
+    "gse303070_148191A_46T"
+   ]
+  },
+  "mouse": {
+   "config": "linA_l20_r46",
+   "dev_mean": 0.06070855081995487,
+   "grid_means": {
+    "edA_e1_r19": 0.044114724115404916,
+    "linA_l20_r19": 0.05025471893516667,
+    "edA_e1_r46": 0.05282642759317867,
+    "linA_l20_r46": 0.06070855081995487
+   },
+   "units": [
+    "allen_animal4_C57BL6J-4.003"
+   ]
+  }
+ }
+}

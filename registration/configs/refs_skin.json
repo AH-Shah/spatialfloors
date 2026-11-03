@@ -1,0 +1,86 @@
+{
+ "tissue": "skin",
+ "source": "GEO GSE144236 (Ji et al. 2020, Cell), level1 / level2 annotation",
+ "ref": "/Users/Hemato/project_3/data/raw/refs/cscc_ji2020/ref.h5ad",
+ "n_cells": 47068,
+ "class_counts": {
+  "epithelial": 28830,
+  "immune_nonmyeloid": 2019,
+  "myeloid": 14089,
+  "other": 2130
+ },
+ "qc_pass": true,
+ "coarse_map": {
+  "Tumor_KC_Diff": "epithelial",
+  "Keratinocyte": "epithelial",
+  "Tumor_KC_Basal": "epithelial",
+  "Tumor_KC_Cyc": "epithelial",
+  "Endothelial Cell": "other",
+  "Pilosebaceous": "epithelial",
+  "Fibroblast": "other",
+  "Melanocyte": "other",
+  "TSK": "epithelial",
+  "Eccrine": "epithelial",
+  "LC": "myeloid",
+  "PDC": "myeloid",
+  "Normal_KC_Basal": "epithelial",
+  "Normal_KC_Diff": "epithelial",
+  "Normal_KC_Cyc": "epithelial",
+  "CLEC9A": "myeloid",
+  "CD1C": "myeloid",
+  "Mac": "myeloid",
+  "ASDC": "myeloid",
+  "Tcell": "immune_nonmyeloid",
+  "MDSC": "myeloid",
+  "B Cell": "immune_nonmyeloid",
+  "NK": "immune_nonmyeloid"
+ },
+ "heldout_markers": {
+  "epithelial": [
+   "PERP",
+   "SFN",
+   "DSP",
+   "FXYD3",
+   "KRT5"
+  ],
+  "immune_nonmyeloid": [
+   "PTPRCAP",
+   "IL32",
+   "CD3D",
+   "CD52",
+   "CD2"
+  ],
+  "myeloid": [
+   "HLA-DRA",
+   "CD74",
+   "HLA-DRB1",
+   "HLA-DPB1",
+   "TYROBP"
+  ]
+ },
+ "marker_auroc_in_reference": {
+  "epithelial": {
+   "PERP": 0.9972433626223245,
+   "SFN": 0.9930571033656094,
+   "DSP": 0.9868965849416202,
+   "FXYD3": 0.9819186859465874,
+   "KRT5": 0.9792663127020134
+  },
+  "immune_nonmyeloid": {
+   "PTPRCAP": 0.9206043892104021,
+   "IL32": 0.8940797755546543,
+   "CD3D": 0.8793476387821031,
+   "CD52": 0.874272681541069,
+   "CD2": 0.8704676371103637
+  },
+  "myeloid": {
+   "HLA-DRA": 0.9967386535084996,
+   "CD74": 0.9940609843943718,
+   "HLA-DRB1": 0.991348522621818,
+   "HLA-DPB1": 0.989644897699558,
+   "TYROBP": 0.9853774678406292
+  }
+ },
+ "rule": "F5 references for the new cancers (PLAN \u00a717), standardised to the Pelka layout read by floors.f5.reference:\nX = log1p CP10k (csr), raw.X = integer counts, var.feature_name = gene symbol, obs.ClusterMidway = fine label, obs.coarse.\nClasses (Cell Ontology, CL basic): epithelial = descendant of epithelial cell CL:0000066, or malignant cell CL:0001064 /\nabnormal cell CL:0001061 (carcinoma: tumour cells are epithelial); immune non-myeloid = descendant of lymphocyte\nCL:0000542 (T, B, plasma, NK, ILC); myeloid = descendant of myeloid leukocyte CL:0000766 except mast cells CL:0000097\n(as the locked Pelka map: Macro / Mono / DC / Granulo myeloid, Mast other); everything else other. Ji 2020 (GEO, no CL\nterms): explicit level1 map below, level2 = fine label, Multiplet dropped.\nHeld-out markers per class = top 5 by one-vs-rest AUROC (log1p CP10k, stratified <= 80k / <= 4k per fine type, seed 0)\namong the 200 genes with the largest mean log-fold change, detected in >= 10% of the class's cells, on the CosMx WTx\ngene list (GSE1 panel), not in another class's list. QC: >= 500 cells per class (else the reference fails G5).",
+ "spatialfloors_commit": "32e8524197c583ccf966ac5be1f68b3b0facd4b6-dirty"
+}

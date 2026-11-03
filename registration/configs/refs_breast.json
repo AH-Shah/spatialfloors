@@ -1,0 +1,81 @@
+{
+ "tissue": "breast",
+ "source": "CELLxGENE 9fddb063-056d-4202-8b8a-4b0ee531d3ce (Wu et al. 2021, Nat Genet)",
+ "ref": "/Users/Hemato/project_3/data/raw/refs/breast_wu2021/ref.h5ad",
+ "n_cells": 100064,
+ "class_counts": {
+  "epithelial": 28844,
+  "immune_nonmyeloid": 41944,
+  "myeloid": 8257,
+  "other": 21019
+ },
+ "qc_pass": true,
+ "coarse_map": {
+  "endothelial cell": "other",
+  "fibroblast of breast": "other",
+  "pericyte": "other",
+  "endothelial cell of lymphatic vessel": "other",
+  "memory B cell": "immune_nonmyeloid",
+  "naive B cell": "immune_nonmyeloid",
+  "CD8-positive, alpha-beta T cell": "immune_nonmyeloid",
+  "CD4-positive, alpha-beta T cell": "immune_nonmyeloid",
+  "natural killer cell": "immune_nonmyeloid",
+  "T cell": "immune_nonmyeloid",
+  "mature NK T cell": "immune_nonmyeloid",
+  "macrophage": "myeloid",
+  "monocyte": "myeloid",
+  "myeloid cell": "other",
+  "basal-myoepithelial cell of mammary gland": "epithelial",
+  "luminal epithelial cell of mammary gland": "epithelial",
+  "plasma cell": "immune_nonmyeloid",
+  "mammary gland epithelial cell": "epithelial"
+ },
+ "heldout_markers": {
+  "epithelial": [
+   "KRT8",
+   "SPINT2",
+   "KRT18",
+   "PERP",
+   "KRT7"
+  ],
+  "immune_nonmyeloid": [
+   "CD52",
+   "CXCR4",
+   "CD69",
+   "RAC2",
+   "BTG1"
+  ],
+  "myeloid": [
+   "TYROBP",
+   "FCER1G",
+   "AIF1",
+   "LYZ",
+   "GPX1"
+  ]
+ },
+ "marker_auroc_in_reference": {
+  "epithelial": {
+   "KRT8": 0.9304811397078371,
+   "SPINT2": 0.9086794898575155,
+   "KRT18": 0.9069127909203384,
+   "PERP": 0.899852425892743,
+   "KRT7": 0.8681777813815752
+  },
+  "immune_nonmyeloid": {
+   "CD52": 0.7870408625204509,
+   "CXCR4": 0.7804577721387068,
+   "CD69": 0.769434529268543,
+   "RAC2": 0.7515210411077531,
+   "BTG1": 0.7479837064521253
+  },
+  "myeloid": {
+   "TYROBP": 0.9691358325626284,
+   "FCER1G": 0.9526483683180927,
+   "AIF1": 0.9496169092359374,
+   "LYZ": 0.9309302588167425,
+   "GPX1": 0.9165597927211587
+  }
+ },
+ "rule": "F5 references for the new cancers (PLAN \u00a717), standardised to the Pelka layout read by floors.f5.reference:\nX = log1p CP10k (csr), raw.X = integer counts, var.feature_name = gene symbol, obs.ClusterMidway = fine label, obs.coarse.\nClasses (Cell Ontology, CL basic): epithelial = descendant of epithelial cell CL:0000066, or malignant cell CL:0001064 /\nabnormal cell CL:0001061 (carcinoma: tumour cells are epithelial); immune non-myeloid = descendant of lymphocyte\nCL:0000542 (T, B, plasma, NK, ILC); myeloid = descendant of myeloid leukocyte CL:0000766 except mast cells CL:0000097\n(as the locked Pelka map: Macro / Mono / DC / Granulo myeloid, Mast other); everything else other. Ji 2020 (GEO, no CL\nterms): explicit level1 map below, level2 = fine label, Multiplet dropped.\nHeld-out markers per class = top 5 by one-vs-rest AUROC (log1p CP10k, stratified <= 80k / <= 4k per fine type, seed 0)\namong the 200 genes with the largest mean log-fold change, detected in >= 10% of the class's cells, on the CosMx WTx\ngene list (GSE1 panel), not in another class's list. QC: >= 500 cells per class (else the reference fails G5).",
+ "spatialfloors_commit": "defffdd4b90c5b8d88213bb2af160c6253013829"
+}
