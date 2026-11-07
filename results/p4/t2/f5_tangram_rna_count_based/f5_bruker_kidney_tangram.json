@@ -1,0 +1,36 @@
+{
+ "unit": "bruker_kidney",
+ "model": "tangram",
+ "n_cells": 50000,
+ "n_genes": 1490,
+ "grid": {
+  "rna_count_based": {
+   "heldout_auroc": 0.45956369995073115,
+   "per_class": {
+    "epithelial": {
+     "auroc": 0.32721304912128607,
+     "n_pred": 453,
+     "n_markers": 5
+    },
+    "immune_nonmyeloid": {
+     "auroc": 0.45031662933125677,
+     "n_pred": 24161,
+     "n_markers": 5
+    },
+    "myeloid": {
+     "auroc": 0.6011614213996506,
+     "n_pred": 18383,
+     "n_markers": 5
+    }
+   },
+   "pred_share": {
+    "epithelial": 0.009,
+    "immune_nonmyeloid": 0.483,
+    "myeloid": 0.368,
+    "other": 0.14
+   },
+   "s": 329.9
+  }
+ },
+ "spatialfloors_commit": "551ff3b4866e83f80e507b89358eb6fe0dbb41c2"
+}

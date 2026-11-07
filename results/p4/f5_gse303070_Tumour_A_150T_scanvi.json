@@ -1,0 +1,36 @@
+{
+ "unit": "gse303070_Tumour_A_150T",
+ "model": "scanvi",
+ "n_cells": 28236,
+ "n_genes": 928,
+ "grid": {
+  "nl30_nb": {
+   "heldout_auroc": 0.7785517114387789,
+   "per_class": {
+    "epithelial": {
+     "auroc": 0.8806958490079588,
+     "n_pred": 10691,
+     "n_markers": 5
+    },
+    "immune_nonmyeloid": {
+     "auroc": 0.6219776402718229,
+     "n_pred": 2632,
+     "n_markers": 5
+    },
+    "myeloid": {
+     "auroc": 0.8329816450365551,
+     "n_pred": 4408,
+     "n_markers": 5
+    }
+   },
+   "pred_share": {
+    "epithelial": 0.379,
+    "immune_nonmyeloid": 0.093,
+    "myeloid": 0.156,
+    "other": 0.372
+   },
+   "s": 1006.3
+  }
+ },
+ "spatialfloors_commit": "7d1d5724d318a2fcd76406d6cdaf4a9cfb4f460f"
+}

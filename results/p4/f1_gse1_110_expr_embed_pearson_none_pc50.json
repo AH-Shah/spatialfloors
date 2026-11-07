@@ -1,0 +1,19 @@
+{
+ "unit": "gse1_110",
+ "model": "expr_embed",
+ "config": "pearson_none_pc50",
+ "n_cells": 50000,
+ "n_panel": 2000,
+ "fit_s": 17.9,
+ "info": {},
+ "scores": {
+  "pearson_none_pc50": {
+   "score": 0.09130435894805866,
+   "chance": -0.09504953299001473,
+   "finite": true,
+   "dim": 50
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "cd489ff5589bbdc6037686fd78c7f927de5dcd7c"
+}

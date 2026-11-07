@@ -1,0 +1,14 @@
+{
+ "unit": "gse1_222",
+ "model": "floor",
+ "k": 2,
+ "n_scored": 42211,
+ "grid": {
+  "ell400_lam0.8": {
+   "ari": 0.6587461862234909,
+   "ari_sd": 0.00015477775425822298,
+   "s": 11.0
+  }
+ },
+ "spatialfloors_commit": "7d1d5724d318a2fcd76406d6cdaf4a9cfb4f460f"
+}

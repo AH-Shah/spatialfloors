@@ -1,0 +1,23 @@
+{
+ "unit": "gse303070_3461G_7T",
+ "model": "scvi",
+ "config": "nl100_nb",
+ "n_cells": 32299,
+ "n_panel": 989,
+ "fit_s": 653.6,
+ "info": {
+  "epochs": 248,
+  "elbo_last": 321.922119140625,
+  "elbo_finite": true
+ },
+ "scores": {
+  "nl100_nb": {
+   "score": 0.13074076228460751,
+   "chance": -0.06525362262340395,
+   "finite": true,
+   "dim": 100
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "551ff3b4866e83f80e507b89358eb6fe0dbb41c2"
+}

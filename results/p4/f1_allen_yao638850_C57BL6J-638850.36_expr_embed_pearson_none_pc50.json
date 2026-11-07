@@ -1,0 +1,19 @@
+{
+ "unit": "allen_yao638850_C57BL6J-638850.36",
+ "model": "expr_embed",
+ "config": "pearson_none_pc50",
+ "n_cells": 50000,
+ "n_panel": 500,
+ "fit_s": 2.6,
+ "info": {},
+ "scores": {
+  "pearson_none_pc50": {
+   "score": 0.5283187693150083,
+   "chance": -0.04212879521695401,
+   "finite": true,
+   "dim": 50
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "d96b4bcd58c788c9386f4dcd8d9c66550596567b"
+}

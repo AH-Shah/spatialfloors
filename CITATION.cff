@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this benchmark or its protocol, please cite the registration."
-title: "Closed-form floors versus learned models in spatial omics: confirmatory protocol and registration package"
-version: "registration-v1"
-date-released: "2026-11-04"
+title: "Closed-form floors versus learned models in spatial omics: confirmatory protocol, registration package and results"
+version: "results-v1"
+date-released: "2026-11-08"
 doi: "10.5281/zenodo.23931264"
 license: MIT
 repository-code: "https://github.com/AH-Shah/spatialfloors"

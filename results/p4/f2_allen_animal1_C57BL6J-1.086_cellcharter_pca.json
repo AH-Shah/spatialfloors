@@ -1,0 +1,17 @@
+{
+ "unit": "allen_animal1_C57BL6J-1.086",
+ "model": "cellcharter_pca",
+ "k": 9,
+ "n_scored": 45445,
+ "grid": {
+  "pc50_L3": {
+   "ari": 0.47670374888216055,
+   "ari_sd": 0.06201853619655246,
+   "s": 440.0,
+   "epochs": 0,
+   "dim": 200,
+   "rep": "pca"
+  }
+ },
+ "spatialfloors_commit": "bad549f54b1adb78aebacc2202309195a99c7a5b"
+}

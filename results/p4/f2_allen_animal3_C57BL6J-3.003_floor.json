@@ -1,0 +1,14 @@
+{
+ "unit": "allen_animal3_C57BL6J-3.003",
+ "model": "floor",
+ "k": 11,
+ "n_scored": 46671,
+ "grid": {
+  "ell400_lam0.8": {
+   "ari": 0.5249954475713684,
+   "ari_sd": 0.045176514890677824,
+   "s": 122.0
+  }
+ },
+ "spatialfloors_commit": "7d1d5724d318a2fcd76406d6cdaf4a9cfb4f460f"
+}

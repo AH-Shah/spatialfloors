@@ -1,0 +1,19 @@
+{
+ "unit": "spatch_xenium5k",
+ "model": "expr_embed",
+ "config": "pearson_z_pc50",
+ "n_cells": 50000,
+ "n_panel": 5000,
+ "fit_s": 3.8,
+ "info": {},
+ "scores": {
+  "pearson_z_pc50": {
+   "score": 0.08756830871943144,
+   "chance": -0.08851252915763408,
+   "finite": true,
+   "dim": 50
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "551ff3b4866e83f80e507b89358eb6fe0dbb41c2"
+}

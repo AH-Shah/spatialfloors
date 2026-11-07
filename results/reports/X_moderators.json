@@ -1,0 +1,61 @@
+{
+ "tier1": "P5_corrected",
+ "pairs": {
+  "F1|nicheformer": {
+   "n_units": 25,
+   "spearman_rho": -0.06552914679285873,
+   "p_two_sided": 0.75564394083894,
+   "cells_min": 13611,
+   "cells_max": 53726
+  },
+  "F1|scvi": {
+   "n_units": 25,
+   "spearman_rho": 0.06718811253445009,
+   "p_two_sided": 0.7496488362096533,
+   "cells_min": 13611,
+   "cells_max": 53726
+  },
+  "F2|cellcharter": {
+   "n_units": 10,
+   "spearman_rho": 0.07784989441615231,
+   "p_two_sided": 0.830731709159245,
+   "cells_min": 47266,
+   "cells_max": 51545
+  },
+  "F2|novae": {
+   "n_units": 4,
+   "spearman_rho": 0.316227766016838,
+   "p_two_sided": 0.683772233983162,
+   "cells_min": 47266,
+   "cells_max": 51545
+  },
+  "F3|lightgbm": {
+   "n_units": 22,
+   "spearman_rho": -0.1331929517819694,
+   "p_two_sided": 0.5545831914899111,
+   "cells_min": 13611,
+   "cells_max": 53726
+  },
+  "F3|ncem": {
+   "n_units": 22,
+   "spearman_rho": 0.10852759034086394,
+   "p_two_sided": 0.6306941469295058,
+   "cells_min": 13611,
+   "cells_max": 53726
+  },
+  "F5|scanvi": {
+   "n_units": 20,
+   "spearman_rho": 0.5278087508855599,
+   "p_two_sided": 0.01676177147258354,
+   "cells_min": 13611,
+   "cells_max": 53726
+  },
+  "F5|tangram": {
+   "n_units": 20,
+   "spearman_rho": 0.3623162049457953,
+   "p_two_sided": 0.1164418811294938,
+   "cells_min": 13611,
+   "cells_max": 53726
+  }
+ }
+}

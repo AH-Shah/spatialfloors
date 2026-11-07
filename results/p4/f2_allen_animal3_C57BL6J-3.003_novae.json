@@ -1,0 +1,20 @@
+{
+ "unit": "allen_animal3_C57BL6J-3.003",
+ "model": "novae",
+ "k": 11,
+ "n_scored": 46671,
+ "grid": {
+  "zero_shot": {
+   "ari": 0.3455665336833796,
+   "effective_rank": 8.137773513793945,
+   "largest_domain_share": 0.38896,
+   "s": 58.4,
+   "collapse": false,
+   "checkpoint": [
+    "prism-oncology/novae-mouse-0",
+    "3a23be90d5c6d87595ce3d5da522a6854f05564e"
+   ]
+  }
+ },
+ "spatialfloors_commit": "cd489ff5589bbdc6037686fd78c7f927de5dcd7c"
+}

@@ -1,0 +1,36 @@
+{
+ "unit": "bruker_kidney",
+ "model": "scanvi",
+ "n_cells": 50000,
+ "n_genes": 1490,
+ "grid": {
+  "nl30_nb": {
+   "heldout_auroc": 0.7054238673003287,
+   "per_class": {
+    "epithelial": {
+     "auroc": 0.881464467533643,
+     "n_pred": 14801,
+     "n_markers": 5
+    },
+    "immune_nonmyeloid": {
+     "auroc": 0.5763208845091621,
+     "n_pred": 7031,
+     "n_markers": 5
+    },
+    "myeloid": {
+     "auroc": 0.6584862498581812,
+     "n_pred": 17993,
+     "n_markers": 5
+    }
+   },
+   "pred_share": {
+    "epithelial": 0.296,
+    "immune_nonmyeloid": 0.141,
+    "myeloid": 0.36,
+    "other": 0.203
+   },
+   "s": 1156.0
+  }
+ },
+ "spatialfloors_commit": "7d1d5724d318a2fcd76406d6cdaf4a9cfb4f460f"
+}

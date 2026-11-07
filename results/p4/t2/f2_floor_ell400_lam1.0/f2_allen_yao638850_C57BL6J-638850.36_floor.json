@@ -1,0 +1,14 @@
+{
+ "unit": "allen_yao638850_C57BL6J-638850.36",
+ "model": "floor",
+ "k": 9,
+ "n_scored": 47727,
+ "grid": {
+  "ell400_lam1.0": {
+   "ari": 0.4439097954917643,
+   "ari_sd": 0.05527012890050447,
+   "s": 65.5
+  }
+ },
+ "spatialfloors_commit": "551ff3b4866e83f80e507b89358eb6fe0dbb41c2"
+}

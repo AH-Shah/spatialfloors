@@ -1,0 +1,23 @@
+{
+ "unit": "bruker_kidney",
+ "model": "scvi",
+ "config": "nl50_nb",
+ "n_cells": 50000,
+ "n_panel": 2000,
+ "fit_s": 628.1,
+ "info": {
+  "epochs": 160,
+  "elbo_last": 236.3661346435547,
+  "elbo_finite": true
+ },
+ "scores": {
+  "nl50_nb": {
+   "score": 0.2340564547023094,
+   "chance": -0.0693076434855866,
+   "finite": true,
+   "dim": 50
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "e80328f4f14060c1d96e9134fd907b53b85fd65f"
+}

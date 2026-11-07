@@ -1,0 +1,3114 @@
+{
+ "runs": "runs/p4",
+ "comparisons": {
+  "F2 CellCharter - multi-scale floor": {
+   "family": "F2",
+   "n_units": 10,
+   "est": -0.15211708677884345,
+   "lower": -0.2688470412213095,
+   "upper": -0.03538713233637743,
+   "mean_first": 0.3602449482833863,
+   "mean_second": 0.5123620350622298,
+   "per_unit": {
+    "allen_animal1_C57BL6J-1.086": -0.08149938599012568,
+    "allen_animal2_C57BL6J-2.039": -0.04598906890754284,
+    "allen_animal3_C57BL6J-3.003": -0.062431370328970226,
+    "allen_yao638850_C57BL6J-638850.36": -0.07621309246429858,
+    "gse1_110": 0.08389849701354601,
+    "gse1_120": 0.023367592911783197,
+    "gse1_210": -0.3282272293875484,
+    "gse1_221": -0.2629075168531651,
+    "gse1_222": -0.6037736238316798,
+    "gse1_242": -0.16739566995043348
+   }
+  },
+  "F2 Novae - multi-scale floor (mouse)": {
+   "family": "F2",
+   "n_units": 4,
+   "est": -0.14016325807914537,
+   "lower": -0.17237241743024195,
+   "upper": -0.10795409872804877,
+   "mean_first": 0.324483036618084,
+   "mean_second": 0.46464629469722935,
+   "per_unit": {
+    "allen_animal1_C57BL6J-1.086": -0.15190732880458724,
+    "allen_animal2_C57BL6J-2.039": -0.10098716350383968,
+    "allen_animal3_C57BL6J-3.003": -0.14390743470077083,
+    "allen_yao638850_C57BL6J-638850.36": -0.16385110530738373
+   }
+  },
+  "F2 multi-scale floor - locked floor": {
+   "family": "F2",
+   "n_units": 10,
+   "est": 0.05177003642562632,
+   "lower": -0.037873317155643474,
+   "upper": 0.14141339000689612,
+   "mean_first": 0.5123620350622298,
+   "mean_second": 0.46059199863660344,
+   "per_unit": {
+    "allen_animal1_C57BL6J-1.086": 0.048158867135034866,
+    "allen_animal2_C57BL6J-2.039": 0.015877504207411464,
+    "allen_animal3_C57BL6J-3.003": 0.009907380671689392,
+    "allen_yao638850_C57BL6J-638850.36": 0.02794329772041687,
+    "gse1_110": -0.253340953539582,
+    "gse1_120": 0.018988082711437038,
+    "gse1_210": 0.239026549729083,
+    "gse1_221": 0.2605311437622435,
+    "gse1_222": 0.15586959321962035,
+    "gse1_242": -0.005261101361091258
+   }
+  },
+  "F2 CellCharter on PCA - locked floor": {
+   "family": "F2",
+   "n_units": 10,
+   "est": -0.11494074953967788,
+   "lower": -0.19699348819634122,
+   "upper": -0.032888010883014546,
+   "mean_first": 0.3456512490969256,
+   "mean_second": 0.46059199863660344,
+   "per_unit": {
+    "allen_animal1_C57BL6J-1.086": -0.0322165981043292,
+    "allen_animal2_C57BL6J-2.039": -0.030805725910530768,
+    "allen_animal3_C57BL6J-3.003": -0.08225082521874671,
+    "allen_yao638850_C57BL6J-638850.36": -0.04416071868490978,
+    "gse1_110": -0.15879485958909467,
+    "gse1_120": 0.015010185920869445,
+    "gse1_210": -0.07430857566319676,
+    "gse1_221": -0.06224342069185884,
+    "gse1_222": -0.4844424919343528,
+    "gse1_242": -0.1951944655206289
+   }
+  },
+  "F2 CellCharter (scVI) - CellCharter on PCA": {
+   "family": "F2",
+   "n_units": 10,
+   "est": 0.014593699186460729,
+   "lower": 0.0001542691612702006,
+   "upper": 0.029033129211651257,
+   "mean_first": 0.3602449482833863,
+   "mean_second": 0.3456512490969256,
+   "per_unit": {
+    "allen_animal1_C57BL6J-1.086": -0.00112392075076162,
+    "allen_animal2_C57BL6J-2.039": 0.000694161210399391,
+    "allen_animal3_C57BL6J-3.003": 0.02972683556146588,
+    "allen_yao638850_C57BL6J-638850.36": -0.004109076058971928,
+    "gse1_110": -0.01064759693694134,
+    "gse1_120": 0.02734548970235079,
+    "gse1_210": -0.014892103995268635,
+    "gse1_221": 0.05986704760093725,
+    "gse1_222": 0.036538461322293325,
+    "gse1_242": 0.022537694209104175
+   }
+  },
+  "F3 LightGBM - v2 floor": {
+   "family": "F3",
+   "n_units": 22,
+   "est": -0.0004908565777212144,
+   "lower": -0.0034036691882510413,
+   "upper": 0.002421956032808613,
+   "mean_first": 0.057157368327463806,
+   "mean_second": 0.05764822490518502,
+   "per_unit": {
+    "Donor130": 0.01245168841562691,
+    "Donor137": 0.004536547360621368,
+    "Donor142": 0.0073482307205503285,
+    "Donor150": -0.0075046695269000985,
+    "Donor280": -0.0018223986387549199,
+    "Donor64": 0.0006367255493340412,
+    "Donor73": -0.011207203434501224,
+    "Donor74": 0.0021725688769479237,
+    "Donor92": 0.0064816939311981014,
+    "allen_animal1_C57BL6J-1.086": 0.00597303411813753,
+    "allen_animal2_C57BL6J-2.039": -0.009172847718177918,
+    "allen_animal3_C57BL6J-3.003": -0.0014349711184466207,
+    "allen_yao638850_C57BL6J-638850.36": 0.005185890809137533,
+    "bruker_kidney": -0.01364067714675763,
+    "bruker_mobreast": 0.004891802684717429,
+    "bruker_skin": 0.006268679664534149,
+    "gse1_110": 0.00013392076123315902,
+    "gse1_120": 0.006544010506978129,
+    "gse1_210": -0.003882193586123066,
+    "gse1_221": -0.018161720694818466,
+    "gse1_222": -0.004319423570637013,
+    "gse1_242": -0.002277532673766361
+   }
+  },
+  "F3 NCEM - v2 floor": {
+   "family": "F3",
+   "n_units": 22,
+   "est": -0.020572309420676033,
+   "lower": -0.024553631419132877,
+   "upper": -0.016590987422219188,
+   "mean_first": 0.037075915484508996,
+   "mean_second": 0.05764822490518502,
+   "per_unit": {
+    "Donor130": -0.01028143141706829,
+    "Donor137": 0.00465896954183183,
+    "Donor142": -0.005988609449991238,
+    "Donor150": -0.03428978358419108,
+    "Donor280": -0.013398080177990376,
+    "Donor64": -0.011955692968827855,
+    "Donor73": -0.005960735127090701,
+    "Donor74": -0.02552120061550702,
+    "Donor92": -0.022632026661918776,
+    "allen_animal1_C57BL6J-1.086": -0.049423771062691274,
+    "allen_animal2_C57BL6J-2.039": -0.07549752593679628,
+    "allen_animal3_C57BL6J-3.003": -0.04769459266838553,
+    "allen_yao638850_C57BL6J-638850.36": -0.0689136914044842,
+    "bruker_kidney": -0.017962743048473978,
+    "bruker_mobreast": 0.0017202897390475452,
+    "bruker_skin": -0.016401262503518296,
+    "gse1_110": -0.01073064372893464,
+    "gse1_120": -0.01666211066334252,
+    "gse1_210": -0.007360284997477137,
+    "gse1_221": -0.017064053111059373,
+    "gse1_222": 0.0003555066232525071,
+    "gse1_242": -0.0015873340312561254
+   }
+  },
+  "F3 ED-NCEM - floor": {
+   "family": "F3",
+   "n_units": 22,
+   "est": -0.04124880085284332,
+   "lower": -0.04656753136799392,
+   "upper": -0.035930070337692716,
+   "mean_first": 0.03137608442204623,
+   "mean_second": 0.07262488527488956,
+   "per_unit": {
+    "Donor130": -0.03435509929835087,
+    "Donor137": -0.014162481250005193,
+    "Donor142": -0.024223242428142586,
+    "Donor150": -0.053154985884150685,
+    "Donor280": -0.021169369145945673,
+    "Donor64": -0.047420822492471204,
+    "Donor73": -0.018465555053213414,
+    "Donor74": -0.03476997921703252,
+    "Donor92": -0.043018687703907224,
+    "allen_animal1_C57BL6J-1.086": -0.07656040029767142,
+    "allen_animal2_C57BL6J-2.039": -0.10157904834929282,
+    "allen_animal3_C57BL6J-3.003": -0.0778729456847821,
+    "allen_yao638850_C57BL6J-638850.36": -0.11396393569518642,
+    "bruker_kidney": -0.032286667920688815,
+    "bruker_mobreast": -0.02039283292066612,
+    "bruker_skin": -0.04801110154707706,
+    "gse1_110": -0.03446215009695679,
+    "gse1_120": -0.04396129616362922,
+    "gse1_210": -0.025431697063226028,
+    "gse1_221": -0.021525160102311047,
+    "gse1_222": -0.011621504067635742,
+    "gse1_242": -0.009064656380210055
+   }
+  },
+  "F3 ED-NCEM - NCEM (linear interactions)": {
+   "family": "F3",
+   "n_units": 22,
+   "est": -0.005699831062462753,
+   "lower": -0.007606431865469808,
+   "upper": -0.0037932302594556972,
+   "mean_first": 0.03137608442204623,
+   "mean_second": 0.037075915484508996,
+   "per_unit": {
+    "Donor130": -0.004099430961997094,
+    "Donor137": -0.013531465100396463,
+    "Donor142": -0.0030231321197916497,
+    "Donor150": -0.0031447765912501237,
+    "Donor280": 0.006023713834256265,
+    "Donor64": -0.010052715602700376,
+    "Donor73": -0.010235075752378671,
+    "Donor74": 0.00423070111168735,
+    "Donor92": -0.005819276337345795,
+    "allen_animal1_C57BL6J-1.086": -0.009125567766736578,
+    "allen_animal2_C57BL6J-2.039": -0.001194891213101415,
+    "allen_animal3_C57BL6J-3.003": -0.009295569790826401,
+    "allen_yao638850_C57BL6J-638850.36": -0.0008850445417416877,
+    "bruker_kidney": -0.009778889476477336,
+    "bruker_mobreast": -0.005514156215325486,
+    "bruker_skin": -0.010577010779353795,
+    "gse1_110": -0.006974589518208429,
+    "gse1_120": -0.009530333298951938,
+    "gse1_210": -0.012187608398221358,
+    "gse1_221": -0.002899961416067947,
+    "gse1_222": -0.006304458124284113,
+    "gse1_242": -0.0014767453149675189
+   }
+  },
+  "F5 scANVI - InSituType without prior (v2 floor)": {
+   "family": "F5",
+   "n_units": 20,
+   "est": -0.010035130065651517,
+   "lower": -0.01772791220342064,
+   "upper": -0.0023423479278823958,
+   "mean_first": 0.7042362515826833,
+   "mean_second": 0.7142713816483349,
+   "per_unit": {
+    "Donor130": -0.06898537523192483,
+    "Donor137": -0.0069200438006422615,
+    "Donor142": -0.004030624139280015,
+    "Donor150": -0.013003531568678284,
+    "Donor170": -0.03421983158850128,
+    "Donor280": -0.01242189153643225,
+    "Donor64": -0.021644414238932486,
+    "Donor7": -0.03076731964080559,
+    "Donor73": -0.012383602868405341,
+    "Donor74": -0.024615417695591058,
+    "Donor92": -0.001961345390225966,
+    "bruker_kidney": 0.036320892143547945,
+    "bruker_mobreast": -0.023355448081645136,
+    "bruker_skin": 0.005100177334769196,
+    "gse1_110": 0.023519205350247763,
+    "gse1_120": -0.019278419365234445,
+    "gse1_210": -0.012369682649482794,
+    "gse1_221": 0.0025807415687616464,
+    "gse1_222": 0.02314194064528663,
+    "gse1_242": -0.0054086105598617484
+   }
+  },
+  "F5 Tangram - InSituType without prior (v2 floor)": {
+   "family": "F5",
+   "n_units": 20,
+   "est": -0.10890680438363243,
+   "lower": -0.1381142547958998,
+   "upper": -0.07969935397136504,
+   "mean_first": 0.6053645772647025,
+   "mean_second": 0.7142713816483349,
+   "per_unit": {
+    "Donor130": -0.31243902280821156,
+    "Donor137": -0.014841562134917052,
+    "Donor142": -0.010095694111749487,
+    "Donor150": -0.119886784133732,
+    "Donor170": -0.12046995388796877,
+    "Donor280": -0.2095204305343083,
+    "Donor64": -0.0682627378352948,
+    "Donor7": -0.1668447502805006,
+    "Donor73": -0.07514995528283552,
+    "Donor74": -0.13557049762379692,
+    "Donor92": -0.09310234083200142,
+    "bruker_kidney": -0.017429586317661117,
+    "bruker_mobreast": -0.1415858173659763,
+    "bruker_skin": -0.17694588635730524,
+    "gse1_110": -0.11467558630594188,
+    "gse1_120": -0.13518474100118283,
+    "gse1_210": -0.08189530395985867,
+    "gse1_221": -0.028748773482833778,
+    "gse1_222": -0.03278669567248649,
+    "gse1_242": -0.12269996774408654
+   }
+  },
+  "F5 floor - InSituType without prior (spatial prior gain)": {
+   "family": "F5",
+   "n_units": 20,
+   "est": 0.004287041981871145,
+   "lower": 0.0031899978373137383,
+   "upper": 0.005384086126428552,
+   "mean_first": 0.718558423630206,
+   "mean_second": 0.7142713816483349,
+   "per_unit": {
+    "Donor130": 0.007577293956329556,
+    "Donor137": 0.002856224785647843,
+    "Donor142": 0.0005658014434990477,
+    "Donor150": 0.004591270781021395,
+    "Donor170": 0.002317946064739118,
+    "Donor280": 0.004134032002673538,
+    "Donor64": 0.004127458121885863,
+    "Donor7": 0.011509859231943587,
+    "Donor73": 0.004625425775511172,
+    "Donor74": 0.006204535682409862,
+    "Donor92": 0.004547117171048498,
+    "bruker_kidney": 0.001803975946902736,
+    "bruker_mobreast": 0.0008829453082112027,
+    "bruker_skin": 0.008814947511139204,
+    "gse1_110": 0.0033220683723317324,
+    "gse1_120": 0.005382869886868646,
+    "gse1_210": 0.002675692514664707,
+    "gse1_221": 0.0025310508739696536,
+    "gse1_222": 0.0006828686544912976,
+    "gse1_242": 0.006587455552134247
+   }
+  },
+  "F5 scANVI - logistic regression (logreg_C0.1_ref)": {
+   "family": "F5",
+   "n_units": 20,
+   "est": 0.0745084265675229,
+   "lower": 0.06396982136839392,
+   "upper": 0.08504703176665189,
+   "mean_first": 0.7042362515826833,
+   "mean_second": 0.6297278250151603,
+   "per_unit": {
+    "Donor130": 0.05827285202105281,
+    "Donor137": 0.02178595966711161,
+    "Donor142": 0.029326231229828692,
+    "Donor150": 0.08907103413317208,
+    "Donor170": 0.0161040186955137,
+    "Donor280": 0.05803912277000578,
+    "Donor64": 0.05666312420958519,
+    "Donor7": 0.04371060132628379,
+    "Donor73": 0.0733951344176923,
+    "Donor74": 0.05865283847385805,
+    "Donor92": 0.09182403551367346,
+    "bruker_kidney": 0.06861295513281784,
+    "bruker_mobreast": 0.10186272684255926,
+    "bruker_skin": 0.13414295577558688,
+    "gse1_110": 0.13985107570101174,
+    "gse1_120": 0.10766591165149997,
+    "gse1_210": 0.0723779394599986,
+    "gse1_221": 0.062161840213724506,
+    "gse1_222": 0.08101310940387452,
+    "gse1_242": 0.12563506471160746
+   }
+  },
+  "F5 Tangram - logistic regression (logreg_C0.1_ref)": {
+   "family": "F5",
+   "n_units": 20,
+   "est": -0.024363247750458037,
+   "lower": -0.045403396748077876,
+   "upper": -0.003323098752838198,
+   "mean_first": 0.6053645772647025,
+   "mean_second": 0.6297278250151603,
+   "per_unit": {
+    "Donor130": -0.18518079555523392,
+    "Donor137": 0.013864441332836819,
+    "Donor142": 0.02326116125735922,
+    "Donor150": -0.017812218431881632,
+    "Donor170": -0.07014610360395379,
+    "Donor280": -0.13905941622787027,
+    "Donor64": 0.010044800613222882,
+    "Donor7": -0.09236682931341123,
+    "Donor73": 0.010628782003262116,
+    "Donor74": -0.05230224145434781,
+    "Donor92": 0.0006830400718980112,
+    "bruker_kidney": 0.014862476671608782,
+    "bruker_mobreast": -0.016367642441771912,
+    "bruker_skin": -0.04790310791648755,
+    "gse1_110": 0.0016562840448220983,
+    "gse1_120": -0.008240409984448416,
+    "gse1_210": 0.0028523181496227235,
+    "gse1_221": 0.03083232516212908,
+    "gse1_222": 0.0250844730861014,
+    "gse1_242": 0.008343707527382671
+   }
+  },
+  "F5 logistic regression (logreg_C0.1_ref) - floor": {
+   "family": "F5",
+   "n_units": 20,
+   "est": -0.08883059861504555,
+   "lower": -0.10243421034160964,
+   "upper": -0.07522698688848146,
+   "mean_first": 0.6297278250151603,
+   "mean_second": 0.718558423630206,
+   "per_unit": {
+    "Donor130": -0.1348355212093072,
+    "Donor137": -0.031562228253401714,
+    "Donor142": -0.033922656812607754,
+    "Donor150": -0.10666583648287176,
+    "Donor170": -0.0526417963487541,
+    "Donor280": -0.07459504630911157,
+    "Donor64": -0.08243499657040354,
+    "Donor7": -0.08598778019903297,
+    "Donor73": -0.09040416306160881,
+    "Donor74": -0.08947279185185897,
+    "Donor92": -0.09833249807494793,
+    "bruker_kidney": -0.034096038936172635,
+    "bruker_mobreast": -0.1261011202324156,
+    "bruker_skin": -0.1378577259519569,
+    "gse1_110": -0.11965393872309571,
+    "gse1_120": -0.13232720090360306,
+    "gse1_210": -0.0874233146241461,
+    "gse1_221": -0.06211214951893251,
+    "gse1_222": -0.058554037413079185,
+    "gse1_242": -0.13763113082360345
+   }
+  },
+  "F5 IF-gated macro-F1 (GSE1): scanvi - floor": {
+   "family": "F5",
+   "n_units": 6,
+   "est": -0.05290279249772612,
+   "lower": -0.0878246269001799,
+   "upper": -0.017980958095272337,
+   "mean_first": 0.6045769720335638,
+   "mean_second": 0.6574797645312899,
+   "per_unit": {
+    "gse1_110": -0.06992862354251195,
+    "gse1_120": -0.022688611839478456,
+    "gse1_210": -0.03212262275510369,
+    "gse1_221": -0.1297181472422232,
+    "gse1_222": -0.014786691616230141,
+    "gse1_242": -0.04817205799080915
+   }
+  },
+  "F5 IF-gated macro-F1 (GSE1): tangram - floor": {
+   "family": "F5",
+   "n_units": 6,
+   "est": -0.3971173083119633,
+   "lower": -0.4426458719830878,
+   "upper": -0.3515887446408388,
+   "mean_first": 0.2603624562193266,
+   "mean_second": 0.6574797645312899,
+   "per_unit": {
+    "gse1_110": -0.4393427434919728,
+    "gse1_120": -0.4477564154115383,
+    "gse1_210": -0.3720459383407261,
+    "gse1_221": -0.31353605001538,
+    "gse1_222": -0.36483235424489713,
+    "gse1_242": -0.4451903483672657
+   }
+  },
+  "F5 IF-gated macro-F1 (GSE1): insitutype_no_prior - floor": {
+   "family": "F5",
+   "n_units": 6,
+   "est": -0.0033298421111600173,
+   "lower": -0.007323902513551878,
+   "upper": 0.0006642182912318436,
+   "mean_first": 0.6541499224201299,
+   "mean_second": 0.6574797645312899,
+   "per_unit": {
+    "gse1_110": -0.0045062037014020895,
+    "gse1_120": 0.0035340080652411787,
+    "gse1_210": -0.005163713904106193,
+    "gse1_221": -0.006092139202738434,
+    "gse1_222": -0.009250371032582638,
+    "gse1_242": 0.0014993671086280802
+   }
+  },
+  "F5 IF-gated macro-F1 (GSE1): logreg - floor": {
+   "family": "F5",
+   "n_units": 6,
+   "est": -0.1291848582362756,
+   "lower": -0.14788174307877278,
+   "upper": -0.11048797339377843,
+   "mean_first": 0.5282949062950143,
+   "mean_second": 0.6574797645312899,
+   "per_unit": {
+    "gse1_110": -0.14300111774756397,
+    "gse1_120": -0.11318303571924004,
+    "gse1_210": -0.09724268228633315,
+    "gse1_221": -0.16224354173763644,
+    "gse1_222": -0.12639595862715025,
+    "gse1_242": -0.13304281329972956
+   }
+  }
+ },
+ "f2_per_crop": {
+  "allen_animal1_C57BL6J-1.086": {
+   "floor": 0.39997779477630246,
+   "floor_multiscale": 0.44813666191133733,
+   "cellcharter": 0.36663727592121165,
+   "cellcharter_pca": 0.36776119667197327,
+   "novae_zero_shot": 0.2962293331067501
+  },
+  "allen_animal2_C57BL6J-2.039": {
+   "floor": 0.38927457455964304,
+   "floor_multiscale": 0.4051520787670545,
+   "cellcharter": 0.35916300985951166,
+   "cellcharter_pca": 0.35846884864911227,
+   "novae_zero_shot": 0.3041649152632148
+  },
+  "allen_animal3_C57BL6J-3.003": {
+   "floor": 0.542418572011097,
+   "floor_multiscale": 0.5523259526827864,
+   "cellcharter": 0.48989458235381617,
+   "cellcharter_pca": 0.4601677467923503,
+   "novae_zero_shot": 0.40841851798201556
+  },
+  "allen_yao638850_C57BL6J-638850.36": {
+   "floor": 0.4250271877073223,
+   "floor_multiscale": 0.45297048542773916,
+   "cellcharter": 0.3767573929634406,
+   "cellcharter_pca": 0.3808664690224125,
+   "novae_zero_shot": 0.28911938012035543
+  },
+  "gse1_110": {
+   "floor": 0.5017500545808236,
+   "floor_multiscale": 0.24840910104124153,
+   "cellcharter": 0.33230759805478755,
+   "cellcharter_pca": 0.3429551949917289,
+   "novae_zero_shot": 0.23134920934419984
+  },
+  "gse1_120": {
+   "floor": 0.25746827701226654,
+   "floor_multiscale": 0.2764563597237036,
+   "cellcharter": 0.2998239526354868,
+   "cellcharter_pca": 0.272478462933136,
+   "novae_zero_shot": 0.040282852619123996
+  },
+  "gse1_210": {
+   "floor": 0.450592417908001,
+   "floor_multiscale": 0.689618967637084,
+   "cellcharter": 0.3613917382495356,
+   "cellcharter_pca": 0.3762838422448042,
+   "novae_zero_shot": 0.06558529223145429
+  },
+  "gse1_221": {
+   "floor": 0.3230182995095229,
+   "floor_multiscale": 0.5835494432717664,
+   "cellcharter": 0.3206419264186013,
+   "cellcharter_pca": 0.26077487881766404,
+   "novae_zero_shot": 0.19610470040396255
+  },
+  "gse1_222": {
+   "floor": 0.6622801769863782,
+   "floor_multiscale": 0.8181497702059985,
+   "cellcharter": 0.21437614637431873,
+   "cellcharter_pca": 0.1778376850520254,
+   "novae_zero_shot": 5.012781339219675e-06
+  },
+  "gse1_242": {
+   "floor": 0.6541126313146777,
+   "floor_multiscale": 0.6488515299535864,
+   "cellcharter": 0.48145586000315294,
+   "cellcharter_pca": 0.45891816579404876,
+   "novae_zero_shot": 0.043733676597333064
+  }
+ },
+ "novae_collapse": {
+  "allen_animal1_C57BL6J-1.086": {
+   "effective_rank": 8.528635025024414,
+   "largest_domain_share": 0.20860660940210723,
+   "collapse": false,
+   "rule": false,
+   "test_pair": true
+  },
+  "allen_animal2_C57BL6J-2.039": {
+   "effective_rank": 8.719893455505371,
+   "largest_domain_share": 0.16884275875448637,
+   "collapse": false,
+   "rule": false,
+   "test_pair": true
+  },
+  "allen_animal3_C57BL6J-3.003": {
+   "effective_rank": 8.137773513793945,
+   "largest_domain_share": 0.38896,
+   "collapse": false,
+   "rule": false,
+   "test_pair": true
+  },
+  "allen_yao638850_C57BL6J-638850.36": {
+   "effective_rank": 7.587127208709717,
+   "largest_domain_share": 0.23886,
+   "collapse": false,
+   "rule": false,
+   "test_pair": true
+  },
+  "gse1_110": {
+   "effective_rank": 5.1791276931762695,
+   "largest_domain_share": 0.50972,
+   "collapse": true,
+   "rule": true,
+   "test_pair": false
+  },
+  "gse1_120": {
+   "effective_rank": 5.201552391052246,
+   "largest_domain_share": 0.48996,
+   "collapse": false,
+   "rule": false,
+   "test_pair": false
+  },
+  "gse1_210": {
+   "effective_rank": 5.838725566864014,
+   "largest_domain_share": 0.54808,
+   "collapse": true,
+   "rule": true,
+   "test_pair": false
+  },
+  "gse1_221": {
+   "effective_rank": 4.462892532348633,
+   "largest_domain_share": 0.73554,
+   "collapse": true,
+   "rule": true,
+   "test_pair": false
+  },
+  "gse1_222": {
+   "effective_rank": 5.202496528625488,
+   "largest_domain_share": 0.99904,
+   "collapse": true,
+   "rule": true,
+   "test_pair": false
+  },
+  "gse1_242": {
+   "effective_rank": 5.1787190437316895,
+   "largest_domain_share": 0.58542,
+   "collapse": true,
+   "rule": true,
+   "test_pair": false
+  }
+ },
+ "f5_models": {
+  "floor": {
+   "bruker_kidney": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.6709069511036835,
+    "per_class_auroc": {
+     "epithelial": 0.821975359873921,
+     "immune_nonmyeloid": 0.5724496276389502,
+     "myeloid": 0.6182958657981792
+    },
+    "class_share": {
+     "epithelial": 0.36,
+     "immune_nonmyeloid": 0.021,
+     "myeloid": 0.465,
+     "other": 0.153
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9447004608294931,
+     "immune_nonmyeloid": 0.040242976461655276,
+     "myeloid": 0.854093420391763
+    }
+   },
+   "bruker_mobreast": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.7778277783527617,
+    "per_class_auroc": {
+     "epithelial": 0.8795799322886979,
+     "immune_nonmyeloid": 0.5792747987078687,
+     "myeloid": 0.8746286040617188
+    },
+    "class_share": {
+     "epithelial": 0.553,
+     "immune_nonmyeloid": 0.067,
+     "myeloid": 0.117,
+     "other": 0.263
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9688026981450253,
+     "immune_nonmyeloid": 0.22065967783175658,
+     "myeloid": 0.6713098729227761
+    }
+   },
+   "bruker_skin": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.8361284815447,
+    "per_class_auroc": {
+     "epithelial": 0.9557734279953551,
+     "immune_nonmyeloid": 0.6890348627900628,
+     "myeloid": 0.8635771538486823
+    },
+    "class_share": {
+     "epithelial": 0.52,
+     "immune_nonmyeloid": 0.039,
+     "myeloid": 0.104,
+     "other": 0.337
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9912790697674418,
+     "immune_nonmyeloid": 0.19684848484848486,
+     "myeloid": 0.656235294117647
+    }
+   },
+   "gse1_110": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.7063287362745334,
+    "per_class_auroc": {
+     "epithelial": 0.9074655230992361,
+     "immune_nonmyeloid": 0.5485818122219178,
+     "myeloid": 0.6629388735024463
+    },
+    "class_share": {
+     "epithelial": 0.528,
+     "immune_nonmyeloid": 0.154,
+     "myeloid": 0.066,
+     "other": 0.252
+    },
+    "gated_macro_f1": 0.7135416197643492,
+    "marker_pos_recall": {
+     "epithelial": 0.9647764176867349,
+     "immune_nonmyeloid": 0.363196683555965,
+     "myeloid": 0.28407310704960836
+    }
+   },
+   "gse1_120": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.7489177144196097,
+    "per_class_auroc": {
+     "epithelial": 0.8987359353236803,
+     "immune_nonmyeloid": 0.562670178128754,
+     "myeloid": 0.7853470298063948
+    },
+    "class_share": {
+     "epithelial": 0.657,
+     "immune_nonmyeloid": 0.091,
+     "myeloid": 0.051,
+     "other": 0.201
+    },
+    "gated_macro_f1": 0.6910252837474887,
+    "marker_pos_recall": {
+     "epithelial": 0.9844754934575294,
+     "immune_nonmyeloid": 0.2747040347910123,
+     "myeloid": 0.2842227378190255
+    }
+   },
+   "gse1_210": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.6841853202293624,
+    "per_class_auroc": {
+     "epithelial": 0.8164009465161909,
+     "immune_nonmyeloid": 0.5885577887053426,
+     "myeloid": 0.6475972254665534
+    },
+    "class_share": {
+     "epithelial": 0.577,
+     "immune_nonmyeloid": 0.153,
+     "myeloid": 0.065,
+     "other": 0.205
+    },
+    "gated_macro_f1": 0.6725936400228294,
+    "marker_pos_recall": {
+     "epithelial": null,
+     "immune_nonmyeloid": 0.4226910213532287,
+     "myeloid": null
+    }
+   },
+   "gse1_221": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.634073932801732,
+    "per_class_auroc": {
+     "epithelial": 0.7090941190995722,
+     "immune_nonmyeloid": 0.5395027260102184,
+     "myeloid": 0.6536249532954053
+    },
+    "class_share": {
+     "epithelial": 0.597,
+     "immune_nonmyeloid": 0.136,
+     "myeloid": 0.041,
+     "other": 0.226
+    },
+    "gated_macro_f1": 0.6031269912492137,
+    "marker_pos_recall": {
+     "epithelial": null,
+     "immune_nonmyeloid": 0.25097929490766646,
+     "myeloid": null
+    }
+   },
+   "gse1_222": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.6185346504938612,
+    "per_class_auroc": {
+     "epithelial": 0.7510642604182152,
+     "immune_nonmyeloid": 0.5495744259332807,
+     "myeloid": 0.5549652651300879
+    },
+    "class_share": {
+     "epithelial": 0.364,
+     "immune_nonmyeloid": 0.241,
+     "myeloid": 0.206,
+     "other": 0.188
+    },
+    "gated_macro_f1": 0.5825052237679706,
+    "marker_pos_recall": {
+     "epithelial": 0.808435438265787,
+     "immune_nonmyeloid": 0.4523098138358998,
+     "myeloid": 0.36917034855179187
+    }
+   },
+   "gse1_242": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.714925686320888,
+    "per_class_auroc": {
+     "epithelial": 0.9034315922313414,
+     "immune_nonmyeloid": 0.5879756406264225,
+     "myeloid": 0.6533698261049002
+    },
+    "class_share": {
+     "epithelial": 0.606,
+     "immune_nonmyeloid": 0.141,
+     "myeloid": 0.049,
+     "other": 0.204
+    },
+    "gated_macro_f1": 0.682085828635888,
+    "marker_pos_recall": {
+     "epithelial": 0.9467871485943775,
+     "immune_nonmyeloid": 0.393532776066872,
+     "myeloid": 0.15326633165829145
+    }
+   },
+   "gse303070_10501A_130T": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.866967994646665,
+    "per_class_auroc": {
+     "epithelial": 0.973128873444871,
+     "immune_nonmyeloid": 0.7669241909657416,
+     "myeloid": 0.8608509195293828
+    },
+    "class_share": {
+     "epithelial": 0.827,
+     "immune_nonmyeloid": 0.004,
+     "myeloid": 0.03,
+     "other": 0.14
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9928571428571429,
+     "immune_nonmyeloid": 0.023174971031286212,
+     "myeloid": 0.2530308955807587
+    }
+   },
+   "gse303070_10501A_74T": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.7435421329551174,
+    "per_class_auroc": {
+     "epithelial": 0.8544249158597339,
+     "immune_nonmyeloid": 0.7363703397829165,
+     "myeloid": 0.6398311432227017
+    },
+    "class_share": {
+     "epithelial": 0.598,
+     "immune_nonmyeloid": 0.05,
+     "myeloid": 0.09,
+     "other": 0.262
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9212121212121213,
+     "immune_nonmyeloid": 0.25732637494981936,
+     "myeloid": 0.24381625441696114
+    }
+   },
+   "gse303070_10501A_92T": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.7543061892740583,
+    "per_class_auroc": {
+     "epithelial": 0.7974451723800173,
+     "immune_nonmyeloid": 0.6929583218420443,
+     "myeloid": 0.7725150736001134
+    },
+    "class_share": {
+     "epithelial": 0.334,
+     "immune_nonmyeloid": 0.168,
+     "myeloid": 0.222,
+     "other": 0.276
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.7802435723951285,
+     "immune_nonmyeloid": 0.48825214899713465,
+     "myeloid": 0.800801373783629
+    }
+   },
+   "gse303070_120131_170T": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.706939920609778,
+    "per_class_auroc": {
+     "epithelial": 0.8742912210002856,
+     "immune_nonmyeloid": 0.5844799436236084,
+     "myeloid": 0.66204859720544
+    },
+    "class_share": {
+     "epithelial": 0.745,
+     "immune_nonmyeloid": 0.012,
+     "myeloid": 0.042,
+     "other": 0.201
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9434124035438697,
+     "immune_nonmyeloid": 0.03713270907329674,
+     "myeloid": 0.2133499688084841
+    }
+   },
+   "gse303070_120131_280N": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.7385185300384003,
+    "per_class_auroc": {
+     "epithelial": 0.8109768054708547,
+     "immune_nonmyeloid": 0.6463169266998584,
+     "myeloid": 0.7582618579444879
+    },
+    "class_share": {
+     "epithelial": 0.553,
+     "immune_nonmyeloid": 0.199,
+     "myeloid": 0.071,
+     "other": 0.177
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9423685877137429,
+     "immune_nonmyeloid": 0.4505050505050505,
+     "myeloid": 0.40135135135135136
+    }
+   },
+   "gse303070_120131_280T": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.8928214997076317,
+    "per_class_auroc": {
+     "epithelial": 0.9452081941226722,
+     "immune_nonmyeloid": 0.8274927162269204,
+     "myeloid": 0.9057635887733022
+    },
+    "class_share": {
+     "epithelial": 0.814,
+     "immune_nonmyeloid": 0.015,
+     "myeloid": 0.097,
+     "other": 0.073
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9896992171405027,
+     "immune_nonmyeloid": 0.12835249042145594,
+     "myeloid": 0.7528604118993135
+    }
+   },
+   "gse303070_3461G_137T": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.5524110886404143,
+    "per_class_auroc": {
+     "epithelial": 0.6012441654878384,
+     "immune_nonmyeloid": 0.5390039085498637,
+     "myeloid": 0.5169851918835409
+    },
+    "class_share": {
+     "epithelial": 0.368,
+     "immune_nonmyeloid": 0.084,
+     "myeloid": 0.145,
+     "other": 0.402
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.4423253676470588,
+     "immune_nonmyeloid": 0.1265017667844523,
+     "myeloid": 0.24611650485436892
+    }
+   },
+   "gse303070_3461G_142T": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.5655349840575606,
+    "per_class_auroc": {
+     "epithelial": 0.5983908333122933,
+     "immune_nonmyeloid": 0.5521355154409822,
+     "myeloid": 0.5460786034194066
+    },
+    "class_share": {
+     "epithelial": 0.334,
+     "immune_nonmyeloid": 0.137,
+     "myeloid": 0.167,
+     "other": 0.362
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.45362318840579713,
+     "immune_nonmyeloid": 0.22054527750730282,
+     "myeloid": 0.3224469900073117
+    }
+   },
+   "gse303070_3461G_7T": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.8258607698901189,
+    "per_class_auroc": {
+     "epithelial": 0.9307426015238487,
+     "immune_nonmyeloid": 0.7157702412367897,
+     "myeloid": 0.8310694669097185
+    },
+    "class_share": {
+     "epithelial": 0.508,
+     "immune_nonmyeloid": 0.035,
+     "myeloid": 0.098,
+     "other": 0.359
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9657290656320724,
+     "immune_nonmyeloid": 0.1785334750265675,
+     "myeloid": 0.5886426592797784
+    }
+   },
+   "gse303070_Tumour_A_150T": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.7961465137884786,
+    "per_class_auroc": {
+     "epithelial": 0.9056770910382131,
+     "immune_nonmyeloid": 0.6722672347224862,
+     "myeloid": 0.8104952156047363
+    },
+    "class_share": {
+     "epithelial": 0.336,
+     "immune_nonmyeloid": 0.05,
+     "myeloid": 0.163,
+     "other": 0.451
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9049268668206313,
+     "immune_nonmyeloid": 0.20957838722881703,
+     "myeloid": 0.7216867469879518
+    }
+   },
+   "gse303070_Tumour_B_64T": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.7089251579244098,
+    "per_class_auroc": {
+     "epithelial": 0.8537694703340246,
+     "immune_nonmyeloid": 0.6298992474458127,
+     "myeloid": 0.6431067559933922
+    },
+    "class_share": {
+     "epithelial": 0.389,
+     "immune_nonmyeloid": 0.063,
+     "myeloid": 0.184,
+     "other": 0.363
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.8951111111111111,
+     "immune_nonmyeloid": 0.23606251457895966,
+     "myeloid": 0.5860530640995539
+    }
+   },
+   "gse303070_Tumour_B_73T": {
+    "config": "insitutype_spatial",
+    "heldout_auroc": 0.6430344544033705,
+    "per_class_auroc": {
+     "epithelial": 0.6607770493391983,
+     "immune_nonmyeloid": 0.5729380549565116,
+     "myeloid": 0.6953882589144013
+    },
+    "class_share": {
+     "epithelial": 0.042,
+     "immune_nonmyeloid": 0.329,
+     "myeloid": 0.176,
+     "other": 0.452
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.1754051477597712,
+     "immune_nonmyeloid": 0.46057692307692305,
+     "myeloid": 0.5656028368794326
+    }
+   }
+  },
+  "insitutype_no_prior": {
+   "bruker_kidney": {
+    "config": "insitutype",
+    "heldout_auroc": 0.6691029751567807,
+    "per_class_auroc": {
+     "epithelial": 0.818352556233546,
+     "immune_nonmyeloid": 0.5642427385910137,
+     "myeloid": 0.6247136306457824
+    },
+    "class_share": {
+     "epithelial": 0.364,
+     "immune_nonmyeloid": 0.028,
+     "myeloid": 0.446,
+     "other": 0.161
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9440720569752827,
+     "immune_nonmyeloid": 0.05213869906352822,
+     "myeloid": 0.8437970868910095
+    }
+   },
+   "bruker_mobreast": {
+    "config": "insitutype",
+    "heldout_auroc": 0.7769448330445505,
+    "per_class_auroc": {
+     "epithelial": 0.882324682331307,
+     "immune_nonmyeloid": 0.5730036095396492,
+     "myeloid": 0.8755062072626953
+    },
+    "class_share": {
+     "epithelial": 0.545,
+     "immune_nonmyeloid": 0.073,
+     "myeloid": 0.111,
+     "other": 0.271
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9633220910623946,
+     "immune_nonmyeloid": 0.23472257734594734,
+     "myeloid": 0.6502932551319648
+    }
+   },
+   "bruker_skin": {
+    "config": "insitutype",
+    "heldout_auroc": 0.8273135340335608,
+    "per_class_auroc": {
+     "epithelial": 0.9534718355937044,
+     "immune_nonmyeloid": 0.6776637419789235,
+     "myeloid": 0.8508050245280545
+    },
+    "class_share": {
+     "epithelial": 0.52,
+     "immune_nonmyeloid": 0.043,
+     "myeloid": 0.11,
+     "other": 0.328
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9894102990033222,
+     "immune_nonmyeloid": 0.21042424242424243,
+     "myeloid": 0.6748235294117647
+    }
+   },
+   "gse1_110": {
+    "config": "insitutype",
+    "heldout_auroc": 0.7030066679022017,
+    "per_class_auroc": {
+     "epithelial": 0.9056854204196031,
+     "immune_nonmyeloid": 0.548428808068449,
+     "myeloid": 0.6549057752185529
+    },
+    "class_share": {
+     "epithelial": 0.52,
+     "immune_nonmyeloid": 0.155,
+     "myeloid": 0.068,
+     "other": 0.256
+    },
+    "gated_macro_f1": 0.7090354160629471,
+    "marker_pos_recall": {
+     "epithelial": 0.9575318511116663,
+     "immune_nonmyeloid": 0.3638876093965914,
+     "myeloid": 0.2859007832898172
+    }
+   },
+   "gse1_120": {
+    "config": "insitutype",
+    "heldout_auroc": 0.7435348445327411,
+    "per_class_auroc": {
+     "epithelial": 0.9010090628599486,
+     "immune_nonmyeloid": 0.5613187470986178,
+     "myeloid": 0.7682767236396568
+    },
+    "class_share": {
+     "epithelial": 0.643,
+     "immune_nonmyeloid": 0.093,
+     "myeloid": 0.055,
+     "other": 0.209
+    },
+    "gated_macro_f1": 0.6945592918127299,
+    "marker_pos_recall": {
+     "epithelial": 0.9798181414947882,
+     "immune_nonmyeloid": 0.27663686880889105,
+     "myeloid": 0.2925754060324826
+    }
+   },
+   "gse1_210": {
+    "config": "insitutype",
+    "heldout_auroc": 0.6815096277146977,
+    "per_class_auroc": {
+     "epithelial": 0.815751421720887,
+     "immune_nonmyeloid": 0.5889234541557158,
+     "myeloid": 0.6398540072674903
+    },
+    "class_share": {
+     "epithelial": 0.56,
+     "immune_nonmyeloid": 0.153,
+     "myeloid": 0.069,
+     "other": 0.218
+    },
+    "gated_macro_f1": 0.6674299261187232,
+    "marker_pos_recall": {
+     "epithelial": null,
+     "immune_nonmyeloid": 0.42474916387959866,
+     "myeloid": null
+    }
+   },
+   "gse1_221": {
+    "config": "insitutype",
+    "heldout_auroc": 0.6315428819277623,
+    "per_class_auroc": {
+     "epithelial": 0.7114796788753293,
+     "immune_nonmyeloid": 0.5376801054262604,
+     "myeloid": 0.6454688614816975
+    },
+    "class_share": {
+     "epithelial": 0.577,
+     "immune_nonmyeloid": 0.142,
+     "myeloid": 0.044,
+     "other": 0.237
+    },
+    "gated_macro_f1": 0.5970348520464752,
+    "marker_pos_recall": {
+     "epithelial": null,
+     "immune_nonmyeloid": 0.2565752658086178,
+     "myeloid": null
+    }
+   },
+   "gse1_222": {
+    "config": "insitutype",
+    "heldout_auroc": 0.61785178183937,
+    "per_class_auroc": {
+     "epithelial": 0.7481485132649734,
+     "immune_nonmyeloid": 0.5492678710627695,
+     "myeloid": 0.5561389611903669
+    },
+    "class_share": {
+     "epithelial": 0.354,
+     "immune_nonmyeloid": 0.245,
+     "myeloid": 0.205,
+     "other": 0.196
+    },
+    "gated_macro_f1": 0.573254852735388,
+    "marker_pos_recall": {
+     "epithelial": 0.7829877474081055,
+     "immune_nonmyeloid": 0.45667662606297404,
+     "myeloid": 0.36818851251840945
+    }
+   },
+   "gse1_242": {
+    "config": "insitutype",
+    "heldout_auroc": 0.7083382307687538,
+    "per_class_auroc": {
+     "epithelial": 0.8971946182367851,
+     "immune_nonmyeloid": 0.5909748910721535,
+     "myeloid": 0.6368451829973228
+    },
+    "class_share": {
+     "epithelial": 0.596,
+     "immune_nonmyeloid": 0.137,
+     "myeloid": 0.053,
+     "other": 0.214
+    },
+    "gated_macro_f1": 0.683585195744516,
+    "marker_pos_recall": {
+     "epithelial": 0.9342369477911646,
+     "immune_nonmyeloid": 0.38869335679718436,
+     "myeloid": 0.15829145728643215
+    }
+   },
+   "gse303070_10501A_130T": {
+    "config": "insitutype",
+    "heldout_auroc": 0.8593907006903354,
+    "per_class_auroc": {
+     "epithelial": 0.9714312462686415,
+     "immune_nonmyeloid": 0.7494813963199963,
+     "myeloid": 0.8572594594823683
+    },
+    "class_share": {
+     "epithelial": 0.823,
+     "immune_nonmyeloid": 0.005,
+     "myeloid": 0.032,
+     "other": 0.14
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9939285714285714,
+     "immune_nonmyeloid": 0.031286210892236384,
+     "myeloid": 0.2651544779037935
+    }
+   },
+   "gse303070_10501A_74T": {
+    "config": "insitutype",
+    "heldout_auroc": 0.7373375972727075,
+    "per_class_auroc": {
+     "epithelial": 0.8537380098163789,
+     "immune_nonmyeloid": 0.7323039103966466,
+     "myeloid": 0.6259708716050969
+    },
+    "class_share": {
+     "epithelial": 0.57,
+     "immune_nonmyeloid": 0.058,
+     "myeloid": 0.105,
+     "other": 0.267
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9017316017316017,
+     "immune_nonmyeloid": 0.2950622240064231,
+     "myeloid": 0.27385159010600707
+    }
+   },
+   "gse303070_10501A_92T": {
+    "config": "insitutype",
+    "heldout_auroc": 0.7497590721030098,
+    "per_class_auroc": {
+     "epithelial": 0.7928747453271271,
+     "immune_nonmyeloid": 0.6915407933611666,
+     "myeloid": 0.7648616776207356
+    },
+    "class_share": {
+     "epithelial": 0.318,
+     "immune_nonmyeloid": 0.172,
+     "myeloid": 0.227,
+     "other": 0.284
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.7537212449255751,
+     "immune_nonmyeloid": 0.4965616045845272,
+     "myeloid": 0.7979393245563824
+    }
+   },
+   "gse303070_120131_170T": {
+    "config": "insitutype",
+    "heldout_auroc": 0.7046219745450388,
+    "per_class_auroc": {
+     "epithelial": 0.8744933801688392,
+     "immune_nonmyeloid": 0.5795725659994938,
+     "myeloid": 0.6597999774667835
+    },
+    "class_share": {
+     "epithelial": 0.731,
+     "immune_nonmyeloid": 0.016,
+     "myeloid": 0.05,
+     "other": 0.203
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9359817090597313,
+     "immune_nonmyeloid": 0.04681950274459154,
+     "myeloid": 0.2560823456019963
+    }
+   },
+   "gse303070_120131_280N": {
+    "config": "insitutype",
+    "heldout_auroc": 0.7350408062348183,
+    "per_class_auroc": {
+     "epithelial": 0.8087113824191926,
+     "immune_nonmyeloid": 0.6450479329624224,
+     "myeloid": 0.7513631033228401
+    },
+    "class_share": {
+     "epithelial": 0.538,
+     "immune_nonmyeloid": 0.202,
+     "myeloid": 0.073,
+     "other": 0.187
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9183027232425586,
+     "immune_nonmyeloid": 0.4531986531986532,
+     "myeloid": 0.4027027027027027
+    }
+   },
+   "gse303070_120131_280T": {
+    "config": "insitutype",
+    "heldout_auroc": 0.8880311595058666,
+    "per_class_auroc": {
+     "epithelial": 0.9395585449432697,
+     "immune_nonmyeloid": 0.8240300170784243,
+     "myeloid": 0.900504916495906
+    },
+    "class_share": {
+     "epithelial": 0.797,
+     "immune_nonmyeloid": 0.021,
+     "myeloid": 0.104,
+     "other": 0.078
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9839307787391842,
+     "immune_nonmyeloid": 0.17049808429118773,
+     "myeloid": 0.7894736842105263
+    }
+   },
+   "gse303070_3461G_137T": {
+    "config": "insitutype",
+    "heldout_auroc": 0.5495548638547665,
+    "per_class_auroc": {
+     "epithelial": 0.6019514364974956,
+     "immune_nonmyeloid": 0.5336597407242485,
+     "myeloid": 0.5130534143425555
+    },
+    "class_share": {
+     "epithelial": 0.349,
+     "immune_nonmyeloid": 0.092,
+     "myeloid": 0.151,
+     "other": 0.408
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.41750919117647056,
+     "immune_nonmyeloid": 0.13451118963486455,
+     "myeloid": 0.2512135922330097
+    }
+   },
+   "gse303070_3461G_142T": {
+    "config": "insitutype",
+    "heldout_auroc": 0.5649691826140616,
+    "per_class_auroc": {
+     "epithelial": 0.6008162030639841,
+     "immune_nonmyeloid": 0.5499007035051181,
+     "myeloid": 0.5441906412730828
+    },
+    "class_share": {
+     "epithelial": 0.314,
+     "immune_nonmyeloid": 0.148,
+     "myeloid": 0.172,
+     "other": 0.366
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.4265700483091787,
+     "immune_nonmyeloid": 0.23417721518987342,
+     "myeloid": 0.32780892030221787
+    }
+   },
+   "gse303070_3461G_7T": {
+    "config": "insitutype",
+    "heldout_auroc": 0.8143509106581753,
+    "per_class_auroc": {
+     "epithelial": 0.9308953191628505,
+     "immune_nonmyeloid": 0.7009383088642729,
+     "myeloid": 0.8112191039474026
+    },
+    "class_share": {
+     "epithelial": 0.5,
+     "immune_nonmyeloid": 0.04,
+     "myeloid": 0.106,
+     "other": 0.354
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9605560944067248,
+     "immune_nonmyeloid": 0.19518243003896563,
+     "myeloid": 0.606994459833795
+    }
+   },
+   "gse303070_Tumour_A_150T": {
+    "config": "insitutype",
+    "heldout_auroc": 0.7915552430074572,
+    "per_class_auroc": {
+     "epithelial": 0.8989678402951667,
+     "immune_nonmyeloid": 0.6670185661815515,
+     "myeloid": 0.8086793225456532
+    },
+    "class_share": {
+     "epithelial": 0.336,
+     "immune_nonmyeloid": 0.053,
+     "myeloid": 0.165,
+     "other": 0.446
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.8991531947652041,
+     "immune_nonmyeloid": 0.21899304134261155,
+     "myeloid": 0.7253012048192771
+    }
+   },
+   "gse303070_Tumour_B_64T": {
+    "config": "insitutype",
+    "heldout_auroc": 0.7047976998025239,
+    "per_class_auroc": {
+     "epithelial": 0.8541907129911667,
+     "immune_nonmyeloid": 0.622256533440976,
+     "myeloid": 0.6379458529754293
+    },
+    "class_share": {
+     "epithelial": 0.38,
+     "immune_nonmyeloid": 0.067,
+     "myeloid": 0.187,
+     "other": 0.366
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.876,
+     "immune_nonmyeloid": 0.24189409843713552,
+     "myeloid": 0.5860530640995539
+    }
+   },
+   "gse303070_Tumour_B_73T": {
+    "config": "insitutype",
+    "heldout_auroc": 0.6384090286278593,
+    "per_class_auroc": {
+     "epithelial": 0.6508986999839886,
+     "immune_nonmyeloid": 0.5708479850302894,
+     "myeloid": 0.6934804008692997
+    },
+    "class_share": {
+     "epithelial": 0.044,
+     "immune_nonmyeloid": 0.333,
+     "myeloid": 0.177,
+     "other": 0.446
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.1744518589132507,
+     "immune_nonmyeloid": 0.45865384615384613,
+     "myeloid": 0.5647163120567376
+    }
+   }
+  },
+  "logreg": {
+   "bruker_kidney": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.6368109121675108,
+    "per_class_auroc": {
+     "epithelial": 0.7381749213577921,
+     "immune_nonmyeloid": 0.5587176454108904,
+     "myeloid": 0.6135401697338502
+    },
+    "class_share": {
+     "epithelial": 0.43,
+     "immune_nonmyeloid": 0.081,
+     "myeloid": 0.331,
+     "other": 0.158
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.8831168831168831,
+     "immune_nonmyeloid": 0.13237155150594787,
+     "myeloid": 0.6516825715720743
+    }
+   },
+   "bruker_mobreast": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.6517266581203461,
+    "per_class_auroc": {
+     "epithelial": 0.803733788685034,
+     "immune_nonmyeloid": 0.49395233917045617,
+     "myeloid": 0.6574938465055483
+    },
+    "class_share": {
+     "epithelial": 0.401,
+     "immune_nonmyeloid": 0.266,
+     "myeloid": 0.199,
+     "other": 0.135
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.7126897133220911,
+     "immune_nonmyeloid": 0.4142163129634365,
+     "myeloid": 0.5789345063538612
+    }
+   },
+   "bruker_skin": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.6982707555927431,
+    "per_class_auroc": {
+     "epithelial": 0.78365602807597,
+     "immune_nonmyeloid": 0.5791134853868297,
+     "myeloid": 0.7320427533154296
+    },
+    "class_share": {
+     "epithelial": 0.692,
+     "immune_nonmyeloid": 0.038,
+     "myeloid": 0.148,
+     "other": 0.122
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9628322259136213,
+     "immune_nonmyeloid": 0.12993939393939394,
+     "myeloid": 0.596
+    }
+   },
+   "gse1_110": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.5866747975514377,
+    "per_class_auroc": {
+     "epithelial": 0.7474906344804149,
+     "immune_nonmyeloid": 0.5033623635056264,
+     "myeloid": 0.509171394668272
+    },
+    "class_share": {
+     "epithelial": 0.492,
+     "immune_nonmyeloid": 0.362,
+     "myeloid": 0.099,
+     "other": 0.047
+    },
+    "gated_macro_f1": 0.5705405020167852,
+    "marker_pos_recall": {
+     "epithelial": 0.7496877341993505,
+     "immune_nonmyeloid": 0.46867802855826807,
+     "myeloid": 0.21592689295039164
+    }
+   },
+   "gse1_120": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.6165905135160067,
+    "per_class_auroc": {
+     "epithelial": 0.7467382419801023,
+     "immune_nonmyeloid": 0.5016870172878052,
+     "myeloid": 0.6013462812801125
+    },
+    "class_share": {
+     "epithelial": 0.531,
+     "immune_nonmyeloid": 0.317,
+     "myeloid": 0.088,
+     "other": 0.063
+    },
+    "gated_macro_f1": 0.5778422480282487,
+    "marker_pos_recall": {
+     "epithelial": 0.7833222444000887,
+     "immune_nonmyeloid": 0.43150519449142305,
+     "myeloid": 0.2517401392111369
+    }
+   },
+   "gse1_210": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.5967620056052163,
+    "per_class_auroc": {
+     "epithelial": 0.7186316219817355,
+     "immune_nonmyeloid": 0.518008287772622,
+     "myeloid": 0.5536461070612916
+    },
+    "class_share": {
+     "epithelial": 0.441,
+     "immune_nonmyeloid": 0.383,
+     "myeloid": 0.12,
+     "other": 0.056
+    },
+    "gated_macro_f1": 0.5753509577364962,
+    "marker_pos_recall": {
+     "epithelial": null,
+     "immune_nonmyeloid": 0.49549781322356573,
+     "myeloid": null
+    }
+   },
+   "gse1_221": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.5719617832827995,
+    "per_class_auroc": {
+     "epithelial": 0.6604877215273305,
+     "immune_nonmyeloid": 0.4924379378692489,
+     "myeloid": 0.562959690451819
+    },
+    "class_share": {
+     "epithelial": 0.317,
+     "immune_nonmyeloid": 0.538,
+     "myeloid": 0.1,
+     "other": 0.044
+    },
+    "gated_macro_f1": 0.4408834495115772,
+    "marker_pos_recall": {
+     "epithelial": null,
+     "immune_nonmyeloid": 0.5092333519865697,
+     "myeloid": null
+    }
+   },
+   "gse1_222": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.5599806130807821,
+    "per_class_auroc": {
+     "epithelial": 0.6194416029006065,
+     "immune_nonmyeloid": 0.5177111866709981,
+     "myeloid": 0.5427890496707416
+    },
+    "class_share": {
+     "epithelial": 0.333,
+     "immune_nonmyeloid": 0.489,
+     "myeloid": 0.134,
+     "other": 0.045
+    },
+    "gated_macro_f1": 0.4561092651408204,
+    "marker_pos_recall": {
+     "epithelial": 0.5263901979264844,
+     "immune_nonmyeloid": 0.5842335095380372,
+     "myeloid": 0.2555228276877761
+    }
+   },
+   "gse1_242": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.5772945554972846,
+    "per_class_auroc": {
+     "epithelial": 0.7089432065974953,
+     "immune_nonmyeloid": 0.5242325112151702,
+     "myeloid": 0.49870794867918833
+    },
+    "class_share": {
+     "epithelial": 0.441,
+     "immune_nonmyeloid": 0.39,
+     "myeloid": 0.099,
+     "other": 0.07
+    },
+    "gated_macro_f1": 0.5490430153361584,
+    "marker_pos_recall": {
+     "epithelial": 0.6736947791164659,
+     "immune_nonmyeloid": 0.5059392872855257,
+     "myeloid": 0.15125628140703518
+    }
+   },
+   "gse303070_10501A_130T": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.7321324734373578,
+    "per_class_auroc": {
+     "epithelial": 0.9470412889380382,
+     "immune_nonmyeloid": 0.49786298344722074,
+     "myeloid": 0.7514931479268141
+    },
+    "class_share": {
+     "epithelial": 0.826,
+     "immune_nonmyeloid": 0.024,
+     "myeloid": 0.038,
+     "other": 0.112
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9775,
+     "immune_nonmyeloid": 0.04712244109694863,
+     "myeloid": 0.26202581149784904
+    }
+   },
+   "gse303070_10501A_74T": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.6540693411032584,
+    "per_class_auroc": {
+     "epithelial": 0.8033061040715249,
+     "immune_nonmyeloid": 0.5857299073622659,
+     "myeloid": 0.5731720118759847
+    },
+    "class_share": {
+     "epithelial": 0.566,
+     "immune_nonmyeloid": 0.115,
+     "myeloid": 0.119,
+     "other": 0.2
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.8454545454545455,
+     "immune_nonmyeloid": 0.3307908470493778,
+     "myeloid": 0.2416077738515901
+    }
+   },
+   "gse303070_10501A_92T": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.6559736911991104,
+    "per_class_auroc": {
+     "epithelial": 0.700338672462651,
+     "immune_nonmyeloid": 0.5886780398569568,
+     "myeloid": 0.6789043612777235
+    },
+    "class_share": {
+     "epithelial": 0.35,
+     "immune_nonmyeloid": 0.22,
+     "myeloid": 0.261,
+     "other": 0.169
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.6635994587280108,
+     "immune_nonmyeloid": 0.45873925501432666,
+     "myeloid": 0.68259874069834
+    }
+   },
+   "gse303070_120131_170T": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.6542981242610239,
+    "per_class_auroc": {
+     "epithelial": 0.847956622853958,
+     "immune_nonmyeloid": 0.494959756400512,
+     "myeloid": 0.6199779935286016
+    },
+    "class_share": {
+     "epithelial": 0.738,
+     "immune_nonmyeloid": 0.077,
+     "myeloid": 0.058,
+     "other": 0.127
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9119748499571306,
+     "immune_nonmyeloid": 0.11301259283177269,
+     "myeloid": 0.25701809107922646
+    }
+   },
+   "gse303070_120131_280N": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.6501839541691684,
+    "per_class_auroc": {
+     "epithelial": 0.7560014040436632,
+     "immune_nonmyeloid": 0.5710548839434537,
+     "myeloid": 0.6234955745203884
+    },
+    "class_share": {
+     "epithelial": 0.525,
+     "immune_nonmyeloid": 0.248,
+     "myeloid": 0.123,
+     "other": 0.105
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.8334388853704876,
+     "immune_nonmyeloid": 0.402020202020202,
+     "myeloid": 0.377027027027027
+    }
+   },
+   "gse303070_120131_280T": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.8319659829586404,
+    "per_class_auroc": {
+     "epithelial": 0.9175276028198671,
+     "immune_nonmyeloid": 0.686873484462756,
+     "myeloid": 0.8914968615932983
+    },
+    "class_share": {
+     "epithelial": 0.795,
+     "immune_nonmyeloid": 0.036,
+     "myeloid": 0.1,
+     "other": 0.068
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9608570251339101,
+     "immune_nonmyeloid": 0.19875478927203066,
+     "myeloid": 0.7633867276887872
+    }
+   },
+   "gse303070_3461G_137T": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.5208488603870126,
+    "per_class_auroc": {
+     "epithelial": 0.5471264438762158,
+     "immune_nonmyeloid": 0.5028084571243172,
+     "myeloid": 0.512611680160505
+    },
+    "class_share": {
+     "epithelial": 0.355,
+     "immune_nonmyeloid": 0.294,
+     "myeloid": 0.181,
+     "other": 0.171
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.4326746323529412,
+     "immune_nonmyeloid": 0.3498233215547703,
+     "myeloid": 0.22427184466019418
+    }
+   },
+   "gse303070_3461G_142T": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.5316123272449529,
+    "per_class_auroc": {
+     "epithelial": 0.5525166511626433,
+     "immune_nonmyeloid": 0.5073994601469558,
+     "myeloid": 0.5349208704252595
+    },
+    "class_share": {
+     "epithelial": 0.331,
+     "immune_nonmyeloid": 0.311,
+     "myeloid": 0.2,
+     "other": 0.158
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.4384057971014493,
+     "immune_nonmyeloid": 0.3661148977604674,
+     "myeloid": 0.2949061662198391
+    }
+   },
+   "gse303070_3461G_7T": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.739872989691086,
+    "per_class_auroc": {
+     "epithelial": 0.8957636459175868,
+     "immune_nonmyeloid": 0.5694814531324407,
+     "myeloid": 0.7543738700232299
+    },
+    "class_share": {
+     "epithelial": 0.533,
+     "immune_nonmyeloid": 0.089,
+     "myeloid": 0.118,
+     "other": 0.26
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9599094730035564,
+     "immune_nonmyeloid": 0.2624867162592986,
+     "myeloid": 0.5969529085872576
+    }
+   },
+   "gse303070_Tumour_A_150T": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.6894806773056068,
+    "per_class_auroc": {
+     "epithelial": 0.825393494913403,
+     "immune_nonmyeloid": 0.5236102977569138,
+     "myeloid": 0.7194382392465039
+    },
+    "class_share": {
+     "epithelial": 0.384,
+     "immune_nonmyeloid": 0.175,
+     "myeloid": 0.158,
+     "other": 0.283
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.8637413394919169,
+     "immune_nonmyeloid": 0.33360622185837085,
+     "myeloid": 0.5626506024096386
+    }
+   },
+   "gse303070_Tumour_B_64T": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.6264901613540063,
+    "per_class_auroc": {
+     "epithelial": 0.7614987428533043,
+     "immune_nonmyeloid": 0.5232027918338591,
+     "myeloid": 0.5947689493748555
+    },
+    "class_share": {
+     "epithelial": 0.39,
+     "immune_nonmyeloid": 0.295,
+     "myeloid": 0.136,
+     "other": 0.179
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.732,
+     "immune_nonmyeloid": 0.47655703289013296,
+     "myeloid": 0.3695703216717539
+    }
+   },
+   "gse303070_Tumour_B_73T": {
+    "config": "logreg_C0.1_ref",
+    "heldout_auroc": 0.5526302913417617,
+    "per_class_auroc": {
+     "epithelial": 0.5219553659928514,
+     "immune_nonmyeloid": 0.5372570185220258,
+     "myeloid": 0.5986784895104078
+    },
+    "class_share": {
+     "epithelial": 0.188,
+     "immune_nonmyeloid": 0.456,
+     "myeloid": 0.18,
+     "other": 0.175
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.2831267874165872,
+     "immune_nonmyeloid": 0.5355769230769231,
+     "myeloid": 0.3803191489361702
+    }
+   }
+  },
+  "scanvi": {
+   "bruker_kidney": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.7054238673003287,
+    "per_class_auroc": {
+     "epithelial": 0.881464467533643,
+     "immune_nonmyeloid": 0.5763208845091621,
+     "myeloid": 0.6584862498581812
+    },
+    "class_share": {
+     "epithelial": 0.296,
+     "immune_nonmyeloid": 0.141,
+     "myeloid": 0.36,
+     "other": 0.203
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9199832425638877,
+     "immune_nonmyeloid": 0.23538344722854973,
+     "myeloid": 0.8129080863887493
+    }
+   },
+   "bruker_mobreast": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.7535893849629054,
+    "per_class_auroc": {
+     "epithelial": 0.9184466187274527,
+     "immune_nonmyeloid": 0.47486346613770847,
+     "myeloid": 0.8674580700235551
+    },
+    "class_share": {
+     "epithelial": 0.454,
+     "immune_nonmyeloid": 0.216,
+     "myeloid": 0.125,
+     "other": 0.205
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.897133220910624,
+     "immune_nonmyeloid": 0.46918946560981845,
+     "myeloid": 0.6781524926686217
+    }
+   },
+   "bruker_skin": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.83241371136833,
+    "per_class_auroc": {
+     "epithelial": 0.9286530572285259,
+     "immune_nonmyeloid": 0.675569968582209,
+     "myeloid": 0.8930181082942553
+    },
+    "class_share": {
+     "epithelial": 0.547,
+     "immune_nonmyeloid": 0.07,
+     "myeloid": 0.092,
+     "other": 0.292
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.990656146179402,
+     "immune_nonmyeloid": 0.31587878787878787,
+     "myeloid": 0.6312941176470588
+    }
+   },
+   "gse1_110": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.7265258732524494,
+    "per_class_auroc": {
+     "epithelial": 0.9371318288641349,
+     "immune_nonmyeloid": 0.506499586216137,
+     "myeloid": 0.7359462046770763
+    },
+    "class_share": {
+     "epithelial": 0.454,
+     "immune_nonmyeloid": 0.365,
+     "myeloid": 0.049,
+     "other": 0.133
+    },
+    "gated_macro_f1": 0.6436129962218372,
+    "marker_pos_recall": {
+     "epithelial": 0.9108168873344992,
+     "immune_nonmyeloid": 0.5838323353293413,
+     "myeloid": 0.2590078328981723
+    }
+   },
+   "gse1_120": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.7242564251675067,
+    "per_class_auroc": {
+     "epithelial": 0.9074070134876033,
+     "immune_nonmyeloid": 0.5045454132277966,
+     "myeloid": 0.7608168487871201
+    },
+    "class_share": {
+     "epithelial": 0.542,
+     "immune_nonmyeloid": 0.257,
+     "myeloid": 0.063,
+     "other": 0.138
+    },
+    "gated_macro_f1": 0.6683366719080103,
+    "marker_pos_recall": {
+     "epithelial": 0.9279219339099578,
+     "immune_nonmyeloid": 0.4602561005073689,
+     "myeloid": 0.3211136890951276
+    }
+   },
+   "gse1_210": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.6691399450652149,
+    "per_class_auroc": {
+     "epithelial": 0.8225721289475714,
+     "immune_nonmyeloid": 0.5481232721526356,
+     "myeloid": 0.6367244340954379
+    },
+    "class_share": {
+     "epithelial": 0.529,
+     "immune_nonmyeloid": 0.277,
+     "myeloid": 0.059,
+     "other": 0.136
+    },
+    "gated_macro_f1": 0.6404710172677257,
+    "marker_pos_recall": {
+     "epithelial": null,
+     "immune_nonmyeloid": 0.5047594545922305,
+     "myeloid": null
+    }
+   },
+   "gse1_221": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.634123623496524,
+    "per_class_auroc": {
+     "epithelial": 0.7381597254548703,
+     "immune_nonmyeloid": 0.5000740642479591,
+     "myeloid": 0.6641370807867424
+    },
+    "class_share": {
+     "epithelial": 0.369,
+     "immune_nonmyeloid": 0.468,
+     "myeloid": 0.033,
+     "other": 0.13
+    },
+    "gated_macro_f1": 0.47340884400699046,
+    "marker_pos_recall": {
+     "epithelial": null,
+     "immune_nonmyeloid": 0.4790151091214326,
+     "myeloid": null
+    }
+   },
+   "gse1_222": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.6409937224846566,
+    "per_class_auroc": {
+     "epithelial": 0.7257597055529055,
+     "immune_nonmyeloid": 0.5289982056166037,
+     "myeloid": 0.6682232562844603
+    },
+    "class_share": {
+     "epithelial": 0.315,
+     "immune_nonmyeloid": 0.552,
+     "myeloid": 0.077,
+     "other": 0.056
+    },
+    "gated_macro_f1": 0.5677185321517405,
+    "marker_pos_recall": {
+     "epithelial": 0.6451460885956645,
+     "immune_nonmyeloid": 0.7379912663755459,
+     "myeloid": 0.3080510554737359
+    }
+   },
+   "gse1_242": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.702929620208892,
+    "per_class_auroc": {
+     "epithelial": 0.8890418331586155,
+     "immune_nonmyeloid": 0.5388204670850144,
+     "myeloid": 0.6809265603830466
+    },
+    "class_share": {
+     "epithelial": 0.527,
+     "immune_nonmyeloid": 0.29,
+     "myeloid": 0.041,
+     "other": 0.142
+    },
+    "gated_macro_f1": 0.6339137706450788,
+    "marker_pos_recall": {
+     "epithelial": 0.8888052208835341,
+     "immune_nonmyeloid": 0.5384953805543334,
+     "myeloid": 0.1399497487437186
+    }
+   },
+   "gse303070_10501A_130T": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.7904053254584106,
+    "per_class_auroc": {
+     "epithelial": 0.9679230085637074,
+     "immune_nonmyeloid": 0.5409531472184465,
+     "myeloid": 0.8623398205930779
+    },
+    "class_share": {
+     "epithelial": 0.812,
+     "immune_nonmyeloid": 0.023,
+     "myeloid": 0.033,
+     "other": 0.132
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9853571428571428,
+     "immune_nonmyeloid": 0.062186172267284665,
+     "myeloid": 0.2764958936253422
+    }
+   },
+   "gse303070_10501A_74T": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.7127221795771165,
+    "per_class_auroc": {
+     "epithelial": 0.8507614222998302,
+     "immune_nonmyeloid": 0.6785099909891547,
+     "myeloid": 0.6088951254423645
+    },
+    "class_share": {
+     "epithelial": 0.549,
+     "immune_nonmyeloid": 0.119,
+     "myeloid": 0.106,
+     "other": 0.226
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.8857142857142857,
+     "immune_nonmyeloid": 0.4853472501003613,
+     "myeloid": 0.27252650176678445
+    }
+   },
+   "gse303070_10501A_92T": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.7477977267127839,
+    "per_class_auroc": {
+     "epithelial": 0.8207610794060303,
+     "immune_nonmyeloid": 0.652152067579686,
+     "myeloid": 0.7704800331526354
+    },
+    "class_share": {
+     "epithelial": 0.369,
+     "immune_nonmyeloid": 0.303,
+     "myeloid": 0.172,
+     "other": 0.156
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.8414073071718539,
+     "immune_nonmyeloid": 0.7510028653295129,
+     "myeloid": 0.6940469376073268
+    }
+   },
+   "gse303070_120131_170T": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.6704021429565376,
+    "per_class_auroc": {
+     "epithelial": 0.8748494565190432,
+     "immune_nonmyeloid": 0.5076099808972222,
+     "myeloid": 0.6287469914533476
+    },
+    "class_share": {
+     "epithelial": 0.667,
+     "immune_nonmyeloid": 0.119,
+     "myeloid": 0.063,
+     "other": 0.15
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.8739639897113461,
+     "immune_nonmyeloid": 0.19793348401679045,
+     "myeloid": 0.2913287585776669
+    }
+   },
+   "gse303070_120131_280N": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.7320686237629203,
+    "per_class_auroc": {
+     "epithelial": 0.797726017240101,
+     "immune_nonmyeloid": 0.6379824577172807,
+     "myeloid": 0.7604973963313789
+    },
+    "class_share": {
+     "epithelial": 0.555,
+     "immune_nonmyeloid": 0.226,
+     "myeloid": 0.076,
+     "other": 0.143
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9601013299556681,
+     "immune_nonmyeloid": 0.49764309764309766,
+     "myeloid": 0.41486486486486485
+    }
+   },
+   "gse303070_120131_280T": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.8661595589049002,
+    "per_class_auroc": {
+     "epithelial": 0.9232404428935103,
+     "immune_nonmyeloid": 0.7991165627063226,
+     "myeloid": 0.8761216711148678
+    },
+    "class_share": {
+     "epithelial": 0.771,
+     "immune_nonmyeloid": 0.041,
+     "myeloid": 0.112,
+     "other": 0.077
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9649773382777092,
+     "immune_nonmyeloid": 0.3031609195402299,
+     "myeloid": 0.8334096109839817
+    }
+   },
+   "gse303070_3461G_137T": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.5426348200541242,
+    "per_class_auroc": {
+     "epithelial": 0.6128440276423942,
+     "immune_nonmyeloid": 0.5078828001013387,
+     "myeloid": 0.5071776324186397
+    },
+    "class_share": {
+     "epithelial": 0.191,
+     "immune_nonmyeloid": 0.529,
+     "myeloid": 0.135,
+     "other": 0.146
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.21185661764705882,
+     "immune_nonmyeloid": 0.6603062426383981,
+     "myeloid": 0.21432038834951456
+    }
+   },
+   "gse303070_3461G_142T": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.5609385584747816,
+    "per_class_auroc": {
+     "epithelial": 0.6041477682725545,
+     "immune_nonmyeloid": 0.5364154155233359,
+     "myeloid": 0.5422524916284543
+    },
+    "class_share": {
+     "epithelial": 0.2,
+     "immune_nonmyeloid": 0.531,
+     "myeloid": 0.162,
+     "other": 0.106
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.35096618357487924,
+     "immune_nonmyeloid": 0.684761441090555,
+     "myeloid": 0.31976602485985867
+    }
+   },
+   "gse303070_3461G_7T": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.7835835910173697,
+    "per_class_auroc": {
+     "epithelial": 0.9348117284231626,
+     "immune_nonmyeloid": 0.6288173828314879,
+     "myeloid": 0.7871216617974586
+    },
+    "class_share": {
+     "epithelial": 0.492,
+     "immune_nonmyeloid": 0.105,
+     "myeloid": 0.118,
+     "other": 0.285
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.962172647914646,
+     "immune_nonmyeloid": 0.38930216082182073,
+     "myeloid": 0.6516620498614959
+    }
+   },
+   "gse303070_Tumour_A_150T": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.7785517114387789,
+    "per_class_auroc": {
+     "epithelial": 0.8806958490079588,
+     "immune_nonmyeloid": 0.6219776402718229,
+     "myeloid": 0.8329816450365551
+    },
+    "class_share": {
+     "epithelial": 0.379,
+     "immune_nonmyeloid": 0.093,
+     "myeloid": 0.156,
+     "other": 0.372
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.9530408006158584,
+     "immune_nonmyeloid": 0.3250102333196889,
+     "myeloid": 0.7156626506024096
+    }
+   },
+   "gse303070_Tumour_B_64T": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.6831532855635915,
+    "per_class_auroc": {
+     "epithelial": 0.8745873718573332,
+     "immune_nonmyeloid": 0.5972425320310384,
+     "myeloid": 0.5776299528024028
+    },
+    "class_share": {
+     "epithelial": 0.371,
+     "immune_nonmyeloid": 0.115,
+     "myeloid": 0.244,
+     "other": 0.27
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.8853333333333333,
+     "immune_nonmyeloid": 0.35712619547469093,
+     "myeloid": 0.641230335759568
+    }
+   },
+   "gse303070_Tumour_B_73T": {
+    "config": "nl30_nb",
+    "heldout_auroc": 0.626025425759454,
+    "per_class_auroc": {
+     "epithelial": 0.5142057875303309,
+     "immune_nonmyeloid": 0.5991017895364333,
+     "myeloid": 0.7647687002115977
+    },
+    "class_share": {
+     "epithelial": 0.44,
+     "immune_nonmyeloid": 0.276,
+     "myeloid": 0.096,
+     "other": 0.187
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.674928503336511,
+     "immune_nonmyeloid": 0.41346153846153844,
+     "myeloid": 0.39095744680851063
+    }
+   }
+  },
+  "tangram": {
+   "bruker_kidney": {
+    "config": "uniform",
+    "heldout_auroc": 0.6516733888391196,
+    "per_class_auroc": {
+     "epithelial": 0.8613084796949348,
+     "immune_nonmyeloid": 0.49785745020754796,
+     "myeloid": 0.5958542366148759
+    },
+    "class_share": {
+     "epithelial": 0.035,
+     "immune_nonmyeloid": 0.619,
+     "myeloid": 0.244,
+     "other": 0.102
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.13573523250942607,
+     "immune_nonmyeloid": 0.7608200455580866,
+     "myeloid": 0.3756906077348066
+    }
+   },
+   "bruker_mobreast": {
+    "config": "uniform",
+    "heldout_auroc": 0.6353590156785742,
+    "per_class_auroc": {
+     "epithelial": 0.7579571896805397,
+     "immune_nonmyeloid": 0.45260889063460896,
+     "myeloid": 0.6955109667205738
+    },
+    "class_share": {
+     "epithelial": 0.123,
+     "immune_nonmyeloid": 0.577,
+     "myeloid": 0.096,
+     "other": 0.204
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.23946037099494097,
+     "immune_nonmyeloid": 0.7760163641012529,
+     "myeloid": 0.3308895405669599
+    }
+   },
+   "bruker_skin": {
+    "config": "uniform",
+    "heldout_auroc": 0.6503676476762555,
+    "per_class_auroc": {
+     "epithelial": 0.7262084290716022,
+     "immune_nonmyeloid": 0.5978443326239502,
+     "myeloid": 0.6270501813332144
+    },
+    "class_share": {
+     "epithelial": 0.434,
+     "immune_nonmyeloid": 0.135,
+     "myeloid": 0.308,
+     "other": 0.123
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.7043189368770764,
+     "immune_nonmyeloid": 0.37503030303030305,
+     "myeloid": 0.7903529411764706
+    }
+   },
+   "gse1_110": {
+    "config": "uniform",
+    "heldout_auroc": 0.5883310815962598,
+    "per_class_auroc": {
+     "epithelial": 0.7819922865707034,
+     "immune_nonmyeloid": 0.500195658303457,
+     "myeloid": 0.48280529991461885
+    },
+    "class_share": {
+     "epithelial": 0.083,
+     "immune_nonmyeloid": 0.458,
+     "myeloid": 0.227,
+     "other": 0.233
+    },
+    "gated_macro_f1": 0.2741988762723764,
+    "marker_pos_recall": {
+     "epithelial": 0.14464151886085436,
+     "immune_nonmyeloid": 0.5877475817595578,
+     "myeloid": 0.3357702349869452
+    }
+   },
+   "gse1_120": {
+    "config": "uniform",
+    "heldout_auroc": 0.6083501035315583,
+    "per_class_auroc": {
+     "epithelial": 0.7869828343874282,
+     "immune_nonmyeloid": 0.47264866588910437,
+     "myeloid": 0.5654188103181425
+    },
+    "class_share": {
+     "epithelial": 0.096,
+     "immune_nonmyeloid": 0.556,
+     "myeloid": 0.131,
+     "other": 0.218
+    },
+    "gated_macro_f1": 0.2432688683359504,
+    "marker_pos_recall": {
+     "epithelial": 0.2078066090042138,
+     "immune_nonmyeloid": 0.6578883788354675,
+     "myeloid": 0.2394431554524362
+    }
+   },
+   "gse1_210": {
+    "config": "uniform",
+    "heldout_auroc": 0.599614323754839,
+    "per_class_auroc": {
+     "epithelial": 0.756640483410433,
+     "immune_nonmyeloid": 0.5002950849463262,
+     "myeloid": 0.5419074029077577
+    },
+    "class_share": {
+     "epithelial": 0.089,
+     "immune_nonmyeloid": 0.506,
+     "myeloid": 0.167,
+     "other": 0.237
+    },
+    "gated_macro_f1": 0.3005477016821033,
+    "marker_pos_recall": {
+     "epithelial": null,
+     "immune_nonmyeloid": 0.5093902752765629,
+     "myeloid": null
+    }
+   },
+   "gse1_221": {
+    "config": "uniform",
+    "heldout_auroc": 0.6027941084449285,
+    "per_class_auroc": {
+     "epithelial": 0.8026934713406537,
+     "immune_nonmyeloid": 0.49214003019896074,
+     "myeloid": 0.5135488237951711
+    },
+    "class_share": {
+     "epithelial": 0.091,
+     "immune_nonmyeloid": 0.453,
+     "myeloid": 0.212,
+     "other": 0.243
+    },
+    "gated_macro_f1": 0.28959094123383367,
+    "marker_pos_recall": {
+     "epithelial": null,
+     "immune_nonmyeloid": 0.4093452714045887,
+     "myeloid": null
+    }
+   },
+   "gse1_222": {
+    "config": "uniform",
+    "heldout_auroc": 0.5850650861668835,
+    "per_class_auroc": {
+     "epithelial": 0.740681280204602,
+     "immune_nonmyeloid": 0.47883464345566124,
+     "myeloid": 0.5356793348403869
+    },
+    "class_share": {
+     "epithelial": 0.056,
+     "immune_nonmyeloid": 0.537,
+     "myeloid": 0.171,
+     "other": 0.236
+    },
+    "gated_macro_f1": 0.21767286952307352,
+    "marker_pos_recall": {
+     "epithelial": 0.11946277097078228,
+     "immune_nonmyeloid": 0.5076993794529993,
+     "myeloid": 0.250613647520864
+    }
+   },
+   "gse1_242": {
+    "config": "uniform",
+    "heldout_auroc": 0.5856382630246673,
+    "per_class_auroc": {
+     "epithelial": 0.7343527908943326,
+     "immune_nonmyeloid": 0.47971821732625425,
+     "myeloid": 0.5428437808534149
+    },
+    "class_share": {
+     "epithelial": 0.074,
+     "immune_nonmyeloid": 0.563,
+     "myeloid": 0.136,
+     "other": 0.227
+    },
+    "gated_macro_f1": 0.23689548026862228,
+    "marker_pos_recall": {
+     "epithelial": 0.12073293172690763,
+     "immune_nonmyeloid": 0.6011878574571051,
+     "myeloid": 0.18216080402010051
+    }
+   },
+   "gse303070_10501A_130T": {
+    "config": "uniform",
+    "heldout_auroc": 0.5469516778821238,
+    "per_class_auroc": {
+     "epithelial": 0.6027464740988776,
+     "immune_nonmyeloid": 0.46990063922912473,
+     "myeloid": 0.568207920318369
+    },
+    "class_share": {
+     "epithelial": 0.07,
+     "immune_nonmyeloid": 0.563,
+     "myeloid": 0.137,
+     "other": 0.23
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.07035714285714285,
+     "immune_nonmyeloid": 0.5797605252993434,
+     "myeloid": 0.23582323034806413
+    }
+   },
+   "gse303070_10501A_74T": {
+    "config": "uniform",
+    "heldout_auroc": 0.6017670996489106,
+    "per_class_auroc": {
+     "epithelial": 0.7322451030899461,
+     "immune_nonmyeloid": 0.501829030754983,
+     "myeloid": 0.5712271651018029
+    },
+    "class_share": {
+     "epithelial": 0.117,
+     "immune_nonmyeloid": 0.519,
+     "myeloid": 0.132,
+     "other": 0.232
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.19567099567099566,
+     "immune_nonmyeloid": 0.7262143717382578,
+     "myeloid": 0.18021201413427562
+    }
+   },
+   "gse303070_10501A_92T": {
+    "config": "uniform",
+    "heldout_auroc": 0.6566567312710084,
+    "per_class_auroc": {
+     "epithelial": 0.7879323482305103,
+     "immune_nonmyeloid": 0.5364696263349847,
+     "myeloid": 0.6455682192475302
+    },
+    "class_share": {
+     "epithelial": 0.106,
+     "immune_nonmyeloid": 0.516,
+     "myeloid": 0.14,
+     "other": 0.238
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.31447902571041947,
+     "immune_nonmyeloid": 0.7449856733524355,
+     "myeloid": 0.34802518603319976
+    }
+   },
+   "gse303070_120131_170T": {
+    "config": "uniform",
+    "heldout_auroc": 0.5841520206570701,
+    "per_class_auroc": {
+     "epithelial": 0.7244301738320938,
+     "immune_nonmyeloid": 0.47606603794094815,
+     "myeloid": 0.5519598501981682
+    },
+    "class_share": {
+     "epithelial": 0.107,
+     "immune_nonmyeloid": 0.528,
+     "myeloid": 0.135,
+     "other": 0.229
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.17347813661046013,
+     "immune_nonmyeloid": 0.5747497578301582,
+     "myeloid": 0.2336244541484716
+    }
+   },
+   "gse303070_120131_280N": {
+    "config": "uniform",
+    "heldout_auroc": 0.6244165911730213,
+    "per_class_auroc": {
+     "epithelial": 0.7882076187915172,
+     "immune_nonmyeloid": 0.498734793038957,
+     "myeloid": 0.5863073616885897
+    },
+    "class_share": {
+     "epithelial": 0.095,
+     "immune_nonmyeloid": 0.529,
+     "myeloid": 0.14,
+     "other": 0.236
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.24129195693476885,
+     "immune_nonmyeloid": 0.6047138047138048,
+     "myeloid": 0.3108108108108108
+    }
+   },
+   "gse303070_120131_280T": {
+    "config": "uniform",
+    "heldout_auroc": 0.579614513499047,
+    "per_class_auroc": {
+     "epithelial": 0.607354518332277,
+     "immune_nonmyeloid": 0.4965795277998318,
+     "myeloid": 0.6349094943650321
+    },
+    "class_share": {
+     "epithelial": 0.082,
+     "immune_nonmyeloid": 0.523,
+     "myeloid": 0.149,
+     "other": 0.246
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.07375360527400082,
+     "immune_nonmyeloid": 0.6776819923371648,
+     "myeloid": 0.445766590389016
+    }
+   },
+   "gse303070_3461G_137T": {
+    "config": "uniform",
+    "heldout_auroc": 0.5347133017198494,
+    "per_class_auroc": {
+     "epithelial": 0.5952173724098857,
+     "immune_nonmyeloid": 0.4606780024858349,
+     "myeloid": 0.5482445302638277
+    },
+    "class_share": {
+     "epithelial": 0.088,
+     "immune_nonmyeloid": 0.553,
+     "myeloid": 0.131,
+     "other": 0.228
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.07628676470588236,
+     "immune_nonmyeloid": 0.6183745583038869,
+     "myeloid": 0.16334951456310678
+    }
+   },
+   "gse303070_3461G_142T": {
+    "config": "uniform",
+    "heldout_auroc": 0.5548734885023121,
+    "per_class_auroc": {
+     "epithelial": 0.6246544701650628,
+     "immune_nonmyeloid": 0.4727377109784815,
+     "myeloid": 0.567228284363392
+    },
+    "class_share": {
+     "epithelial": 0.078,
+     "immune_nonmyeloid": 0.543,
+     "myeloid": 0.142,
+     "other": 0.238
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.09855072463768116,
+     "immune_nonmyeloid": 0.6122200584225901,
+     "myeloid": 0.21252741896173533
+    }
+   },
+   "gse303070_3461G_7T": {
+    "config": "uniform",
+    "heldout_auroc": 0.6475061603776747,
+    "per_class_auroc": {
+     "epithelial": 0.793970813205855,
+     "immune_nonmyeloid": 0.493957191588054,
+     "myeloid": 0.6545904763391153
+    },
+    "class_share": {
+     "epithelial": 0.119,
+     "immune_nonmyeloid": 0.517,
+     "myeloid": 0.126,
+     "other": 0.238
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.2518590365341093,
+     "immune_nonmyeloid": 0.6989018774353525,
+     "myeloid": 0.40962603878116344
+    }
+   },
+   "gse303070_Tumour_A_150T": {
+    "config": "uniform",
+    "heldout_auroc": 0.6716684588737252,
+    "per_class_auroc": {
+     "epithelial": 0.8491863239432669,
+     "immune_nonmyeloid": 0.48159591130452917,
+     "myeloid": 0.6842231413733794
+    },
+    "class_share": {
+     "epithelial": 0.102,
+     "immune_nonmyeloid": 0.529,
+     "myeloid": 0.136,
+     "other": 0.232
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.29753656658968436,
+     "immune_nonmyeloid": 0.6966844044207942,
+     "myeloid": 0.3827309236947791
+    }
+   },
+   "gse303070_Tumour_B_64T": {
+    "config": "uniform",
+    "heldout_auroc": 0.6365349619672291,
+    "per_class_auroc": {
+     "epithelial": 0.8159149279287621,
+     "immune_nonmyeloid": 0.4921742056985339,
+     "myeloid": 0.6015157522743914
+    },
+    "class_share": {
+     "epithelial": 0.116,
+     "immune_nonmyeloid": 0.512,
+     "myeloid": 0.146,
+     "other": 0.226
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.26222222222222225,
+     "immune_nonmyeloid": 0.6643340331233963,
+     "myeloid": 0.29725287626203334
+    }
+   },
+   "gse303070_Tumour_B_73T": {
+    "config": "uniform",
+    "heldout_auroc": 0.5632590733450238,
+    "per_class_auroc": {
+     "epithelial": 0.5660829619019612,
+     "immune_nonmyeloid": 0.5049991982734711,
+     "myeloid": 0.6186950598596394
+    },
+    "class_share": {
+     "epithelial": 0.058,
+     "immune_nonmyeloid": 0.53,
+     "myeloid": 0.164,
+     "other": 0.248
+    },
+    "gated_macro_f1": null,
+    "marker_pos_recall": {
+     "epithelial": 0.12202097235462345,
+     "immune_nonmyeloid": 0.6067307692307692,
+     "myeloid": 0.350177304964539
+    }
+   }
+  }
+ },
+ "f3_per_crop": {
+  "allen_animal1_C57BL6J-1.086": {
+   "floor_v3": 0.14203901434397384,
+   "floor_v2": 0.12402795287573028,
+   "lightgbm": 0.1300009869938678,
+   "ncem_linear": 0.074604181813039,
+   "ncem_ed": 0.06547861404630242
+  },
+  "allen_animal2_C57BL6J-2.039": {
+   "floor_v3": 0.17762699105193536,
+   "floor_v2": 0.15274035985254023,
+   "lightgbm": 0.1435675121343623,
+   "ncem_linear": 0.07724283391574395,
+   "ncem_ed": 0.07604794270264253
+  },
+  "allen_animal3_C57BL6J-3.003": {
+   "floor_v3": 0.12677476003041196,
+   "floor_v2": 0.10589197680484179,
+   "lightgbm": 0.10445700568639517,
+   "ncem_linear": 0.05819738413645626,
+   "ncem_ed": 0.04890181434562986
+  },
+  "allen_yao638850_C57BL6J-638850.36": {
+   "floor_v3": 0.17023978028141476,
+   "floor_v2": 0.1260745805324542,
+   "lightgbm": 0.13126047134159174,
+   "ncem_linear": 0.057160889127970016,
+   "ncem_ed": 0.05627584458622833
+  },
+  "bruker_kidney": {
+   "floor_v3": 0.06936144558742507,
+   "floor_v2": 0.06481641019168757,
+   "lightgbm": 0.05117573304492994,
+   "ncem_linear": 0.046853667143213595,
+   "ncem_ed": 0.03707477766673626
+  },
+  "bruker_mobreast": {
+   "floor_v3": 0.05710462244065627,
+   "floor_v2": 0.04050565599626809,
+   "lightgbm": 0.04539745868098552,
+   "ncem_linear": 0.042225945735315636,
+   "ncem_ed": 0.03671178951999015
+  },
+  "bruker_skin": {
+   "floor_v3": 0.09284328747748084,
+   "floor_v2": 0.07181045921327588,
+   "lightgbm": 0.07807913887781003,
+   "ncem_linear": 0.05540919670975758,
+   "ncem_ed": 0.044832185930403785
+  },
+  "gse1_110": {
+   "floor_v3": 0.046189796529478605,
+   "floor_v2": 0.029432879679664885,
+   "lightgbm": 0.029566800440898044,
+   "ncem_linear": 0.018702235950730246,
+   "ncem_ed": 0.011727646432521817
+  },
+  "gse1_120": {
+   "floor_v3": 0.07313592198157166,
+   "floor_v2": 0.05536706978023691,
+   "lightgbm": 0.06191108028721504,
+   "ncem_linear": 0.03870495911689439,
+   "ncem_ed": 0.02917462581794245
+  },
+  "gse1_210": {
+   "floor_v3": 0.04753229589003577,
+   "floor_v2": 0.041648492222508236,
+   "lightgbm": 0.03776629863638517,
+   "ncem_linear": 0.0342882072250311,
+   "ncem_ed": 0.02210059882680974
+  },
+  "gse1_221": {
+   "floor_v3": 0.03646540531195896,
+   "floor_v2": 0.03490425973677523,
+   "lightgbm": 0.016742539041956765,
+   "ncem_linear": 0.01784020662571586,
+   "ncem_ed": 0.014940245209647911
+  },
+  "gse1_222": {
+   "floor_v3": 0.028200354467060745,
+   "floor_v2": 0.02252780190045661,
+   "lightgbm": 0.018208378329819596,
+   "ncem_linear": 0.022883308523709116,
+   "ncem_ed": 0.016578850399425003
+  },
+  "gse1_242": {
+   "floor_v3": 0.04366952827415616,
+   "floor_v2": 0.03766895124016975,
+   "lightgbm": 0.03539141856640339,
+   "ncem_linear": 0.036081617208913626,
+   "ncem_ed": 0.03460487189394611
+  },
+  "gse303070_10501A_130T": {
+   "floor_v3": 0.07293691882186829,
+   "floor_v2": 0.0529626819025828,
+   "lightgbm": 0.06541437031820971,
+   "ncem_linear": 0.04268125048551451,
+   "ncem_ed": 0.03858181952351741
+  },
+  "gse303070_10501A_74T": {
+   "floor_v3": 0.06890672004557423,
+   "floor_v2": 0.05542724033236138,
+   "lightgbm": 0.0575998092093093,
+   "ncem_linear": 0.029906039716854356,
+   "ncem_ed": 0.034136740828541706
+  },
+  "gse303070_10501A_92T": {
+   "floor_v3": 0.06778623361660575,
+   "floor_v2": 0.0532188489119631,
+   "lightgbm": 0.0597005428431612,
+   "ncem_linear": 0.030586822250044325,
+   "ncem_ed": 0.02476754591269853
+  },
+  "gse303070_120131_280N": {
+   "floor_v3": 0.057815882622180625,
+   "floor_v2": 0.044020879819969064,
+   "lightgbm": 0.042198481181214144,
+   "ncem_linear": 0.030622799641978688,
+   "ncem_ed": 0.03664651347623495
+  },
+  "gse303070_3461G_137T": {
+   "floor_v3": 0.013245540137725628,
+   "floor_v2": 0.007955554446285068,
+   "lightgbm": 0.012492101806906436,
+   "ncem_linear": 0.012614523988116898,
+   "ncem_ed": -0.0009169411122795655
+  },
+  "gse303070_3461G_142T": {
+   "floor_v3": 0.02379870848507687,
+   "floor_v2": 0.00858720762671717,
+   "lightgbm": 0.0159354383472675,
+   "ncem_linear": 0.0025985981767259335,
+   "ncem_ed": -0.0004245339430657161
+  },
+  "gse303070_Tumour_A_150T": {
+   "floor_v3": 0.08266989893474433,
+   "floor_v2": 0.06694947322603485,
+   "lightgbm": 0.059444803699134754,
+   "ncem_linear": 0.03265968964184377,
+   "ncem_ed": 0.029514913050593648
+  },
+  "gse303070_Tumour_B_64T": {
+   "floor_v3": 0.07230561759884821,
+   "floor_v2": 0.04689320367790523,
+   "lightgbm": 0.047529929227239275,
+   "ncem_linear": 0.03493751070907738,
+   "ncem_ed": 0.024884795106377002
+  },
+  "gse303070_Tumour_B_73T": {
+   "floor_v3": 0.027098752117386295,
+   "floor_v2": 0.02482900794364225,
+   "lightgbm": 0.013621804509141027,
+   "ncem_linear": 0.01886827281655155,
+   "ncem_ed": 0.00863319706417288
+  }
+ },
+ "f5_summary": {
+  "floor": {
+   "n_crops": 21,
+   "heldout_auroc": 0.7231827851179587,
+   "gated_macro_f1_gse1": 0.6574797645312899,
+   "marker_pos_recall": {
+    "epithelial": 0.8429563431044914,
+    "immune_nonmyeloid": 0.25865270727779077,
+    "myeloid": 0.47200685107683144
+   },
+   "marker_pos_recall_n_crops": {
+    "epithelial": 19,
+    "immune_nonmyeloid": 21,
+    "myeloid": 19
+   },
+   "class_share": {
+    "epithelial": 0.5052380952380953,
+    "immune_nonmyeloid": 0.10423809523809524,
+    "myeloid": 0.12614285714285714,
+    "other": 0.2641428571428572
+   }
+  },
+  "insitutype_no_prior": {
+   "n_crops": 21,
+   "heldout_auroc": 0.7189030293255733,
+   "gated_macro_f1_gse1": 0.6541499224201299,
+   "marker_pos_recall": {
+    "epithelial": 0.8312219027128829,
+    "immune_nonmyeloid": 0.26863535762392815,
+    "myeloid": 0.4800611425783095
+   },
+   "marker_pos_recall_n_crops": {
+    "epithelial": 19,
+    "immune_nonmyeloid": 21,
+    "myeloid": 19
+   },
+   "class_share": {
+    "epithelial": 0.4942380952380953,
+    "immune_nonmyeloid": 0.10838095238095237,
+    "myeloid": 0.12904761904761905,
+    "other": 0.26833333333333326
+   }
+  },
+  "logreg": {
+   "n_crops": 21,
+   "heldout_auroc": 0.6350300699460532,
+   "gated_macro_f1_gse1": 0.5282949062950143,
+   "marker_pos_recall": {
+    "epithelial": 0.7470745564213431,
+    "immune_nonmyeloid": 0.359343794484609,
+    "myeloid": 0.40596833597420784
+   },
+   "marker_pos_recall_n_crops": {
+    "epithelial": 19,
+    "immune_nonmyeloid": 21,
+    "myeloid": 19
+   },
+   "class_share": {
+    "epithelial": 0.47900000000000004,
+    "immune_nonmyeloid": 0.24780952380952384,
+    "myeloid": 0.14238095238095239,
+    "other": 0.1308095238095238
+   }
+  },
+  "scanvi": {
+   "n_crops": 21,
+   "heldout_auroc": 0.7087542439517894,
+   "gated_macro_f1_gse1": 0.6045769720335638,
+   "marker_pos_recall": {
+    "epithelial": 0.8279095905519928,
+    "immune_nonmyeloid": 0.45009728323339904,
+    "myeloid": 0.4666709729780268
+   },
+   "marker_pos_recall_n_crops": {
+    "epithelial": 19,
+    "immune_nonmyeloid": 21,
+    "myeloid": 19
+   },
+   "class_share": {
+    "epithelial": 0.468047619047619,
+    "immune_nonmyeloid": 0.2436190476190476,
+    "myeloid": 0.11295238095238094,
+    "other": 0.17547619047619045
+   }
+  },
+  "tangram": {
+   "n_crops": 21,
+   "heldout_auroc": 0.6052050998871469,
+   "gated_macro_f1_gse1": 0.2603624562193266,
+   "marker_pos_recall": {
+    "epithelial": 0.20261397479190488,
+    "immune_nonmyeloid": 0.6185941563373275,
+    "myeloid": 0.3197288049763041
+   },
+   "marker_pos_recall_n_crops": {
+    "epithelial": 19,
+    "immune_nonmyeloid": 21,
+    "myeloid": 19
+   },
+   "class_share": {
+    "epithelial": 0.10566666666666666,
+    "immune_nonmyeloid": 0.5126666666666667,
+    "myeloid": 0.1604761904761905,
+    "other": 0.22114285714285714
+   }
+  }
+ }
+}

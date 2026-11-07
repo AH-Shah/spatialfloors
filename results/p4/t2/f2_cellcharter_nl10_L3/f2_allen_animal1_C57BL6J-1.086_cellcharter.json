@@ -1,0 +1,22 @@
+{
+ "unit": "allen_animal1_C57BL6J-1.086",
+ "model": "cellcharter",
+ "k": 9,
+ "n_scored": 45445,
+ "grid": {
+  "nl10_L3": {
+   "ari": 0.43838879842542755,
+   "ari_sd": 0.0416585540416208,
+   "s": 2385.5,
+   "epochs": 169,
+   "dim": 40,
+   "rep": "scvi",
+   "scvi_seeds": [
+    0,
+    1,
+    2
+   ]
+  }
+ },
+ "spatialfloors_commit": "551ff3b4866e83f80e507b89358eb6fe0dbb41c2"
+}

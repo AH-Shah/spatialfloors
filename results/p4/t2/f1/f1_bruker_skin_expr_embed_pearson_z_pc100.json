@@ -1,0 +1,19 @@
+{
+ "unit": "bruker_skin",
+ "model": "expr_embed",
+ "config": "pearson_z_pc100",
+ "n_cells": 50000,
+ "n_panel": 2000,
+ "fit_s": 2.4,
+ "info": {},
+ "scores": {
+  "pearson_z_pc100": {
+   "score": 0.2975521979897895,
+   "chance": -0.07009633322995823,
+   "finite": true,
+   "dim": 100
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "551ff3b4866e83f80e507b89358eb6fe0dbb41c2"
+}

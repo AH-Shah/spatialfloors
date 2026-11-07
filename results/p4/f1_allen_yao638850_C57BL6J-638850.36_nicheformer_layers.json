@@ -1,0 +1,34 @@
+{
+ "unit": "allen_yao638850_C57BL6J-638850.36",
+ "model": "nicheformer",
+ "config": "layers",
+ "n_cells": 50000,
+ "n_panel": 500,
+ "fit_s": 500.0,
+ "info": {
+  "vocab_share_genes": 0.8690909090909091,
+  "vocab_share_counts": 0.9728033542633057,
+  "tokens_nonpad_median": 79.0,
+  "masked_cells_per_s": {
+   "-1": 104.73059430795398
+  },
+  "emb_finite": true,
+  "vocab_gate_passed": true
+ },
+ "scores": {
+  "final": {
+   "score": 0.5119970345507878,
+   "chance": -0.04134404517292545,
+   "finite": true,
+   "dim": 512
+  },
+  "penultimate": {
+   "score": 0.49519967616058025,
+   "chance": -0.04118643183831838,
+   "finite": true,
+   "dim": 512
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "69ea7ca801298055717a3d68009a5d315379755d"
+}

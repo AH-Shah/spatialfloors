@@ -1,0 +1,23 @@
+{
+ "unit": "allen_yao638850_C57BL6J-638850.36",
+ "model": "scvi",
+ "config": "nl30_nb",
+ "n_cells": 50000,
+ "n_panel": 500,
+ "fit_s": 463.9,
+ "info": {
+  "epochs": 160,
+  "elbo_last": 348.2287902832031,
+  "elbo_finite": true
+ },
+ "scores": {
+  "nl30_nb": {
+   "score": 0.5253614894144447,
+   "chance": -0.041807667806546434,
+   "finite": true,
+   "dim": 30
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "551ff3b4866e83f80e507b89358eb6fe0dbb41c2"
+}

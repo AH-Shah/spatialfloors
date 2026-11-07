@@ -1,0 +1,19 @@
+{
+ "unit": "bruker_kidney",
+ "model": "expr_embed",
+ "config": "pearson_none_pc50",
+ "n_cells": 50000,
+ "n_panel": 2000,
+ "fit_s": 4.9,
+ "info": {},
+ "scores": {
+  "pearson_none_pc50": {
+   "score": 0.2532760255861126,
+   "chance": -0.06939905663498247,
+   "finite": true,
+   "dim": 50
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "d96b4bcd58c788c9386f4dcd8d9c66550596567b"
+}

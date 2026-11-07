@@ -25,7 +25,7 @@ footprint_gb() {  # sum over the process tree rooted at $1
 }
 guarded_run() {
   local cap=$1 log=$2; shift 2; check_swap
-  "$@" > "$log" 2>&1 & local pid=$! peak=0
+  rm -f "$log.rc"; { "$@"; echo $? > "$log.rc"; } > "$log" 2>&1 & local pid=$! peak=0  # the command records its own exit code: zsh `wait` returned 145 (128 + SIGSTOP) for a job once paused by sched.sh, though it exited 0 (2026-11-04)
   while kill -0 $pid 2>/dev/null; do
     local fp=$(footprint_gb $pid); echo "$(date +%T) $fp" >> "$log.mem"; peak=$(echo "if ($fp > $peak) $fp else $peak" | bc)
     if [ $(echo "$fp > $cap" | bc) -eq 1 ]; then
@@ -33,5 +33,5 @@ guarded_run() {
     fi
     check_swap >> "$log"; sleep 5
   done
-  wait $pid; local rc=$?; echo "[$(date +%T)] mem_guard: exit $rc peak_footprint ${peak}G" | tee -a "$log"; return $rc
+  wait $pid; local rc=$?; [ -s "$log.rc" ] && rc=$(cat "$log.rc"); rm -f "$log.rc"; echo "[$(date +%T)] mem_guard: exit $rc peak_footprint ${peak}G" | tee -a "$log"; return $rc
 }

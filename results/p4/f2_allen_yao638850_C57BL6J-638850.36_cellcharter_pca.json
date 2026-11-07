@@ -1,0 +1,17 @@
+{
+ "unit": "allen_yao638850_C57BL6J-638850.36",
+ "model": "cellcharter_pca",
+ "k": 9,
+ "n_scored": 47727,
+ "grid": {
+  "pc50_L3": {
+   "ari": 0.42051449096656823,
+   "ari_sd": 0.042970210889314346,
+   "s": 600.4,
+   "epochs": 0,
+   "dim": 200,
+   "rep": "pca"
+  }
+ },
+ "spatialfloors_commit": "d96b4bcd58c788c9386f4dcd8d9c66550596567b"
+}

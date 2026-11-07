@@ -1,0 +1,23 @@
+{
+ "unit": "gse303070_Tumour_B_64T",
+ "model": "scvi",
+ "config": "nl10_nb",
+ "n_cells": 50000,
+ "n_panel": 952,
+ "fit_s": 453.1,
+ "info": {
+  "epochs": 160,
+  "elbo_last": 139.6741180419922,
+  "elbo_finite": true
+ },
+ "scores": {
+  "nl10_nb": {
+   "score": 0.07328157443262251,
+   "chance": -0.1028470556756722,
+   "finite": true,
+   "dim": 10
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "551ff3b4866e83f80e507b89358eb6fe0dbb41c2"
+}

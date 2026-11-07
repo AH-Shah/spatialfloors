@@ -1,0 +1,22 @@
+{
+ "unit": "gse1_222",
+ "model": "cellcharter",
+ "k": 2,
+ "n_scored": 42211,
+ "grid": {
+  "nl30_L1": {
+   "ari": 0.12267704808049983,
+   "ari_sd": 0.001190611963241783,
+   "s": 2609.8,
+   "epochs": 160,
+   "dim": 60,
+   "rep": "scvi",
+   "scvi_seeds": [
+    0,
+    1,
+    2
+   ]
+  }
+ },
+ "spatialfloors_commit": "551ff3b4866e83f80e507b89358eb6fe0dbb41c2"
+}

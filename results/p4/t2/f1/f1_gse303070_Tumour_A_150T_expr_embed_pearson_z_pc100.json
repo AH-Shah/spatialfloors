@@ -1,0 +1,19 @@
+{
+ "unit": "gse303070_Tumour_A_150T",
+ "model": "expr_embed",
+ "config": "pearson_z_pc100",
+ "n_cells": 28236,
+ "n_panel": 952,
+ "fit_s": 1.1,
+ "info": {},
+ "scores": {
+  "pearson_z_pc100": {
+   "score": 0.11519284475287728,
+   "chance": -0.07444606948702148,
+   "finite": true,
+   "dim": 100
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "551ff3b4866e83f80e507b89358eb6fe0dbb41c2"
+}

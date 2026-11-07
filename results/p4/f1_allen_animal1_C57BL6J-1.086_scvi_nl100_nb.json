@@ -1,0 +1,23 @@
+{
+ "unit": "allen_animal1_C57BL6J-1.086",
+ "model": "scvi",
+ "config": "nl100_nb",
+ "n_cells": 47266,
+ "n_panel": 1120,
+ "fit_s": 731.6,
+ "info": {
+  "epochs": 169,
+  "elbo_last": 235.6144256591797,
+  "elbo_finite": true
+ },
+ "scores": {
+  "nl100_nb": {
+   "score": 0.33717294926480823,
+   "chance": -0.05720681826839091,
+   "finite": true,
+   "dim": 100
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "cd489ff5589bbdc6037686fd78c7f927de5dcd7c"
+}

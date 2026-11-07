@@ -1,0 +1,23 @@
+{
+ "unit": "bruker_mobreast",
+ "model": "scvi",
+ "config": "nl100_nb",
+ "n_cells": 50000,
+ "n_panel": 2000,
+ "fit_s": 589.0,
+ "info": {
+  "epochs": 160,
+  "elbo_last": 412.3699035644531,
+  "elbo_finite": true
+ },
+ "scores": {
+  "nl100_nb": {
+   "score": 0.11334825242926316,
+   "chance": -0.07920002828678352,
+   "finite": true,
+   "dim": 100
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "551ff3b4866e83f80e507b89358eb6fe0dbb41c2"
+}

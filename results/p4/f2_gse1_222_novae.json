@@ -1,0 +1,20 @@
+{
+ "unit": "gse1_222",
+ "model": "novae",
+ "k": 2,
+ "n_scored": 42211,
+ "grid": {
+  "zero_shot": {
+   "ari": 8.861114063935423e-06,
+   "effective_rank": 5.202496528625488,
+   "largest_domain_share": 0.99904,
+   "s": 65.6,
+   "collapse": true,
+   "checkpoint": [
+    "prism-oncology/novae-human-0",
+    "b8c0a5d7612bac6bc719ab57ed3cd16ad814728c"
+   ]
+  }
+ },
+ "spatialfloors_commit": "cd489ff5589bbdc6037686fd78c7f927de5dcd7c"
+}

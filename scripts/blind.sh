@@ -2,6 +2,7 @@
 # P4 blind wrapper (PLAN §17): run a job with all output sealed in runs/p4/sealed/<id>.log (read only after p4-final);
 # print only the exit code, and on failure the Python traceback (from the last "Traceback" line), so crashes can be fixed
 # without seeing scores. Usage: scripts/blind.sh <id> <command ...>
+[ $# -ge 2 ] || { echo "usage: blind.sh <id> <command ...>" >&2; exit 2; }  # 2026-11-04: called without a command, it truncated a sealed log
 id=$1; shift; mkdir -p runs/p4/sealed; L=runs/p4/sealed/$id.log
 "$@" > $L 2>&1; rc=$?
 echo "[$id] exit $rc"

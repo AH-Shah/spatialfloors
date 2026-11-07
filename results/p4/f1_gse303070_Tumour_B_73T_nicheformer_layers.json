@@ -1,0 +1,34 @@
+{
+ "unit": "gse303070_Tumour_B_73T",
+ "model": "nicheformer",
+ "config": "layers",
+ "n_cells": 13611,
+ "n_panel": 952,
+ "fit_s": 82.7,
+ "info": {
+  "vocab_share_genes": 0.9693564862104188,
+  "vocab_share_counts": 0.9841023683547974,
+  "tokens_nonpad_median": 11.0,
+  "masked_cells_per_s": {
+   "-1": 182.5250345719379
+  },
+  "emb_finite": true,
+  "vocab_gate_passed": true
+ },
+ "scores": {
+  "final": {
+   "score": 0.028137021983256183,
+   "chance": -0.0921516597771257,
+   "finite": true,
+   "dim": 512
+  },
+  "penultimate": {
+   "score": 0.01677829626857763,
+   "chance": -0.09158027043479633,
+   "finite": true,
+   "dim": 512
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "cd489ff5589bbdc6037686fd78c7f927de5dcd7c"
+}

@@ -1,0 +1,19 @@
+{
+ "unit": "gse303070_3461G_7T",
+ "model": "expr_embed",
+ "config": "pearson_none_pc50",
+ "n_cells": 32299,
+ "n_panel": 989,
+ "fit_s": 2.3,
+ "info": {},
+ "scores": {
+  "pearson_none_pc50": {
+   "score": 0.15119132918591327,
+   "chance": -0.0659493932729942,
+   "finite": true,
+   "dim": 50
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "bad549f54b1adb78aebacc2202309195a99c7a5b"
+}

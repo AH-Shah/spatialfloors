@@ -1,0 +1,59 @@
+{
+ "unit": "gse303070_10501A_130T",
+ "model": "prior",
+ "grid": {
+  "prior_b0.5": {
+   "heldout_auroc": 0.8687546453093015,
+   "per_class": {
+    "epithelial": {
+     "auroc": 0.9725476670217734,
+     "n_pred": 27061,
+     "n_markers": 5
+    },
+    "immune_nonmyeloid": {
+     "auroc": 0.7692664951821003,
+     "n_pred": 147,
+     "n_markers": 5
+    },
+    "myeloid": {
+     "auroc": 0.8644497737240306,
+     "n_pred": 1008,
+     "n_markers": 5
+    }
+   },
+   "pred_share": {
+    "epithelial": 0.825,
+    "immune_nonmyeloid": 0.004,
+    "myeloid": 0.031,
+    "other": 0.14
+   }
+  },
+  "prior_b2": {
+   "heldout_auroc": 0.8600362010053763,
+   "per_class": {
+    "epithelial": {
+     "auroc": 0.9736221630115508,
+     "n_pred": 27299,
+     "n_markers": 5
+    },
+    "immune_nonmyeloid": {
+     "auroc": 0.7465575632528866,
+     "n_pred": 88,
+     "n_markers": 5
+    },
+    "myeloid": {
+     "auroc": 0.859928876751691,
+     "n_pred": 915,
+     "n_markers": 5
+    }
+   },
+   "pred_share": {
+    "epithelial": 0.832,
+    "immune_nonmyeloid": 0.003,
+    "myeloid": 0.028,
+    "other": 0.137
+   }
+  }
+ },
+ "spatialfloors_commit": "551ff3b4866e83f80e507b89358eb6fe0dbb41c2"
+}

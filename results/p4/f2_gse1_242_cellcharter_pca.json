@@ -1,0 +1,17 @@
+{
+ "unit": "gse1_242",
+ "model": "cellcharter_pca",
+ "k": 3,
+ "n_scored": 44550,
+ "grid": {
+  "pc50_L3": {
+   "ari": 0.4635307428700555,
+   "ari_sd": 0.05898165575635651,
+   "s": 148.1,
+   "epochs": 0,
+   "dim": 200,
+   "rep": "pca"
+  }
+ },
+ "spatialfloors_commit": "bad549f54b1adb78aebacc2202309195a99c7a5b"
+}

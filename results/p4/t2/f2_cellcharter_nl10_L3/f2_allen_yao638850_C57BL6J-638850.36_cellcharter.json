@@ -1,0 +1,22 @@
+{
+ "unit": "allen_yao638850_C57BL6J-638850.36",
+ "model": "cellcharter",
+ "k": 9,
+ "n_scored": 47727,
+ "grid": {
+  "nl10_L3": {
+   "ari": 0.3823042365372203,
+   "ari_sd": 0.04977193022686572,
+   "s": 2313.7,
+   "epochs": 160,
+   "dim": 40,
+   "rep": "scvi",
+   "scvi_seeds": [
+    0,
+    1,
+    2
+   ]
+  }
+ },
+ "spatialfloors_commit": "551ff3b4866e83f80e507b89358eb6fe0dbb41c2"
+}

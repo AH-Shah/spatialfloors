@@ -1,0 +1,23 @@
+{
+ "unit": "spatch_xenium5k",
+ "model": "scvi",
+ "config": "nl100_nb",
+ "n_cells": 50000,
+ "n_panel": 5000,
+ "fit_s": 842.6,
+ "info": {
+  "epochs": 160,
+  "elbo_last": 515.3557739257812,
+  "elbo_finite": true
+ },
+ "scores": {
+  "nl100_nb": {
+   "score": 0.05937681293210251,
+   "chance": -0.08868798566809066,
+   "finite": true,
+   "dim": 100
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "551ff3b4866e83f80e507b89358eb6fe0dbb41c2"
+}

@@ -1,0 +1,19 @@
+{
+ "unit": "allen_animal3_C57BL6J-3.003",
+ "model": "expr_embed",
+ "config": "pearson_none_pc100",
+ "n_cells": 50000,
+ "n_panel": 1120,
+ "fit_s": 1.8,
+ "info": {},
+ "scores": {
+  "pearson_none_pc100": {
+   "score": 0.36937593404765523,
+   "chance": -0.05327047553477038,
+   "finite": true,
+   "dim": 100
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "551ff3b4866e83f80e507b89358eb6fe0dbb41c2"
+}

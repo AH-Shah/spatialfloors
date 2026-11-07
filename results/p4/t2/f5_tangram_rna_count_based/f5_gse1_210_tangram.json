@@ -1,0 +1,38 @@
+{
+ "unit": "gse1_210",
+ "model": "tangram",
+ "n_cells": 50000,
+ "n_genes": 1956,
+ "grid": {
+  "rna_count_based": {
+   "heldout_auroc": 0.5622985912069521,
+   "per_class": {
+    "epithelial": {
+     "auroc": 0.6126525007059149,
+     "n_pred": 4065,
+     "n_markers": 5
+    },
+    "immune_nonmyeloid": {
+     "auroc": 0.5326167879816528,
+     "n_pred": 18333,
+     "n_markers": 5
+    },
+    "myeloid": {
+     "auroc": 0.5416264849332889,
+     "n_pred": 10361,
+     "n_markers": 5
+    }
+   },
+   "pred_share": {
+    "epithelial": 0.081,
+    "immune_nonmyeloid": 0.367,
+    "myeloid": 0.207,
+    "other": 0.345
+   },
+   "gated_macro_f1": 0.28023645012092496,
+   "n_gated": 25185,
+   "s": 367.5
+  }
+ },
+ "spatialfloors_commit": "551ff3b4866e83f80e507b89358eb6fe0dbb41c2"
+}

@@ -1,0 +1,36 @@
+{
+ "unit": "gse303070_10501A_130T",
+ "model": "scanvi",
+ "n_cells": 32803,
+ "n_genes": 946,
+ "grid": {
+  "nl30_zinb": {
+   "heldout_auroc": 0.7713502740496359,
+   "per_class": {
+    "epithelial": {
+     "auroc": 0.9645734796469386,
+     "n_pred": 26582,
+     "n_markers": 5
+    },
+    "immune_nonmyeloid": {
+     "auroc": 0.5279896183314667,
+     "n_pred": 816,
+     "n_markers": 5
+    },
+    "myeloid": {
+     "auroc": 0.8214877241705021,
+     "n_pred": 1252,
+     "n_markers": 5
+    }
+   },
+   "pred_share": {
+    "epithelial": 0.81,
+    "immune_nonmyeloid": 0.025,
+    "myeloid": 0.038,
+    "other": 0.127
+   },
+   "s": 557.6
+  }
+ },
+ "spatialfloors_commit": "551ff3b4866e83f80e507b89358eb6fe0dbb41c2"
+}
