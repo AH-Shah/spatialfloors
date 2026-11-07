@@ -1,7 +1,9 @@
 # Results: closed-form floors versus learned models in spatial omics
 
 Confirmatory results of the protocol registered as DOI [10.5281/zenodo.23931264](https://doi.org/10.5281/zenodo.23931264)
-(`registration/PROTOCOL.md`, tag `registration-v1`). Release `results-v1`, 2026-11-08. Every number below is read from
+(`registration/PROTOCOL.md`, tag `registration-v1`). Release `results-v1`, 2026-11-08, deposited on Zenodo as version 2
+of the registration record, DOI [10.5281/zenodo.24044400](https://doi.org/10.5281/zenodo.24044400); version 1 is
+unchanged. Every number below is read from
 the reports in [`results/reports/`](results/reports/); events and deviations after registration are in
 [`results/EXECUTION_LOG.md`](results/EXECUTION_LOG.md).
 

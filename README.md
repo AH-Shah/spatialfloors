@@ -6,7 +6,8 @@ counterfactuals (F4) and label transfer (F5).
 
 - Protocol: [`registration/PROTOCOL.md`](registration/PROTOCOL.md). Registration: DOI
   [10.5281/zenodo.23931264](https://doi.org/10.5281/zenodo.23931264), tag `registration-v1`.
-- Results: [`RESULTS.md`](RESULTS.md), tag `results-v1`. The floors were non-inferior to the learned model in all 12
+- Results: [`RESULTS.md`](RESULTS.md), tag `results-v1`, DOI [10.5281/zenodo.24044400](https://doi.org/10.5281/zenodo.24044400)
+  (version 2 of the Zenodo record; all versions: 10.5281/zenodo.23931263). The floors were non-inferior to the learned model in all 12
   registered pairs, and no learned model was superior after Holm correction. Execution events and deviations:
   [`results/EXECUTION_LOG.md`](results/EXECUTION_LOG.md).
 - Metric definitions and their tests: [`SPEC.md`](SPEC.md).
