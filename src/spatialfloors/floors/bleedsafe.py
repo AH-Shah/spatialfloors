@@ -131,6 +131,9 @@ def sender_means(Z, ids, nb, w, K, tau_w=TAU_W, chunk=20000):
 
 
 def kernel_mean(nb, w, F, rows=None, chunk=20000):
+    if sp.issparse(nb):  # lean.ring (whole-slide arm, SF_LEAN=1): nb is a cells x cells 0/1 matrix, w None
+        from .lean import kernel_mean_sparse
+        return kernel_mean_sparse(nb, F, np.arange(nb.shape[0]) if rows is None else rows)
     rows = np.arange(len(nb)) if rows is None else rows; out = np.zeros((len(rows), F.shape[1]), np.float32)
     for a in range(0, len(rows), chunk):
         r = rows[a:a + chunk]; out[a:a + chunk] = np.einsum("nk,nkd->nd", w[r], F[nb[r]]) / np.maximum(w[r].sum(1, keepdims=True), 1e-9)

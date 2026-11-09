@@ -22,6 +22,8 @@ def prepare(X, xy_um, fov, ids=None, seed=0):
     """X counts (cells x panel genes). Returns the shared F3 design dict."""
     from scipy.spatial import cKDTree
     x = lognorm(X); fov = np.asarray(fov).astype(str); xy_um = np.asarray(xy_um, float)
+    from . import lean
+    if lean.on(): fov = np.unique(fov, return_inverse=True)[1].astype(np.int32)  # same partition as int codes (whole-slide arm)
     if ids is None: ids = bs.leiden_ids(bs.expr50(x, seed), seed=seed)
     ids = np.unique(np.asarray(ids), return_inverse=True)[1]; K = int(ids.max()) + 1
     mu_c = bs.id_means(x, ids, K); lin_c = bs.lineages(mu_c); nb15 = cKDTree(xy_um).query(xy_um, 16)[1][:, 1:]
@@ -32,6 +34,8 @@ def prepare(X, xy_um, fov, ids=None, seed=0):
 def kernel(D, ell_um, knn=KNN, same_lineage=False):
     """200-NN Gaussian kernel (ell in um) restricted to the same FOV and quadrant; other lineages unless same_lineage."""
     from scipy.spatial import cKDTree
+    from . import lean
+    if lean.on(): return lean.knn_gauss(D["xy"], ell_um, knn, [(D["fov"], True), (D["blocks"], True)] + ([] if same_lineage else [(D["lin"], False)]))  # whole-slide arm
     d, nb = cKDTree(D["xy"]).query(D["xy"], knn + 1); d, nb = d[:, 1:], nb[:, 1:]
     keep = (D["fov"][nb] == D["fov"][:, None]) & (D["blocks"][nb] == D["blocks"][:, None])
     if not same_lineage: keep &= D["lin"][nb] != D["lin"][:, None]
@@ -115,6 +119,8 @@ V3_ALPHAS, V3_MULTS, V3_NPC_OWN, V3_NPC_TYPED = (300., 1000., 3000., 10000.), (.
 def ring(D, lo, hi, kmax):
     """Same-lineage cells at lo <= d < hi um among the kmax nearest, same FOV and quadrant -> (nb, w) as kernel().
     Bleed-safe: no contact spill reaches beyond 50 um."""
+    from . import lean
+    if lean.on(): return lean.ring(D, lo, hi, kmax)  # whole-slide arm only (SF_LEAN=1): sparse, chunked query
     from scipy.spatial import cKDTree
     n = len(D["xy"]); dd, ii = cKDTree(D["xy"]).query(D["xy"], kmax, distance_upper_bound=hi); ok = (ii < n) & (dd >= lo); ii = np.where(ok, ii, 0)
     ok &= (D["lin"][ii] == D["lin"][:, None]) & (D["fov"][ii] == D["fov"][:, None]) & (D["blocks"][ii] == D["blocks"][:, None])

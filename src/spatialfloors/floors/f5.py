@@ -106,7 +106,12 @@ def insitutype(Xq, profiles, names, neg=None, workdir=None):
     import subprocess, tempfile, scipy.io as sio, pandas as pd
     from pathlib import Path
     d = Path(workdir or tempfile.mkdtemp()); d.mkdir(parents=True, exist_ok=True)
-    sio.mmwrite(str(d / "x.mtx"), sp.csr_matrix(Xq).astype(np.float64)); pd.DataFrame(profiles, columns=names).to_csv(d / "profiles.csv", index=False)
+    from . import lean
+    if lean.on():  # whole-slide arm (SF_LEAN=1): the same matrix as raw CSC arrays (scripts/insitutype_ml.R reads them), not Matrix Market text
+        C = sp.csc_matrix(Xq, dtype=np.float64); C.sort_indices(); assert C.nnz < 2 ** 31
+        C.indices.astype(np.int32).tofile(d / "x_i.bin"); C.indptr.astype(np.int32).tofile(d / "x_p.bin"); C.data.tofile(d / "x_x.bin"); (d / "x_dim.txt").write_text(f"{C.shape[0]} {C.shape[1]} {C.nnz}")
+    else: sio.mmwrite(str(d / "x.mtx"), sp.csr_matrix(Xq).astype(np.float64))
+    pd.DataFrame(profiles, columns=names).to_csv(d / "profiles.csv", index=False)
     np.savetxt(d / "neg.txt", np.full(Xq.shape[0], .05) if neg is None else np.asarray(neg, float))
     root = Path(__file__).resolve().parents[3]
     subprocess.run(["pixi", "run", "-e", "r", "Rscript", str(root / "scripts/insitutype_ml.R"), str(d)], check=True, cwd=root)

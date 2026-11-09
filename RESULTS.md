@@ -159,6 +159,25 @@ second, with one-sided 95% bounds.
 - **Unit size** (`results/reports/X_moderators.md`): no association between D and the cells scored, except F5 scANVI
   (Spearman ρ = +.53, p = .017, no multiplicity correction). Unit size is confounded with platform there: the CosMx 1k
   samples are the small units and carry the floor's lead.
+- **F5 at a matched call rate** (`results/reports/X_f5_matched.md`; added 2026-11-09 after an external review). The
+  held-out-marker AUROC can rise when a model calls fewer cells of a class. Here the floor calls, per class, as many
+  cells as the comparator: its top cells by class posterior. Nothing is refitted.
+  - scANVI − floor at scANVI's call rate: D −.0040 (one-sided 95% bounds −.0075, −.0005), against −.0143 registered.
+    About 70% of the floor's lead over scANVI comes from its more conservative calling.
+  - By class: immune non-myeloid +.025 (+.019, +.031; scANVI ranks these cells better), epithelial −.012, myeloid
+    −.025.
+  - By stratum: CosMx 1k +.002, CosMx WTx −.011.
+  - Tangram at its own call rate: −.035 (−.048, −.022).
+  - Ranking by class posterior raises the floor at its own call rate from .723 to .741, so matching does not handicap
+    the floor. The reading is that scANVI and the floor are level on F5.
+- **F1 with Euclidean k-NN** (`results/reports/X_f1_euclid.md`; added 2026-11-09). Every saved locked embedding was
+  re-scored with Euclidean instead of cosine neighbours.
+  - Crop means, cosine → Euclidean: scVI .154 → .111; floor .162 → .149.
+  - D with Euclidean for both: scVI −.0376, Nicheformer −.0256; registered (cosine): −.0087 and −.0379.
+  - The registered cosine metric is the more favourable choice for scVI.
+- **Whole-slide arm** (`results/WHOLESLIDE_PLAN.md`): the six GSE1 confirmation slides as whole slides, for the four
+  pairs whose learned model trains on the unit. The plan was committed before any whole-slide output existed; results
+  will be added here.
 - **Not run in this release:** stress panels on the confirmation units, the protein shift-null on IF stains, and the F1
   depth-matched reference (PROTOCOL §6).
 

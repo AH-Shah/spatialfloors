@@ -13,6 +13,8 @@ def lognorm(X):
 
 def expr_pca(X, n_pc=50, seed=0):
     """F1 floor: log1p-CP10k, genes z-scored (clip 10), PCA n_pc (randomized SVD, seed)."""
+    from . import lean
+    if lean.on(): return lean.expr_pca(X, n_pc, seed)  # whole-slide arm only (SF_LEAN=1)
     from sklearn.decomposition import PCA
     Y = lognorm(X).toarray(); mu, sd = Y.mean(0), Y.std(0); Z = np.clip((Y - mu) / np.where(sd > 0, sd, 1), -10, 10)
     return PCA(n_pc, svd_solver="randomized", random_state=seed).fit_transform(Z).astype(np.float32)
@@ -49,6 +51,8 @@ def expr_embed(X, n_pc=100, norm="pearson", scale="z", seed=0):
     lost rare Allen types (kNN recall .75 vs scVI .89); the landscape score rose with n_pc to 100.
     norm: pearson | logcp10k | log1p (raw counts) | sqrtcp10k; scale: z | none (centred)."""
     from sklearn.decomposition import PCA
+    from . import lean
+    if lean.on() and norm == "pearson": return lean.expr_embed(X, n_pc, norm, scale, seed)  # whole-slide arm only (SF_LEAN=1)
     X = sp.csr_matrix(X, dtype=np.float32); s = np.maximum(np.asarray(X.sum(1)).ravel(), 1)
     if norm == "pearson":  # in place, row blocks: the same elementwise operations as the dense form, ~1/3 of the memory (audit 2026-10-30: whole slides)
         Y = X.toarray().astype(np.float64); p = np.asarray(X.sum(0)).ravel() / s.sum(); c = np.sqrt(len(Y))
@@ -66,7 +70,10 @@ def expr_embed(X, n_pc=100, norm="pearson", scale="z", seed=0):
 def neighbour_mean(xy_um, fov, E, ell_um=25., knn=200):
     """BANKSY-class neighbour mean: Gaussian kernel (ell um) over the 200 NN in the same FOV, self excluded, all types."""
     from scipy.spatial import cKDTree
-    fov = np.asarray(fov).astype(str); d, nb = cKDTree(xy_um).query(xy_um, knn + 1); d, nb = d[:, 1:], nb[:, 1:]
+    from . import lean
+    fov = np.asarray(fov).astype(str)
+    if lean.on(): return bs.kernel_mean(*lean.knn_gauss(xy_um, ell_um, knn, [(np.unique(fov, return_inverse=True)[1].astype(np.int32), True)]), E), {}  # whole-slide arm: chunked query
+    d, nb = cKDTree(xy_um).query(xy_um, knn + 1); d, nb = d[:, 1:], nb[:, 1:]
     w = (np.exp(-d ** 2 / (2 * ell_um ** 2)) * (fov[nb] == fov[:, None])).astype(np.float32); return bs.kernel_mean(nb, w, E), {}
 
 

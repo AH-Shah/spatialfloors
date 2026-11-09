@@ -1,0 +1,1658 @@
+{
+ "commit": "0714d4f3e838ef7ef7cc2cecf4f14294e1fb8965",
+ "margin": 0.025452985695741493,
+ "per_crop_class": [
+  {
+   "crop": "bruker_kidney",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 14801,
+   "n_floor": 18019,
+   "auroc_comp": 0.881464467533643,
+   "auroc_floor": 0.821975359873921,
+   "auroc_floor_ownrate": 0.8311485130905053,
+   "auroc_floor_matched": 0.8941337992641063
+  },
+  {
+   "crop": "bruker_kidney",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 7031,
+   "n_floor": 1070,
+   "auroc_comp": 0.5763208845091621,
+   "auroc_floor": 0.5724496276389502,
+   "auroc_floor_ownrate": 0.6178248632893453,
+   "auroc_floor_matched": 0.52356784198353
+  },
+  {
+   "crop": "bruker_kidney",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 17993,
+   "n_floor": 23246,
+   "auroc_comp": 0.6584862498581812,
+   "auroc_floor": 0.6182958657981792,
+   "auroc_floor_ownrate": 0.6326646591142391,
+   "auroc_floor_matched": 0.6676727650120429
+  },
+  {
+   "crop": "bruker_kidney",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 1745,
+   "n_floor": 18019,
+   "auroc_comp": 0.8613084796949348,
+   "auroc_floor": 0.821975359873921,
+   "auroc_floor_ownrate": 0.8311485130905053,
+   "auroc_floor_matched": 0.8829953218322315
+  },
+  {
+   "crop": "bruker_kidney",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 30952,
+   "n_floor": 1070,
+   "auroc_comp": 0.49785745020754796,
+   "auroc_floor": 0.5724496276389502,
+   "auroc_floor_ownrate": 0.6178248632893453,
+   "auroc_floor_matched": 0.5678319576862534
+  },
+  {
+   "crop": "bruker_kidney",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 12203,
+   "n_floor": 23246,
+   "auroc_comp": 0.5958542366148759,
+   "auroc_floor": 0.6182958657981792,
+   "auroc_floor_ownrate": 0.6326646591142391,
+   "auroc_floor_matched": 0.6930349719218301
+  },
+  {
+   "crop": "bruker_mobreast",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 22721,
+   "n_floor": 27649,
+   "auroc_comp": 0.9184466187274527,
+   "auroc_floor": 0.8795799322886979,
+   "auroc_floor_ownrate": 0.8838127669310744,
+   "auroc_floor_matched": 0.9224308135666655
+  },
+  {
+   "crop": "bruker_mobreast",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 10784,
+   "n_floor": 3365,
+   "auroc_comp": 0.47486346613770847,
+   "auroc_floor": 0.5792747987078687,
+   "auroc_floor_ownrate": 0.5947968216386272,
+   "auroc_floor_matched": 0.4654614295912043
+  },
+  {
+   "crop": "bruker_mobreast",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 6240,
+   "n_floor": 5843,
+   "auroc_comp": 0.8674580700235551,
+   "auroc_floor": 0.8746286040617188,
+   "auroc_floor_ownrate": 0.9066159427686789,
+   "auroc_floor_matched": 0.900413586784559
+  },
+  {
+   "crop": "bruker_mobreast",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 6159,
+   "n_floor": 27649,
+   "auroc_comp": 0.7579571896805397,
+   "auroc_floor": 0.8795799322886979,
+   "auroc_floor_ownrate": 0.8838127669310744,
+   "auroc_floor_matched": 0.8076049690834144
+  },
+  {
+   "crop": "bruker_mobreast",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 28841,
+   "n_floor": 3365,
+   "auroc_comp": 0.45260889063460896,
+   "auroc_floor": 0.5792747987078687,
+   "auroc_floor_ownrate": 0.5947968216386272,
+   "auroc_floor_matched": 0.4548503266922112
+  },
+  {
+   "crop": "bruker_mobreast",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 4784,
+   "n_floor": 5843,
+   "auroc_comp": 0.6955109667205738,
+   "auroc_floor": 0.8746286040617188,
+   "auroc_floor_ownrate": 0.9066159427686789,
+   "auroc_floor_matched": 0.9187073544570602
+  },
+  {
+   "crop": "bruker_skin",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 27349,
+   "n_floor": 25988,
+   "auroc_comp": 0.9286530572285259,
+   "auroc_floor": 0.9557734279953551,
+   "auroc_floor_ownrate": 0.9599774195171152,
+   "auroc_floor_matched": 0.9366489092610716
+  },
+  {
+   "crop": "bruker_skin",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 3483,
+   "n_floor": 1926,
+   "auroc_comp": 0.675569968582209,
+   "auroc_floor": 0.6890348627900628,
+   "auroc_floor_ownrate": 0.7391508012202199,
+   "auroc_floor_matched": 0.6306383310258531
+  },
+  {
+   "crop": "bruker_skin",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 4579,
+   "n_floor": 5223,
+   "auroc_comp": 0.8930181082942553,
+   "auroc_floor": 0.8635771538486823,
+   "auroc_floor_ownrate": 0.9132818916518038,
+   "auroc_floor_matched": 0.9430049055171924
+  },
+  {
+   "crop": "bruker_skin",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 21690,
+   "n_floor": 25988,
+   "auroc_comp": 0.7262084290716022,
+   "auroc_floor": 0.9557734279953551,
+   "auroc_floor_ownrate": 0.9599774195171152,
+   "auroc_floor_matched": 0.9397880843698635
+  },
+  {
+   "crop": "bruker_skin",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 6755,
+   "n_floor": 1926,
+   "auroc_comp": 0.5978443326239502,
+   "auroc_floor": 0.6890348627900628,
+   "auroc_floor_ownrate": 0.7391508012202199,
+   "auroc_floor_matched": 0.532749804254228
+  },
+  {
+   "crop": "bruker_skin",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 15418,
+   "n_floor": 5223,
+   "auroc_comp": 0.6270501813332144,
+   "auroc_floor": 0.8635771538486823,
+   "auroc_floor_ownrate": 0.9132818916518038,
+   "auroc_floor_matched": 0.6195515815406727
+  },
+  {
+   "crop": "gse1_110",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 22691,
+   "n_floor": 26414,
+   "auroc_comp": 0.9371318288641349,
+   "auroc_floor": 0.9074655230992361,
+   "auroc_floor_ownrate": 0.916593214089404,
+   "auroc_floor_matched": 0.9444511138704466
+  },
+  {
+   "crop": "gse1_110",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 18230,
+   "n_floor": 7709,
+   "auroc_comp": 0.506499586216137,
+   "auroc_floor": 0.5485818122219178,
+   "auroc_floor_ownrate": 0.5570231405633936,
+   "auroc_floor_matched": 0.5076242452307805
+  },
+  {
+   "crop": "gse1_110",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 2431,
+   "n_floor": 3296,
+   "auroc_comp": 0.7359462046770763,
+   "auroc_floor": 0.6629388735024463,
+   "auroc_floor_ownrate": 0.7027187705019756,
+   "auroc_floor_matched": 0.7783342483406662
+  },
+  {
+   "crop": "gse1_110",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 4126,
+   "n_floor": 26414,
+   "auroc_comp": 0.7819922865707034,
+   "auroc_floor": 0.9074655230992361,
+   "auroc_floor_ownrate": 0.916593214089404,
+   "auroc_floor_matched": 0.8174988647802192
+  },
+  {
+   "crop": "gse1_110",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 22917,
+   "n_floor": 7709,
+   "auroc_comp": 0.500195658303457,
+   "auroc_floor": 0.5485818122219178,
+   "auroc_floor_ownrate": 0.5570231405633936,
+   "auroc_floor_matched": 0.49767000868208094
+  },
+  {
+   "crop": "gse1_110",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 11332,
+   "n_floor": 3296,
+   "auroc_comp": 0.48280529991461885,
+   "auroc_floor": 0.6629388735024463,
+   "auroc_floor_ownrate": 0.7027187705019756,
+   "auroc_floor_matched": 0.43943113069010253
+  },
+  {
+   "crop": "gse1_120",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 27111,
+   "n_floor": 32835,
+   "auroc_comp": 0.9074070134876033,
+   "auroc_floor": 0.8987359353236803,
+   "auroc_floor_ownrate": 0.9090348608581487,
+   "auroc_floor_matched": 0.9128642852552526
+  },
+  {
+   "crop": "gse1_120",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 12826,
+   "n_floor": 4554,
+   "auroc_comp": 0.5045454132277966,
+   "auroc_floor": 0.562670178128754,
+   "auroc_floor_ownrate": 0.5703929754252737,
+   "auroc_floor_matched": 0.5033524581376412
+  },
+  {
+   "crop": "gse1_120",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 3145,
+   "n_floor": 2554,
+   "auroc_comp": 0.7608168487871201,
+   "auroc_floor": 0.7853470298063948,
+   "auroc_floor_ownrate": 0.826942930892775,
+   "auroc_floor_matched": 0.7810067693535464
+  },
+  {
+   "crop": "gse1_120",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 4783,
+   "n_floor": 32835,
+   "auroc_comp": 0.7869828343874282,
+   "auroc_floor": 0.8987359353236803,
+   "auroc_floor_ownrate": 0.9090348608581487,
+   "auroc_floor_matched": 0.7942450522617693
+  },
+  {
+   "crop": "gse1_120",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 27799,
+   "n_floor": 4554,
+   "auroc_comp": 0.47264866588910437,
+   "auroc_floor": 0.562670178128754,
+   "auroc_floor_ownrate": 0.5703929754252737,
+   "auroc_floor_matched": 0.47519526926840255
+  },
+  {
+   "crop": "gse1_120",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 6538,
+   "n_floor": 2554,
+   "auroc_comp": 0.5654188103181425,
+   "auroc_floor": 0.7853470298063948,
+   "auroc_floor_ownrate": 0.826942930892775,
+   "auroc_floor_matched": 0.607306873517101
+  },
+  {
+   "crop": "gse1_210",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 26435,
+   "n_floor": 28841,
+   "auroc_comp": 0.8225721289475714,
+   "auroc_floor": 0.8164009465161909,
+   "auroc_floor_ownrate": 0.8264149749570386,
+   "auroc_floor_matched": 0.844500053797249
+  },
+  {
+   "crop": "gse1_210",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 13865,
+   "n_floor": 7645,
+   "auroc_comp": 0.5481232721526356,
+   "auroc_floor": 0.5885577887053426,
+   "auroc_floor_ownrate": 0.5917968317096788,
+   "auroc_floor_matched": 0.5456647530888871
+  },
+  {
+   "crop": "gse1_210",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 2925,
+   "n_floor": 3254,
+   "auroc_comp": 0.6367244340954379,
+   "auroc_floor": 0.6475972254665534,
+   "auroc_floor_ownrate": 0.672136490365185,
+   "auroc_floor_matched": 0.6877024097752723
+  },
+  {
+   "crop": "gse1_210",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 4465,
+   "n_floor": 28841,
+   "auroc_comp": 0.756640483410433,
+   "auroc_floor": 0.8164009465161909,
+   "auroc_floor_ownrate": 0.8264149749570386,
+   "auroc_floor_matched": 0.7981877543712914
+  },
+  {
+   "crop": "gse1_210",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 25303,
+   "n_floor": 7645,
+   "auroc_comp": 0.5002950849463262,
+   "auroc_floor": 0.5885577887053426,
+   "auroc_floor_ownrate": 0.5917968317096788,
+   "auroc_floor_matched": 0.517898191544108
+  },
+  {
+   "crop": "gse1_210",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 8369,
+   "n_floor": 3254,
+   "auroc_comp": 0.5419074029077577,
+   "auroc_floor": 0.6475972254665534,
+   "auroc_floor_ownrate": 0.672136490365185,
+   "auroc_floor_matched": 0.531210989997329
+  },
+  {
+   "crop": "gse1_221",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 18471,
+   "n_floor": 29853,
+   "auroc_comp": 0.7381597254548703,
+   "auroc_floor": 0.7090941190995722,
+   "auroc_floor_ownrate": 0.7180197785249374,
+   "auroc_floor_matched": 0.784538164194762
+  },
+  {
+   "crop": "gse1_221",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 23383,
+   "n_floor": 6791,
+   "auroc_comp": 0.5000740642479591,
+   "auroc_floor": 0.5395027260102184,
+   "auroc_floor_ownrate": 0.5414324129033653,
+   "auroc_floor_matched": 0.49296927815830155
+  },
+  {
+   "crop": "gse1_221",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 1651,
+   "n_floor": 2067,
+   "auroc_comp": 0.6641370807867424,
+   "auroc_floor": 0.6536249532954053,
+   "auroc_floor_ownrate": 0.6722497550427967,
+   "auroc_floor_matched": 0.7057749618007441
+  },
+  {
+   "crop": "gse1_221",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 4560,
+   "n_floor": 29853,
+   "auroc_comp": 0.8026934713406537,
+   "auroc_floor": 0.7090941190995722,
+   "auroc_floor_ownrate": 0.7180197785249374,
+   "auroc_floor_matched": 0.8642641636551767
+  },
+  {
+   "crop": "gse1_221",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 22666,
+   "n_floor": 6791,
+   "auroc_comp": 0.49214003019896074,
+   "auroc_floor": 0.5395027260102184,
+   "auroc_floor_ownrate": 0.5414324129033653,
+   "auroc_floor_matched": 0.49420775991644705
+  },
+  {
+   "crop": "gse1_221",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 10614,
+   "n_floor": 2067,
+   "auroc_comp": 0.5135488237951711,
+   "auroc_floor": 0.6536249532954053,
+   "auroc_floor_ownrate": 0.6722497550427967,
+   "auroc_floor_matched": 0.4994019993215817
+  },
+  {
+   "crop": "gse1_222",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 15768,
+   "n_floor": 18192,
+   "auroc_comp": 0.7257597055529055,
+   "auroc_floor": 0.7510642604182152,
+   "auroc_floor_ownrate": 0.7733059639236585,
+   "auroc_floor_matched": 0.7856967045544955
+  },
+  {
+   "crop": "gse1_222",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 27578,
+   "n_floor": 12075,
+   "auroc_comp": 0.5289982056166037,
+   "auroc_floor": 0.5495744259332807,
+   "auroc_floor_ownrate": 0.5503983546036567,
+   "auroc_floor_matched": 0.5109492473886105
+  },
+  {
+   "crop": "gse1_222",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 3844,
+   "n_floor": 10323,
+   "auroc_comp": 0.6682232562844603,
+   "auroc_floor": 0.5549652651300879,
+   "auroc_floor_ownrate": 0.5721891415971923,
+   "auroc_floor_matched": 0.6650477300480054
+  },
+  {
+   "crop": "gse1_222",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 2801,
+   "n_floor": 18192,
+   "auroc_comp": 0.740681280204602,
+   "auroc_floor": 0.7510642604182152,
+   "auroc_floor_ownrate": 0.7733059639236585,
+   "auroc_floor_matched": 0.7993628449534421
+  },
+  {
+   "crop": "gse1_222",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 26866,
+   "n_floor": 12075,
+   "auroc_comp": 0.47883464345566124,
+   "auroc_floor": 0.5495744259332807,
+   "auroc_floor_ownrate": 0.5503983546036567,
+   "auroc_floor_matched": 0.5112873167041952
+  },
+  {
+   "crop": "gse1_222",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 8540,
+   "n_floor": 10323,
+   "auroc_comp": 0.5356793348403869,
+   "auroc_floor": 0.5549652651300879,
+   "auroc_floor_ownrate": 0.5721891415971923,
+   "auroc_floor_matched": 0.5899894285962823
+  },
+  {
+   "crop": "gse1_242",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 26356,
+   "n_floor": 30283,
+   "auroc_comp": 0.8890418331586155,
+   "auroc_floor": 0.9034315922313414,
+   "auroc_floor_ownrate": 0.9118585751819878,
+   "auroc_floor_matched": 0.8823456772178317
+  },
+  {
+   "crop": "gse1_242",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 14520,
+   "n_floor": 7060,
+   "auroc_comp": 0.5388204670850144,
+   "auroc_floor": 0.5879756406264225,
+   "auroc_floor_ownrate": 0.5925886440134531,
+   "auroc_floor_matched": 0.5327446340001428
+  },
+  {
+   "crop": "gse1_242",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 2043,
+   "n_floor": 2432,
+   "auroc_comp": 0.6809265603830466,
+   "auroc_floor": 0.6533698261049002,
+   "auroc_floor_ownrate": 0.6838558185608525,
+   "auroc_floor_matched": 0.717806913031315
+  },
+  {
+   "crop": "gse1_242",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 3723,
+   "n_floor": 30283,
+   "auroc_comp": 0.7343527908943326,
+   "auroc_floor": 0.9034315922313414,
+   "auroc_floor_ownrate": 0.9118585751819878,
+   "auroc_floor_matched": 0.7785502760644915
+  },
+  {
+   "crop": "gse1_242",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 28133,
+   "n_floor": 7060,
+   "auroc_comp": 0.47971821732625425,
+   "auroc_floor": 0.5879756406264225,
+   "auroc_floor_ownrate": 0.5925886440134531,
+   "auroc_floor_matched": 0.49900690087657334
+  },
+  {
+   "crop": "gse1_242",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 6813,
+   "n_floor": 2432,
+   "auroc_comp": 0.5428437808534149,
+   "auroc_floor": 0.6533698261049002,
+   "auroc_floor_ownrate": 0.6838558185608525,
+   "auroc_floor_matched": 0.4838728116830635
+  },
+  {
+   "crop": "gse303070_10501A_130T",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 26641,
+   "n_floor": 27121,
+   "auroc_comp": 0.9679230085637074,
+   "auroc_floor": 0.973128873444871,
+   "auroc_floor_ownrate": 0.9735769319656686,
+   "auroc_floor_matched": 0.961211189991399
+  },
+  {
+   "crop": "gse303070_10501A_130T",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 762,
+   "n_floor": 120,
+   "auroc_comp": 0.5409531472184465,
+   "auroc_floor": 0.7669241909657416,
+   "auroc_floor_ownrate": 0.8428443941294658,
+   "auroc_floor_matched": 0.5022847203398597
+  },
+  {
+   "crop": "gse303070_10501A_130T",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 1074,
+   "n_floor": 981,
+   "auroc_comp": 0.8623398205930779,
+   "auroc_floor": 0.8608509195293828,
+   "auroc_floor_ownrate": 0.8884988497754233,
+   "auroc_floor_matched": 0.8686665906035125
+  },
+  {
+   "crop": "gse303070_10501A_130T",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 2304,
+   "n_floor": 27121,
+   "auroc_comp": 0.6027464740988776,
+   "auroc_floor": 0.973128873444871,
+   "auroc_floor_ownrate": 0.9735769319656686,
+   "auroc_floor_matched": 0.6185471828425159
+  },
+  {
+   "crop": "gse303070_10501A_130T",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 18479,
+   "n_floor": 120,
+   "auroc_comp": 0.46990063922912473,
+   "auroc_floor": 0.7669241909657416,
+   "auroc_floor_ownrate": 0.8428443941294658,
+   "auroc_floor_matched": 0.4430115876495745
+  },
+  {
+   "crop": "gse303070_10501A_130T",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 4488,
+   "n_floor": 981,
+   "auroc_comp": 0.568207920318369,
+   "auroc_floor": 0.8608509195293828,
+   "auroc_floor_ownrate": 0.8884988497754233,
+   "auroc_floor_matched": 0.5150732480878631
+  },
+  {
+   "crop": "gse303070_10501A_74T",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 15080,
+   "n_floor": 16399,
+   "auroc_comp": 0.8507614222998302,
+   "auroc_floor": 0.8544249158597339,
+   "auroc_floor_ownrate": 0.8668410876393511,
+   "auroc_floor_matched": 0.866395833623827
+  },
+  {
+   "crop": "gse303070_10501A_74T",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 3255,
+   "n_floor": 1365,
+   "auroc_comp": 0.6785099909891547,
+   "auroc_floor": 0.7363703397829165,
+   "auroc_floor_ownrate": 0.7612548596597676,
+   "auroc_floor_matched": 0.6371254704658271
+  },
+  {
+   "crop": "gse303070_10501A_74T",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 2915,
+   "n_floor": 2481,
+   "auroc_comp": 0.6088951254423645,
+   "auroc_floor": 0.6398311432227017,
+   "auroc_floor_ownrate": 0.6653750929754808,
+   "auroc_floor_matched": 0.6366871524279089
+  },
+  {
+   "crop": "gse303070_10501A_74T",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 3208,
+   "n_floor": 16399,
+   "auroc_comp": 0.7322451030899461,
+   "auroc_floor": 0.8544249158597339,
+   "auroc_floor_ownrate": 0.8668410876393511,
+   "auroc_floor_matched": 0.7814672829725825
+  },
+  {
+   "crop": "gse303070_10501A_74T",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 14252,
+   "n_floor": 1365,
+   "auroc_comp": 0.501829030754983,
+   "auroc_floor": 0.7363703397829165,
+   "auroc_floor_ownrate": 0.7612548596597676,
+   "auroc_floor_matched": 0.5075955594929646
+  },
+  {
+   "crop": "gse303070_10501A_74T",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 3626,
+   "n_floor": 2481,
+   "auroc_comp": 0.5712271651018029,
+   "auroc_floor": 0.6398311432227017,
+   "auroc_floor_ownrate": 0.6653750929754808,
+   "auroc_floor_matched": 0.6041645733878225
+  },
+  {
+   "crop": "gse303070_10501A_92T",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 14461,
+   "n_floor": 13070,
+   "auroc_comp": 0.8207610794060303,
+   "auroc_floor": 0.7974451723800173,
+   "auroc_floor_ownrate": 0.8266353710840885,
+   "auroc_floor_matched": 0.8153481547446138
+  },
+  {
+   "crop": "gse303070_10501A_92T",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 11864,
+   "n_floor": 6568,
+   "auroc_comp": 0.652152067579686,
+   "auroc_floor": 0.6929583218420443,
+   "auroc_floor_ownrate": 0.703792040825285,
+   "auroc_floor_matched": 0.6147988326399091
+  },
+  {
+   "crop": "gse303070_10501A_92T",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 6723,
+   "n_floor": 8687,
+   "auroc_comp": 0.7704800331526354,
+   "auroc_floor": 0.7725150736001134,
+   "auroc_floor_ownrate": 0.7881830346795089,
+   "auroc_floor_matched": 0.8306499654123269
+  },
+  {
+   "crop": "gse303070_10501A_92T",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 4135,
+   "n_floor": 13070,
+   "auroc_comp": 0.7879323482305103,
+   "auroc_floor": 0.7974451723800173,
+   "auroc_floor_ownrate": 0.8266353710840885,
+   "auroc_floor_matched": 0.8278080920494344
+  },
+  {
+   "crop": "gse303070_10501A_92T",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 20193,
+   "n_floor": 6568,
+   "auroc_comp": 0.5364696263349847,
+   "auroc_floor": 0.6929583218420443,
+   "auroc_floor_ownrate": 0.703792040825285,
+   "auroc_floor_matched": 0.5649619214786273
+  },
+  {
+   "crop": "gse303070_10501A_92T",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 5497,
+   "n_floor": 8687,
+   "auroc_comp": 0.6455682192475302,
+   "auroc_floor": 0.7725150736001134,
+   "auroc_floor_ownrate": 0.7881830346795089,
+   "auroc_floor_matched": 0.8551902331280227
+  },
+  {
+   "crop": "gse303070_120131_170T",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 26391,
+   "n_floor": 29470,
+   "auroc_comp": 0.8748494565190432,
+   "auroc_floor": 0.8742912210002856,
+   "auroc_floor_ownrate": 0.8696959367350908,
+   "auroc_floor_matched": 0.8707964915426342
+  },
+  {
+   "crop": "gse303070_120131_170T",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 4720,
+   "n_floor": 485,
+   "auroc_comp": 0.5076099808972222,
+   "auroc_floor": 0.5844799436236084,
+   "auroc_floor_ownrate": 0.6212801611055684,
+   "auroc_floor_matched": 0.485990594619587
+  },
+  {
+   "crop": "gse303070_120131_170T",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 2506,
+   "n_floor": 1656,
+   "auroc_comp": 0.6287469914533476,
+   "auroc_floor": 0.66204859720544,
+   "auroc_floor_ownrate": 0.7270509566273107,
+   "auroc_floor_matched": 0.6578024291687802
+  },
+  {
+   "crop": "gse303070_120131_170T",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 4244,
+   "n_floor": 29470,
+   "auroc_comp": 0.7244301738320938,
+   "auroc_floor": 0.8742912210002856,
+   "auroc_floor_ownrate": 0.8696959367350908,
+   "auroc_floor_matched": 0.7221312726440587
+  },
+  {
+   "crop": "gse303070_120131_170T",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 20897,
+   "n_floor": 485,
+   "auroc_comp": 0.47606603794094815,
+   "auroc_floor": 0.5844799436236084,
+   "auroc_floor_ownrate": 0.6212801611055684,
+   "auroc_floor_matched": 0.46508549794607595
+  },
+  {
+   "crop": "gse303070_120131_170T",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 5338,
+   "n_floor": 1656,
+   "auroc_comp": 0.5519598501981682,
+   "auroc_floor": 0.66204859720544,
+   "auroc_floor_ownrate": 0.7270509566273107,
+   "auroc_floor_matched": 0.5425314240982514
+  },
+  {
+   "crop": "gse303070_120131_280N",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 9507,
+   "n_floor": 9469,
+   "auroc_comp": 0.797726017240101,
+   "auroc_floor": 0.8109768054708547,
+   "auroc_floor_ownrate": 0.8253236965057802,
+   "auroc_floor_matched": 0.8246592760812999
+  },
+  {
+   "crop": "gse303070_120131_280N",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 3878,
+   "n_floor": 3414,
+   "auroc_comp": 0.6379824577172807,
+   "auroc_floor": 0.6463169266998584,
+   "auroc_floor_ownrate": 0.6523287449694929,
+   "auroc_floor_matched": 0.6333513959373381
+  },
+  {
+   "crop": "gse303070_120131_280N",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 1301,
+   "n_floor": 1217,
+   "auroc_comp": 0.7604973963313789,
+   "auroc_floor": 0.7582618579444879,
+   "auroc_floor_ownrate": 0.7727122131723301,
+   "auroc_floor_matched": 0.7559908460477359
+  },
+  {
+   "crop": "gse303070_120131_280N",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 1633,
+   "n_floor": 9469,
+   "auroc_comp": 0.7882076187915172,
+   "auroc_floor": 0.8109768054708547,
+   "auroc_floor_ownrate": 0.8253236965057802,
+   "auroc_floor_matched": 0.8148548350728195
+  },
+  {
+   "crop": "gse303070_120131_280N",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 9064,
+   "n_floor": 3414,
+   "auroc_comp": 0.498734793038957,
+   "auroc_floor": 0.6463169266998584,
+   "auroc_floor_ownrate": 0.6523287449694929,
+   "auroc_floor_matched": 0.5374023196912738
+  },
+  {
+   "crop": "gse303070_120131_280N",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 2393,
+   "n_floor": 1217,
+   "auroc_comp": 0.5863073616885897,
+   "auroc_floor": 0.7582618579444879,
+   "auroc_floor_ownrate": 0.7727122131723301,
+   "auroc_floor_matched": 0.622909739652429
+  },
+  {
+   "crop": "gse303070_120131_280T",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 20412,
+   "n_floor": 21559,
+   "auroc_comp": 0.9232404428935103,
+   "auroc_floor": 0.9452081941226722,
+   "auroc_floor_ownrate": 0.9131058874507737,
+   "auroc_floor_matched": 0.8770192816653695
+  },
+  {
+   "crop": "gse303070_120131_280T",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 1077,
+   "n_floor": 406,
+   "auroc_comp": 0.7991165627063226,
+   "auroc_floor": 0.8274927162269204,
+   "auroc_floor_ownrate": 0.898706920160479,
+   "auroc_floor_matched": 0.7420409763396905
+  },
+  {
+   "crop": "gse303070_120131_280T",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 2970,
+   "n_floor": 2582,
+   "auroc_comp": 0.8761216711148678,
+   "auroc_floor": 0.9057635887733022,
+   "auroc_floor_ownrate": 0.9249116553389491,
+   "auroc_floor_matched": 0.9017946351286773
+  },
+  {
+   "crop": "gse303070_120131_280T",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 2162,
+   "n_floor": 21559,
+   "auroc_comp": 0.607354518332277,
+   "auroc_floor": 0.9452081941226722,
+   "auroc_floor_ownrate": 0.9131058874507737,
+   "auroc_floor_matched": 0.5862723407906008
+  },
+  {
+   "crop": "gse303070_120131_280T",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 13860,
+   "n_floor": 406,
+   "auroc_comp": 0.4965795277998318,
+   "auroc_floor": 0.8274927162269204,
+   "auroc_floor_ownrate": 0.898706920160479,
+   "auroc_floor_matched": 0.4749758576077075
+  },
+  {
+   "crop": "gse303070_120131_280T",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 3957,
+   "n_floor": 2582,
+   "auroc_comp": 0.6349094943650321,
+   "auroc_floor": 0.9057635887733022,
+   "auroc_floor_ownrate": 0.9249116553389491,
+   "auroc_floor_matched": 0.8307158967017582
+  },
+  {
+   "crop": "gse303070_3461G_137T",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 10237,
+   "n_floor": 19798,
+   "auroc_comp": 0.6128440276423942,
+   "auroc_floor": 0.6012441654878384,
+   "auroc_floor_ownrate": 0.6244807092425766,
+   "auroc_floor_matched": 0.6344008267820503
+  },
+  {
+   "crop": "gse303070_3461G_137T",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 28438,
+   "n_floor": 4537,
+   "auroc_comp": 0.5078828001013387,
+   "auroc_floor": 0.5390039085498637,
+   "auroc_floor_ownrate": 0.5458613563218683,
+   "auroc_floor_matched": 0.47570124732182945
+  },
+  {
+   "crop": "gse303070_3461G_137T",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 7233,
+   "n_floor": 7774,
+   "auroc_comp": 0.5071776324186397,
+   "auroc_floor": 0.5169851918835409,
+   "auroc_floor_ownrate": 0.5209867653982669,
+   "auroc_floor_matched": 0.5244269596529473
+  },
+  {
+   "crop": "gse303070_3461G_137T",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 4707,
+   "n_floor": 19798,
+   "auroc_comp": 0.5952173724098857,
+   "auroc_floor": 0.6012441654878384,
+   "auroc_floor_ownrate": 0.6244807092425766,
+   "auroc_floor_matched": 0.6106597636405975
+  },
+  {
+   "crop": "gse303070_3461G_137T",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 29718,
+   "n_floor": 4537,
+   "auroc_comp": 0.4606780024858349,
+   "auroc_floor": 0.5390039085498637,
+   "auroc_floor_ownrate": 0.5458613563218683,
+   "auroc_floor_matched": 0.47588459336265854
+  },
+  {
+   "crop": "gse303070_3461G_137T",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 7060,
+   "n_floor": 7774,
+   "auroc_comp": 0.5482445302638277,
+   "auroc_floor": 0.5169851918835409,
+   "auroc_floor_ownrate": 0.5209867653982669,
+   "auroc_floor_matched": 0.526264060955626
+  },
+  {
+   "crop": "gse303070_3461G_142T",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 10005,
+   "n_floor": 16659,
+   "auroc_comp": 0.6041477682725545,
+   "auroc_floor": 0.5983908333122933,
+   "auroc_floor_ownrate": 0.621617977403494,
+   "auroc_floor_matched": 0.6434333418313267
+  },
+  {
+   "crop": "gse303070_3461G_142T",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 26527,
+   "n_floor": 6849,
+   "auroc_comp": 0.5364154155233359,
+   "auroc_floor": 0.5521355154409822,
+   "auroc_floor_ownrate": 0.5580403021184032,
+   "auroc_floor_matched": 0.49659141794394007
+  },
+  {
+   "crop": "gse303070_3461G_142T",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 8084,
+   "n_floor": 8359,
+   "auroc_comp": 0.5422524916284543,
+   "auroc_floor": 0.5460786034194066,
+   "auroc_floor_ownrate": 0.5521516676733544,
+   "auroc_floor_matched": 0.554993404281577
+  },
+  {
+   "crop": "gse303070_3461G_142T",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 3873,
+   "n_floor": 16659,
+   "auroc_comp": 0.6246544701650628,
+   "auroc_floor": 0.5983908333122933,
+   "auroc_floor_ownrate": 0.621617977403494,
+   "auroc_floor_matched": 0.6529139718026941
+  },
+  {
+   "crop": "gse303070_3461G_142T",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 27084,
+   "n_floor": 6849,
+   "auroc_comp": 0.4727377109784815,
+   "auroc_floor": 0.5521355154409822,
+   "auroc_floor_ownrate": 0.5580403021184032,
+   "auroc_floor_matched": 0.4967491408683326
+  },
+  {
+   "crop": "gse303070_3461G_142T",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 7099,
+   "n_floor": 8359,
+   "auroc_comp": 0.567228284363392,
+   "auroc_floor": 0.5460786034194066,
+   "auroc_floor_ownrate": 0.5521516676733544,
+   "auroc_floor_matched": 0.5626167374891249
+  },
+  {
+   "crop": "gse303070_3461G_7T",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 15902,
+   "n_floor": 16410,
+   "auroc_comp": 0.9348117284231626,
+   "auroc_floor": 0.9307426015238487,
+   "auroc_floor_ownrate": 0.9390181173481523,
+   "auroc_floor_matched": 0.9414618324515819
+  },
+  {
+   "crop": "gse303070_3461G_7T",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 3387,
+   "n_floor": 1131,
+   "auroc_comp": 0.6288173828314879,
+   "auroc_floor": 0.7157702412367897,
+   "auroc_floor_ownrate": 0.7367514143141665,
+   "auroc_floor_matched": 0.5800778349181389
+  },
+  {
+   "crop": "gse303070_3461G_7T",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 3819,
+   "n_floor": 3178,
+   "auroc_comp": 0.7871216617974586,
+   "auroc_floor": 0.8310694669097185,
+   "auroc_floor_ownrate": 0.8488985401053035,
+   "auroc_floor_matched": 0.8028271195765702
+  },
+  {
+   "crop": "gse303070_3461G_7T",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 3847,
+   "n_floor": 16410,
+   "auroc_comp": 0.793970813205855,
+   "auroc_floor": 0.9307426015238487,
+   "auroc_floor_ownrate": 0.9390181173481523,
+   "auroc_floor_matched": 0.811605423328729
+  },
+  {
+   "crop": "gse303070_3461G_7T",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 16688,
+   "n_floor": 1131,
+   "auroc_comp": 0.493957191588054,
+   "auroc_floor": 0.7157702412367897,
+   "auroc_floor_ownrate": 0.7367514143141665,
+   "auroc_floor_matched": 0.5030656096817686
+  },
+  {
+   "crop": "gse303070_3461G_7T",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 4067,
+   "n_floor": 3178,
+   "auroc_comp": 0.6545904763391153,
+   "auroc_floor": 0.8310694669097185,
+   "auroc_floor_ownrate": 0.8488985401053035,
+   "auroc_floor_matched": 0.7870188327868641
+  },
+  {
+   "crop": "gse303070_Tumour_A_150T",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 10691,
+   "n_floor": 9481,
+   "auroc_comp": 0.8806958490079588,
+   "auroc_floor": 0.9056770910382131,
+   "auroc_floor_ownrate": 0.9237640106434649,
+   "auroc_floor_matched": 0.8780831438454862
+  },
+  {
+   "crop": "gse303070_Tumour_A_150T",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 2632,
+   "n_floor": 1407,
+   "auroc_comp": 0.6219776402718229,
+   "auroc_floor": 0.6722672347224862,
+   "auroc_floor_ownrate": 0.6878685172456169,
+   "auroc_floor_matched": 0.5926281153709361
+  },
+  {
+   "crop": "gse303070_Tumour_A_150T",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 4408,
+   "n_floor": 4611,
+   "auroc_comp": 0.8329816450365551,
+   "auroc_floor": 0.8104952156047363,
+   "auroc_floor_ownrate": 0.8282564835182488,
+   "auroc_floor_matched": 0.83790246939881
+  },
+  {
+   "crop": "gse303070_Tumour_A_150T",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 2877,
+   "n_floor": 9481,
+   "auroc_comp": 0.8491863239432669,
+   "auroc_floor": 0.9056770910382131,
+   "auroc_floor_ownrate": 0.9237640106434649,
+   "auroc_floor_matched": 0.8810474632590222
+  },
+  {
+   "crop": "gse303070_Tumour_A_150T",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 14950,
+   "n_floor": 1407,
+   "auroc_comp": 0.48159591130452917,
+   "auroc_floor": 0.6722672347224862,
+   "auroc_floor_ownrate": 0.6878685172456169,
+   "auroc_floor_matched": 0.48469506463665074
+  },
+  {
+   "crop": "gse303070_Tumour_A_150T",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 3846,
+   "n_floor": 4611,
+   "auroc_comp": 0.6842231413733794,
+   "auroc_floor": 0.8104952156047363,
+   "auroc_floor_ownrate": 0.8282564835182488,
+   "auroc_floor_matched": 0.8579866421389125
+  },
+  {
+   "crop": "gse303070_Tumour_B_64T",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 18539,
+   "n_floor": 19471,
+   "auroc_comp": 0.8745873718573332,
+   "auroc_floor": 0.8537694703340246,
+   "auroc_floor_ownrate": 0.8655516526374633,
+   "auroc_floor_matched": 0.8830892208386782
+  },
+  {
+   "crop": "gse303070_Tumour_B_64T",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 5755,
+   "n_floor": 3154,
+   "auroc_comp": 0.5972425320310384,
+   "auroc_floor": 0.6298992474458127,
+   "auroc_floor_ownrate": 0.6381194520146979,
+   "auroc_floor_matched": 0.5696884056953625
+  },
+  {
+   "crop": "gse303070_Tumour_B_64T",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 12182,
+   "n_floor": 9213,
+   "auroc_comp": 0.5776299528024028,
+   "auroc_floor": 0.6431067559933922,
+   "auroc_floor_ownrate": 0.6520696730554231,
+   "auroc_floor_matched": 0.5947272541207588
+  },
+  {
+   "crop": "gse303070_Tumour_B_64T",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 5790,
+   "n_floor": 19471,
+   "auroc_comp": 0.8159149279287621,
+   "auroc_floor": 0.8537694703340246,
+   "auroc_floor_ownrate": 0.8655516526374633,
+   "auroc_floor_matched": 0.8619907889766184
+  },
+  {
+   "crop": "gse303070_Tumour_B_64T",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 25609,
+   "n_floor": 3154,
+   "auroc_comp": 0.4921742056985339,
+   "auroc_floor": 0.6298992474458127,
+   "auroc_floor_ownrate": 0.6381194520146979,
+   "auroc_floor_matched": 0.48333077712312045
+  },
+  {
+   "crop": "gse303070_Tumour_B_64T",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 7291,
+   "n_floor": 9213,
+   "auroc_comp": 0.6015157522743914,
+   "auroc_floor": 0.6431067559933922,
+   "auroc_floor_ownrate": 0.6520696730554231,
+   "auroc_floor_matched": 0.699086526236783
+  },
+  {
+   "crop": "gse303070_Tumour_B_73T",
+   "comparator": "scanvi",
+   "cls": "epithelial",
+   "n_comp": 5992,
+   "n_floor": 573,
+   "auroc_comp": 0.5142057875303309,
+   "auroc_floor": 0.6607770493391983,
+   "auroc_floor_ownrate": 0.6838792071611322,
+   "auroc_floor_matched": 0.5211520926269808
+  },
+  {
+   "crop": "gse303070_Tumour_B_73T",
+   "comparator": "scanvi",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 3760,
+   "n_floor": 4478,
+   "auroc_comp": 0.5991017895364333,
+   "auroc_floor": 0.5729380549565116,
+   "auroc_floor_ownrate": 0.5804993592040447,
+   "auroc_floor_matched": 0.5890486331444912
+  },
+  {
+   "crop": "gse303070_Tumour_B_73T",
+   "comparator": "scanvi",
+   "cls": "myeloid",
+   "n_comp": 1312,
+   "n_floor": 2402,
+   "auroc_comp": 0.7647687002115977,
+   "auroc_floor": 0.6953882589144013,
+   "auroc_floor_ownrate": 0.7037554350171656,
+   "auroc_floor_matched": 0.7896606704094522
+  },
+  {
+   "crop": "gse303070_Tumour_B_73T",
+   "comparator": "tangram",
+   "cls": "epithelial",
+   "n_comp": 787,
+   "n_floor": 573,
+   "auroc_comp": 0.5660829619019612,
+   "auroc_floor": 0.6607770493391983,
+   "auroc_floor_ownrate": 0.6838792071611322,
+   "auroc_floor_matched": 0.6538598807350575
+  },
+  {
+   "crop": "gse303070_Tumour_B_73T",
+   "comparator": "tangram",
+   "cls": "immune_nonmyeloid",
+   "n_comp": 7211,
+   "n_floor": 4478,
+   "auroc_comp": 0.5049991982734711,
+   "auroc_floor": 0.5729380549565116,
+   "auroc_floor_ownrate": 0.5804993592040447,
+   "auroc_floor_matched": 0.543078998231868
+  },
+  {
+   "crop": "gse303070_Tumour_B_73T",
+   "comparator": "tangram",
+   "cls": "myeloid",
+   "n_comp": 2236,
+   "n_floor": 2402,
+   "auroc_comp": 0.6186950598596394,
+   "auroc_floor": 0.6953882589144013,
+   "auroc_floor_ownrate": 0.7037554350171656,
+   "auroc_floor_matched": 0.7145709764296526
+  }
+ ],
+ "tests": {
+  "scanvi - auroc_floor [mean]": {
+   "n_units": 20,
+   "est": -0.014322172047522662,
+   "lower": -0.022486535191972946,
+   "upper": -0.006157808903072376,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.025819123883284435,
+    "CosMx WTx": -0.00027034202603605354
+   }
+  },
+  "scanvi - auroc_floor_ownrate [mean]": {
+   "n_units": 20,
+   "est": -0.03256991890665231,
+   "lower": -0.042332649394775566,
+   "upper": -0.022807188418529058,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.044065373981308435,
+    "CosMx WTx": -0.018519918259850394
+   }
+  },
+  "scanvi - auroc_floor_matched [mean]": {
+   "n_units": 20,
+   "est": -0.003970842594672241,
+   "lower": -0.007472326610226047,
+   "upper": -0.0004693585791184342,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": 0.0018456652621035726,
+    "CosMx WTx": -0.011079907752953791
+   }
+  },
+  "scanvi - auroc_floor [epithelial]": {
+   "n_units": 20,
+   "est": -0.001339894090941226,
+   "lower": -0.016978659786344916,
+   "upper": 0.014298871604462466,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.011992105811630627,
+    "CosMx WTx": 0.011679475789901373
+   }
+  },
+  "scanvi - auroc_floor_ownrate [epithelial]": {
+   "n_units": 20,
+   "est": -0.01248673761840778,
+   "lower": -0.02918267298633305,
+   "upper": 0.004209197749517489,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.024382278568146218,
+    "CosMx WTx": 0.0020522568757169735
+   }
+  },
+  "scanvi - auroc_floor_matched [epithelial]": {
+   "n_units": 20,
+   "est": -0.011455690979466011,
+   "lower": -0.01850263302916235,
+   "upper": -0.004408748929769672,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.006376425232978363,
+    "CosMx WTx": -0.017663682447395357
+   }
+  },
+  "scanvi - auroc_floor [immune_nonmyeloid]": {
+   "n_units": 20,
+   "est": -0.04871230479129851,
+   "lower": -0.06895805063844705,
+   "upper": -0.028466558944149966,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.055494505712579835,
+    "CosMx WTx": -0.040422948109732425
+   }
+  },
+  "scanvi - auroc_floor_ownrate [immune_nonmyeloid]": {
+   "n_units": 20,
+   "est": -0.0682103474951945,
+   "lower": -0.09326274214418837,
+   "upper": -0.04315795284620064,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.07841976657382746,
+    "CosMx WTx": -0.05573216862130976
+   }
+  },
+  "scanvi - auroc_floor_matched [immune_nonmyeloid]": {
+   "n_units": 20,
+   "est": 0.024921195388182375,
+   "lower": 0.01898043645991951,
+   "upper": 0.030861954316445242,
+   "noninferior": false,
+   "strata_means": {
+    "CosMx 1k": 0.032507345326670246,
+    "CosMx WTx": 0.015649234352252756
+   }
+  },
+  "scanvi - auroc_floor [myeloid]": {
+   "n_units": 20,
+   "est": 0.007085682739671762,
+   "lower": -0.008227531094284934,
+   "upper": 0.02239889657362846,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.009970760125642878,
+    "CosMx WTx": 0.02793244624172299
+   }
+  },
+  "scanvi - auroc_floor_ownrate [myeloid]": {
+   "n_units": 20,
+   "est": -0.01701267160635462,
+   "lower": -0.03465782633670401,
+   "upper": 0.000632483123994769,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.029394076801951705,
+    "CosMx WTx": -0.0018798430339581988
+   }
+  },
+  "scanvi - auroc_floor_matched [myeloid]": {
+   "n_units": 20,
+   "est": -0.025378032192733106,
+   "lower": -0.03194792637574622,
+   "upper": -0.01880813800971999,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.020593924307381228,
+    "CosMx WTx": -0.031225275163718733
+   }
+  },
+  "tangram - auroc_floor [mean]": {
+   "n_units": 20,
+   "est": -0.11319384636550364,
+   "lower": -0.14309499473760248,
+   "upper": -0.08329269799340482,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.12538551768018416,
+    "CosMx WTx": -0.09829291475867184
+   }
+  },
+  "tangram - auroc_floor_ownrate [mean]": {
+   "n_units": 20,
+   "est": -0.13144159322463328,
+   "lower": -0.1633706344004979,
+   "upper": -0.09951255204876866,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.14363176777820819,
+    "CosMx WTx": -0.1165424909924862
+   }
+  },
+  "tangram - auroc_floor_matched [mean]": {
+   "n_units": 20,
+   "est": -0.03468976658432417,
+   "lower": -0.04788071851993746,
+   "upper": -0.02149881464871088,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.03597766795385709,
+    "CosMx WTx": -0.03311566491045061
+   }
+  },
+  "tangram - auroc_floor [epithelial]": {
+   "n_units": 20,
+   "est": -0.09162628538699746,
+   "lower": -0.13322543009299562,
+   "upper": -0.0500271406809993,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.10343835055899718,
+    "CosMx WTx": -0.07718931684344227
+   }
+  },
+  "tangram - auroc_floor_ownrate [epithelial]": {
+   "n_units": 20,
+   "est": -0.10277312891446402,
+   "lower": -0.14208666020186558,
+   "upper": -0.06345959762706246,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.11582852331551279,
+    "CosMx WTx": -0.08681653575762667
+   }
+  },
+  "tangram - auroc_floor_matched [epithelial]": {
+   "n_units": 20,
+   "est": -0.04330563794657857,
+   "lower": -0.0605382834409427,
+   "upper": -0.026072992452214446,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.030221152074081967,
+    "CosMx WTx": -0.05929778734629665
+   }
+  },
+  "tangram - auroc_floor [immune_nonmyeloid]": {
+   "n_units": 20,
+   "est": -0.12785329960993766,
+   "lower": -0.1512116459368243,
+   "upper": -0.10449495328305104,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.16468973682016427,
+    "CosMx WTx": -0.08283098746410518
+   }
+  },
+  "tangram - auroc_floor_ownrate [immune_nonmyeloid]": {
+   "n_units": 20,
+   "est": -0.14735134231383362,
+   "lower": -0.1759410210153297,
+   "upper": -0.11876166361233755,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.18761499768141185,
+    "CosMx WTx": -0.09814020797568251
+   }
+  },
+  "tangram - auroc_floor_matched [immune_nonmyeloid]": {
+   "n_units": 20,
+   "est": -0.008206884307571063,
+   "lower": -0.018915719468786386,
+   "upper": 0.0025019508536442588,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.0077802840102538665,
+    "CosMx WTx": -0.008728284670958751
+   }
+  },
+  "tangram - auroc_floor [myeloid]": {
+   "n_units": 20,
+   "est": -0.12010195409957569,
+   "lower": -0.15483159989836126,
+   "upper": -0.08537230830079012,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.10802846566139111,
+    "CosMx WTx": -0.13485843996846802
+   }
+  },
+  "tangram - auroc_floor_ownrate [myeloid]": {
+   "n_units": 20,
+   "est": -0.1442003084456021,
+   "lower": -0.18228906504569606,
+   "upper": -0.10611155184550816,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.12745178233769996,
+    "CosMx WTx": -0.16467072924414922
+   }
+  },
+  "tangram - auroc_floor_matched [myeloid]": {
+   "n_units": 20,
+   "est": -0.05255677749882286,
+   "lower": -0.08619399974143883,
+   "upper": -0.01891955525620688,
+   "noninferior": true,
+   "strata_means": {
+    "CosMx 1k": -0.06993156777723547,
+    "CosMx WTx": -0.03132092271409633
+   }
+  }
+ }
+}

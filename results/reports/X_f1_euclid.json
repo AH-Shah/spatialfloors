@@ -1,0 +1,556 @@
+{
+ "commit": "0714d4f3e838ef7ef7cc2cecf4f14294e1fb8965",
+ "margin": 0.0194878990028946,
+ "per_crop": [
+  {
+   "crop": "allen_animal1_C57BL6J-1.086",
+   "model": "floor",
+   "cosine": 0.3443732710410923,
+   "euclid": 0.3334179615113807
+  },
+  {
+   "crop": "allen_animal1_C57BL6J-1.086",
+   "model": "scvi",
+   "cosine": 0.3371729492648082,
+   "euclid": 0.3022855991426874
+  },
+  {
+   "crop": "allen_animal1_C57BL6J-1.086",
+   "model": "nicheformer",
+   "cosine": 0.333280476023863,
+   "euclid": 0.3332531540105734
+  },
+  {
+   "crop": "allen_animal2_C57BL6J-2.039",
+   "model": "floor",
+   "cosine": 0.3933355959668101,
+   "euclid": 0.38425644037973716
+  },
+  {
+   "crop": "allen_animal2_C57BL6J-2.039",
+   "model": "scvi",
+   "cosine": 0.3904978875542655,
+   "euclid": 0.3669598155611704
+  },
+  {
+   "crop": "allen_animal2_C57BL6J-2.039",
+   "model": "nicheformer",
+   "cosine": 0.3851754574930863,
+   "euclid": 0.38504179535278693
+  },
+  {
+   "crop": "allen_animal3_C57BL6J-3.003",
+   "model": "floor",
+   "cosine": 0.3629902946948727,
+   "euclid": 0.3532521884120562
+  },
+  {
+   "crop": "allen_animal3_C57BL6J-3.003",
+   "model": "scvi",
+   "cosine": 0.3619294409931648,
+   "euclid": 0.32906219404081627
+  },
+  {
+   "crop": "allen_animal3_C57BL6J-3.003",
+   "model": "nicheformer",
+   "cosine": 0.3519426085255609,
+   "euclid": 0.35207811302779723
+  },
+  {
+   "crop": "allen_yao638850_C57BL6J-638850.36",
+   "model": "floor",
+   "cosine": 0.5283187693150083,
+   "euclid": 0.5201856561501143
+  },
+  {
+   "crop": "allen_yao638850_C57BL6J-638850.36",
+   "model": "scvi",
+   "cosine": 0.5303822700630321,
+   "euclid": 0.523955843614347
+  },
+  {
+   "crop": "allen_yao638850_C57BL6J-638850.36",
+   "model": "nicheformer",
+   "cosine": 0.5119970345507878,
+   "euclid": 0.5124874964689314
+  },
+  {
+   "crop": "bruker_kidney",
+   "model": "floor",
+   "cosine": 0.2532760255861126,
+   "euclid": 0.24060438135143125
+  },
+  {
+   "crop": "bruker_kidney",
+   "model": "scvi",
+   "cosine": 0.2340564547023094,
+   "euclid": 0.20416860432823802
+  },
+  {
+   "crop": "bruker_kidney",
+   "model": "nicheformer",
+   "cosine": 0.1550173196318965,
+   "euclid": 0.15509149202698225
+  },
+  {
+   "crop": "bruker_mobreast",
+   "model": "floor",
+   "cosine": 0.1365614125141,
+   "euclid": 0.1208540094359718
+  },
+  {
+   "crop": "bruker_mobreast",
+   "model": "scvi",
+   "cosine": 0.1180870447481415,
+   "euclid": 0.06948836840880757
+  },
+  {
+   "crop": "bruker_mobreast",
+   "model": "nicheformer",
+   "cosine": 0.0777043470364711,
+   "euclid": 0.07558230538025856
+  },
+  {
+   "crop": "bruker_skin",
+   "model": "floor",
+   "cosine": 0.2891989538723388,
+   "euclid": 0.27873031037666984
+  },
+  {
+   "crop": "bruker_skin",
+   "model": "scvi",
+   "cosine": 0.2750649641234783,
+   "euclid": 0.2434638130707365
+  },
+  {
+   "crop": "bruker_skin",
+   "model": "nicheformer",
+   "cosine": 0.2284105760490499,
+   "euclid": 0.22636965525381303
+  },
+  {
+   "crop": "gse1_110",
+   "model": "floor",
+   "cosine": 0.0913043589480586,
+   "euclid": 0.07909482977769111
+  },
+  {
+   "crop": "gse1_110",
+   "model": "scvi",
+   "cosine": 0.0818587544473937,
+   "euclid": 0.04868238605973918
+  },
+  {
+   "crop": "gse1_110",
+   "model": "nicheformer",
+   "cosine": 0.0337584110681281,
+   "euclid": 0.03271611944014119
+  },
+  {
+   "crop": "gse1_120",
+   "model": "floor",
+   "cosine": 0.1298719466378719,
+   "euclid": 0.11928036993611268
+  },
+  {
+   "crop": "gse1_120",
+   "model": "scvi",
+   "cosine": 0.1152660444422819,
+   "euclid": 0.08203126615337186
+  },
+  {
+   "crop": "gse1_120",
+   "model": "nicheformer",
+   "cosine": 0.0701426117092165,
+   "euclid": 0.06754021193380844
+  },
+  {
+   "crop": "gse1_210",
+   "model": "floor",
+   "cosine": 0.1795697531102349,
+   "euclid": 0.16659397414361976
+  },
+  {
+   "crop": "gse1_210",
+   "model": "scvi",
+   "cosine": 0.1609308051305603,
+   "euclid": 0.12994305509295911
+  },
+  {
+   "crop": "gse1_210",
+   "model": "nicheformer",
+   "cosine": 0.0964961926074176,
+   "euclid": 0.09109909425102147
+  },
+  {
+   "crop": "gse1_221",
+   "model": "floor",
+   "cosine": 0.0934390564383083,
+   "euclid": 0.08833075828498238
+  },
+  {
+   "crop": "gse1_221",
+   "model": "scvi",
+   "cosine": 0.0940883007867573,
+   "euclid": 0.06466447140669584
+  },
+  {
+   "crop": "gse1_221",
+   "model": "nicheformer",
+   "cosine": 0.0466788175615973,
+   "euclid": 0.04212343125137685
+  },
+  {
+   "crop": "gse1_222",
+   "model": "floor",
+   "cosine": 0.1187404560131969,
+   "euclid": 0.11159844901902205
+  },
+  {
+   "crop": "gse1_222",
+   "model": "scvi",
+   "cosine": 0.1083595987563768,
+   "euclid": 0.09291518402945353
+  },
+  {
+   "crop": "gse1_222",
+   "model": "nicheformer",
+   "cosine": 0.0159572676817703,
+   "euclid": 0.009990468504705419
+  },
+  {
+   "crop": "gse1_242",
+   "model": "floor",
+   "cosine": 0.1771871558231051,
+   "euclid": 0.16419110737132048
+  },
+  {
+   "crop": "gse1_242",
+   "model": "scvi",
+   "cosine": 0.1586982092440032,
+   "euclid": 0.13253256856403417
+  },
+  {
+   "crop": "gse1_242",
+   "model": "nicheformer",
+   "cosine": 0.0871807904675597,
+   "euclid": 0.08151567688058348
+  },
+  {
+   "crop": "gse303070_10501A_130T",
+   "model": "floor",
+   "cosine": 0.0844463277799432,
+   "euclid": 0.06953593484200737
+  },
+  {
+   "crop": "gse303070_10501A_130T",
+   "model": "scvi",
+   "cosine": 0.0769841619247633,
+   "euclid": 0.022061346931705694
+  },
+  {
+   "crop": "gse303070_10501A_130T",
+   "model": "nicheformer",
+   "cosine": 0.0598659199135473,
+   "euclid": 0.059858163272713316
+  },
+  {
+   "crop": "gse303070_10501A_74T",
+   "model": "floor",
+   "cosine": 0.1066578946438315,
+   "euclid": 0.08637434085910811
+  },
+  {
+   "crop": "gse303070_10501A_74T",
+   "model": "scvi",
+   "cosine": 0.0932856329481029,
+   "euclid": 0.028274154573714738
+  },
+  {
+   "crop": "gse303070_10501A_74T",
+   "model": "nicheformer",
+   "cosine": 0.0752580571900953,
+   "euclid": 0.07549200775462439
+  },
+  {
+   "crop": "gse303070_10501A_92T",
+   "model": "floor",
+   "cosine": 0.1033725030931893,
+   "euclid": 0.08220903051673323
+  },
+  {
+   "crop": "gse303070_10501A_92T",
+   "model": "scvi",
+   "cosine": 0.087797869872658,
+   "euclid": 0.01374850817926776
+  },
+  {
+   "crop": "gse303070_10501A_92T",
+   "model": "nicheformer",
+   "cosine": 0.0712350524478354,
+   "euclid": 0.07165212738695603
+  },
+  {
+   "crop": "gse303070_120131_170T",
+   "model": "floor",
+   "cosine": 0.0857673171452844,
+   "euclid": 0.07333620744136371
+  },
+  {
+   "crop": "gse303070_120131_170T",
+   "model": "scvi",
+   "cosine": 0.0836452959760666,
+   "euclid": 0.008839122850052505
+  },
+  {
+   "crop": "gse303070_120131_170T",
+   "model": "nicheformer",
+   "cosine": 0.0653347643918964,
+   "euclid": 0.06543378039166814
+  },
+  {
+   "crop": "gse303070_120131_280N",
+   "model": "floor",
+   "cosine": 0.1025888227711945,
+   "euclid": 0.08385671578961829
+  },
+  {
+   "crop": "gse303070_120131_280N",
+   "model": "scvi",
+   "cosine": 0.0852375242180208,
+   "euclid": 0.042338545214176126
+  },
+  {
+   "crop": "gse303070_120131_280N",
+   "model": "nicheformer",
+   "cosine": 0.0662977034639701,
+   "euclid": 0.06620455728572139
+  },
+  {
+   "crop": "gse303070_120131_280T",
+   "model": "floor",
+   "cosine": 0.169937870865215,
+   "euclid": 0.1563943816866985
+  },
+  {
+   "crop": "gse303070_120131_280T",
+   "model": "scvi",
+   "cosine": 0.1623533922145177,
+   "euclid": 0.11955332635265659
+  },
+  {
+   "crop": "gse303070_120131_280T",
+   "model": "nicheformer",
+   "cosine": 0.131082060621322,
+   "euclid": 0.13109430144629686
+  },
+  {
+   "crop": "gse303070_3461G_137T",
+   "model": "floor",
+   "cosine": 0.0145661744893451,
+   "euclid": -0.0082819817910742
+  },
+  {
+   "crop": "gse303070_3461G_137T",
+   "model": "scvi",
+   "cosine": 0.0125864607666883,
+   "euclid": -0.029532892478631778
+  },
+  {
+   "crop": "gse303070_3461G_137T",
+   "model": "nicheformer",
+   "cosine": 0.0059850376117661,
+   "euclid": 0.007088971380895148
+  },
+  {
+   "crop": "gse303070_3461G_142T",
+   "model": "floor",
+   "cosine": 0.0116870653390437,
+   "euclid": -0.013631941046829965
+  },
+  {
+   "crop": "gse303070_3461G_142T",
+   "model": "scvi",
+   "cosine": 0.0107456997144098,
+   "euclid": -0.031977997985560336
+  },
+  {
+   "crop": "gse303070_3461G_142T",
+   "model": "nicheformer",
+   "cosine": 0.0008496399489742,
+   "euclid": 0.0018218412463723022
+  },
+  {
+   "crop": "gse303070_3461G_7T",
+   "model": "floor",
+   "cosine": 0.1511913291859132,
+   "euclid": 0.13423189614737596
+  },
+  {
+   "crop": "gse303070_3461G_7T",
+   "model": "scvi",
+   "cosine": 0.1337592951393664,
+   "euclid": 0.0717763483642575
+  },
+  {
+   "crop": "gse303070_3461G_7T",
+   "model": "nicheformer",
+   "cosine": 0.1146360295910157,
+   "euclid": 0.11476140889078135
+  },
+  {
+   "crop": "gse303070_Tumour_A_150T",
+   "model": "floor",
+   "cosine": 0.1157119823251414,
+   "euclid": 0.09575156975702159
+  },
+  {
+   "crop": "gse303070_Tumour_A_150T",
+   "model": "scvi",
+   "cosine": 0.0988864889132514,
+   "euclid": 0.03166074546892883
+  },
+  {
+   "crop": "gse303070_Tumour_A_150T",
+   "model": "nicheformer",
+   "cosine": 0.0890433649380351,
+   "euclid": 0.08926223346137718
+  },
+  {
+   "crop": "gse303070_Tumour_B_64T",
+   "model": "floor",
+   "cosine": 0.0706495831541871,
+   "euclid": 0.0639436485294117
+  },
+  {
+   "crop": "gse303070_Tumour_B_64T",
+   "model": "scvi",
+   "cosine": 0.0734258862645248,
+   "euclid": 0.012976970189804149
+  },
+  {
+   "crop": "gse303070_Tumour_B_64T",
+   "model": "nicheformer",
+   "cosine": 0.0668378643694808,
+   "euclid": 0.06688083985138593
+  },
+  {
+   "crop": "gse303070_Tumour_B_73T",
+   "model": "floor",
+   "cosine": 0.0368074912300271,
+   "euclid": 0.024412426398411013
+  },
+  {
+   "crop": "gse303070_Tumour_B_73T",
+   "model": "scvi",
+   "cosine": 0.0431091917061434,
+   "euclid": 0.003158486902576585
+  },
+  {
+   "crop": "gse303070_Tumour_B_73T",
+   "model": "nicheformer",
+   "cosine": 0.0281370219832561,
+   "euclid": 0.028026411364813875
+  },
+  {
+   "crop": "spatch_xenium5k",
+   "model": "floor",
+   "cosine": 0.071481228059454,
+   "euclid": 0.06394417533892716
+  },
+  {
+   "crop": "spatch_xenium5k",
+   "model": "scvi",
+   "cosine": 0.0643461716202178,
+   "euclid": 0.009599216806735367
+  },
+  {
+   "crop": "spatch_xenium5k",
+   "model": "nicheformer",
+   "cosine": 0.069225627785314,
+   "euclid": 0.06929195420541834
+  }
+ ],
+ "tests": {
+  "scvi euclid \u2212 floor euclid": {
+   "n_units": 25,
+   "est": -0.03762632707285598,
+   "lower": -0.042942834463756845,
+   "upper": -0.032309819681955114,
+   "noninferior": true,
+   "floor_superior": true,
+   "n_learned_ahead": 1
+  },
+  "scvi euclid \u2212 floor cosine": {
+   "n_units": 25,
+   "est": -0.05100344712661406,
+   "lower": -0.05656093862500328,
+   "upper": -0.045445955628224836,
+   "noninferior": true,
+   "floor_superior": true,
+   "n_learned_ahead": 0
+  },
+  "scvi cosine \u2212 floor cosine (registered)": {
+   "n_units": 25,
+   "est": -0.008720358236225616,
+   "lower": -0.011198495146229396,
+   "upper": -0.006242221326221837,
+   "noninferior": true,
+   "floor_superior": true,
+   "n_learned_ahead": 4
+  },
+  "scvi best \u2212 floor cosine": {
+   "n_units": 25,
+   "est": -0.008720358236225616,
+   "lower": -0.011198495146229396,
+   "upper": -0.006242221326221837,
+   "noninferior": true,
+   "floor_superior": true,
+   "n_learned_ahead": 4
+  },
+  "nicheformer euclid \u2212 floor euclid": {
+   "n_units": 25,
+   "est": -0.025569324380997155,
+   "lower": -0.030983824257944544,
+   "upper": -0.020154824504049765,
+   "noninferior": true,
+   "floor_superior": true,
+   "n_learned_ahead": 6
+  },
+  "nicheformer euclid \u2212 floor cosine": {
+   "n_units": 25,
+   "est": -0.03894644443475521,
+   "lower": -0.04433991984831974,
+   "upper": -0.033552969021190676,
+   "noninferior": true,
+   "floor_superior": true,
+   "n_learned_ahead": 0
+  },
+  "nicheformer cosine \u2212 floor cosine (registered)": {
+   "n_units": 25,
+   "est": -0.03791716482417631,
+   "lower": -0.043170087051382214,
+   "upper": -0.0326642425969704,
+   "noninferior": true,
+   "floor_superior": true,
+   "n_learned_ahead": 0
+  },
+  "nicheformer best \u2212 floor cosine": {
+   "n_units": 25,
+   "est": -0.037757725403255546,
+   "lower": -0.043025428535432446,
+   "upper": -0.032490022271078646,
+   "noninferior": true,
+   "floor_superior": true,
+   "n_learned_ahead": 0
+  }
+ },
+ "means": {
+  "cosine_floor": 0.16242433230934156,
+  "cosine_scvi": 0.15355983828981937,
+  "cosine_nicheformer": 0.12452038671780438,
+  "euclid_floor": 0.14894103233149547,
+  "euclid_scvi": 0.11125496349395156,
+  "euclid_nicheformer": 0.12352913891237709
+ }
+}

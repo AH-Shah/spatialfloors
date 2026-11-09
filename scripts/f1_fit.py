@@ -14,7 +14,9 @@ from spatialfloors.provenance import stamp
 
 u, model, cfg = sys.argv[1:4]; OUT = Path(sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else os.environ.get("SF_OUT", "runs/p3")); OUT.mkdir(parents=True, exist_ok=True)
 tag = f"f1_{u}_{model}_{cfg}"; a = ad.read_h5ad(f"runs/p2/cache/{u}.h5ad"); species = "mouse" if u.startswith("allen") else "human"
-Xa_all, Xb_all = count_split(a.X, seed=0); keep = np.flatnonzero(filter_reason(a.var_names, species) == "")
+_sp = Path(f"runs/p2/cache/{u}_split.npz")  # whole-slide arm (scripts/xw_prepare.py): the full-slide count split on the lean cache's columns
+Xa_all, Xb_all = (lambda A: (A, sp.csr_matrix(a.X - A)))(sp.load_npz(_sp).tocsr()) if _sp.exists() else count_split(a.X, seed=0)
+keep = np.flatnonzero(filter_reason(a.var_names, species) == "")
 Xa, Xb, vn = Xa_all[:, keep], Xb_all[:, keep], a.var_names[keep]
 g = vn.get_indexer(json.loads(Path(f"manifests/panels/{u}.json").read_text())["genes"]); assert (g >= 0).all(); t = time.time(); info = {}
 if model == "expr_embed":  # F1 floor v2 (locked: pearson_z_pc100)
