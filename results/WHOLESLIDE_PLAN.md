@@ -69,11 +69,38 @@ The registered scripts run with `SF_LEAN=1`. Without it nothing changes.
   - F5: InSituType log-likelihoods identical, and |Δ AUROC| < 1e-9
 
   Results are in §7.
-- **Execution.** `runs/sched/xw_jobs.txt` (from `scripts/xw_jobs.py`) runs through `scripts/sched.sh`, every job
-  under a `mem_guard` footprint cap. The largest slide (120) goes first, and there is one GPU job at a time. A job
-  killed at its cap is rerun after a memory-only fix, which is logged. A model that still fails is reported as failed
-  on that slide.
-- **Compute estimate.** ~8 GPU h and ~10 CPU h, about one day of wall time on the M5.
+- **Execution** (amended 2026-11-09, before any learned-model output; see the feasibility review below).
+  - `runs/sched/xw_jobs.txt` (from `scripts/xw_jobs.py`) runs through `scripts/sched.sh`. Every job runs under a
+    `mem_guard` footprint cap, with one GPU job at a time and at most two CPU jobs.
+  - The largest slide (120, 741k cells) runs first, all of its jobs. The other five slides start only after every
+    slide-120 job has finished (gate `xw_gate120`).
+  - **Stop rule:** if any slide-120 job fails (cap kill or crash), the arm is declared failed and stopped
+    (`scripts/xw_watch.sh` writes `runs/xw/ARM_FAILED`). It is reported as infeasible at whole-slide scale on this
+    machine, and nothing is rerun.
+  - On the smaller slides, a model that fails is reported as failed on that slide.
+- **Compute estimate.** From the feasibility review below: 30–60 min per learned model on slide 120, about 10–12 h of
+  wall time for the arm on the M5.
+
+### Feasibility review and amendment (2026-11-09)
+
+The first start of the pool was stopped by the investigators after 45 min, before any learned model had produced
+an output, to check whether each learned model can run on a whole slide as-is.
+
+- **What had finished by then:** the caches of slides 120, 221, 210 and 242; the F3 receiver ids of 120, 221 and 242;
+  and the F2 floor on 120 and 221. These outputs were kept unread.
+- **Review method:** `scripts/xw_scaling.py` read the peak memory footprint and active run time of 1,369 earlier
+  jobs (crops of 13.6k–54k cells and the 298k-cell GSE1 231 slide) and related them to the number of cells
+  (`runs/xw/XW_SCALING.md`).
+- **The four learned models of this arm:** scVI, CellCharter, LightGBM and scANVI run unchanged (no change to their
+  code since the results). Their memory grows ~0.5–1.2 GB per 100k cells, giving a forecast of ≤ ~10 GB and 30–60 min
+  each at 741k cells.
+- **Three learned models that cannot run on a whole slide on this machine:**
+  - Nicheformer: per-cell inference at ~16 cells/s, 7–23 h per slide;
+  - NCEM: 2–4 h per 50k crop, with images padded to the largest;
+  - Tangram: a dense cells × genes matrix on the GPU, ~12 GB per 100k cells.
+
+  They stay outside the arm (§3), and this limit is reported.
+- **Slide 120 is the worst case.** No other slide is larger, hence the stop rule.
 
 ## 5. Analysis (`scripts/xw_analyze.py`, run once after every job is done)
 

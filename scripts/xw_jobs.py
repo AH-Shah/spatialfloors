@@ -26,5 +26,8 @@ for s, n in N.items():
         ("5s", "gpu", f"runs/xw/f5_{u}_scanvi.json", "prep", f"{E} SF_CONFIG=nl30_nb pixi run -e scvi python scripts/p3_f5.py {u} scanvi")]
     for i, k, d, after, cmd in J:
         est = max(2.5, round(EST_741K[i] * n / 741155, 1)); cap = min(16, round(est + 6)); jid = f"xw_{i}_{s}"; ids.append(jid)
-        print(f"{jid}|{k}|{est}|{cap}|{d}|{'-' if after == '-' else f'xw_{after}_{s}'}|{cmd}")
+        dep = f"xw_{after}_{s}" if after != "-" else ("-" if s == "120" else "xw_gate120")  # plan §4: other slides only after all of slide 120
+        print(f"{jid}|{k}|{est}|{cap}|{d}|{dep}|{cmd}")
+    if s == "120":  # gate: every slide-120 job done (a failure there stops the arm: scripts/xw_watch.sh)
+        print(f"xw_gate120|cpu|0.5|2|runs/xw/GATE120.ok|{','.join(ids)}|touch runs/xw/GATE120.ok")
 print(f"xw_analyze|cpu|4|10|runs/xw/X_wholeslide.json|{','.join(ids)}|pixi run -e floors python scripts/xw_analyze.py runs/xw runs/p4/P5_corrected.json")
