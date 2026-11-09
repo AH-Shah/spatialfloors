@@ -70,13 +70,16 @@ The registered scripts run with `SF_LEAN=1`. Without it nothing changes.
 
   Results are in §7.
 - **Execution** (amended 2026-11-09, before any learned-model output; see the feasibility review below).
-  - `runs/sched/xw_jobs.txt` (from `scripts/xw_jobs.py`) runs through `scripts/sched.sh`. Every job runs under a
-    `mem_guard` footprint cap, with one GPU job at a time and at most two CPU jobs.
-  - The largest slide (120, 741k cells) runs first, all of its jobs. The other five slides start only after every
-    slide-120 job has finished (gate `xw_gate120`).
-  - **Stop rule:** if any slide-120 job fails (cap kill or crash), the arm is declared failed and stopped
-    (`scripts/xw_watch.sh` writes `runs/xw/ARM_FAILED`). It is reported as infeasible at whole-slide scale on this
-    machine, and nothing is rerun.
+  - `runs/sched/xw_jobs.txt` (from `scripts/xw_jobs.py`) runs through `scripts/sched.sh`, with one GPU job at a time
+    and at most two CPU jobs.
+  - **System limits** (the machine's own): RAM 23 GB, which is every job's `mem_guard` footprint cap; and swap at
+    most 2 GB for at most 15 minutes.
+  - The largest slide (120, 741k cells) runs first, all of its jobs. Every job of the other five slides waits until
+    every slide-120 job has finished (gate `xw_gate120`).
+  - **Stop rule** (`scripts/xw_watch.sh` writes `runs/xw/ARM_FAILED`). The arm is declared failed and stopped, and
+    reported as infeasible at whole-slide scale on this machine, with nothing rerun, if either:
+    - a slide-120 job fails (cap kill or crash); or
+    - swap stays above 2 GB for more than 15 minutes at any point.
   - On the smaller slides, a model that fails is reported as failed on that slide.
 - **Compute estimate.** From the feasibility review below: 30–60 min per learned model on slide 120, about 10–12 h of
   wall time for the arm on the M5.
