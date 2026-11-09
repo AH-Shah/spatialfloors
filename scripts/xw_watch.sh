@@ -17,7 +17,7 @@ stop_arm() {
 hi_since=0
 while true; do
   [ -e runs/xw/X_wholeslide.json ] && { echo "[$(date +%T)] analysis written; watcher exits"; exit 0; }
-  f=$(ls runs/sched/xw_*_120.fail 2>/dev/null | head -1)
+  ff=(runs/sched/xw_*_120.fail(N)); f=${ff[1]}
   [ -n "$f" ] && stop_arm "slide-120 job failed: $(basename $f) | $(tail -2 ${f%.fail}.log | tr '\n' ' ' | cut -c1-300)"
   s=$(sysctl -n vm.swapusage | awk '{print $6}' | tr -d M | cut -d. -f1); now=$(date +%s)
   if [ "$s" -gt 2048 ]; then [ $hi_since -eq 0 ] && { hi_since=$now; echo "[$(date +%T)] swap ${s}M > 2048M"; }; [ $((now - hi_since)) -gt 900 ] && stop_arm "swap > 2 GB for > 15 min (now ${s}M)"
