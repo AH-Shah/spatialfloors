@@ -9,7 +9,7 @@
 cd /Users/Hemato/project_3/antig/spatialfloors
 kt() { local c; for c in $(pgrep -P $1); do kt $c; done; kill -TERM $1 2>/dev/null; kill -CONT $1 2>/dev/null; }
 stop_arm() {
-  { echo "[$(date +%T)] ARM FAILED: $1"; echo "running: $(ls runs/sched/xw_*.run(N) | xargs -n1 basename 2>/dev/null | tr '\n' ' ')"; } | tee runs/xw/ARM_FAILED
+  { echo "[$(date +%T)] ARM FAILED: $1"; echo "running: ${(j: :)${(@)$(print -l runs/sched/xw_*.run(N))##*/}}"; } | tee runs/xw/ARM_FAILED
   launchctl bootout gui/$UID/com.prun.sfxw 2>/dev/null; p=$(cat runs/sched/sched.pid 2>/dev/null); [ -n "$p" ] && kill $p 2>/dev/null
   for r in runs/sched/xw_*.run(N); do kt $(awk '{print $1}' $r); mv $r ${r%.run}.stopped; done
   echo "[$(date +%T)] pool stopped"; exit 0
