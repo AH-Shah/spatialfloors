@@ -214,7 +214,7 @@ r-irlba = "*"
 "r-spatstat.geom" = "*"
 anndata = "*"
 [feature.r.tasks]  # GenomeInfoDbData from Bioconductor 3.20 source (the bioconda data package needs a post-link download pixi does not run)
-r-setup = "Rscript -e 'install.packages(\"https://bioconductor.org/packages/3.20/data/annotation/src/contrib/GenomeInfoDbData_1.2.13.tar.gz\", repos=NULL, type=\"source\"); install.packages(c(\"anndata\", \"fastglm\"), repos=\"https://cloud.r-project.org\"); remotes::install_github(\"Nanostring-Biostats/InSituType\", upgrade=\"never\")'"
+r-setup = "Rscript -e 'options(timeout = 600); install.packages(\"https://bioconductor.org/packages/3.20/data/annotation/src/contrib/GenomeInfoDbData_1.2.13.tar.gz\", repos=NULL, type=\"source\"); install.packages(c(\"anndata\", \"fastglm\"), repos=\"https://cloud.r-project.org\"); remotes::install_github(\"Nanostring-Biostats/InSituType@f3ef0dd0814318d74675e6a613fad3ef7f1e23a1\", upgrade=\"never\")'"
 
 [feature.stack]
 platforms = ["osx-arm64"]  # learned-model environment: macOS arm64 only (MPS); floors and r are also locked for linux-64

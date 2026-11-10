@@ -33,11 +33,13 @@ and one environment per learned model.
   floating-point tolerance (different BLAS), and for the learned models within GPU nondeterminism.
 
 ```
-pixi run -e floors pytest
-pixi run -e floors spatialfloors check
+pixi run --frozen -e r r-setup        # once: Bioconductor data package, InSituType @ f3ef0dd from GitHub
+pixi run --frozen -e floors pytest
+pixi run --frozen -e floors spatialfloors check
 ```
 
-`pytest` gives 36 passed and 1 skipped (the slow `spatialfloors check` test, which needs the data). Tests that need a
+In this repository `pytest` gives 36 passed and 3 skipped: the slow `spatialfloors check` test (set `SF_SLOW=1`; needs
+the data) and two F4 score tests that need the Cellina run outputs (development repository only). Tests that need a
 data file skip when it is absent.
 
 Data are public and not included: sources, the names used in the text, and the SHA-256 of every input file are in
