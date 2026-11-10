@@ -37,7 +37,7 @@ CANCER = {
     "gse1": "CRC",
     "gse0": "CRC",
     "gse303070": "CRC",
-    "spatch": "SPATCH (tissue unverified)",
+    "spatch": "SPATCH (tissue unverified)",  # registered label; colon adenocarcinoma, corrected in p5_loco_crc.py
     "allen": "mouse brain",
     "bruker_breast": "breast",
     "bruker_mobreast": "breast",

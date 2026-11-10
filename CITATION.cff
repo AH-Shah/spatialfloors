@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this benchmark, its protocol or its results, please cite the Zenodo record."
 title: "Closed-form floors versus learned models in spatial omics: confirmatory protocol, registration package and results"
-version: "results-v1"
-date-released: "2026-11-08"
-doi: "10.5281/zenodo.24044400"
+version: "results-v1.1"
+date-released: "2026-11-10"
+doi: "10.5281/zenodo.24109807"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.23931263"
@@ -14,6 +14,9 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.24044400"
     description: "Version 2: registration package and results"
+  - type: doi
+    value: "10.5281/zenodo.24109807"
+    description: "Version 3: results-v1.1 (exploratory analyses, label correction, publication clean-up)"
 license: MIT
 repository-code: "https://github.com/AH-Shah/spatialfloors"
 authors:

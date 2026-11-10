@@ -1,9 +1,11 @@
 # Results: closed-form floors versus learned models in spatial omics
 
 Confirmatory results of the protocol registered as DOI [10.5281/zenodo.23931264](https://doi.org/10.5281/zenodo.23931264)
-(`registration/PROTOCOL.md`, tag `registration-v1`). Release `results-v1`, 2026-11-08, deposited on Zenodo as version 2
-of the registration record, DOI [10.5281/zenodo.24044400](https://doi.org/10.5281/zenodo.24044400); version 1 is
-unchanged. Every number below is read from
+(`registration/PROTOCOL.md`, tag `registration-v1`). Release `results-v1.1`, 2026-11-10, deposited on Zenodo as version 3
+of the registration record, DOI [10.5281/zenodo.24109807](https://doi.org/10.5281/zenodo.24109807); the first results release `results-v1`
+(2026-11-08) is version 2, DOI [10.5281/zenodo.24044400](https://doi.org/10.5281/zenodo.24044400), and the
+registration (version 1) is unchanged. The registered verdicts and every tier-1 and tier-2 number are the same in
+both releases (`CHANGELOG.md`). Every number below is read from
 the reports in [`results/reports/`](results/reports/); events and deviations after registration are in
 [`results/DEVIATIONS.md`](results/DEVIATIONS.md).
 
@@ -60,9 +62,11 @@ whole small samples, PROTOCOL §3).
 
 - **Wilcoxon:** with 4 units the smallest attainable one-sided signed-rank p is .0625, so the Novae entry cannot reach
   .05. With 5 units the smallest is .031, and Cellina spike-free gives .063.
-- **Leave-one-cancer-out:** the registered analysis treats SPATCH Xenium 5K as its own group (tissue unverified at
-  registration); it is the colon adenocarcinoma sample of its study, and with it counted as CRC every F1 split stays
-  non-inferior. The failures are in splits of 2–6 units. F4 non-inferiority for Cellina rests on the mouse
+- **Leave-one-cancer-out:** SPATCH Xenium 5K (F1 only) is colon adenocarcinoma and counts as CRC. The registered
+  analysis code labelled it "tissue unverified" and so left it out as a group of its own; the label is corrected
+  (`results/DEVIATIONS.md`, `results/reports/P5_loco_crc.md`). This changes only F1 without CRC (7 units; upper
+  bound scVI −.0061, Nicheformer −.0269; with the registered label 8 units, −.0060, −.0232) and removes the SPATCH
+  split. Every F1 split is non-inferior with either label. The failures are in splits of 2–6 units. F4 non-inferiority for Cellina rests on the mouse
   sections, where D ≈ 0. On the six CRC slides Cellina leads by +.017 (official), close to the .03 margin. F5
   non-inferiority rests on the CRC units. On the three Bruker units (kidney, skin, breast) scANVI is level with the
   floor (D +.002, upper +.0525).
@@ -169,6 +173,13 @@ second, with one-sided 95% bounds.
   - Tangram at its own call rate: −.035 (−.048, −.022).
   - Ranking by class posterior raises the floor at its own call rate from .723 to .741, so matching does not handicap
     the floor. The reading is that scANVI and the floor are level on F5.
+- **F5 with depth held fixed** (`results/reports/X_f5_depth.md`; F5 stress panel on the confirmation units, PROTOCOL
+  §6). The held-out-marker score is log1p CP10k, so calling deep cells can raise it. The same AUROC computed within
+  each library-size quintile (mean over quintiles; registered scores recomputed exactly on every crop):
+  - scANVI − floor: D +.0015 (one-sided 95% bounds −.0044, +.0074), against −.0143 registered: level, and still
+    non-inferior. The floor's registered lead over scANVI is a depth effect.
+  - Tangram − floor: −.1526 (−.1798, −.1253); Tangram calls 70% of its epithelial cells from the deepest quintile
+    (floor 31%, scANVI 34%).
 - **F1 with Euclidean k-NN** (`results/reports/X_f1_euclid.md`; added 2026-11-09). Every saved locked embedding was
   re-scored with Euclidean instead of cosine neighbours.
   - Crop means, cosine → Euclidean: scVI .154 → .111; floor .162 → .149.
@@ -205,8 +216,6 @@ second, with one-sided 95% bounds.
   Floor grids: F1 48, F2 225 (+ 173 in reference and k sweeps), F3 144, F5 84. Learned models: 2–6 each. The floors
   were tuned far more than the learned models before the lock; tier 2 (above) measures what tuning on the scored unit
   would add.
-- **Not run in this release:** stress panels on the confirmation units, the protein shift-null on IF stains, and the F1
-  depth-matched reference (PROTOCOL §6).
 
 ## Reproducing the analysis
 

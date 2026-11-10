@@ -6,8 +6,8 @@ counterfactuals (F4) and label transfer (F5).
 
 - Protocol: [`registration/PROTOCOL.md`](registration/PROTOCOL.md); registration DOI
   [10.5281/zenodo.23931264](https://doi.org/10.5281/zenodo.23931264), tag `registration-v1`.
-- Results: [`RESULTS.md`](RESULTS.md); DOI [10.5281/zenodo.24044400](https://doi.org/10.5281/zenodo.24044400), tag
-  `results-v1`. The floors were non-inferior to the learned model in all 12 registered pairs, and no learned model was
+- Results: [`RESULTS.md`](RESULTS.md); release `results-v1.1`, DOI [10.5281/zenodo.24109807](https://doi.org/10.5281/zenodo.24109807) (first release
+  `results-v1`: DOI [10.5281/zenodo.24044400](https://doi.org/10.5281/zenodo.24044400)). The floors were non-inferior to the learned model in all 12 registered pairs, and no learned model was
   superior after Holm correction.
 - Deviations and additions after registration: [`results/DEVIATIONS.md`](results/DEVIATIONS.md).
 - Data sources: [`DATA.md`](DATA.md).
@@ -17,7 +17,7 @@ counterfactuals (F4) and label transfer (F5).
 | Path | Content |
 |---|---|
 | `src/spatialfloors/` | floors (`floors/`), metrics (`metrics/`), learned-model wrappers (`models/`), data loading (`data/`), statistics (`stats.py`) |
-| `scripts/` | data preparation (`p1_panels.py`, `p2_cache_crop.py`, `v_bruker_*`, `ref_prep.py`, `f4_crop.py`, `f4_merfish_prep.py`); model runs (`f1_fit.py`, `p3_f2.py`, `p3_f3.py`, `p3_f3_ncem_auth.py`, `p3_f5.py`, `f4_run.py`, `f4_l6.py`); confirmation job list (`p4_build.py`) and job pool (`sched.sh`); tier 1 (`p5_tier1_run.sh`, `p5_analyze.py`), tier 2 (`p5_tier2_run.sh`, `p5_tier2.py`), secondary outputs (`p5_secondary.py`); positive controls (`p3_posctl_*`); exploratory analyses (`x_*`, whole-slide arm `xw_*`) |
+| `scripts/` | data preparation (`p1_panels.py`, `p2_cache_crop.py`, `v_bruker_*`, `ref_prep.py`, `f4_crop.py`, `f4_merfish_prep.py`); model runs (`f1_fit.py`, `p3_f2.py`, `p3_f3.py`, `p3_f3_ncem_auth.py`, `p3_f5.py`, `f4_run.py`, `f4_l6.py`); confirmation job list (`p4_build.py`) and job pool (`sched.sh`); tier 1 (`p5_tier1_run.sh`, `p5_analyze.py`, `p5_loco_crc.py`), tier 2 (`p5_tier2_run.sh`, `p5_tier2.py`), secondary outputs (`p5_secondary.py`); positive controls (`p3_posctl_*`); exploratory analyses (`x_*`, whole-slide arm `xw_*`) |
 | `manifests/` | locked configurations, crop cell-ID lists, gene panels |
 | `registration/` | the registration package (protocol, configurations, units, sealed job list, `SHA256SUMS`) |
 | `results/` | reports and per-crop outputs ([index](results/README.md)) |

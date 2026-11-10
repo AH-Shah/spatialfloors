@@ -16,5 +16,3 @@ Summary: [`../RESULTS.md`](../RESULTS.md). Deviations and additions after regist
 | `p4/f4/` | F4 scores per task and seed (Cellina, CPA, L6) and L6 per task |
 | `p4/f5_*.json` | F5 runs (held-out-marker AUROC per class, class shares, IF-gated macro-F1) |
 | `p4/t2/` | Tier-2 runs |
-
-`p4/` mirrors the confirmation run directory without partitions, embeddings, counterfactuals and logs.

@@ -1,0 +1,599 @@
+{
+ "source": "P5_corrected.json",
+ "source_sha256": "6d2b2b18339ae3a58e058d95a56a71ba2c28d5d19ec3e7ee933ab57f4abb36d3",
+ "commit": "8533a6a736e7ef336b683ab8fd8517d873ab615d",
+ "relabelled": {
+  "spatch_xenium5k": "CRC"
+ },
+ "pairs": {
+  "F1|nicheformer": {
+   "changed": true,
+   "registered": {
+    "CRC": {
+     "est": -0.033347762994219904,
+     "upper": -0.02316515901853184,
+     "noninferior": true,
+     "n_units": 8
+    },
+    "RCC": {
+     "est": -0.035402933943758,
+     "upper": -0.030313437873964927,
+     "noninferior": true,
+     "n_units": 24
+    },
+    "SPATCH (tissue unverified)": {
+     "est": -0.0394030633470945,
+     "upper": -0.0340418220491034,
+     "noninferior": true,
+     "n_units": 24
+    },
+    "breast": {
+     "est": -0.0370446689636158,
+     "upper": -0.031668100399467505,
+     "noninferior": true,
+     "n_units": 24
+    },
+    "mouse brain": {
+     "est": -0.042919369818091545,
+     "upper": -0.03670296679124526,
+     "noninferior": true,
+     "n_units": 21
+    },
+    "skin SCC": {
+     "est": -0.03696419761587997,
+     "upper": -0.031554507180402196,
+     "noninferior": true,
+     "n_units": 24
+    }
+   },
+   "corrected": {
+    "CRC": {
+     "est": -0.037789500525659894,
+     "upper": -0.026903838987880766,
+     "noninferior": true,
+     "n_units": 7
+    },
+    "RCC": {
+     "est": -0.035402933943758,
+     "upper": -0.030313437873964927,
+     "noninferior": true,
+     "n_units": 24
+    },
+    "breast": {
+     "est": -0.0370446689636158,
+     "upper": -0.031668100399467505,
+     "noninferior": true,
+     "n_units": 24
+    },
+    "mouse brain": {
+     "est": -0.042919369818091545,
+     "upper": -0.03670296679124526,
+     "noninferior": true,
+     "n_units": 21
+    },
+    "skin SCC": {
+     "est": -0.03696419761587997,
+     "upper": -0.031554507180402196,
+     "noninferior": true,
+     "n_units": 24
+    }
+   },
+   "noninferior_every_split": {
+    "registered": true,
+    "corrected": true
+   }
+  },
+  "F1|scvi": {
+   "changed": true,
+   "registered": {
+    "CRC": {
+     "est": -0.008499795997546406,
+     "upper": -0.006032762123213554,
+     "noninferior": true,
+     "n_units": 8
+    },
+    "RCC": {
+     "est": -0.008282891042576549,
+     "upper": -0.005727359594645055,
+     "noninferior": true,
+     "n_units": 24
+    },
+    "SPATCH (tissue unverified)": {
+     "est": -0.008786412477766842,
+     "upper": -0.006257174585155735,
+     "noninferior": true,
+     "n_units": 24
+    },
+    "breast": {
+     "est": -0.008313941172486745,
+     "upper": -0.005747840964464994,
+     "noninferior": true,
+     "n_units": 24
+    },
+    "mouse brain": {
+     "est": -0.009951122512529881,
+     "upper": -0.007069280800958106,
+     "noninferior": true,
+     "n_units": 21
+    },
+    "skin SCC": {
+     "est": -0.008494790256532499,
+     "upper": -0.005897435777287734,
+     "noninferior": true,
+     "n_units": 24
+    }
+   },
+   "corrected": {
+    "CRC": {
+     "est": -0.008694758791590722,
+     "upper": -0.006057388643213851,
+     "noninferior": true,
+     "n_units": 7
+    },
+    "RCC": {
+     "est": -0.008282891042576549,
+     "upper": -0.005727359594645055,
+     "noninferior": true,
+     "n_units": 24
+    },
+    "breast": {
+     "est": -0.008313941172486745,
+     "upper": -0.005747840964464994,
+     "noninferior": true,
+     "n_units": 24
+    },
+    "mouse brain": {
+     "est": -0.009951122512529881,
+     "upper": -0.007069280800958106,
+     "noninferior": true,
+     "n_units": 21
+    },
+    "skin SCC": {
+     "est": -0.008494790256532499,
+     "upper": -0.005897435777287734,
+     "noninferior": true,
+     "n_units": 24
+    }
+   },
+   "noninferior_every_split": {
+    "registered": true,
+    "corrected": true
+   }
+  },
+  "F2|cellcharter": {
+   "changed": false,
+   "registered": {
+    "CRC": {
+     "est": -0.04106146698909618,
+     "upper": -0.02812041413013202,
+     "noninferior": true,
+     "n_units": 4
+    },
+    "mouse brain": {
+     "est": -0.13987077259596453,
+     "upper": 0.0033312459224605073,
+     "noninferior": true,
+     "n_units": 6
+    }
+   },
+   "corrected": {
+    "CRC": {
+     "est": -0.04106146698909618,
+     "upper": -0.02812041413013202,
+     "noninferior": true,
+     "n_units": 4
+    },
+    "mouse brain": {
+     "est": -0.13987077259596453,
+     "upper": 0.0033312459224605073,
+     "noninferior": true,
+     "n_units": 6
+    }
+   },
+   "noninferior_every_split": {
+    "registered": true,
+    "corrected": true
+   }
+  },
+  "F3|lightgbm": {
+   "changed": false,
+   "registered": {
+    "CRC": {
+     "est": -0.02172165635047937,
+     "upper": -0.014416164453570949,
+     "noninferior": true,
+     "n_units": 7
+    },
+    "RCC": {
+     "est": -0.015338079061946248,
+     "upper": -0.012478148481251512,
+     "noninferior": true,
+     "n_units": 21
+    },
+    "breast": {
+     "est": -0.015646581384937887,
+     "upper": -0.01275472119051737,
+     "noninferior": true,
+     "n_units": 21
+    },
+    "mouse brain": {
+     "est": -0.012938377960658191,
+     "upper": -0.010386431317458599,
+     "noninferior": true,
+     "n_units": 18
+    },
+    "skin SCC": {
+     "est": -0.015501010678271213,
+     "upper": -0.012607949368412055,
+     "noninferior": true,
+     "n_units": 21
+    }
+   },
+   "corrected": {
+    "CRC": {
+     "est": -0.02172165635047937,
+     "upper": -0.014416164453570949,
+     "noninferior": true,
+     "n_units": 7
+    },
+    "RCC": {
+     "est": -0.015338079061946248,
+     "upper": -0.012478148481251512,
+     "noninferior": true,
+     "n_units": 21
+    },
+    "breast": {
+     "est": -0.015646581384937887,
+     "upper": -0.01275472119051737,
+     "noninferior": true,
+     "n_units": 21
+    },
+    "mouse brain": {
+     "est": -0.012938377960658191,
+     "upper": -0.010386431317458599,
+     "noninferior": true,
+     "n_units": 18
+    },
+    "skin SCC": {
+     "est": -0.015501010678271213,
+     "upper": -0.012607949368412055,
+     "noninferior": true,
+     "n_units": 21
+    }
+   },
+   "noninferior_every_split": {
+    "registered": true,
+    "corrected": true
+   }
+  },
+  "F3|ncem": {
+   "changed": false,
+   "registered": {
+    "CRC": {
+     "est": -0.060613686090257426,
+     "upper": -0.0459869282702348,
+     "noninferior": true,
+     "n_units": 7
+    },
+    "RCC": {
+     "est": -0.0361699789021029,
+     "upper": -0.03014576628770918,
+     "noninferior": true,
+     "n_units": 21
+    },
+    "breast": {
+     "est": -0.036533269461096744,
+     "upper": -0.030525796084346794,
+     "noninferior": true,
+     "n_units": 21
+    },
+    "mouse brain": {
+     "est": -0.02403344881521365,
+     "upper": -0.01841053247456731,
+     "noninferior": true,
+     "n_units": 18
+    },
+    "skin SCC": {
+     "est": -0.03545920212479282,
+     "upper": -0.029656425770145697,
+     "noninferior": true,
+     "n_units": 21
+    }
+   },
+   "corrected": {
+    "CRC": {
+     "est": -0.060613686090257426,
+     "upper": -0.0459869282702348,
+     "noninferior": true,
+     "n_units": 7
+    },
+    "RCC": {
+     "est": -0.0361699789021029,
+     "upper": -0.03014576628770918,
+     "noninferior": true,
+     "n_units": 21
+    },
+    "breast": {
+     "est": -0.036533269461096744,
+     "upper": -0.030525796084346794,
+     "noninferior": true,
+     "n_units": 21
+    },
+    "mouse brain": {
+     "est": -0.02403344881521365,
+     "upper": -0.01841053247456731,
+     "noninferior": true,
+     "n_units": 18
+    },
+    "skin SCC": {
+     "est": -0.03545920212479282,
+     "upper": -0.029656425770145697,
+     "noninferior": true,
+     "n_units": 21
+    }
+   },
+   "noninferior_every_split": {
+    "registered": true,
+    "corrected": true
+   }
+  },
+  "F4_pearson|cellina": {
+   "changed": false,
+   "registered": {
+    "CRC": {
+     "est": -0.0009973734959173586,
+     "upper": 0.0031047855345598917,
+     "noninferior": true,
+     "n_units": 4
+    },
+    "mouse brain": {
+     "est": 0.016545411368351696,
+     "upper": 0.031379262015254546,
+     "noninferior": false,
+     "n_units": 6
+    }
+   },
+   "corrected": {
+    "CRC": {
+     "est": -0.0009973734959173586,
+     "upper": 0.0031047855345598917,
+     "noninferior": true,
+     "n_units": 4
+    },
+    "mouse brain": {
+     "est": 0.016545411368351696,
+     "upper": 0.031379262015254546,
+     "noninferior": false,
+     "n_units": 6
+    }
+   },
+   "noninferior_every_split": {
+    "registered": false,
+    "corrected": false
+   }
+  },
+  "F4_pearson|cpa": {
+   "changed": false,
+   "registered": {
+    "CRC": {
+     "est": -0.03481399848260622,
+     "upper": 0.0013158886888797183,
+     "noninferior": true,
+     "n_units": 4
+    },
+    "mouse brain": {
+     "est": -0.15089732804922165,
+     "upper": -0.07249812185004688,
+     "noninferior": true,
+     "n_units": 6
+    }
+   },
+   "corrected": {
+    "CRC": {
+     "est": -0.03481399848260622,
+     "upper": 0.0013158886888797183,
+     "noninferior": true,
+     "n_units": 4
+    },
+    "mouse brain": {
+     "est": -0.15089732804922165,
+     "upper": -0.07249812185004688,
+     "noninferior": true,
+     "n_units": 6
+    }
+   },
+   "noninferior_every_split": {
+    "registered": true,
+    "corrected": true
+   }
+  },
+  "F4_pearson_clean|cellina": {
+   "changed": false,
+   "registered": {
+    "CRC": {
+     "est": -0.001199072652715868,
+     "upper": 0.004222831606004701,
+     "noninferior": true,
+     "n_units": 3
+    },
+    "mouse brain": {
+     "est": 0.02324839514107928,
+     "upper": 0.1553995201568939,
+     "noninferior": false,
+     "n_units": 2
+    }
+   },
+   "corrected": {
+    "CRC": {
+     "est": -0.001199072652715868,
+     "upper": 0.004222831606004701,
+     "noninferior": true,
+     "n_units": 3
+    },
+    "mouse brain": {
+     "est": 0.02324839514107928,
+     "upper": 0.1553995201568939,
+     "noninferior": false,
+     "n_units": 2
+    }
+   },
+   "noninferior_every_split": {
+    "registered": false,
+    "corrected": false
+   }
+  },
+  "F4_pearson_clean|cpa": {
+   "changed": false,
+   "registered": {
+    "CRC": {
+     "est": -0.061111891899630406,
+     "upper": -0.013632596610909889,
+     "noninferior": true,
+     "n_units": 3
+    },
+    "mouse brain": {
+     "est": -0.0777038062235609,
+     "upper": 0.17828848632026092,
+     "noninferior": false,
+     "n_units": 2
+    }
+   },
+   "corrected": {
+    "CRC": {
+     "est": -0.061111891899630406,
+     "upper": -0.013632596610909889,
+     "noninferior": true,
+     "n_units": 3
+    },
+    "mouse brain": {
+     "est": -0.0777038062235609,
+     "upper": 0.17828848632026092,
+     "noninferior": false,
+     "n_units": 2
+    }
+   },
+   "noninferior_every_split": {
+    "registered": false,
+    "corrected": false
+   }
+  },
+  "F5|scanvi": {
+   "changed": false,
+   "registered": {
+    "CRC": {
+     "est": 0.0021879175434729517,
+     "upper": 0.052458556780168815,
+     "noninferior": false,
+     "n_units": 3
+    },
+    "RCC": {
+     "est": -0.01689265037616308,
+     "upper": -0.00901782920566012,
+     "noninferior": true,
+     "n_units": 19
+    },
+    "breast": {
+     "est": -0.013800265661084051,
+     "upper": -0.005510928206656298,
+     "noninferior": true,
+     "n_units": 19
+    },
+    "skin SCC": {
+     "est": -0.0148804563565307,
+     "upper": -0.006240831774192313,
+     "noninferior": true,
+     "n_units": 19
+    }
+   },
+   "corrected": {
+    "CRC": {
+     "est": 0.0021879175434729517,
+     "upper": 0.052458556780168815,
+     "noninferior": false,
+     "n_units": 3
+    },
+    "RCC": {
+     "est": -0.01689265037616308,
+     "upper": -0.00901782920566012,
+     "noninferior": true,
+     "n_units": 19
+    },
+    "breast": {
+     "est": -0.013800265661084051,
+     "upper": -0.005510928206656298,
+     "noninferior": true,
+     "n_units": 19
+    },
+    "skin SCC": {
+     "est": -0.0148804563565307,
+     "upper": -0.006240831774192313,
+     "noninferior": true,
+     "n_units": 19
+    }
+   },
+   "noninferior_every_split": {
+    "registered": false,
+    "corrected": false
+   }
+  },
+  "F5|tangram": {
+   "changed": false,
+   "registered": {
+    "CRC": {
+     "est": -0.11582105293573193,
+     "upper": 0.029841146785528613,
+     "noninferior": false,
+     "n_units": 3
+    },
+    "RCC": {
+     "est": -0.11813912447607942,
+     "upper": -0.08752872457762162,
+     "noninferior": true,
+     "n_units": 19
+    },
+    "breast": {
+     "est": -0.11165306129662554,
+     "upper": -0.08031126913092218,
+     "noninferior": true,
+     "n_units": 19
+    },
+    "skin SCC": {
+     "est": -0.10937453123376988,
+     "upper": -0.07900616784417225,
+     "noninferior": true,
+     "n_units": 19
+    }
+   },
+   "corrected": {
+    "CRC": {
+     "est": -0.11582105293573193,
+     "upper": 0.029841146785528613,
+     "noninferior": false,
+     "n_units": 3
+    },
+    "RCC": {
+     "est": -0.11813912447607942,
+     "upper": -0.08752872457762162,
+     "noninferior": true,
+     "n_units": 19
+    },
+    "breast": {
+     "est": -0.11165306129662554,
+     "upper": -0.08031126913092218,
+     "noninferior": true,
+     "n_units": 19
+    },
+    "skin SCC": {
+     "est": -0.10937453123376988,
+     "upper": -0.07900616784417225,
+     "noninferior": true,
+     "n_units": 19
+    }
+   },
+   "noninferior_every_split": {
+    "registered": false,
+    "corrected": false
+   }
+  }
+ }
+}
