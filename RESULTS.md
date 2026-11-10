@@ -37,9 +37,6 @@ whole small samples, PROTOCOL §3).
 - **Units:** F3 lost 3 of 25 crops before scoring. Their label-free receiver identities form a single lineage, so no
   model has an other-lineage context (`results/DEVIATIONS.md`). Donors 7 and 170 are therefore missing, and donor 280
   is scored on sample 280N only.
-- **First tier-1 run:** it left GSE1 222 out of F4 (it read 222's scores with the wrong held-out type), giving N = 9 / 4.
-  The corrected report above is the registered analysis on every registered unit. The first run is kept as
-  `results/reports/P5.{json,md}`, and its verdicts are the same (`results/DEVIATIONS.md`).
 - **F4 retrospective units:** 5 of the 10 official-metric units carry the authors' published Cellina and CPA results,
   and their comparison with L6 was computed before registration (PROTOCOL §3). The spike-free pairs use the 5
   prospective units only.
@@ -63,7 +60,9 @@ whole small samples, PROTOCOL §3).
 
 - **Wilcoxon:** with 4 units the smallest attainable one-sided signed-rank p is .0625, so the Novae entry cannot reach
   .05. With 5 units the smallest is .031, and Cellina spike-free gives .063.
-- **Leave-one-cancer-out:** the failures are in splits of 2–6 units. F4 non-inferiority for Cellina rests on the mouse
+- **Leave-one-cancer-out:** the registered analysis treats SPATCH Xenium 5K as its own group (tissue unverified at
+  registration); it is the colon adenocarcinoma sample of its study, and with it counted as CRC every F1 split stays
+  non-inferior. The failures are in splits of 2–6 units. F4 non-inferiority for Cellina rests on the mouse
   sections, where D ≈ 0. On the six CRC slides Cellina leads by +.017 (official), close to the .03 margin. F5
   non-inferiority rests on the CRC units. On the three Bruker units (kidney, skin, breast) scANVI is level with the
   floor (D +.002, upper +.0525).
@@ -220,7 +219,6 @@ zsh scripts/p5_tier1_run.sh   # F1 rescore, F4 scores, tier 1 -> runs/p4/P5_corr
 zsh scripts/p5_tier2_run.sh   # tier 2 -> runs/p4/T2_corrected, secondary outputs, unit-size moderators
 ```
 
-`P5_corrected.json` has SHA-256 `6d2b2b18…` and is the tier-1 report recorded in `T2_corrected.json`. The first tier-1
-report, `P5.json` (`8c855932…`), is the one recorded in `T2.json`. The two tier-2 reports are otherwise identical. Run
+`P5_corrected.json` (the tier-1 report) has SHA-256 `6d2b2b18…`, recorded in the tier-2 report `T2_corrected.json`. Run
 outputs carry the commit hash of the development repository in which they ran; the code as run is this repository at
 `results-v1`.

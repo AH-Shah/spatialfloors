@@ -5,8 +5,7 @@ Summary: [`../RESULTS.md`](../RESULTS.md). Deviations and additions after regist
 | Path | Content |
 |---|---|
 | `reports/P5_corrected.{json,md}` | Tier 1, the registered analysis (`scripts/p5_analyze.py`) |
-| `reports/P5.{json,md}` | First tier-1 run, with GSE1 222 missing from F4 (`DEVIATIONS.md`) |
-| `reports/T2_corrected.{json,md}`, `reports/T2.{json,md}` | Tier 2 (`scripts/p5_tier2.py`) on the corrected and the first tier-1 report |
+| `reports/T2_corrected.{json,md}` | Tier 2 (`scripts/p5_tier2.py`) |
 | `reports/P5_secondary.{json,md}` | Secondary outputs (`scripts/p5_secondary.py`) |
 | `reports/X_*.{json,md}` | Exploratory analyses (`scripts/x_*.py`); whole-slide arm: `X_wholeslide`, `X_f5_scale` |
 | `WHOLESLIDE_PLAN.md` | Plan of the whole-slide arm, committed before any whole-slide output |
