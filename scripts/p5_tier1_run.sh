@@ -9,6 +9,6 @@ RETRO=(retro:120 retro:210 retro:221 retro:242 retro:C57BL6J-2.036 retro:C57BL6J
 echo "[$(date +%T)] start $(git rev-parse --short HEAD) crops ${#CROPS}"
 SF_OUT=runs/p4 pixi run -e floors python scripts/p3_f1_rescore.py; echo "[$(date +%T)] f1 rescore done"
 for s in $F4; do SF_F4_RUN=runs/p4/f4 SF_BLIND=1 SF_HOLDOUT=$([ $s = 222 ] && echo TVA || echo CRC) pixi run -e floors python scripts/f4_score.py $s; echo "[$(date +%T)] f4_score $s done"; done
-SF_P5NAME=P5_corrected pixi run -e floors python scripts/p5_analyze.py runs/p4 $CROPS $RETRO; echo "[$(date +%T)] p5_analyze done"
+SF_EXPECT=manifests/expected_units_tier1.json SF_P5NAME=P5_corrected pixi run -e floors python scripts/p5_analyze.py runs/p4 $CROPS $RETRO; echo "[$(date +%T)] p5_analyze done"
 pixi run -e floors python scripts/x_interior.py runs/p4 $CROPS; echo "[$(date +%T)] x_interior done"
 echo "[$(date +%T)] TIER1_ANALYSIS_DONE"

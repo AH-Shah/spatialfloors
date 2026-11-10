@@ -6,3 +6,4 @@ runs/
 .DS_Store
 registration/*.tar.gz
 registration/units/crops/*.csv.gz
+data

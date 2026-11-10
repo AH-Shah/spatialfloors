@@ -7,8 +7,9 @@ import json, numpy as np, pandas as pd, anndata as ad
 from spatialfloors.data.crops import choose_crop
 from spatialfloors.provenance import stamp
 T = ["GABAergic neuron", "astrocyte", "endothelial cell", "glutamatergic neuron", "oligodendrocyte"]; R = ["Thalamus", "Isocortex", "Fiber_tracts"]
-Z = "/Users/Hemato/project_3/data/raw/allen_zhuang"; Y = "/Users/Hemato/project_3/data/raw/allen_yao_638850"
-SRC = {"animal1": f"{Z}/WB_MERFISH_animal1_coronal.h5ad", "animal2": "/Users/Hemato/project_3/antig/N2/trials/perturb/WB_MERFISH_animal2_coronal.h5ad",
+from spatialfloors.paths import RAW, DERIVED
+Z = f"{RAW}/allen_zhuang"; Y = f"{RAW}/allen_yao_638850"
+SRC = {"animal1": f"{Z}/WB_MERFISH_animal1_coronal.h5ad", "animal2": f"{DERIVED}/WB_MERFISH_animal2_coronal.h5ad",
        "animal3": f"{Z}/WB_MERFISH_animal3_sagittal.h5ad", "animal4": f"{Z}/WB_MERFISH_animal4_sagittal.h5ad"}
 
 

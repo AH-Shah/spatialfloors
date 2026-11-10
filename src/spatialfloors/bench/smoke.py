@@ -8,7 +8,7 @@ import numpy as np
 os.environ.setdefault("PYTORCH_ENABLE_MPS_FALLBACK", "1")
 import torch
 
-OUT = Path("runs/p0_smoke"); CROP = OUT / "gse1_232_crop.h5ad"; PELKA = "/Users/Hemato/project_3/data/pelka.h5ad"
+OUT = Path("runs/p0_smoke"); CROP = OUT / "gse1_232_crop.h5ad"; PELKA = str(__import__("spatialfloors.paths", fromlist=["PELKA"]).PELKA)
 
 
 class MemPeak:

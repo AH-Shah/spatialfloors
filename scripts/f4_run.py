@@ -42,7 +42,7 @@ MER = not SID.isdigit(); DS = "merfish" if MER else "crc"  # MERFISH: SID = sect
 if MER: holdouts = [h.replace("_", " ") for h in holdouts]  # job lines use GABAergic_neuron (no spaces)
 HD = "Fiber_tracts" if MER else os.environ.get("SF_HOLDOUT", "CRC")  # 222: TVA (= adata_crc_holdout_config, which differs from adata_crc_config only here)
 if not MER: train_loo.ADATA_CRC_ARGS["holdout_domains"] = [HD]; assert eval_loo.ADATA_CRC_ARGS["holdout_domains"] == [HD]  # same dict object
-src = RUN / f"raw/{SID}.h5ad" if MER else next(f for f in (RUN / f"raw/cosmx_wt_{SID}.h5ad", Path(f"/Users/Hemato/project_3/data/raw/GSE1/cosmx_wt_{SID}.h5ad")) if f.exists())  # crop (f4_crop.py) first
+src = RUN / f"raw/{SID}.h5ad" if MER else next(f for f in (RUN / f"raw/cosmx_wt_{SID}.h5ad", __import__("spatialfloors.paths", fromlist=["RAW"]).RAW / f"GSE1/cosmx_wt_{SID}.h5ad") if f.exists())  # crop (f4_crop.py) first
 lnk = RUN / (f"datasets/raw/{SID}.h5ad" if MER else f"datasets/crc/raw/crc_{SID}.h5ad"); lnk.parent.mkdir(parents=True, exist_ok=True)
 if not lnk.exists(): lnk.symlink_to(src)
 adata = str(lnk); log = RUN / f"timing_crc_{SID}_{NAME}{'_diag' if MAXEP else ''}.jsonl"

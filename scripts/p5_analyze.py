@@ -22,6 +22,7 @@ CANCER = {"gse1": "CRC", "gse0": "CRC", "gse303070": "CRC", "spatch": "SPATCH (t
 cancer = lambda u: next(v for k, v in sorted(CANCER.items(), key=lambda kv: -len(kv[0])) if u.startswith(k))
 donors = {f"gse303070_{d['slide'].replace('Tumor', 'Tumour')}_{d['pref']}": d["donor_cells"] for d in json.loads(Path("manifests/gse303070_donors.json").read_text())["check_vs_fov_csv"]}
 unit_of = lambda c: donors.get(c, c)
+EXP = json.loads(Path(__import__("os").environ["SF_EXPECT"]).read_text()) if __import__("os").environ.get("SF_EXPECT") else None  # 2026-11-10 (review ST8): fail if a registered unit x pair is missing
 rows = []  # family, model, crop, floor, learned
 
 
@@ -107,7 +108,8 @@ for (f, m), g in df.groupby(["fam", "model"]):
     mg = L[f.split("_")[0]]["margin"]; uo = (lambda c: c.rsplit("_", 1)[0] if c.startswith("allen_") else c) if f.startswith("F4") else unit_of  # F4 MERFISH unit = animal
     units, D, strata = stats.aggregate_units(dict(zip(g.crop, g.D)), {c: uo(c) for c in g.crop})
     t = stats.family_test(D, strata, margin=mg) if len(D) > 1 else dict(est=float(D[0]), note="one unit: descriptive")
-    um = {k: float(stats.aggregate_units(dict(zip(g.crop, g[k])), {c: uo(c) for c in g.crop})[1].mean()) for k in ("floor", "learned")}  # unit means, as D
+    if EXP and f"{f}|{m}" in EXP["n_units"]: assert len(units) == EXP["n_units"][f"{f}|{m}"], f"{f}|{m}: {len(units)} units scored, {EXP['n_units'][f'{f}|{m}']} registered"
+    um ={k: float(stats.aggregate_units(dict(zip(g.crop, g[k])), {c: uo(c) for c in g.crop})[1].mean()) for k in ("floor", "learned")}  # unit means, as D
     t.update(margin=mg, n_units=len(D), per_unit=dict(zip(units, map(float, D))), floor_mean=um["floor"], learned_mean=um["learned"])
     canc = {c: cancer(c) for c in g.crop}
     if len(set(canc.values())) > 1 and len(D) > 2:  # leave-one-cancer-out
@@ -123,6 +125,7 @@ for (f, m), g in df.groupby(["fam", "model"]):
         if len(gg) < len(g) and len(gg) > 2:
             u2, D2, s2 = stats.aggregate_units(dict(zip(gg.crop, gg.D)), {c: uo(c) for c in gg.crop}); t["without_pretraining_overlap"] = {kk: v for kk, v in stats.family_test(D2, s2, margin=mg).items() if kk in ("est", "upper", "noninferior")}
     out["pairs"][f"{f}|{m}"] = t
+if EXP: assert set(EXP["n_units"]) <= set(out["pairs"]), f"registered pairs missing: {sorted(set(EXP['n_units']) - set(out['pairs']))}"
 keys = [k for k, v in out["pairs"].items() if "p_superior" in v]
 for k, r in zip(keys, stats.holm([out["pairs"][k]["p_superior"] for k in keys])): out["pairs"][k]["learned_superior_holm"] = bool(r)
 out["floor_noninferior_all"] = all(v.get("noninferior", False) for k, v in out["pairs"].items() if "noninferior" in v)

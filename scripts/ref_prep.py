@@ -17,7 +17,7 @@ from spatialfloors.floors.f5 import stratified_rows
 from spatialfloors.metrics.f5 import CLASSES
 from spatialfloors.provenance import stamp
 
-T = sys.argv[1]; RD = Path("/Users/Hemato/project_3/data/raw/refs")
+T = sys.argv[1]; RD = __import__("spatialfloors.paths", fromlist=["RAW"]).RAW / "refs"
 SRC = dict(breast=dict(dir="breast_wu2021", file="wu2021.h5ad", source="CELLxGENE 9fddb063-056d-4202-8b8a-4b0ee531d3ce (Wu et al. 2021, Nat Genet)"),
            kidney=dict(dir="ccrcc_krishna2021", file="krishna2021.h5ad", source="CELLxGENE bd65a70f-b274-4133-b9dd-0d1431b6af34 (Krishna et al. 2021, Cancer Cell)"),
            skin=dict(dir="cscc_ji2020", file="counts.txt.gz", source="GEO GSE144236 (Ji et al. 2020, Cell), level1 / level2 annotation"))[T]
@@ -77,7 +77,7 @@ assert np.allclose(X.data[:100000], np.round(X.data[:100000])), "reference count
 n_cls = {c: int((coarse == c).sum()) for c in (*CLASSES, "other")}
 lib = np.asarray(X.sum(1)).ravel(); L = sp.csr_matrix(sp.diags(1e4 / np.maximum(lib, 1)) @ X); L.data = np.log1p(L.data)
 # held-out markers
-wtx = set(ad.read_h5ad("/Users/Hemato/project_3/data/raw/GSE1/cosmx_wt_232.h5ad", backed="r").var_names.astype(str))
+wtx = set(ad.read_h5ad(RD.parent / "GSE1/cosmx_wt_232.h5ad", backed="r").var_names.astype(str))
 r = stratified_rows(fine); Lr = L[r].tocsc(); cs = coarse[r]; ok_g = np.array([g in wtx for g in genes]); mk = {}  # sparse until the 200 candidates (memory)
 col = lambda j: Lr[:, j].toarray().ravel()
 for c in CLASSES:

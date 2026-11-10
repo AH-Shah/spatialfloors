@@ -2,7 +2,7 @@
 # Release check on development units (no confirmation data): re-run one P4 job per family with the release code into
 # runs/verify and compare with the development outputs (scripts/verify_compare.py). F4 L6 = `spatialfloors check`.
 # Usage: zsh scripts/verify_dev.sh > runs/verify/verify.log 2>&1
-cd /Users/Hemato/project_3/antig/spatialfloors; export PATH=$HOME/.pixi/bin:$PATH PIXI_FROZEN=true OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4
+cd ${0:A:h}/..; export PATH=$HOME/.pixi/bin:$PATH PIXI_FROZEN=true OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4
 V=runs/verify; mkdir -p $V; G=gse303070_148191A_278N; H=gse303070_148191A_118N; A=allen_animal4_C57BL6J-4.003
 run() { echo "== $*"; "$@" || echo "FAILED: $*"; }
 for u in $G $H; do run pixi run -e floors python scripts/f1_fit.py $u expr_embed pearson_none_pc50 --out $V; done

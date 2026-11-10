@@ -175,9 +175,37 @@ second, with one-sided 95% bounds.
   - Crop means, cosine → Euclidean: scVI .154 → .111; floor .162 → .149.
   - D with Euclidean for both: scVI −.0376, Nicheformer −.0256; registered (cosine): −.0087 and −.0379.
   - The registered cosine metric is the more favourable choice for scVI.
-- **Whole-slide arm** (`results/WHOLESLIDE_PLAN.md`): the six GSE1 confirmation slides as whole slides, for the four
-  pairs whose learned model trains on the unit. The plan was committed before any whole-slide output existed; results
-  will be added here.
+- **Whole-slide arm** (`results/WHOLESLIDE_PLAN.md`; report `results/reports/X_wholeslide.md`): the six GSE1
+  confirmation slides as whole slides (141k–741k cells), for the four pairs whose learned model trains on the unit. The
+  plan was committed before any whole-slide output existed. All 68 jobs ran; none failed.
+  - All four pairs are non-inferior on whole slides and no learned model is ahead after Holm.
+  - D on whole slides vs crops of the same slides: scVI −.0076 vs −.0118; CellCharter −.155 vs −.140; LightGBM −.0071
+    vs −.0126; scANVI −.0639 vs −.0015.
+  - The F1 and F3 floor leads shrink at slide scale, as on the validation slide (PROTOCOL Appendix A).
+  - LightGBM − v2 floor (no rings): +.0167 (one-sided 95% bounds +.0036, +.0297). On whole slides LightGBM beats the
+    floor without the same-lineage rings.
+- **F5 at slide scale** (`results/reports/X_f5_scale.md`; diagnostic added after the arm). scANVI's whole-slide loss
+  comes from the ratio of query to reference cells, not from the model's capacity.
+  - On GSE1 221, training for the crop's number of epochs on every cell changed nothing (.588).
+  - Training on the reference plus 50,000 random cells of the slide, then labelling every cell, restores scANVI:
+    D −.0106 (−.0253, +.0041) over the six slides, against −.0639 for the registered recipe and −.0015 on the crops.
+  - The registered recipe (joint model of reference and the whole query) degrades when the query outnumbers the
+    reference 6–11 to 1.
+- **F4 by cancer and provenance** (`results/reports/X_f4_split.md`; subsets chosen after tier 1).
+  - Cellina, official metric, CRC (6 slides): +.0165 (+.0017, +.0314). Ahead on 5 of 6 slides, above the .03 margin
+    on 2 (110 +.044, run here; 120 +.031, the authors' run).
+  - Mouse (4 animals): −.0010 (−.0051, +.0031).
+  - CPA is below the floor in every subset.
+- **Replication levels** (`results/reports/X_levels.md`): tier-1 D re-aggregated per slide (GSE303070's 11 donors sit
+  on 5 slides) and per study. Every pair stays non-inferior at both levels except Cellina spike-free at study level
+  (3 studies, upper +.0311 against .03). The two Allen sources (Zhuang lab, Yao et al.) count as separate studies.
+- **Positive controls** (`results/reports/X_posctl.md`; run 2026-10-28 to 11-02, before registration). scVI,
+  CellCharter, Novae, LightGBM, scANVI and Tangram pass. The locked NCEM configuration (linear NCEM) fails the
+  planted-composition control; the ED-NCEM variant passes.
+- **Development effort** (`results/reports/X_effort.md`): configurations evaluated on development units per model.
+  Floor grids: F1 48, F2 225 (+ 173 in reference and k sweeps), F3 144, F5 84. Learned models: 2–6 each. The floors
+  were tuned far more than the learned models before the lock; tier 2 (above) measures what tuning on the scored unit
+  would add.
 - **Not run in this release:** stress panels on the confirmation units, the protein shift-null on IF stains, and the F1
   depth-matched reference (PROTOCOL §6).
 

@@ -5,9 +5,9 @@ from pathlib import Path
 import numpy as np, pandas as pd, scipy.sparse as sp, anndata as ad
 
 SF = Path(__file__).resolve().parents[3]; MAN = SF / "manifests/crops"
-RAW = Path("/Users/Hemato/project_3/data/raw"); PROC = Path("/Users/Hemato/project_3/data/processed/p5/labeled_h5ad")
+from spatialfloors.paths import RAW, PROC, DERIVED
 COSMX_UM = 0.12028  # um per CosMx px
-ALLEN = {"animal1": RAW / "allen_zhuang/WB_MERFISH_animal1_coronal.h5ad", "animal2": Path("/Users/Hemato/project_3/antig/N2/trials/perturb/WB_MERFISH_animal2_coronal.h5ad"),
+ALLEN = {"animal1": RAW / "allen_zhuang/WB_MERFISH_animal1_coronal.h5ad", "animal2": DERIVED / "WB_MERFISH_animal2_coronal.h5ad",
          "animal3": RAW / "allen_zhuang/WB_MERFISH_animal3_sagittal.h5ad", "animal4": RAW / "allen_zhuang/WB_MERFISH_animal4_sagittal.h5ad"}  # 4 = mouse dev unit (review 2026-10-28)
 YAO = RAW / "allen_yao_638850"
 BRUKER = {"bruker_breast": RAW / "bruker_wtx/breast_discovery.h5ad", "bruker_mobreast": RAW / "bruker_wtx/multiomic_breast.h5ad",

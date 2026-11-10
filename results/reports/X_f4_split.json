@@ -1,0 +1,356 @@
+{
+ "commit": "672137e8d572abe79591b63012bfc0bbdfc5fd72-dirty",
+ "source": "runs/p4/P5_corrected.json",
+ "pairs": {
+  "F4_pearson|cellina": {
+   "per_unit": {
+    "allen_animal1": -0.0026208605909493845,
+    "allen_animal2": 0.0010144418342279415,
+    "allen_animal3": 0.0026621917634859957,
+    "allen_yao638850": -0.005045266990433987,
+    "gse1_110": 0.04350054171690598,
+    "gse1_120": 0.03046160337317183,
+    "gse1_210": 0.013551974722984639,
+    "gse1_221": 0.015121622155663594,
+    "gse1_222": 0.0021970480465695053,
+    "gse1_242": -0.0055603218051853975
+   },
+   "subsets": {
+    "CRC (GSE1)": {
+     "n": 6,
+     "units": [
+      "gse1_110",
+      "gse1_120",
+      "gse1_210",
+      "gse1_221",
+      "gse1_222",
+      "gse1_242"
+     ],
+     "mean": 0.016545411368351692,
+     "lower": 0.001711560721448846,
+     "upper": 0.031379262015254546,
+     "p_superior_uncorrected": 0.037252805448484035,
+     "n_above_margin": 2,
+     "n_ahead": 5
+    },
+    "mouse (Allen)": {
+     "n": 4,
+     "units": [
+      "allen_animal1",
+      "allen_animal2",
+      "allen_animal3",
+      "allen_yao638850"
+     ],
+     "mean": -0.0009973734959173586,
+     "lower": -0.005099532526394609,
+     "upper": 0.0031047855345598917,
+     "p_superior_uncorrected": 0.6963679672205078,
+     "n_above_margin": 0,
+     "n_ahead": 2
+    },
+    "prospective": {
+     "n": 5,
+     "units": [
+      "allen_animal1",
+      "allen_animal3",
+      "allen_yao638850",
+      "gse1_110",
+      "gse1_222"
+     ],
+     "mean": 0.008138730789115622,
+     "lower": -0.010960881533714696,
+     "upper": 0.027238343111945937,
+     "p_superior_uncorrected": 0.20751862251147976,
+     "n_above_margin": 1,
+     "n_ahead": 3
+    },
+    "retrospective": {
+     "n": 5,
+     "units": [
+      "allen_animal2",
+      "gse1_120",
+      "gse1_210",
+      "gse1_221",
+      "gse1_242"
+     ],
+     "mean": 0.01091786405617252,
+     "lower": -0.0023628420407896273,
+     "upper": 0.024198570153134667,
+     "p_superior_uncorrected": 0.07727686174131601,
+     "n_above_margin": 1,
+     "n_ahead": 4
+    },
+    "CRC prospective": {
+     "n": 2,
+     "units": [
+      "gse1_110",
+      "gse1_222"
+     ],
+     "mean": 0.022848794881737744,
+     "lower": -0.10754120297949113,
+     "upper": 0.15323879274296662,
+     "p_superior_uncorrected": 0.23393701896718203,
+     "n_above_margin": 1,
+     "n_ahead": 2
+    },
+    "CRC retrospective": {
+     "n": 4,
+     "units": [
+      "gse1_120",
+      "gse1_210",
+      "gse1_221",
+      "gse1_242"
+     ],
+     "mean": 0.013393719611658667,
+     "lower": -0.003974185367213464,
+     "upper": 0.0307616245905308,
+     "p_superior_uncorrected": 0.08358840731315036,
+     "n_above_margin": 1,
+     "n_ahead": 3
+    }
+   }
+  },
+  "F4_pearson|cpa": {
+   "per_unit": {
+    "allen_animal1": -0.015956699175343775,
+    "allen_animal2": -0.019721164716942408,
+    "allen_animal3": -0.022904169536395996,
+    "allen_yao638850": -0.08067396050174269,
+    "gse1_110": -0.010165196363854268,
+    "gse1_120": -0.2651207027009411,
+    "gse1_210": -0.13916438802991526,
+    "gse1_221": -0.1454767802329806,
+    "gse1_222": -0.0970992171987759,
+    "gse1_242": -0.24835768376886236
+   },
+   "subsets": {
+    "CRC (GSE1)": {
+     "n": 6,
+     "units": [
+      "gse1_110",
+      "gse1_120",
+      "gse1_210",
+      "gse1_221",
+      "gse1_222",
+      "gse1_242"
+     ],
+     "mean": -0.1508973280492216,
+     "lower": -0.2292965342483964,
+     "upper": -0.07249812185004688,
+     "p_superior_uncorrected": 0.9941697671331488,
+     "n_above_margin": 0,
+     "n_ahead": 0
+    },
+    "mouse (Allen)": {
+     "n": 4,
+     "units": [
+      "allen_animal1",
+      "allen_animal2",
+      "allen_animal3",
+      "allen_yao638850"
+     ],
+     "mean": -0.03481399848260622,
+     "lower": -0.07094388565409215,
+     "upper": 0.0013158886888797183,
+     "p_superior_uncorrected": 0.9459204276839248,
+     "n_above_margin": 0,
+     "n_ahead": 0
+    },
+    "prospective": {
+     "n": 5,
+     "units": [
+      "allen_animal1",
+      "allen_animal3",
+      "allen_yao638850",
+      "gse1_110",
+      "gse1_222"
+     ],
+     "mean": -0.04535984855522253,
+     "lower": -0.08388531951479655,
+     "upper": -0.0068343775956484915,
+     "p_superior_uncorrected": 0.9669725211301673,
+     "n_above_margin": 0,
+     "n_ahead": 0
+    },
+    "retrospective": {
+     "n": 5,
+     "units": [
+      "allen_animal2",
+      "gse1_120",
+      "gse1_210",
+      "gse1_221",
+      "gse1_242"
+     ],
+     "mean": -0.16356814388992835,
+     "lower": -0.2578490317776568,
+     "upper": -0.06928725600219986,
+     "p_superior_uncorrected": 0.9895690208017005,
+     "n_above_margin": 0,
+     "n_ahead": 0
+    },
+    "CRC prospective": {
+     "n": 2,
+     "units": [
+      "gse1_110",
+      "gse1_222"
+     ],
+     "mean": -0.053632206781315084,
+     "lower": -0.3280721096429539,
+     "upper": 0.22080769608032375,
+     "p_superior_uncorrected": 0.7832025218816446,
+     "n_above_margin": 0,
+     "n_ahead": 0
+    },
+    "CRC retrospective": {
+     "n": 4,
+     "units": [
+      "gse1_120",
+      "gse1_210",
+      "gse1_221",
+      "gse1_242"
+     ],
+     "mean": -0.19952988868317484,
+     "lower": -0.2777358318797559,
+     "upper": -0.12132394548659378,
+     "p_superior_uncorrected": 0.9953728267832939,
+     "n_above_margin": 0,
+     "n_ahead": 0
+    }
+   }
+  },
+  "F4_pearson_clean|cellina": {
+   "per_unit": {
+    "allen_animal1": -0.002731827613796941,
+    "allen_animal3": 0.002496707782763415,
+    "allen_yao638850": -0.003362098127114077,
+    "gse1_110": 0.044179077114966936,
+    "gse1_222": 0.0023177131671916484
+   },
+   "subsets": {
+    "CRC (GSE1)": {
+     "n": 2,
+     "units": [
+      "gse1_110",
+      "gse1_222"
+     ],
+     "mean": 0.023248395141079292,
+     "lower": -0.10890272987473533,
+     "upper": 0.1553995201568939,
+     "p_superior_uncorrected": 0.2333161904737615,
+     "n_above_margin": 1,
+     "n_ahead": 2
+    },
+    "mouse (Allen)": {
+     "n": 3,
+     "units": [
+      "allen_animal1",
+      "allen_animal3",
+      "allen_yao638850"
+     ],
+     "mean": -0.0011990726527158675,
+     "lower": -0.006620976911436437,
+     "upper": 0.004222831606004701,
+     "p_superior_uncorrected": 0.707684912072524,
+     "n_above_margin": 0,
+     "n_ahead": 1
+    },
+    "prospective": {
+     "n": 5,
+     "units": [
+      "allen_animal1",
+      "allen_animal3",
+      "allen_yao638850",
+      "gse1_110",
+      "gse1_222"
+     ],
+     "mean": 0.008579914464802196,
+     "lower": -0.010571665684527604,
+     "upper": 0.027731494614131998,
+     "p_superior_uncorrected": 0.1968136041008966,
+     "n_above_margin": 1,
+     "n_ahead": 3
+    },
+    "CRC prospective": {
+     "n": 2,
+     "units": [
+      "gse1_110",
+      "gse1_222"
+     ],
+     "mean": 0.023248395141079292,
+     "lower": -0.10890272987473533,
+     "upper": 0.1553995201568939,
+     "p_superior_uncorrected": 0.2333161904737615,
+     "n_above_margin": 1,
+     "n_ahead": 2
+    }
+   }
+  },
+  "F4_pearson_clean|cpa": {
+   "per_unit": {
+    "allen_animal1": -0.028865141357513724,
+    "allen_animal3": -0.07359052753187985,
+    "allen_yao638850": -0.08088000680949763,
+    "gse1_110": -0.03715861024161271,
+    "gse1_222": -0.11824900220550916
+   },
+   "subsets": {
+    "CRC (GSE1)": {
+     "n": 2,
+     "units": [
+      "gse1_110",
+      "gse1_222"
+     ],
+     "mean": -0.07770380622356093,
+     "lower": -0.3336960987673827,
+     "upper": 0.17828848632026092,
+     "p_superior_uncorrected": 0.8469156884750693,
+     "n_above_margin": 0,
+     "n_ahead": 0
+    },
+    "mouse (Allen)": {
+     "n": 3,
+     "units": [
+      "allen_animal1",
+      "allen_animal3",
+      "allen_yao638850"
+     ],
+     "mean": -0.0611118918996304,
+     "lower": -0.10859118718835092,
+     "upper": -0.013632596610909889,
+     "p_superior_uncorrected": 0.967967137309272,
+     "n_above_margin": 0,
+     "n_ahead": 0
+    },
+    "prospective": {
+     "n": 5,
+     "units": [
+      "allen_animal1",
+      "allen_animal3",
+      "allen_yao638850",
+      "gse1_110",
+      "gse1_222"
+     ],
+     "mean": -0.06774865762920261,
+     "lower": -0.10213860210958756,
+     "upper": -0.03335871314881767,
+     "p_superior_uncorrected": 0.9931508118621466,
+     "n_above_margin": 0,
+     "n_ahead": 0
+    },
+    "CRC prospective": {
+     "n": 2,
+     "units": [
+      "gse1_110",
+      "gse1_222"
+     ],
+     "mean": -0.07770380622356093,
+     "lower": -0.3336960987673827,
+     "upper": 0.17828848632026092,
+     "p_superior_uncorrected": 0.8469156884750693,
+     "n_above_margin": 0,
+     "n_ahead": 0
+    }
+   }
+  }
+ }
+}

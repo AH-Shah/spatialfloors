@@ -65,7 +65,7 @@ for k, h in zip(tp, ph): out["pairs"][k]["learned_superior_holm"] = bool(h)
 md = ["# X_wholeslide: the six GSE1 confirmation slides as whole slides (exploratory; results/WHOLESLIDE_PLAN.md)", "", f"commit {commit()}", "",
       "| Pair | Slides | D whole | One-sided 95% bounds | δ | Non-inferior | Learned superior (Holm) | D crop (same slides) | Δ = whole − crop (90% CI) | Floor lead change |", "|---|---|---|---|---|---|---|---|---|---|"]
 for k, o in out["pairs"].items():
-    md.append(f"| {k} | {o['n']} | {o['est']:+.4f} | {o['lower']:+.4f}, {o['upper']:+.4f} | {o['margin']:.4f} | {o['noninferior']} | {o.get('learned_superior_holm', '–')} | "
+    md.append(f"| {k} | {o['n']} | {o['est']:+.4f} | {o['lower']:+.4f}, {o['upper']:+.4f} | {o['margin']:.4f} | {o['noninferior'] if '|' in k else '–'} | {o.get('learned_superior_holm', '–')} | "
               + (f"{o['D_crop_mean']:+.4f} | {o['delta_mean']:+.4f} ({o['delta_ci90'][0]:+.4f}, {o['delta_ci90'][1]:+.4f}) | " + (f"{o['floor_lead_change']:+.0%}" if o["floor_lead_change"] is not None else "–") + " |" if "D_crop" in o else "– | – | – |"))
 md += ["", "Per slide (learned, floor): " + "; ".join(f"{s}: " + ", ".join(f"{k.split('|')[0] if '|' in k else k} {v[0]:.3f}/{v[1]:.3f}" for k, v in rows[s].items()) for s in SIDS)]
 (R / "X_wholeslide.json").write_text(json.dumps(out, indent=1, default=float)); (R / "X_wholeslide.md").write_text("\n".join(md) + "\n"); print("\n".join(md))

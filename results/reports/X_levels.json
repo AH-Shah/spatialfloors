@@ -1,0 +1,770 @@
+{
+ "commit": "672137e8d572abe79591b63012bfc0bbdfc5fd72-dirty",
+ "pairs": {
+  "F1|nicheformer": {
+   "donor": {
+    "n": 25,
+    "est": -0.03791716482417631,
+    "lower": -0.043170087051382214,
+    "upper": -0.0326642425969704,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "Donor130",
+     "Donor137",
+     "Donor142",
+     "Donor150",
+     "Donor170",
+     "Donor280",
+     "Donor64",
+     "Donor7",
+     "Donor73",
+     "Donor74",
+     "Donor92",
+     "allen_animal1_C57BL6J-1.086",
+     "allen_animal2_C57BL6J-2.039",
+     "allen_animal3_C57BL6J-3.003",
+     "allen_yao638850_C57BL6J-638850.36",
+     "bruker_kidney",
+     "bruker_mobreast",
+     "bruker_skin",
+     "gse1_110",
+     "gse1_120",
+     "gse1_210",
+     "gse1_221",
+     "gse1_222",
+     "gse1_242",
+     "spatch_xenium5k"
+    ]
+   },
+   "slide": {
+    "n": 19,
+    "est": -0.04298020943537761,
+    "lower": -0.04937103684906944,
+    "upper": -0.036589382021685775,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "allen_animal1_C57BL6J-1.086",
+     "allen_animal2_C57BL6J-2.039",
+     "allen_animal3_C57BL6J-3.003",
+     "allen_yao638850_C57BL6J-638850.36",
+     "bruker_kidney",
+     "bruker_mobreast",
+     "bruker_skin",
+     "gse1_110",
+     "gse1_120",
+     "gse1_210",
+     "gse1_221",
+     "gse1_222",
+     "gse1_242",
+     "gse303070_10501A",
+     "gse303070_120131",
+     "gse303070_3461G",
+     "gse303070_Tumour_A",
+     "gse303070_Tumour_B",
+     "spatch_xenium5k"
+    ]
+   },
+   "study": {
+    "n": 8,
+    "est": -0.04272872514237837,
+    "lower": -0.054684485792451734,
+    "upper": -0.030772964492305,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "Allen Yao",
+     "Allen Zhuang",
+     "Bruker breast multiomic",
+     "Bruker kidney",
+     "Bruker skin",
+     "GSE1 CRC (Crowell et al.)",
+     "GSE303070",
+     "SPATCH"
+    ]
+   }
+  },
+  "F1|scvi": {
+   "donor": {
+    "n": 25,
+    "est": -0.008720358236225616,
+    "lower": -0.011198495146229396,
+    "upper": -0.006242221326221837,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "Donor130",
+     "Donor137",
+     "Donor142",
+     "Donor150",
+     "Donor170",
+     "Donor280",
+     "Donor64",
+     "Donor7",
+     "Donor73",
+     "Donor74",
+     "Donor92",
+     "allen_animal1_C57BL6J-1.086",
+     "allen_animal2_C57BL6J-2.039",
+     "allen_animal3_C57BL6J-3.003",
+     "allen_yao638850_C57BL6J-638850.36",
+     "bruker_kidney",
+     "bruker_mobreast",
+     "bruker_skin",
+     "gse1_110",
+     "gse1_120",
+     "gse1_210",
+     "gse1_221",
+     "gse1_222",
+     "gse1_242",
+     "spatch_xenium5k"
+    ]
+   },
+   "slide": {
+    "n": 19,
+    "est": -0.009337450177356451,
+    "lower": -0.011954594769975015,
+    "upper": -0.006720305584737888,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "allen_animal1_C57BL6J-1.086",
+     "allen_animal2_C57BL6J-2.039",
+     "allen_animal3_C57BL6J-3.003",
+     "allen_yao638850_C57BL6J-638850.36",
+     "bruker_kidney",
+     "bruker_mobreast",
+     "bruker_skin",
+     "gse1_110",
+     "gse1_120",
+     "gse1_210",
+     "gse1_221",
+     "gse1_222",
+     "gse1_242",
+     "gse303070_10501A",
+     "gse303070_120131",
+     "gse303070_3461G",
+     "gse303070_Tumour_A",
+     "gse303070_Tumour_B",
+     "spatch_xenium5k"
+    ]
+   },
+   "study": {
+    "n": 8,
+    "est": -0.009951060594487726,
+    "lower": -0.012721195926781337,
+    "upper": -0.007180925262194115,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "Allen Yao",
+     "Allen Zhuang",
+     "Bruker breast multiomic",
+     "Bruker kidney",
+     "Bruker skin",
+     "GSE1 CRC (Crowell et al.)",
+     "GSE303070",
+     "SPATCH"
+    ]
+   }
+  },
+  "F2|cellcharter": {
+   "donor": {
+    "n": 10,
+    "est": -0.10034705035321716,
+    "lower": -0.1813696420721745,
+    "upper": -0.019324458634259814,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "allen_animal1_C57BL6J-1.086",
+     "allen_animal2_C57BL6J-2.039",
+     "allen_animal3_C57BL6J-3.003",
+     "allen_yao638850_C57BL6J-638850.36",
+     "gse1_110",
+     "gse1_120",
+     "gse1_210",
+     "gse1_221",
+     "gse1_222",
+     "gse1_242"
+    ]
+   },
+   "slide": {
+    "n": 10,
+    "est": -0.10034705035321716,
+    "lower": -0.1813696420721745,
+    "upper": -0.019324458634259814,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "allen_animal1_C57BL6J-1.086",
+     "allen_animal2_C57BL6J-2.039",
+     "allen_animal3_C57BL6J-3.003",
+     "allen_yao638850_C57BL6J-638850.36",
+     "gse1_110",
+     "gse1_120",
+     "gse1_210",
+     "gse1_221",
+     "gse1_222",
+     "gse1_242"
+    ]
+   },
+   "study": {
+    "n": 3,
+    "est": -0.0755997528035602,
+    "lower": -0.16978405732213153,
+    "upper": 0.018584551715011152,
+    "noninferior": true,
+    "strata": false,
+    "groups": [
+     "Allen Yao",
+     "Allen Zhuang",
+     "GSE1 CRC (Crowell et al.)"
+    ]
+   }
+  },
+  "F2|novae": {
+   "donor": {
+    "n": 4,
+    "est": -0.11469149564550721,
+    "lower": -0.14365625450284752,
+    "upper": -0.08572673678816689,
+    "noninferior": true,
+    "strata": false,
+    "groups": [
+     "allen_animal1_C57BL6J-1.086",
+     "allen_animal2_C57BL6J-2.039",
+     "allen_animal3_C57BL6J-3.003",
+     "allen_yao638850_C57BL6J-638850.36"
+    ]
+   },
+   "slide": {
+    "n": 4,
+    "est": -0.11469149564550721,
+    "lower": -0.14365625450284752,
+    "upper": -0.08572673678816689,
+    "noninferior": true,
+    "strata": false,
+    "groups": [
+     "allen_animal1_C57BL6J-1.086",
+     "allen_animal2_C57BL6J-2.039",
+     "allen_animal3_C57BL6J-3.003",
+     "allen_yao638850_C57BL6J-638850.36"
+    ]
+   },
+   "study": {
+    "n": 2,
+    "est": -0.12176359962599372,
+    "lower": -0.21106661406346627,
+    "upper": -0.03246058518852114,
+    "noninferior": true,
+    "strata": false,
+    "groups": [
+     "Allen Yao",
+     "Allen Zhuang"
+    ]
+   }
+  },
+  "F3|lightgbm": {
+   "donor": {
+    "n": 22,
+    "est": -0.015467516947425743,
+    "lower": -0.018213730474076487,
+    "upper": -0.012721303420775,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "Donor130",
+     "Donor137",
+     "Donor142",
+     "Donor150",
+     "Donor280",
+     "Donor64",
+     "Donor73",
+     "Donor74",
+     "Donor92",
+     "allen_animal1_C57BL6J-1.086",
+     "allen_animal2_C57BL6J-2.039",
+     "allen_animal3_C57BL6J-3.003",
+     "allen_yao638850_C57BL6J-638850.36",
+     "bruker_kidney",
+     "bruker_mobreast",
+     "bruker_skin",
+     "gse1_110",
+     "gse1_120",
+     "gse1_210",
+     "gse1_221",
+     "gse1_222",
+     "gse1_242"
+    ]
+   },
+   "slide": {
+    "n": 18,
+    "est": -0.016605959289456275,
+    "lower": -0.019634259072874315,
+    "upper": -0.013577659506038234,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "allen_animal1_C57BL6J-1.086",
+     "allen_animal2_C57BL6J-2.039",
+     "allen_animal3_C57BL6J-3.003",
+     "allen_yao638850_C57BL6J-638850.36",
+     "bruker_kidney",
+     "bruker_mobreast",
+     "bruker_skin",
+     "gse1_110",
+     "gse1_120",
+     "gse1_210",
+     "gse1_221",
+     "gse1_222",
+     "gse1_242",
+     "gse303070_10501A",
+     "gse303070_120131",
+     "gse303070_3461G",
+     "gse303070_Tumour_A",
+     "gse303070_Tumour_B"
+    ]
+   },
+   "study": {
+    "n": 7,
+    "est": -0.018793808863108375,
+    "lower": -0.02382135647618787,
+    "upper": -0.013766261250028883,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "Allen Yao",
+     "Allen Zhuang",
+     "Bruker breast multiomic",
+     "Bruker kidney",
+     "Bruker skin",
+     "GSE1 CRC (Crowell et al.)",
+     "GSE303070"
+    ]
+   }
+  },
+  "F3|ncem": {
+   "donor": {
+    "n": 22,
+    "est": -0.03554896979038056,
+    "lower": -0.041265260364026266,
+    "upper": -0.02983267921673485,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "Donor130",
+     "Donor137",
+     "Donor142",
+     "Donor150",
+     "Donor280",
+     "Donor64",
+     "Donor73",
+     "Donor74",
+     "Donor92",
+     "allen_animal1_C57BL6J-1.086",
+     "allen_animal2_C57BL6J-2.039",
+     "allen_animal3_C57BL6J-3.003",
+     "allen_yao638850_C57BL6J-638850.36",
+     "bruker_kidney",
+     "bruker_mobreast",
+     "bruker_skin",
+     "gse1_110",
+     "gse1_120",
+     "gse1_210",
+     "gse1_221",
+     "gse1_222",
+     "gse1_242"
+    ]
+   },
+   "slide": {
+    "n": 18,
+    "est": -0.03763288735424072,
+    "lower": -0.04389975362959941,
+    "upper": -0.03136602107888203,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "allen_animal1_C57BL6J-1.086",
+     "allen_animal2_C57BL6J-2.039",
+     "allen_animal3_C57BL6J-3.003",
+     "allen_yao638850_C57BL6J-638850.36",
+     "bruker_kidney",
+     "bruker_mobreast",
+     "bruker_skin",
+     "gse1_110",
+     "gse1_120",
+     "gse1_210",
+     "gse1_221",
+     "gse1_222",
+     "gse1_242",
+     "gse303070_10501A",
+     "gse303070_120131",
+     "gse303070_3461G",
+     "gse303070_Tumour_A",
+     "gse303070_Tumour_B"
+    ]
+   },
+   "study": {
+    "n": 7,
+    "est": -0.04462558645996716,
+    "lower": -0.056639549350937735,
+    "upper": -0.03261162356899659,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "Allen Yao",
+     "Allen Zhuang",
+     "Bruker breast multiomic",
+     "Bruker kidney",
+     "Bruker skin",
+     "GSE1 CRC (Crowell et al.)",
+     "GSE303070"
+    ]
+   }
+  },
+  "F4_pearson|cellina": {
+   "donor": {
+    "n": 10,
+    "est": 0.009528297422644069,
+    "lower": 0.001051972331721704,
+    "upper": 0.018004622513566434,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "allen_animal1",
+     "allen_animal2",
+     "allen_animal3",
+     "allen_yao638850",
+     "gse1_110",
+     "gse1_120",
+     "gse1_210",
+     "gse1_221",
+     "gse1_222",
+     "gse1_242"
+    ]
+   },
+   "slide": {
+    "n": 10,
+    "est": 0.009528297422644069,
+    "lower": 0.001051972331721704,
+    "upper": 0.018004622513566434,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "allen_animal1",
+     "allen_animal2",
+     "allen_animal3",
+     "allen_yao638850",
+     "gse1_110",
+     "gse1_120",
+     "gse1_210",
+     "gse1_221",
+     "gse1_222",
+     "gse1_242"
+    ]
+   },
+   "study": {
+    "n": 3,
+    "est": 0.00395068957116863,
+    "lower": -0.014991945154070041,
+    "upper": 0.0228933242964073,
+    "noninferior": true,
+    "strata": false,
+    "groups": [
+     "Allen Yao",
+     "Allen Zhuang",
+     "GSE1 CRC (Crowell et al.)"
+    ]
+   }
+  },
+  "F4_pearson|cpa": {
+   "donor": {
+    "n": 10,
+    "est": -0.10446399622257543,
+    "lower": -0.15012749076226553,
+    "upper": -0.058800501682885344,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "allen_animal1",
+     "allen_animal2",
+     "allen_animal3",
+     "allen_yao638850",
+     "gse1_110",
+     "gse1_120",
+     "gse1_210",
+     "gse1_221",
+     "gse1_222",
+     "gse1_242"
+    ]
+   },
+   "slide": {
+    "n": 10,
+    "est": -0.10446399622257543,
+    "lower": -0.15012749076226553,
+    "upper": -0.058800501682885344,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "allen_animal1",
+     "allen_animal2",
+     "allen_animal3",
+     "allen_yao638850",
+     "gse1_110",
+     "gse1_120",
+     "gse1_210",
+     "gse1_221",
+     "gse1_222",
+     "gse1_242"
+    ]
+   },
+   "study": {
+    "n": 3,
+    "est": -0.08369954434239725,
+    "lower": -0.19452295134780517,
+    "upper": 0.027123862663010687,
+    "noninferior": true,
+    "strata": false,
+    "groups": [
+     "Allen Yao",
+     "Allen Zhuang",
+     "GSE1 CRC (Crowell et al.)"
+    ]
+   }
+  },
+  "F4_pearson_clean|cellina": {
+   "donor": {
+    "n": 5,
+    "est": 0.008579914464802196,
+    "lower": -0.009617471967611155,
+    "upper": 0.02677730089721555,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "allen_animal1",
+     "allen_animal3",
+     "allen_yao638850",
+     "gse1_110",
+     "gse1_222"
+    ]
+   },
+   "slide": {
+    "n": 5,
+    "est": 0.008579914464802196,
+    "lower": -0.009617471967611155,
+    "upper": 0.02677730089721555,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "allen_animal1",
+     "allen_animal3",
+     "allen_yao638850",
+     "gse1_110",
+     "gse1_222"
+    ]
+   },
+   "study": {
+    "n": 3,
+    "est": 0.0065895790328161525,
+    "lower": -0.017885455640574165,
+    "upper": 0.031064613706206473,
+    "noninferior": false,
+    "strata": false,
+    "groups": [
+     "Allen Yao",
+     "Allen Zhuang",
+     "GSE1 CRC (Crowell et al.)"
+    ]
+   }
+  },
+  "F4_pearson_clean|cpa": {
+   "donor": {
+    "n": 5,
+    "est": -0.06774865762920261,
+    "lower": -0.11017092360525857,
+    "upper": -0.02532639165314665,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "allen_animal1",
+     "allen_animal3",
+     "allen_yao638850",
+     "gse1_110",
+     "gse1_222"
+    ]
+   },
+   "slide": {
+    "n": 5,
+    "est": -0.06774865762920261,
+    "lower": -0.11017092360525857,
+    "upper": -0.02532639165314665,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "allen_animal1",
+     "allen_animal3",
+     "allen_yao638850",
+     "gse1_110",
+     "gse1_222"
+    ]
+   },
+   "study": {
+    "n": 3,
+    "est": -0.06993721582591847,
+    "lower": -0.09738367079760409,
+    "upper": -0.042490760854232854,
+    "noninferior": true,
+    "strata": false,
+    "groups": [
+     "Allen Yao",
+     "Allen Zhuang",
+     "GSE1 CRC (Crowell et al.)"
+    ]
+   }
+  },
+  "F5|scanvi": {
+   "donor": {
+    "n": 20,
+    "est": -0.014322172047522657,
+    "lower": -0.02248653519197294,
+    "upper": -0.006157808903072376,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "Donor130",
+     "Donor137",
+     "Donor142",
+     "Donor150",
+     "Donor170",
+     "Donor280",
+     "Donor64",
+     "Donor7",
+     "Donor73",
+     "Donor74",
+     "Donor92",
+     "bruker_kidney",
+     "bruker_mobreast",
+     "bruker_skin",
+     "gse1_110",
+     "gse1_120",
+     "gse1_210",
+     "gse1_221",
+     "gse1_222",
+     "gse1_242"
+    ]
+   },
+   "slide": {
+    "n": 14,
+    "est": -0.008915154838501,
+    "lower": -0.017565175321080238,
+    "upper": -0.000265134355921761,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "bruker_kidney",
+     "bruker_mobreast",
+     "bruker_skin",
+     "gse1_110",
+     "gse1_120",
+     "gse1_210",
+     "gse1_221",
+     "gse1_222",
+     "gse1_242",
+     "gse303070_10501A",
+     "gse303070_120131",
+     "gse303070_3461G",
+     "gse303070_Tumour_A",
+     "gse303070_Tumour_B"
+    ]
+   },
+   "study": {
+    "n": 5,
+    "est": -0.004150968612731221,
+    "lower": -0.029848673026700058,
+    "upper": 0.021546735801237615,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "Bruker breast multiomic",
+     "Bruker kidney",
+     "Bruker skin",
+     "GSE1 CRC (Crowell et al.)",
+     "GSE303070"
+    ]
+   }
+  },
+  "F5|tangram": {
+   "donor": {
+    "n": 20,
+    "est": -0.11319384636550359,
+    "lower": -0.1430949947376024,
+    "upper": -0.08329269799340477,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "Donor130",
+     "Donor137",
+     "Donor142",
+     "Donor150",
+     "Donor170",
+     "Donor280",
+     "Donor64",
+     "Donor7",
+     "Donor73",
+     "Donor74",
+     "Donor92",
+     "bruker_kidney",
+     "bruker_mobreast",
+     "bruker_skin",
+     "gse1_110",
+     "gse1_120",
+     "gse1_210",
+     "gse1_221",
+     "gse1_222",
+     "gse1_242"
+    ]
+   },
+   "slide": {
+    "n": 14,
+    "est": -0.10777165410829238,
+    "lower": -0.1349469592872958,
+    "upper": -0.08059634892928895,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "bruker_kidney",
+     "bruker_mobreast",
+     "bruker_skin",
+     "gse1_110",
+     "gse1_120",
+     "gse1_210",
+     "gse1_221",
+     "gse1_222",
+     "gse1_242",
+     "gse303070_10501A",
+     "gse303070_120131",
+     "gse303070_3461G",
+     "gse303070_Tumour_A",
+     "gse303070_Tumour_B"
+    ]
+   },
+   "study": {
+    "n": 5,
+    "est": -0.11247550443150434,
+    "lower": -0.18800167237379833,
+    "upper": -0.036949336489210324,
+    "noninferior": true,
+    "strata": true,
+    "groups": [
+     "Bruker breast multiomic",
+     "Bruker kidney",
+     "Bruker skin",
+     "GSE1 CRC (Crowell et al.)",
+     "GSE303070"
+    ]
+   }
+  }
+ }
+}

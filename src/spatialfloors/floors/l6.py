@@ -10,7 +10,8 @@ from scipy.stats import pearsonr, spearmanr
 from sklearn.decomposition import PCA
 from . import _labels_to_coarse as lm
 
-RAW = Path("/Users/Hemato/project_3/data/raw/GSE1")  # GSE1 CosMx WTx h5ads (cosmx_wt_{sid}.h5ad); override per call
+from spatialfloors.paths import RAW as _RAW
+RAW = _RAW / "GSE1"  # GSE1 CosMx WTx h5ads (cosmx_wt_{sid}.h5ad); override per call
 K_NB, NPC, KMATCH, KAPPA, NDEG, PSC = 200, 50, 30, 10, 50, .1
 CAP_H, CAP_BASE, CAP_POOL = 50000, 20000, 200000
 ALPHA_REL = [1e-4, 1e-3, 1e-2, 1e-1, 1.]

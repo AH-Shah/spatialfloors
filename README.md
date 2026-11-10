@@ -25,19 +25,26 @@ counterfactuals (F4) and label transfer (F5).
 
 ## Environments and checks
 
-Environments are defined in `pixi.toml` / `pixi.lock` (`floors` for the floors and the analysis; one environment per
-learned model). On macOS arm64:
+Environments are defined in `pixi.toml` / `pixi.lock`: `floors` for the floors and the analysis, `r` for InSituType,
+and one environment per learned model.
+- `floors` and `r` are locked for macOS arm64 and Linux x86-64; the learned-model environments for macOS arm64 only
+  (they ran on Apple MPS).
+- On macOS arm64 the floors and the analysis reproduce the committed outputs exactly. On Linux, expect agreement within
+  floating-point tolerance (different BLAS), and for the learned models within GPU nondeterminism.
 
 ```
 pixi run -e floors pytest
 pixi run -e floors spatialfloors check
 ```
 
-At `results-v1`, `pytest` gives 33 passed and 1 skipped (the slow `spatialfloors check` test, which needs the GSE1 data).
+`pytest` gives 36 passed and 1 skipped (the slow `spatialfloors check` test, which needs the data). Tests that need a
+data file skip when it is absent.
 
-Data are public (sources in the protocol, §3) and not included. Commit hashes recorded inside the lock files and run
-stamps refer to the development repository. The registered state is this repository at tag `registration-v1`, and the
-code as run for the results is at `results-v1`.
+Data are public and not included: sources, the names used in the text, and the SHA-256 of every input file are in
+[`DATA.md`](DATA.md). Put them under one root and point `SF_DATA` to it (default: `data/` in the repository).
+Commit hashes recorded inside run outputs refer to the development repository. The registered state is this
+repository at tag `registration-v1`, the code as run for the results is at `results-v1`, and the changes since then
+are listed in [`CHANGELOG.md`](CHANGELOG.md). Use of AI tools: [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md).
 
 ## Citation and licence
 

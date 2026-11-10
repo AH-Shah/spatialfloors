@@ -5,7 +5,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-HGNC = Path("/Users/Hemato/project_3/data/raw/hgnc_2026-10-06/hgnc_complete_set_2026-10-06.txt")
+from spatialfloors.paths import RAW
+HGNC = RAW / "hgnc_2026-10-06/hgnc_complete_set_2026-10-06.txt"
 HGNC_SHA = "8bf6f686e640dbc864a346484626953621b0500d900d26cd085a35c2782d725d"
 WTX_MIN = 10000  # panels with more genes than this are whole-transcriptome -> HVG 2000; else targeted (keep all filtered)
 N_HVG = 2000

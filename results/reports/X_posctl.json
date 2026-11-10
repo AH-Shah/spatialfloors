@@ -1,0 +1,106 @@
+[
+ {
+  "family": "F1",
+  "model": "scVI",
+  "control": "planted types (5 types, 200 genes)",
+  "rule": "F1 \u2265 floor \u2212 .05 and \u2265 chance + .20",
+  "observed": "scVI 0.415, floor 0.416, chance -0.021",
+  "pass": true
+ },
+ {
+  "family": "F1",
+  "model": "Nicheformer",
+  "control": "vocabulary gate (cannot read synthetic genes)",
+  "rule": "\u2265 80% panel in vocabulary; F1 \u2265 chance + .05 on every dev crop",
+  "observed": "see runs/p3/f1_*",
+  "pass": null
+ },
+ {
+  "family": "F2",
+  "model": "CellCharter",
+  "control": "2 domains differing only in neighbourhood",
+  "rule": "ARI \u2265 .80 (k = 2, seeds 0\u20132)",
+  "observed": "ARI 0.967",
+  "pass": true
+ },
+ {
+  "family": "F2",
+  "model": "Novae",
+  "control": "authors' tutorial slide (Xenium colon P5)",
+  "rule": "ARI vs published domains \u2265 .50; eff. rank \u2265 5; largest domain \u2264 50%",
+  "observed": "ARI 0.540, rank 7.2, largest 0.36",
+  "pass": true
+ },
+ {
+  "family": "F3",
+  "model": "LightGBM",
+  "control": "planted niche toys (quadratic, couple, bleed)",
+  "rule": "quadratic \u2265 ridge + .08; couple \u2265 .15; bleed null",
+  "observed": "{'quadratic': True, 'couple': True, 'bleed': True, 'pass': True}",
+  "pass": true
+ },
+ {
+  "family": "F3",
+  "model": "NCEM authors' setup edA",
+  "control": "planted toys (compo, couple, bleed)",
+  "rule": "compo / couple recovered; bleed null",
+  "observed": "{'bleed': True, 'compo': True, 'pass': True}",
+  "pass": true
+ },
+ {
+  "family": "F3",
+  "model": "NCEM authors' setup linA (locked: linA)",
+  "control": "planted toys (compo, couple, bleed)",
+  "rule": "compo / couple recovered; bleed null",
+  "observed": "{'bleed': True, 'compo': False, 'pass': False}",
+  "pass": false
+ },
+ {
+  "family": "F3",
+  "model": "NCEM authors' setup edT_type",
+  "control": "planted toys (compo, couple, bleed)",
+  "rule": "compo / couple recovered; bleed null",
+  "observed": "{'bleed': True, 'compo': False, 'pass': False}",
+  "pass": false
+ },
+ {
+  "family": "F3",
+  "model": "NCEM authors' setup edT_ctx",
+  "control": "planted toys (compo, couple, bleed)",
+  "rule": "compo / couple recovered; bleed null",
+  "observed": "{'bleed': True, 'couple': False, 'pass': False}",
+  "pass": false
+ },
+ {
+  "family": "F3",
+  "model": "NCEM ncem_type (earlier port, superseded)",
+  "control": "planted niche toys",
+  "rule": "as LightGBM",
+  "observed": "{'quadratic': False, 'couple': False, 'bleed': True, 'pass': False}",
+  "pass": false
+ },
+ {
+  "family": "F3",
+  "model": "NCEM ncem_type+ctx (earlier port, superseded)",
+  "control": "planted niche toys",
+  "rule": "as LightGBM",
+  "observed": "{'quadratic': False, 'couple': False, 'bleed': True, 'pass': False}",
+  "pass": false
+ },
+ {
+  "family": "F5",
+  "model": "scANVI",
+  "control": "planted-type toy (query depth \u00d70.3, platform factor)",
+  "rule": "coarse macro-F1 \u2265 .90",
+  "observed": "1.000",
+  "pass": true
+ },
+ {
+  "family": "F5",
+  "model": "Tangram",
+  "control": "same toy",
+  "rule": "coarse macro-F1 \u2265 .90",
+  "observed": "1.000",
+  "pass": true
+ }
+]

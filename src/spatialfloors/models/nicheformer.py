@@ -8,7 +8,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-ORTHO = Path("/Users/Hemato/project_3/data/raw/ensembl_orthologs/mouse_human_orthologs.tsv")
+from spatialfloors.paths import RAW
+ORTHO = RAW / "ensembl_orthologs/mouse_human_orthologs.tsv"
 ORTHO_SHA = "38d7c752d021d5088ffb2ac4d4dd263fdfda65cfb429522c25ee71c49d022d6f"
 
 

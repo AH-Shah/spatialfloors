@@ -1,0 +1,306 @@
+{
+ "rows": [
+  {
+   "family": "F1",
+   "side": "floor: grid",
+   "dev_configs": 48,
+   "dev_units": [
+    "allen_animal4_C57BL6J-4.003",
+    "bruker_breast",
+    "gse0_S0",
+    "gse1_231",
+    "gse1_232",
+    "gse303070_148191A_118N",
+    "gse303070_148191A_278N",
+    "gse303070_148191A_278T",
+    "gse303070_148191A_46T"
+   ],
+   "tier2_configs": 4
+  },
+  {
+   "family": "F1",
+   "side": "floor: ref",
+   "dev_configs": 3,
+   "dev_units": [
+    "allen_animal4_C57BL6J-4.003",
+    "bruker_breast",
+    "gse0_S0",
+    "gse1_231",
+    "gse1_232",
+    "gse303070_148191A_118N",
+    "gse303070_148191A_278N",
+    "gse303070_148191A_278T",
+    "gse303070_148191A_46T"
+   ],
+   "tier2_configs": 4
+  },
+  {
+   "family": "F1",
+   "side": "floor: split",
+   "dev_configs": 4,
+   "dev_units": [
+    "allen_animal4_C57BL6J-4.003",
+    "gse0_S0",
+    "gse1_232",
+    "gse303070_148191A_118N",
+    "gse303070_148191A_278N",
+    "gse303070_148191A_278T",
+    "gse303070_148191A_46T"
+   ],
+   "tier2_configs": 4
+  },
+  {
+   "family": "F1",
+   "side": "nicheformer",
+   "dev_configs": 2,
+   "dev_units": [
+    "allen_animal4_C57BL6J-4.003",
+    "gse0_S0",
+    "gse1_232",
+    "gse303070_148191A_118N",
+    "gse303070_148191A_278N",
+    "gse303070_148191A_278T",
+    "gse303070_148191A_46T"
+   ],
+   "tier2_configs": 2
+  },
+  {
+   "family": "F1",
+   "side": "scvi",
+   "dev_configs": 5,
+   "dev_units": [
+    "allen_animal4_C57BL6J-4.003",
+    "gse0_S0",
+    "gse1_232",
+    "gse303070_148191A_118N",
+    "gse303070_148191A_278N",
+    "gse303070_148191A_278T",
+    "gse303070_148191A_46T"
+   ],
+   "tier2_configs": 4
+  },
+  {
+   "family": "F2",
+   "side": "floor: ?",
+   "dev_configs": 153,
+   "dev_units": [
+    "allen_animal4_C57BL6J-4.003",
+    "gse1_232"
+   ],
+   "tier2_configs": 4
+  },
+  {
+   "family": "F2",
+   "side": "floor: grid",
+   "dev_configs": 225,
+   "dev_units": [
+    "allen_animal4_C57BL6J-4.003",
+    "gse1_231",
+    "gse1_232"
+   ],
+   "tier2_configs": 4
+  },
+  {
+   "family": "F2",
+   "side": "floor: k",
+   "dev_configs": 20,
+   "dev_units": [
+    "allen_animal4_C57BL6J-4.003",
+    "gse1_232"
+   ],
+   "tier2_configs": 4
+  },
+  {
+   "family": "F2",
+   "side": "cellcharter",
+   "dev_configs": 4,
+   "dev_units": [
+    "allen_animal4_C57BL6J-4.003",
+    "gse1_232"
+   ],
+   "tier2_configs": 4
+  },
+  {
+   "family": "F2",
+   "side": "novae",
+   "dev_configs": 4,
+   "dev_units": [
+    "allen_animal4_C57BL6J-4.003",
+    "gse1_232"
+   ],
+   "tier2_configs": 2
+  },
+  {
+   "family": "F3",
+   "side": "floor: anchor",
+   "dev_configs": 4,
+   "dev_units": [
+    "allen_animal4_C57BL6J-4.003",
+    "bruker_breast",
+    "gse0_S0",
+    "gse1_231",
+    "gse1_232",
+    "gse303070_148191A_118N",
+    "gse303070_148191A_278N",
+    "gse303070_148191A_278T",
+    "gse303070_148191A_46T"
+   ],
+   "tier2_configs": 4
+  },
+  {
+   "family": "F3",
+   "side": "floor: grid",
+   "dev_configs": 144,
+   "dev_units": [
+    "allen_animal4_C57BL6J-4.003",
+    "bruker_breast",
+    "gse0_S0",
+    "gse1_231",
+    "gse1_232",
+    "gse303070_148191A_118N",
+    "gse303070_148191A_278N",
+    "gse303070_148191A_278T",
+    "gse303070_148191A_46T"
+   ],
+   "tier2_configs": 4
+  },
+  {
+   "family": "F3",
+   "side": "floor: null",
+   "dev_configs": 4,
+   "dev_units": [
+    "allen_animal4_C57BL6J-4.003",
+    "bruker_breast",
+    "gse0_S0",
+    "gse1_231",
+    "gse1_232",
+    "gse303070_148191A_118N",
+    "gse303070_148191A_278N",
+    "gse303070_148191A_278T",
+    "gse303070_148191A_46T"
+   ],
+   "tier2_configs": 4
+  },
+  {
+   "family": "F3",
+   "side": "floor: protein",
+   "dev_configs": 4,
+   "dev_units": [
+    "bruker_breast",
+    "gse1_231",
+    "gse1_232",
+    "gse303070_148191A_118N",
+    "gse303070_148191A_278N",
+    "gse303070_148191A_278T",
+    "gse303070_148191A_46T"
+   ],
+   "tier2_configs": 4
+  },
+  {
+   "family": "F3",
+   "side": "floor: split",
+   "dev_configs": 8,
+   "dev_units": [
+    "allen_animal4_C57BL6J-4.003",
+    "gse0_S0",
+    "gse1_232",
+    "gse303070_148191A_118N",
+    "gse303070_148191A_278N",
+    "gse303070_148191A_278T",
+    "gse303070_148191A_46T"
+   ],
+   "tier2_configs": 4
+  },
+  {
+   "family": "F3",
+   "side": "gat",
+   "dev_configs": 4,
+   "dev_units": [
+    "allen_animal4_C57BL6J-4.003",
+    "gse0_S0",
+    "gse1_232",
+    "gse303070_148191A_118N",
+    "gse303070_148191A_278N",
+    "gse303070_148191A_278T",
+    "gse303070_148191A_46T"
+   ],
+   "tier2_configs": null
+  },
+  {
+   "family": "F3",
+   "side": "lightgbm",
+   "dev_configs": 6,
+   "dev_units": [
+    "allen_animal4_C57BL6J-4.003",
+    "gse0_S0",
+    "gse1_232",
+    "gse303070_148191A_118N",
+    "gse303070_148191A_278N",
+    "gse303070_148191A_278T",
+    "gse303070_148191A_46T"
+   ],
+   "tier2_configs": 4
+  },
+  {
+   "family": "F5",
+   "side": "floor: ist",
+   "dev_configs": 60,
+   "dev_units": [
+    "bruker_breast",
+    "gse1_231",
+    "gse1_232",
+    "gse303070_148191A_118N",
+    "gse303070_148191A_278N",
+    "gse303070_148191A_278T",
+    "gse303070_148191A_46T"
+   ],
+   "tier2_configs": 4
+  },
+  {
+   "family": "F5",
+   "side": "floor: logreg",
+   "dev_configs": 24,
+   "dev_units": [
+    "bruker_breast",
+    "gse1_231",
+    "gse1_232",
+    "gse303070_148191A_118N",
+    "gse303070_148191A_278N",
+    "gse303070_148191A_278T",
+    "gse303070_148191A_46T"
+   ],
+   "tier2_configs": 4
+  },
+  {
+   "family": "F5",
+   "side": "scanvi",
+   "dev_configs": 5,
+   "dev_units": [
+    "gse1_232",
+    "gse303070_148191A_118N",
+    "gse303070_148191A_278N",
+    "gse303070_148191A_278T",
+    "gse303070_148191A_46T"
+   ],
+   "tier2_configs": 4
+  },
+  {
+   "family": "F5",
+   "side": "tangram",
+   "dev_configs": 3,
+   "dev_units": [
+    "gse1_232",
+    "gse303070_148191A_118N",
+    "gse303070_148191A_278N",
+    "gse303070_148191A_278T",
+    "gse303070_148191A_46T"
+   ],
+   "tier2_configs": 2
+  }
+ ],
+ "floor_lock_files": [
+  "manifests/locked.json",
+  "manifests/locked_v2.json",
+  "manifests/locked_v3.json"
+ ]
+}

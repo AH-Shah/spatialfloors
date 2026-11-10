@@ -1,7 +1,7 @@
 """F5 floors (PLAN §3/§5): label transfer from the Pelka CRC atlas (ClusterMidway) to a crop, scored on IF-gated cells.
 Input genes = the unit's panel minus every F5 held-out marker (P1, scripts/p1_panels.py), intersected with Pelka.
 Pelka X is log1p-normalised (CELLxGENE): linear values = expm1(X).
-- InSituType ML (insitutypeML, R env; /Users/crocodilus/code/label_transfer.R): reference profiles = mean linear
+- InSituType ML (insitutypeML, R env; the call pattern of the InSituType vignette): reference profiles = mean linear
   expression per ClusterMidway over all annotated Pelka cells on the shared genes; neg = mean negative-probe count per
   cell, or 0.05 when the panel has none (that script's default).
 - Logistic regression: multinomial, on the same stratified Pelka subsample as scANVI (<= 80k cells, <= 4k per
@@ -11,7 +11,8 @@ Fine labels -> F5 classes by COARSE (locked); everything else is "other" (counts
 import numpy as np
 import scipy.sparse as sp
 
-PELKA = "/Users/Hemato/project_3/data/pelka.h5ad"
+from spatialfloors.paths import PELKA as _P
+PELKA = str(_P)
 COARSE = {**{k: "epithelial" for k in ("EpiT", "Epi")},
           **{k: "immune_nonmyeloid" for k in ("Plasma", "TCD4", "TCD8", "B", "Tgd", "TZBTB16", "NK", "ILC")},
           **{k: "myeloid" for k in ("Macro", "Mono", "DC", "Granulo")}}  # Mast, Endo, Fibro, Peri, SmoothMuscle, Schwann -> other
@@ -114,5 +115,5 @@ def insitutype(Xq, profiles, names, neg=None, workdir=None):
     pd.DataFrame(profiles, columns=names).to_csv(d / "profiles.csv", index=False)
     np.savetxt(d / "neg.txt", np.full(Xq.shape[0], .05) if neg is None else np.asarray(neg, float))
     root = Path(__file__).resolve().parents[3]
-    subprocess.run(["pixi", "run", "-e", "r", "Rscript", str(root / "scripts/insitutype_ml.R"), str(d)], check=True, cwd=root)
+    subprocess.run(["pixi", "run", "--frozen", "-e", "r", "Rscript", str(root / "scripts/insitutype_ml.R"), str(d)], check=True, cwd=root)
     o = pd.read_csv(d / "out.csv"); return o.clust.astype(str).values, o.prob.values

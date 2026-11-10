@@ -70,7 +70,7 @@ if p5.exists():
         md.append(f"| {k} | {a:+.4f} | {b:+.4f} | {abs(b - a):.4f} | {v['margin']:.4f} | {ok} |")
 # G7 for F4 (gse1_231): our 50k crop (runs/f4/f4_231.csv, seed mean) vs the whole slide (N2 L6 opt/crc_231.csv + Cellina camera-ready)
 import pandas as pd
-c4 = Path("runs/f4/f4_231.csv"); w6 = Path("/Users/Hemato/project_3/antig/N2/trials/perturb/opt/crc_231.csv"); cam = Path("external/cellina-reproducibility/results/loo_summary_crc_DEG_50_camready.csv")
+c4 = Path("runs/f4/f4_231.csv"); w6 = __import__("spatialfloors.paths", fromlist=["DERIVED"]).DERIVED / "perturb_opt/crc_231.csv"; cam = Path("external/cellina-reproducibility/results/loo_summary_crc_DEG_50_camready.csv")
 if c4.exists() and w6.exists():
     d = pd.read_csv(c4); W = pd.read_csv(w6); W = W[W.model_name == "L6_twoway_pseudobulk"].pearson.mean(); C = pd.read_csv(cam); C = C[C.sid == "crc_231"]
     md += ["", "## G7 F4 crop check (gse1_231, official pearson)", "| model | crop: learned - L6 | whole: learned - L6 | |diff| | margin | pass |", "|---|---|---|---|---|---|"]

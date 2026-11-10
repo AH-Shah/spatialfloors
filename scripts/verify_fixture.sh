@@ -3,7 +3,7 @@
 # the release re-runs (scripts/verify_dev.sh) in the P4 layout under runs/verify, then run tier 1 (p5_analyze.py, and the
 # pre-release version for comparison) and tier 2 (p5_tier2.py, every unit treated as subset). No confirmation data.
 # Usage: zsh scripts/verify_fixture.sh [old_p5.py] > runs/verify/fixture.log 2>&1
-cd /Users/Hemato/project_3/antig/spatialfloors; export PATH=$HOME/.pixi/bin:$PATH PIXI_FROZEN=true OMP_NUM_THREADS=4
+cd ${0:A:h}/..; export PATH=$HOME/.pixi/bin:$PATH PIXI_FROZEN=true OMP_NUM_THREADS=4
 R=runs/verify; G=gse303070_148191A_278N; H=gse303070_148191A_118N; A=allen_animal4_C57BL6J-4.003; P=$PWD
 py() { pixi run -e floors python "$@"; }
 mkdir -p $R/labels $R/t2/f1 $R/t2/f2_floor_dev/labels $R/t2/f3_lightgbm_dev

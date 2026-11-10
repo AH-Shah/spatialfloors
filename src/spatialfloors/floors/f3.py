@@ -218,7 +218,7 @@ V3_LOCK = {"human": dict(feat="T+ctx", ell=25., npc=10), "mouse": dict(feat="ctx
 
 def v3_floor_parts(rows, lock, K_lock, T_lock, rings, Es, Ec):
     """F3 floor v3 as locked (PLAN §19, chosen on development 2026-11-03): the v2 lock features + the same-lineage rings
-    50-150 and 150-250 um on the receiver's own masked genes, one ridge (alpha 1000), no search ('fixed_sf' in
+    50-150 um (600 nearest) and 150-400 um (1,500 nearest; median reach 220-330 um on CosMx) on the receiver's own masked genes, one ridge (alpha 1000), no search ('fixed_sf' in
     scripts/v3_f3_alt.py; the per-group penalty search won on human but lost to v2 on Allen)."""
     lk = lock_part(rows, lock, K_lock, T_lock, Ec)
     return lambda q, tr: np.hstack([lk(q, tr)] + [bs.kernel_mean(*rings[k], Es(q), rows) for k in ("self", "far")])

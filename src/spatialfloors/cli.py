@@ -3,7 +3,8 @@ import argparse, json, sys, tempfile, time
 from pathlib import Path
 import numpy as np, pandas as pd
 
-ROW323 = Path("/Users/Hemato/project_3/antig/N2/trials/perturb/opt")
+from spatialfloors.paths import DERIVED
+ROW323 = DERIVED / "perturb_opt"
 
 
 def check(args):

@@ -10,7 +10,7 @@
 # Stop: kill $(cat runs/sched/sched.pid) - NOT pkill -f. Jobs run in their own session (sched_job.sh via setsid), so they survive
 # a restart, even a launchctl bootout (their .run pids are re-adopted; jobs running outside the pool are detected by pgrep).
 # Every job runs under mem_guard (footprint cap). State: runs/sched/<id>.{run,done,fail}. No output unless something happens.
-cd /Users/Hemato/project_3/antig/spatialfloors; source scripts/mem_guard.sh
+cd ${0:A:h}/..; source scripts/mem_guard.sh
 setopt NO_BG_NICE  # 2026-11-04: zsh gave each & subshell +5 (jobs ran at nice 10), which pinned every job to the E cores
 JOBS=$1; S=runs/sched; mkdir -p $S; echo $$ > $S/sched.pid
 RESERVE_GB=${RESERVE_GB:-3}; PANIC_GB=${PANIC_GB:-1.5}; GPU_MAX=${GPU_MAX:-4}; CPU_MAX=${CPU_MAX:-8}; GPU_BUSY=${GPU_BUSY:-85}; NCPU=$(sysctl -n hw.ncpu)

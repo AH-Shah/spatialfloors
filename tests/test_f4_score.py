@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 import numpy as np, pytest
 
-P0 = Path("runs/p0_cellina/datasets/crc"); LFC = Path("/Users/Hemato/project_3/antig/N2/trials/perturb/opt/crc_232_lfc.npz")
+P0 = Path("runs/p0_cellina/datasets/crc"); LFC = __import__("spatialfloors.paths", fromlist=["DERIVED"]).DERIVED / "perturb_opt/crc_232_lfc.npz"
 
 
 @pytest.mark.skipif(not (P0.exists() and LFC.exists()), reason="P0 Cellina outputs not on disk")

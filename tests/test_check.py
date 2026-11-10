@@ -2,7 +2,7 @@
 import os, pytest
 from pathlib import Path
 
-RAW = Path("/Users/Hemato/project_3/data/raw/GSE1/cosmx_wt_232.h5ad")
+RAW = __import__("spatialfloors.paths", fromlist=["RAW"]).RAW / "GSE1/cosmx_wt_232.h5ad"
 
 
 @pytest.mark.slow

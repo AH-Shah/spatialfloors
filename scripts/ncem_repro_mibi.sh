@@ -4,7 +4,7 @@
 # interaction_baseline}.sh) with their exact argument keys, sequentially on CPU instead of SLURM. Published targets
 # (model_benchmarks_mibitof_cancer.ipynb, test r_squared_linreg, best on val): ED ~.69, ED-NCEM GCN ~.70-.715 (13-46 um),
 # linear interactions ~.80. Usage: bash scripts/ncem_repro_mibi.sh {profile|ed_ncem_gcn|ed|interactions|interaction_baseline}
-cd /Users/Hemato/project_3/antig/spatialfloors
+cd ${0:A:h}/..
 PY=external/ncem_env/bin/python; S=external/ncem_benchmarks_src/ncem_benchmarks/scripts; DATA=runs/p3/ncem_repro/data; OUT=runs/p3/ncem_repro/gs
 export OMP_NUM_THREADS=4 TF_NUM_INTRAOP_THREADS=4 TF_NUM_INTEROP_THREADS=2 TF_CPP_MIN_LOG_LEVEL=2
 run_ed_ncem() {  # args: GS_KEY radius enc_depth  (ed_ncem_gcn.sh: LR 1, LAT 1, DR 1, L1 1, L2 2, EID 2, DID 1, DDE 1, CDE 1, CDI 0, CDR 1, CL2 2, BS S, NEVAL 10, TYPE_COND 1)

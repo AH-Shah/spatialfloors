@@ -5,7 +5,7 @@ from pathlib import Path
 from spatialfloors.data.crops import choose_crop
 from spatialfloors.provenance import stamp
 
-RAW = Path("/Users/Hemato/project_3/data/raw"); OUT = Path("manifests/crops"); OUT.mkdir(parents=True, exist_ok=True); index = {}
+from spatialfloors.paths import RAW, DERIVED; OUT = Path("manifests/crops"); OUT.mkdir(parents=True, exist_ok=True); index = {}
 
 
 def save(name, ids, rec, extra=None):
@@ -27,7 +27,7 @@ idx, rec = choose_crop(m[["CenterX_global_px", "CenterY_global_px"]].values.asty
 M = pd.read_csv(RAW / "GSE303070/GSE303070_All_cells_metadata.csv", index_col=False,
                 usecols=["Barcode", "fov", "CenterX_global_px", "CenterY_global_px", "Slide", "Sample", "Donor", "Sample_type", "niches", "Mean.PanCK", "Mean.CD45", "Mean.CD68", "Mean.CD3"])
 M[["Slide", "Sample"]] = M[["Slide", "Sample"]].astype(str); M.loc[M.Donor.astype(str).isin(["DonorC", "nan"]), "Donor"] = np.nan  # mixed int/str slide ids; NC FOVs have no donor
-fm = pd.read_csv("/Users/Hemato/project_3/antig/N2/trials/fap_spp1/gse303070_fov_meta.csv"); fm[["slide", "pref"]] = fm[["slide", "pref"]].astype(str)
+fm = pd.read_csv(DERIVED / "gse303070_fov_meta.csv"); fm[["slide", "pref"]] = fm[["slide", "pref"]].astype(str)
 mc = M.groupby(["Slide", "Sample"]).agg(cells=("Barcode", "size"), fovs=("fov", "nunique"), donor=("Donor", lambda x: ",".join(sorted(set(map(str, x.dropna())))))).reset_index()
 fc = fm.groupby(["slide", "pref"]).agg(cells=("total cells", "sum"), fovs=("fov", "nunique"), donor=("donor", lambda x: ",".join(sorted(set(map(str, x.dropna())))))).reset_index()
 J = mc.merge(fc, left_on=["Slide", "Sample"], right_on=["slide", "pref"], how="outer", suffixes=("_cells", "_fovcsv"))
@@ -56,7 +56,7 @@ a = ad.read_h5ad(RAW / "spatch_xenium_5k/spatch_xenium_5k.h5ad", backed="r"); id
 save("spatch_xenium5k", a.obs_names[idx], rec, dict(dataset="SPATCH", role="confirmation_F1", region_key=None)); a.file.close()
 
 # Allen animal 2 (on disk): the three F4 sections, regions = major_brain_region
-A = ad.read_h5ad("/Users/Hemato/project_3/antig/N2/trials/perturb/WB_MERFISH_animal2_coronal.h5ad", backed="r")
+A = ad.read_h5ad(DERIVED / "WB_MERFISH_animal2_coronal.h5ad", backed="r")
 for sid in ["C57BL6J-2.036", "C57BL6J-2.039", "C57BL6J-2.041"]:
     m = (A.obs.brain_section_label == sid).values; xy = np.asarray(A.obsm["X_spatial_coords"][np.flatnonzero(m)], float)
     idx, rec = choose_crop(xy, A.obs.major_brain_region.values[m].astype(str)); save(f"allen2_{sid}", A.obs_names[m][idx], rec, dict(dataset="Allen Zhuang animal 2", role="retrospective", region_key="major_brain_region"))

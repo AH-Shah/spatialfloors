@@ -5,6 +5,20 @@ The locked configurations, units and decision rules of the confirmatory study ar
 `registration/PROTOCOL.md` and `manifests/locked_v3.json`; where this file names an earlier floor configuration, the
 protocol governs. Section references (PLAN §n) point to the development record summarised in the protocol's appendix.
 
+**Locked floors of the confirmatory study (v3; added 2026-11-10). These supersede the floor configurations described in
+the family sections below, which record earlier development stages.**
+- F1: analytic Pearson residuals on X_a, centred (not z-scored), PCA 50 (`pearson_none_pc50`).
+- F2: full-covariance GMM on [PCA 50, mean over the 200 nearest neighbours], Gaussian ℓ 400 µm, λ .8.
+- F3: ridge (α 1000) on the v2 features (human: type mix + bleed-safe context of other lineages, ℓ 25 µm, 10
+  components; mouse: context only, ℓ 100 µm, 50 components) plus two same-lineage rings of the receiver's own genes:
+  50–150 µm among the 600 nearest cells and 150–400 µm among the 1,500 nearest (median reach 220–330 µm on CosMx).
+  The note in `locked_v3.json` says 150–250 µm; that file is hashed in the tier-2 manifest and is left unchanged.
+- F4: L6 two-way (`floors.l6.twoway`), unchanged.
+- F5: InSituType ML with a spatial prior on its log-likelihoods (15 nearest neighbours, 5 iterations;
+  `floors.f5.spatial_prior`).
+- GAT (F3) was dropped as a test pair before confirmation (PLAN §18, 2026-11-02); `models.gat` is kept because the
+  development landscape and the F3 positive controls used it.
+
 ## Units and statistics — `spatialfloors.stats`
 - Unit = patient / donor / animal. Per unit, paired D = metric(learned) − metric(floor), one primary metric per family.
 - Model: D ~ 1 + S_c, where S_c is the stratum indicator(s) mean-centred over units, so the intercept equals the grand

@@ -1,6 +1,6 @@
 # InSituType ML for spatialfloors F5 (floors/f5.py insitutype): <dir>/x.mtx (cells x genes counts), profiles.csv
 # (genes x labels, linear mean expression, same gene order), neg.txt (per-cell background) -> <dir>/out.csv (clust, prob).
-# Call as in /Users/crocodilus/code/label_transfer.R (insitutypeML(x, neg, reference_profiles)).
+# Call as in the InSituType vignette: insitutypeML(x, neg, reference_profiles).
 # v3 (PLAN §19, additive; out.csv unchanged): also <dir>/logliks.csv (the log-likelihoods, for the spatial prior).
 suppressPackageStartupMessages({library(InSituType); library(Matrix)})
 d <- commandArgs(trailingOnly = TRUE)[1]

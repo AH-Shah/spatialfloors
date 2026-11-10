@@ -10,7 +10,7 @@ import anndata as ad, numpy as np, pandas as pd
 from sklearn.metrics import adjusted_rand_score
 from spatialfloors.provenance import stamp
 
-D = Path("/Users/Hemato/project_3/data/raw/novae_p5"); acc = sys.argv[1] if len(sys.argv) > 1 else "cpu"
+D = __import__("spatialfloors.paths", fromlist=["RAW"]).RAW / "novae_p5"; acc = sys.argv[1] if len(sys.argv) > 1 else "cpu"
 import novae
 a = ad.read_h5ad(D / "slide.h5ad"); ann = pd.read_csv(D / "annotations.csv.gz", index_col=0).reindex(a.obs_names); t = time.time()  # parquet converted in env floors (no pyarrow here)
 novae.utils.spatial_neighbors(a, radius=80)

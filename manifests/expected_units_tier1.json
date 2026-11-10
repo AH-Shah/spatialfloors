@@ -1,0 +1,10 @@
+{
+ "note": "Tier-1 units per registered pair (PROTOCOL §3 table; read by scripts/p5_analyze.py when SF_EXPECT points here; added 2026-11-10 after the external review, ST8). F3 = 25 registered minus the 3 crops lost before scoring (single-lineage receivers; EXECUTION_LOG 2026-11-04).",
+ "n_units": {
+  "F1|scvi": 25, "F1|nicheformer": 25,
+  "F2|cellcharter": 10, "F2|novae": 4,
+  "F3|lightgbm": 22, "F3|ncem": 22,
+  "F4_pearson|cellina": 10, "F4_pearson|cpa": 10, "F4_pearson_clean|cellina": 5, "F4_pearson_clean|cpa": 5,
+  "F5|scanvi": 20, "F5|tangram": 20
+ }
+}

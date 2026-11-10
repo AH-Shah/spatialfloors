@@ -13,7 +13,7 @@ import json, numpy as np, anndata as ad, scipy.sparse as sp
 from sklearn.metrics import roc_auc_score
 from spatialfloors.provenance import stamp
 
-a = ad.read_h5ad("/Users/Hemato/project_3/data/raw/GSE1/cosmx_wt_232.h5ad")
+a = ad.read_h5ad(__import__("spatialfloors.paths", fromlist=["RAW"]).RAW / "GSE1/cosmx_wt_232.h5ad")
 L = {c: np.log1p(a.obs[f"Mean.{c}"].astype(float).values) for c in ["PanCK", "CD45", "CD68_CK8_18"]}
 Q = dict(PanCK=(.40, .60), CD45=(.50, .80), CD68_CK8_18=(.50, .85))
 thr = {c: (float(np.quantile(L[c], lo)), float(np.quantile(L[c], hi))) for c, (lo, hi) in Q.items()}

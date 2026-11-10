@@ -1,7 +1,9 @@
 import numpy as np
-from spatialfloors.data.genes import filter_reason
+import pytest
+from spatialfloors.data.genes import HGNC, filter_reason
 
 
+@pytest.mark.skipif(not HGNC.exists(), reason="HGNC complete set not under SF_DATA (DATA.md)")
 def test_filter_rules():
     g = ["NEGR1", "NEGATIVE1", "SystemControl3", "RPS6KA1", "RPL13", "RPSA", "MRPL12", "LINC00511", "MALAT1", "ACTBP2", "MT-CO1",
          "AC012345.1", "ENSG00000123", "KRT20", "HAND2-AS1"]
