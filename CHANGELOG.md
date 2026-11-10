@@ -20,5 +20,8 @@ byte-identically from the committed outputs. Each change has a row in `results/E
   (`results/data_sha256.tsv`).
 - `floors` and `r` environments locked for Linux x86-64 too; macOS arm64 lock unchanged.
 - SPEC: the locked v3 floors at the top; F3 far-ring docstring corrected to 150–400 µm.
-- InSituType is called with `pixi run --frozen`; `test_genes` skips without the HGNC file.
+- InSituType is called with `pixi run --frozen`; the `r-setup` task installs InSituType at commit f3ef0dd (the version
+  every run used; it installed the current GitHub head before). `test_genes` skips without the HGNC file.
+- `tests/test_analysis.py`: every tier-1 test recomputes from the per-unit D in the committed report; a documented
+  property of the F5 metric (calling fewer cells of a class can raise its AUROC).
 - `AI_DISCLOSURE.md`.
