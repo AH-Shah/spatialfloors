@@ -1,5 +1,6 @@
-"""Gene panel (SPEC §Gene panel): filter, then seurat_v3 HVG on X_a for whole-transcriptome panels; targeted panels keep
-all filtered genes. Annotation: HGNC complete set 2026-10-06 (sha256 in HGNC_SHA), human; mouse panels use symbol rules."""
+"""Gene panel (PROTOCOL §3): filter, then seurat_v3 HVG on X_a for whole-transcriptome panels; targeted panels keep
+all filtered genes. Annotation: HGNC complete set 2026-10-06 (sha256 in HGNC_SHA), human; mouse panels use symbol
+rules."""
 import re
 from pathlib import Path
 import numpy as np
@@ -8,17 +9,20 @@ import pandas as pd
 from spatialfloors.paths import RAW
 HGNC = RAW / "hgnc_2026-10-06/hgnc_complete_set_2026-10-06.txt"
 HGNC_SHA = "8bf6f686e640dbc864a346484626953621b0500d900d26cd085a35c2782d725d"
-WTX_MIN = 10000  # panels with more genes than this are whole-transcriptome -> HVG 2000; else targeted (keep all filtered)
+# panels with more genes than this are whole-transcriptome -> HVG 2000; else targeted (keep all filtered)
+WTX_MIN = 10000
 N_HVG = 2000
 
 PROBE = re.compile(r"^(NEGATIVE|NegPrb|Neg_?Control|SYSTEMCONTROL|SystemControl|BLANK|Blank|FalseCode|falsecode|Unassigned|Deprecated|Intergenic)", re.I)
-CLONE = re.compile(r"^((A[CFLP]|B[X]|C[RU]|FP|U|Z)\d{5,}\.\d+|ENS[A-Z]*G\d+(\.\d+)?|LOC\d+)$")  # unannotated loci without an HGNC symbol
+# unannotated loci without an HGNC symbol
+CLONE = re.compile(r"^((A[CFLP]|B[X]|C[RU]|FP|U|Z)\d{5,}\.\d+|ENS[A-Z]*G\d+(\.\d+)?|LOC\d+)$")
 UNANNOT_LNC = re.compile(r"^LINC\d+|-(AS|DT|IT|OT)\d*$")
 PSEUDO = {"pseudogene", "immunoglobulin pseudogene", "T cell receptor pseudogene"}
 
 
 def hgnc_table(path=HGNC):
-    """symbol -> (locus_type, gene_group); previous / alias symbols resolve only when unique and not an approved symbol."""
+    """symbol -> (locus_type, gene_group); previous / alias symbols resolve only when unique and not an approved
+    symbol."""
     h = pd.read_csv(path, sep="\t", usecols=["symbol", "locus_type", "gene_group", "prev_symbol", "alias_symbol"], dtype=str).fillna("")
     main = {s: (lt, gg) for s, lt, gg in zip(h.symbol, h.locus_type, h.gene_group)}
     alt = {}
@@ -31,7 +35,8 @@ def hgnc_table(path=HGNC):
 
 
 def filter_reason(symbols, species="human", table=None):
-    """Per gene: '' (kept) or the removal reason. Human: HGNC locus type / gene group; mouse: symbol rules (targeted panels)."""
+    """Per gene: '' (kept) or the removal reason. Human: HGNC locus type / gene group; mouse: symbol rules (targeted
+    panels)."""
     if species == "human": table = table if table is not None else hgnc_table()
     out = []
     for g in map(str, symbols):
@@ -50,7 +55,8 @@ def filter_reason(symbols, species="human", table=None):
 
 
 def panel(Xa, symbols, species="human", n_hvg=N_HVG):
-    """Xa: cells x genes counts (X_a of the count split, or the counts when no split applies). Returns dict with the kept
+    """Xa: cells x genes counts (X_a of the count split, or the counts when no split applies). Returns dict with the
+    kept
     gene indices (filtered; HVG seurat_v3 on Xa for whole-transcriptome panels), the removal counts, and the mode."""
     import anndata as ad, scanpy as sc
     reason = filter_reason(symbols, species); keep = np.flatnonzero(reason == "")

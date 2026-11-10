@@ -1,11 +1,12 @@
-"""Contiguous ~50k-cell crops chosen by code from coordinates + region labels only (SPEC §Crops)."""
+"""Contiguous ~50k-cell crops chosen by code from coordinates + region labels only (PROTOCOL §3)."""
 import numpy as np
 
 N_TARGET, MIN_SHARE, PRESENT_MIN, GRID = 50000, .20, .02, 40
 
 
 def square_window(xy, c, n):
-    """The n cells nearest to centre c in L-inf distance: a contiguous axis-aligned square; returns indices, half-side."""
+    """The n cells nearest to centre c in L-inf distance: a contiguous axis-aligned square; returns indices,
+    half-side."""
     d = np.max(np.abs(xy - c), 1); idx = np.argpartition(d, n - 1)[:n]; return np.sort(idx), float(d[idx].max())
 
 

@@ -5,7 +5,7 @@ Confirmatory results of the protocol registered as DOI [10.5281/zenodo.23931264]
 of the registration record, DOI [10.5281/zenodo.24044400](https://doi.org/10.5281/zenodo.24044400); version 1 is
 unchanged. Every number below is read from
 the reports in [`results/reports/`](results/reports/); events and deviations after registration are in
-[`results/EXECUTION_LOG.md`](results/EXECUTION_LOG.md).
+[`results/DEVIATIONS.md`](results/DEVIATIONS.md).
 
 D = M(learned) − M(floor) on the same cells, averaged per unit (patient, donor or animal); estimate = intercept of
 D ~ 1 + centred platform strata (= mean D); one-sided 95% bounds from the exact t. Non-inferior: upper bound < δ_f.
@@ -35,11 +35,11 @@ whole small samples, PROTOCOL §3).
   above 0 (one-sided p = .035); its lead is inside the margin on both F4 metrics (equivalent).
 - **Floor superiority** (upper bound < 0; no decision weight) holds on 10 of 12 pairs.
 - **Units:** F3 lost 3 of 25 crops before scoring. Their label-free receiver identities form a single lineage, so no
-  model has an other-lineage context (EXECUTION_LOG 2026-11-04). Donors 7 and 170 are therefore missing, and donor 280
+  model has an other-lineage context (`results/DEVIATIONS.md`). Donors 7 and 170 are therefore missing, and donor 280
   is scored on sample 280N only.
 - **First tier-1 run:** it left GSE1 222 out of F4 (it read 222's scores with the wrong held-out type), giving N = 9 / 4.
   The corrected report above is the registered analysis on every registered unit. The first run is kept as
-  `results/reports/P5.{json,md}`, and its verdicts are the same (EXECUTION_LOG 2026-11-08).
+  `results/reports/P5.{json,md}`, and its verdicts are the same (`results/DEVIATIONS.md`).
 - **F4 retrospective units:** 5 of the 10 official-metric units carry the authors' published Cellina and CPA results,
   and their comparison with L6 was computed before registration (PROTOCOL §3). The spike-free pairs use the 5
   prospective units only.
@@ -159,7 +159,7 @@ second, with one-sided 95% bounds.
 - **Unit size** (`results/reports/X_moderators.md`): no association between D and the cells scored, except F5 scANVI
   (Spearman ρ = +.53, p = .017, no multiplicity correction). Unit size is confounded with platform there: the CosMx 1k
   samples are the small units and carry the floor's lead.
-- **F5 at a matched call rate** (`results/reports/X_f5_matched.md`; added 2026-11-09 after an external review). The
+- **F5 at a matched call rate** (`results/reports/X_f5_matched.md`; added after `results-v1`). The
   held-out-marker AUROC can rise when a model calls fewer cells of a class. Here the floor calls, per class, as many
   cells as the comparator: its top cells by class posterior. Nothing is refitted.
   - scANVI − floor at scANVI's call rate: D −.0040 (one-sided 95% bounds −.0075, −.0005), against −.0143 registered.

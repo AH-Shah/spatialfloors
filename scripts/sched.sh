@@ -1,17 +1,17 @@
 #!/bin/zsh
-# Resource-aware job pool (replaces one-at-a-time queues). Usage: nohup scripts/sched.sh <jobs.txt> > runs/sched/sched.log &
+# Resource-aware job pool. Usage: nohup scripts/sched.sh <jobs.txt> > runs/sched/sched.log &
 # jobs.txt lines: id|gpu or cpu|est_gb|cap_gb|done_file|after (comma ids or -)|command   (# = comment)
 # Every 20 s: avail = free + inactive + speculative + purgeable pages; gpu% = IOAccelerator "Device Utilization %"
 # (mean of the last 3 reads); load = 1-min load average. Launch the next ready job (>= 60 s after the last launch) when
 #   memory: avail - (est not yet reached by running jobs) - est(job) >= RESERVE_GB and swap not growing (> 256 MB/round)
 #   gpu job: gpu% < GPU_BUSY (underused) and running gpu jobs < GPU_MAX;  cpu job: load < NCPU - 1 and cpu jobs < CPU_MAX
-# Remove: avail < PANIC_GB or swap > 6 GB and still growing (> 256 MB per round; macOS swap is sticky, 2026-10-30) -> kill the youngest job (requeued with est x 1.5); load > 2.5 x NCPU for 3 rounds -> pause (SIGSTOP) the youngest cpu job,
-#   resumed once load < NCPU (2026-11-04; killing it lost hours of work). Status line every 5 min.
+# Remove: avail < PANIC_GB or swap > 6 GB and still growing -> kill the youngest job (requeued with est x 1.5); load > 2.5 x NCPU for 3 rounds -> pause (SIGSTOP) the youngest cpu job,
+#   resumed once load < NCPU. Status line every 5 min.
 # Stop: kill $(cat runs/sched/sched.pid) - NOT pkill -f. Jobs run in their own session (sched_job.sh via setsid), so they survive
 # a restart, even a launchctl bootout (their .run pids are re-adopted; jobs running outside the pool are detected by pgrep).
 # Every job runs under mem_guard (footprint cap). State: runs/sched/<id>.{run,done,fail}. No output unless something happens.
 cd ${0:A:h}/..; source scripts/mem_guard.sh
-setopt NO_BG_NICE  # 2026-11-04: zsh gave each & subshell +5 (jobs ran at nice 10), which pinned every job to the E cores
+setopt NO_BG_NICE  # keep background jobs at normal priority
 JOBS=$1; S=runs/sched; mkdir -p $S; echo $$ > $S/sched.pid
 RESERVE_GB=${RESERVE_GB:-3}; PANIC_GB=${PANIC_GB:-1.5}; GPU_MAX=${GPU_MAX:-4}; CPU_MAX=${CPU_MAX:-8}; GPU_BUSY=${GPU_BUSY:-85}; NCPU=$(sysctl -n hw.ncpu)
 gpu_now() { ioreg -r -c IOAccelerator -d 1 2>/dev/null | grep -o '"Device Utilization %"=[0-9]*' | head -1 | cut -d= -f2; }
@@ -38,7 +38,7 @@ while true; do
   tick=$((tick + 1)); [ $((tick % 15)) = 0 ] && log "status avail=${av}G swap=${sw}M load=${ld} gpu=${gp}% running gpu=$ngpu cpu=$ncpu"
   if [ $(echo "$ld > 2.5 * $NCPU" | bc) -eq 1 ]; then hot=$((hot + 1)); else hot=0; fi
   # overload: pause (SIGSTOP) the youngest running cpu job, resume paused jobs once load < NCPU; no work is lost
-  # (2026-11-04: killing wasted 6 half-done NCEM fits in 12 h; NCEM's TF thread pools spike load to 40+ mid-run)
+
   if [ $hot -ge 3 ] && [ -n "$ycpu" ]; then
     log "CPU overload load=${ld} -> pause $ycpu"; sigtree STOP $ycpid; touch $S/$ycpu.paused; hot=0
   elif [ $(echo "$ld < $NCPU" | bc) -eq 1 ]; then
@@ -49,7 +49,7 @@ while true; do
     sleep 30; rm -f $S/$youngest.run $S/$youngest.fail; touch $S/$youngest.requeue; continue
   fi
   now=$(date +%s); launched=0; gpuwait=0
-  for pass in gpu cpu; do  # gpu jobs first; 2026-11-05: 8 GB Cellina jobs starved for hours while 3-6 GB cpu jobs took every freed slot
+  for pass in gpu cpu; do  # GPU jobs first, so large GPU jobs are not starved by CPU jobs
   while IFS='|' read -r id cls est cap done after cmd; do
     [[ -z $id || $id == \#* || $cls != $pass ]] && continue
     [ -e $S/$id.done ] || [ -e $S/$id.fail ] || [ -e $S/$id.run ] && continue

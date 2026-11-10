@@ -1,13 +1,8 @@
 #!/bin/zsh
-# Whole-slide arm stop rule (results/WHOLESLIDE_PLAN.md §4), with the investigators' system limits (2026-11-09):
-# RAM 23 GB (every job's mem_guard cap) and swap > 2 GB for more than 15 min.
-# - 2026-11-09 22:15 user order: a failing job (any slide, incl. 120) no longer stops the arm; slide 120 ran its
-#   heaviest jobs, so a failure is treated as a bug: the job is set aside (runs/xw/SET_ASIDE.txt; <id>.done touched so
-#   dependents and the gate proceed; xw_analyze skips missing outputs) and debugged separately.
-# - Swap > 2 GB continuously for > 15 min, at any time -> the arm is declared failed and stopped (the running jobs are
-#   named in runs/xw/ARM_FAILED).
-# Failures of single jobs on the other slides do not stop the arm (reported as failed on that slide, §4).
-# Exits when runs/xw/X_wholeslide.json exists (analysis done).
+# Whole-slide arm watcher (results/WHOLESLIDE_PLAN.md §4). Every job runs under a 23 GB memory cap (mem_guard).
+# - Swap > 2 GB for more than 15 min -> the arm is stopped and declared failed (runs/xw/ARM_FAILED).
+# - A failed job is set aside (runs/xw/SET_ASIDE.txt; its dependents proceed, xw_analyze skips missing outputs).
+# Exits when runs/xw/X_wholeslide.json exists.
 cd ${0:A:h}/..
 kt() { local c; for c in $(pgrep -P $1); do kt $c; done; kill -TERM $1 2>/dev/null; kill -CONT $1 2>/dev/null; }
 stop_arm() {

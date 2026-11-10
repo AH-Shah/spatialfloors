@@ -17,7 +17,7 @@ tables and figures meant for readers use the names in the second column.
 | `gse0_S0` | Bruker colon WTx | development | Bruker Spatial Biology, CosMx Human Whole Transcriptome Colon Dataset (sigmoid adenocarcinoma, FFPE): [dataset page](https://brukerspatialbiology.com/products/cosmx-spatial-molecular-imager/ffpe-dataset/cosmx-human-whole-transcriptome-colon-dataset/); files `https://objects.liquidweb.services/smi-public/wtx_manuscript/colon_discovery/` (local `md5sums.txt` identical to the bucket's) | `GSE0/S0_exprMat_file`, `S0_metadata_file`, `S0_fov_positions_file` |
 | `Donor<n>` (crops `gse303070_<slide>_<sample>`) | GSE303070 donor `<n>` | confirmation (11 donors); development (donors 46, 118, 278) | GEO [GSE303070](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303070): "A spatial atlas of colorectal cancer reveals the influence of stromal niches on tumour differentiation" (CosMx 1k) | `GSE303070/GSE303070_All_cells_metadata.csv`; `processed/p5/labeled_h5ad/GSE303070_CosMx_Slide_*.h5ad` (made from `GSE303070/Processed`) |
 | `spatch_xenium5k` | SPATCH Xenium 5K (colon adenocarcinoma) | confirmation (F1 only) | SPATCH benchmark (Xenium 5K section with adjacent CODEX), Nature Communications 16 (2025), doi [10.1038/s41467-025-64292-3](https://doi.org/10.1038/s41467-025-64292-3); SPATCH web server http://spatch.pku-genomics.org/ (raw data also NGDC GSA-Human HRA011129). Downloaded 2025-05-27 (file dates). The study has colon, liver and ovarian tumours; this file is the colon sample (CDX1 / CDX2 in 27% / 21% of cells, ovarian and hepatocyte markers absent) | `spatch_xenium_5k/spatch_xenium_5k.h5ad` |
-| `allen_animal<k>` (k = 1–4; F4 retrospective `allen2`) | Zhuang MERFISH mouse `<k>` | confirmation (1–3); development (4) | Zhang et al. 2023, Nature, doi [10.1038/s41586-023-06808-9](https://doi.org/10.1038/s41586-023-06808-9) (Zhuang lab whole mouse brain MERFISH; Allen Brain Cell Atlas Zhuang-ABCA-1 to 4), as curated by CZ CELLxGENE Discover, collection `0cca8620-8dee-45d0-aef5-23f032a5cf09`. Dataset versions (`https://datasets.cellxgene.cziscience.com/<id>.h5ad`): animal 1 `aeaa6e77-7f6e-4d8c-b217-4c1e777cc0be`, animal 2 `93c3bb97-ea05-4ee0-a760-a1508cd04612`, animal 3 `0cd6f9fe-4054-480e-a4b7-ccce8d67c4cb`, animal 4 `4b5c682f-4b5d-4dcb-81c1-606fef2b601e` (read from each file's `uns/citation`) | `allen_zhuang/WB_MERFISH_animal{1,3,4}_*.h5ad`; animal 2 under `derived/` |
+| `allen_animal<k>` (k = 1–4; F4 retrospective `allen2`) | Zhuang MERFISH mouse `<k>` | confirmation (1–3); development (4) | Zhang et al. 2023, Nature, doi [10.1038/s41586-023-06808-9](https://doi.org/10.1038/s41586-023-06808-9) (Zhuang lab whole mouse brain MERFISH; Allen Brain Cell Atlas Zhuang-ABCA-1 to 4), as curated by CZ CELLxGENE Discover, collection `0cca8620-8dee-45d0-aef5-23f032a5cf09`. Dataset versions (`https://datasets.cellxgene.cziscience.com/<id>.h5ad`): animal 1 `aeaa6e77-7f6e-4d8c-b217-4c1e777cc0be`, animal 2 `93c3bb97-ea05-4ee0-a760-a1508cd04612`, animal 3 `0cd6f9fe-4054-480e-a4b7-ccce8d67c4cb`, animal 4 `4b5c682f-4b5d-4dcb-81c1-606fef2b601e` (read from each file's `uns/citation`) | `allen_zhuang/WB_MERFISH_animal<k>_*.h5ad` |
 | `allen_yao638850` | Yao MERFISH mouse 638850 | confirmation | Yao et al. 2023, Allen Brain Cell Atlas dataset MERFISH-C57BL6J-638850: `https://allen-brain-cell-atlas.s3.us-west-2.amazonaws.com/` `expression_matrices/MERFISH-C57BL6J-638850/20230830/C57BL6J-638850-raw.h5ad`, `metadata/MERFISH-C57BL6J-638850-CCF/20231215/views/cell_metadata_with_parcellation_annotation.csv`, `metadata/MERFISH-C57BL6J-638850/20241115/gene.csv` | `allen_yao_638850/` (these three files) |
 | `bruker_kidney`, `bruker_skin` | Bruker WTx kidney RCC, skin SCC | confirmation | Bruker Spatial Biology CosMx whole-transcriptome FFPE datasets ([list](https://brukerspatialbiology.com/products/cosmx-spatial-molecular-imager/ffpe-dataset/)); files `https://objects.liquidweb.services/smi-public/wtx_manuscript/kidney_discovery/` and `.../wtx_manuscript/skin_scc/` (local `md5sums.txt` identical to the bucket's) | `bruker_wtx/{kidney_rcc,skin_scc}` |
 | `bruker_mobreast` | Bruker breast (multiomic) | confirmation | Bruker CosMx Human Multiomic Breast Dataset ([page](https://brukerspatialbiology.com/products/cosmx-spatial-molecular-imager/ffpe-dataset/cosmx-human-multiomic-breast-dataset/)); files `https://objects.liquidweb.services/smi-public/multiomic_breast/Flatfiles_RNA.zip`, `Flatfiles_Protein.zip` | `bruker_wtx/multiomic_breast/flat` |
@@ -40,16 +40,6 @@ tables and figures meant for readers use the names in the second column.
 | `raw/hgnc_2026-10-06/hgnc_complete_set_2026-10-06.txt` | HGNC complete set, downloaded 2026-10-06 (genenames.org) |
 | `raw/ensembl_orthologs/mouse_human_orthologs.tsv` | Ensembl release 116 BioMart export (`https://www.ensembl.org/biomart/martservice`): mouse "Gene stable ID" → "Human gene stable ID" (`src/spatialfloors/models/nicheformer.py`) |
 
-## Derived inputs (`derived/`)
-
-Made by the investigators' earlier project, before this study. Each is listed with its SHA-256 in `results/data_sha256.tsv`.
-
-| File | What it is |
-|---|---|
-| `WB_MERFISH_animal2_coronal.h5ad` | Zhuang MERFISH mouse 2, the same format as the other `WB_MERFISH_*` files |
-| `gse303070_fov_meta.csv` | GSE303070 FOV-to-donor table, used to cut the donor crops |
-| `perturb_opt/` | L6 floor reference outputs on Crowell CRC 231 and 232 (F4 validation check and a test fixture) |
-
 ## External code (`external/`, not in this repository)
 
 | Directory | Repository and commit |
@@ -62,5 +52,3 @@ Made by the investigators' earlier project, before this study. Each is listed wi
 | `external/ncem_env`, `external/ncem_benchmarks_src` | NCEM 0.1.5 (`pip install ncem==0.1.5`, TensorFlow 2.15) and github.com/theislab/ncem_benchmarks |
 | R environment (pixi env `r`) | InSituType 2.0, github.com/Nanostring-Biostats/InSituType @ f3ef0dd |
 
-Vendored inside this repository with their source hashes: `src/spatialfloors/floors/l6.py` (the investigators' earlier
-L6 baseline, verbatim) and `src/spatialfloors/floors/validate.py` (verbatim from the investigators' earlier library).

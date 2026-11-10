@@ -5,13 +5,14 @@ from pathlib import Path
 import numpy as np, pandas as pd, scipy.sparse as sp, anndata as ad
 
 SF = Path(__file__).resolve().parents[3]; MAN = SF / "manifests/crops"
-from spatialfloors.paths import RAW, PROC, DERIVED
+from spatialfloors.paths import RAW, PROC
 COSMX_UM = 0.12028  # um per CosMx px
-ALLEN = {"animal1": RAW / "allen_zhuang/WB_MERFISH_animal1_coronal.h5ad", "animal2": DERIVED / "WB_MERFISH_animal2_coronal.h5ad",
-         "animal3": RAW / "allen_zhuang/WB_MERFISH_animal3_sagittal.h5ad", "animal4": RAW / "allen_zhuang/WB_MERFISH_animal4_sagittal.h5ad"}  # 4 = mouse dev unit (review 2026-10-28)
+ALLEN = {"animal1": RAW / "allen_zhuang/WB_MERFISH_animal1_coronal.h5ad", "animal2": RAW / "allen_zhuang/WB_MERFISH_animal2_coronal.h5ad",
+         "animal3": RAW / "allen_zhuang/WB_MERFISH_animal3_sagittal.h5ad", "animal4": RAW / "allen_zhuang/WB_MERFISH_animal4_sagittal.h5ad"}  # 4 = mouse dev unit
 YAO = RAW / "allen_yao_638850"
 BRUKER = {"bruker_breast": RAW / "bruker_wtx/breast_discovery.h5ad", "bruker_mobreast": RAW / "bruker_wtx/multiomic_breast.h5ad",
-          "bruker_skin": RAW / "bruker_wtx/skin_scc.h5ad", "bruker_kidney": RAW / "bruker_wtx/kidney_rcc.h5ad"}  # crop h5ads (scripts/v_bruker_h5ad.py)
+          # crop h5ads (scripts/v_bruker_h5ad.py)
+          "bruker_skin": RAW / "bruker_wtx/skin_scc.h5ad", "bruker_kidney": RAW / "bruker_wtx/kidney_rcc.h5ad"}
 
 
 BRUKER_SRC = {"bruker_breast": RAW / "bruker_wtx/breast_discovery", "bruker_mobreast": RAW / "bruker_wtx/multiomic_breast/flat",
@@ -19,7 +20,8 @@ BRUKER_SRC = {"bruker_breast": RAW / "bruker_wtx/breast_discovery", "bruker_mobr
 
 
 def bruker_obs(u):
-    """Cells of a Bruker WTx slide from its metadata flat file (index = cell id c_<slide>_<fov>_<cell_ID>; x_px, y_px global
+    """Cells of a Bruker WTx slide from its metadata flat file (index = cell id c_<slide>_<fov>_<cell_ID>; x_px, y_px
+    global
     CosMx px; fov; cell_ID). Used to choose the crop before any expression is read (scripts/v_crops.py)."""
     mf = next(BRUKER_SRC[u].glob("*metadata*.csv*")); m = pd.read_csv(mf, usecols=lambda c: c in ("fov", "cell_ID", "cell", "cell_id", "CenterX_global_px", "CenterY_global_px"))
     idx = (m["cell"] if "cell" in m else m["cell_id"]).astype(str).values
@@ -42,7 +44,8 @@ def _take(path, ids, key=None, raw=False):
 def load_crop(name):
     rec = index()[name]; ids = pd.read_csv(MAN / f"{name}.csv.gz").cell_id.astype(str).values
     if name.startswith("gse1_"):
-        X, obs, var, _ = _take(RAW / f"GSE1/cosmx_wt_{name[5:].rstrip('w')}.h5ad", ids); genes = var.index.astype(str)  # <sid>w = whole slide (crop check)
+        # <sid>w = whole slide (crop check)
+        X, obs, var, _ = _take(RAW / f"GSE1/cosmx_wt_{name[5:].rstrip('w')}.h5ad", ids); genes = var.index.astype(str)
         xy = obs[["CenterX_global_px", "CenterY_global_px"]].values * COSMX_UM; region = obs["typ"].astype(str).str.extract(r"(REF|TVA|CRC)", expand=False).values
         ifc = {c: obs[f"Mean.{c}"].values for c in ("PanCK", "CD45", "CD68_CK8_18") if f"Mean.{c}" in obs}
     elif name == "gse0_S0":
@@ -51,7 +54,8 @@ def load_crop(name):
     elif name.startswith("gse303070_"):
         slide = "_".join(name.split("_")[1:-1])  # gse303070_<slide>_<sample>, slide may be Tumour_A
         f = PROC / f"GSE303070_CosMx_Slide_{slide.replace('Tumour', 'Tumor')}.h5ad"
-        key = [f"{b.split('_')[-1]}_{b.split('_')[-2]}" for b in ids]  # Barcode <slide>_<cell_ID>_<fov> -> h5ad <fov>_<cell_ID>
+        # Barcode <slide>_<cell_ID>_<fov> -> h5ad <fov>_<cell_ID>
+        key = [f"{b.split('_')[-1]}_{b.split('_')[-2]}" for b in ids]
         X, obs, var, _ = _take(f, key); genes = var.index.astype(str)
         M = pd.read_csv(RAW / "GSE303070/GSE303070_All_cells_metadata.csv", index_col=False, usecols=["Barcode", "nCount_RNA", "CenterX_global_px", "CenterY_global_px", "Mean.PanCK", "Mean.CD45", "Mean.CD68", "Mean.CD3"]).set_index("Barcode").loc[ids]
         tot = np.asarray(X.sum(1)).ravel()  # metadata nCount_RNA = total over all h5ad features (probes included)
@@ -68,7 +72,8 @@ def load_crop(name):
     elif name.startswith("allen_animal") or name.startswith("allen2_"):
         an = "animal2" if name.startswith("allen2_") else name.split("_")[1]
         X, obs, var, obsm = _take(ALLEN[an], ids, raw=True); genes = var["feature_name"].astype(str).values
-        xy = obsm["X_spatial_coords"][:, :2]; region = obs["major_brain_region"].astype(str).values; ifc = {}  # already um (span ~5,000 um per section)
+        # already um (span ~5,000 um per section)
+        xy = obsm["X_spatial_coords"][:, :2]; region = obs["major_brain_region"].astype(str).values; ifc = {}
     elif name.startswith("allen_yao638850_"):
         X, obs, var, _ = _take(YAO / "C57BL6J-638850-raw.h5ad", ids); genes = var["gene_symbol"].astype(str).values if "gene_symbol" in var else var.index.astype(str)
         m = pd.read_csv(YAO / "cell_metadata_with_parcellation_annotation.csv", usecols=["cell_label", "x_section", "y_section", "parcellation_division", "parcellation_category"]).set_index("cell_label").loc[ids]

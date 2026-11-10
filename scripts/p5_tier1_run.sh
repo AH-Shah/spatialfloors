@@ -1,7 +1,6 @@
-# Tier-1 analysis on the sealed P4 outputs: F1 rescore, F4 scores per slide / section, p5_analyze (confirmation crops + F4
+# Tier-1 analysis on the sealed confirmation outputs: F1 rescore, F4 scores per slide / section, p5_analyze (confirmation crops + F4
 # retrospective) -> runs/p4/P5_corrected.{json,md}, then the exploratory interior re-score. Usage: zsh scripts/p5_tier1_run.sh
-# GSE1 222 holds out TVA (PROTOCOL §2 F4), so its scores are read with SF_HOLDOUT=TVA. The first run (2026-11-06, report
-# runs/p4/P5.{json,md}) lacked this and left 222 out of F4; see results/EXECUTION_LOG.md.
+# GSE1 222 holds out TVA (PROTOCOL §2, F4), so its scores are read with SF_HOLDOUT=TVA.
 set -e; cd ${0:A:h}/..; export PYTHONPATH=src PIXI_FROZEN=true OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 NUMBA_NUM_THREADS=4
 CROPS=($(awk -F'\t' '$3 == "confirmation" {print $1}' registration/units/units.tsv))
 F4=(110 222 C57BL6J-1.069 C57BL6J-1.084 C57BL6J-1.086 C57BL6J-3.003 C57BL6J-3.011 C57BL6J-3.012 C57BL6J-638850.36 C57BL6J-638850.38 C57BL6J-638850.40)

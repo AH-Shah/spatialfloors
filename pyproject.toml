@@ -10,12 +10,13 @@ requires-python = ">=3.10"
 license = { text = "MIT" }
 dependencies = []
 
-[project.scripts]
-spatialfloors = "spatialfloors.cli:main"
-
 [tool.hatch.build.targets.wheel]
 packages = ["src/spatialfloors"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 markers = ["data: needs the GSE1 raw h5ads on disk", "slow: minutes on CPU"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
