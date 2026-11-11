@@ -1,0 +1,20 @@
+{
+ "unit": "gse1_242",
+ "grid": {
+  "floor_feats": {
+   "unit": 0.016097752312821487,
+   "n_receivers": 11,
+   "rounds_median": 5.0,
+   "rounds_at_cap": 0.0,
+   "s": 59.2
+  },
+  "all_feats": {
+   "unit": 0.030170928513586603,
+   "n_receivers": 11,
+   "rounds_median": 4.5,
+   "rounds_at_cap": 0.0,
+   "s": 89.0
+  }
+ },
+ "spatialfloors_commit": "ed85d08f8bb3904132593d26707db3d10de52776"
+}

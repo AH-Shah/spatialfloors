@@ -1,0 +1,20 @@
+{
+ "unit": "allen_animal3_C57BL6J-3.003",
+ "grid": {
+  "floor_feats": {
+   "unit": 0.10358256271840492,
+   "n_receivers": 17,
+   "rounds_median": 39.0,
+   "rounds_at_cap": 0.0,
+   "s": 3898.8
+  },
+  "all_feats": {
+   "unit": 0.0968307900268799,
+   "n_receivers": 17,
+   "rounds_median": 36.5,
+   "rounds_at_cap": 0.0,
+   "s": 774.4
+  }
+ },
+ "spatialfloors_commit": "ed85d08f8bb3904132593d26707db3d10de52776"
+}

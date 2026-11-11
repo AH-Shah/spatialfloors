@@ -1,0 +1,20 @@
+{
+ "unit": "gse303070_3461G_137T",
+ "grid": {
+  "floor_feats": {
+   "unit": 0.008544269494482691,
+   "n_receivers": 9,
+   "rounds_median": 4.0,
+   "rounds_at_cap": 0.0,
+   "s": 43.4
+  },
+  "all_feats": {
+   "unit": 0.006633044667627761,
+   "n_receivers": 9,
+   "rounds_median": 4.5,
+   "rounds_at_cap": 0.0,
+   "s": 51.6
+  }
+ },
+ "spatialfloors_commit": "ed85d08f8bb3904132593d26707db3d10de52776"
+}

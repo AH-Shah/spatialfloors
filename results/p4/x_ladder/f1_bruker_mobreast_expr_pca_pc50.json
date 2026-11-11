@@ -1,0 +1,19 @@
+{
+ "unit": "bruker_mobreast",
+ "model": "expr_pca",
+ "config": "pc50",
+ "n_cells": 50000,
+ "n_panel": 2000,
+ "fit_s": 1.2,
+ "info": {},
+ "scores": {
+  "pc50": {
+   "score": 0.12496359936378065,
+   "chance": -0.07912289438050513,
+   "finite": true,
+   "dim": 50
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "ed85d08f8bb3904132593d26707db3d10de52776-dirty"
+}

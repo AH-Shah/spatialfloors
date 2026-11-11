@@ -1,0 +1,19 @@
+{
+ "unit": "allen_animal1_C57BL6J-1.086",
+ "model": "expr_pca",
+ "config": "pc50",
+ "n_cells": 47266,
+ "n_panel": 1120,
+ "fit_s": 0.9,
+ "info": {},
+ "scores": {
+  "pc50": {
+   "score": 0.33495829675519795,
+   "chance": -0.05690948333315382,
+   "finite": true,
+   "dim": 50
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "ed85d08f8bb3904132593d26707db3d10de52776-dirty"
+}

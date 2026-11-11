@@ -1,0 +1,20 @@
+{
+ "unit": "bruker_kidney",
+ "grid": {
+  "floor_feats": {
+   "unit": 0.04151433227606345,
+   "n_receivers": 11,
+   "rounds_median": 8.0,
+   "rounds_at_cap": 0.0,
+   "s": 50.9
+  },
+  "all_feats": {
+   "unit": 0.045390607309336424,
+   "n_receivers": 11,
+   "rounds_median": 7.0,
+   "rounds_at_cap": 0.0,
+   "s": 87.5
+  }
+ },
+ "spatialfloors_commit": "ed85d08f8bb3904132593d26707db3d10de52776"
+}

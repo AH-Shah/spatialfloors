@@ -12,7 +12,10 @@ STRATUM = {
     "spatch": "Xenium 5K",
     "allen": "MERFISH mouse",
     "bruker": "CosMx WTx",
-}  # bruker = Bruker WTx pan-cancer units
+    "cervilla": "Xenium 5K",
+    "tenx": "Xenium 5K",
+    "nsclc": "CosMx 1k",
+}  # bruker = Bruker WTx pan-cancer units; cervilla, tenx, nsclc = replication round (CosMx NSCLC: 960-plex)
 
 
 def stratum(crop):

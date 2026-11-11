@@ -1,0 +1,20 @@
+{
+ "unit": "gse303070_120131_280N",
+ "grid": {
+  "floor_feats": {
+   "unit": 0.03640192160329788,
+   "n_receivers": 7,
+   "rounds_median": 3.0,
+   "rounds_at_cap": 0.0,
+   "s": 21.6
+  },
+  "all_feats": {
+   "unit": 0.039731316808472236,
+   "n_receivers": 7,
+   "rounds_median": 4.0,
+   "rounds_at_cap": 0.0,
+   "s": 27.0
+  }
+ },
+ "spatialfloors_commit": "ed85d08f8bb3904132593d26707db3d10de52776"
+}

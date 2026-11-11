@@ -1,0 +1,67 @@
+{
+ "unit": "gse1_120",
+ "n_cells": 50000,
+ "n_genes": 1972,
+ "density": "uniform",
+ "grid": {
+  "cp10k": {
+   "heldout_auroc": 0.6259107513174439,
+   "per_class": {
+    "epithelial": {
+     "auroc": 0.765180349954971,
+     "n_pred": 3921,
+     "n_markers": 5
+    },
+    "immune_nonmyeloid": {
+     "auroc": 0.5210353316785167,
+     "n_pred": 26065,
+     "n_markers": 5
+    },
+    "myeloid": {
+     "auroc": 0.591516572318844,
+     "n_pred": 7789,
+     "n_markers": 5
+    }
+   },
+   "pred_share": {
+    "epithelial": 0.078,
+    "immune_nonmyeloid": 0.521,
+    "myeloid": 0.156,
+    "other": 0.244
+   },
+   "gated_macro_f1": 0.28191473513239634,
+   "n_gated": 26278,
+   "s": 459.0
+  },
+  "logcp10k": {
+   "heldout_auroc": 0.6115774131227831,
+   "per_class": {
+    "epithelial": {
+     "auroc": 0.7845985186859487,
+     "n_pred": 4072,
+     "n_markers": 5
+    },
+    "immune_nonmyeloid": {
+     "auroc": 0.4873573481305365,
+     "n_pred": 27183,
+     "n_markers": 5
+    },
+    "myeloid": {
+     "auroc": 0.5627763725518642,
+     "n_pred": 7625,
+     "n_markers": 5
+    }
+   },
+   "pred_share": {
+    "epithelial": 0.081,
+    "immune_nonmyeloid": 0.544,
+    "myeloid": 0.152,
+    "other": 0.222
+   },
+   "gated_macro_f1": 0.2456363625920565,
+   "n_gated": 26278,
+   "s": 453.6
+  }
+ },
+ "spatialfloors_commit": "ed85d08f8bb3904132593d26707db3d10de52776"
+}

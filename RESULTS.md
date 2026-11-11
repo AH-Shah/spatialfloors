@@ -216,6 +216,56 @@ second, with one-sided 95% bounds.
   Floor grids: F1 48, F2 225 (+ 173 in reference and k sweeps), F3 144, F5 84. Learned models: 2–6 each. The floors
   were tuned far more than the learned models before the lock; tier 2 (above) measures what tuning on the scored unit
   would add.
+- **F3 LightGBM with early stopping** (`results/reports/X_f3_lgbm_es.md`; added after `results-v1.1`). The registered
+  LightGBM runs a fixed 100 rounds on a superset of the floor's features. With early stopping (up to 1,000 rounds,
+  patience 30, validation on held-out FOVs or tiles) it scores lower, not higher, on the same 22 units:
+  - all v3 feature groups: D −.0211 (one-sided 95% bounds −.0234, −.0188);
+  - exactly the floor's features: D −.0237 (−.0265, −.0209);
+  - registered: D −.0155.
+  - Early stopping halts after a median of 5–6 rounds, so the validation loss stops improving almost at once: the
+    signal a tree model can add here is small. The fixed 100 rounds did not handicap LightGBM.
+- **F5 Tangram on normalised input** (`results/reports/X_f5_tangram_norm.md`; added after `results-v1.1`). The
+  registered Tangram run maps on raw counts. With both sides normalised first, everything else as registered:
+  - counts per 10,000: D −.1044 (one-sided 95% bounds −.1290, −.0798);
+  - log1p counts per 10,000: D −.1094 (−.1391, −.0796);
+  - registered (raw counts): D −.1132.
+  - Tangram still calls about half of the cells immune non-myeloid and about a tenth epithelial with either input.
+    The raw-count input does not explain its result.
+- **Specification curve** (`results/reports/X_speccurve.md`; added after `results-v1.1`). Every estimate of D already
+  computed under another defensible choice, collected from the reports above without a new run: other units (leave one
+  cancer out, one platform, subsets), slide and study level, both sides at their best configuration, other metrics,
+  other floors, other configurations of the learned model, whole slides. Rows of one pair share units, so the curve
+  is descriptive.
+  - 146 specifications on the registered scale over the 12 pairs: D < 0 in 131, floor non-inferior in 135, floor
+    ahead (upper bound < 0) in 117.
+  - The learned model is ahead (lower bound > 0) in 3: Cellina as registered, Cellina on the six CRC units, and
+    LightGBM against the floor without ring features on whole slides.
+  - The 11 specifications where the floor is not non-inferior all have six units or fewer (wide bounds); 7 of them are
+    in F4.
+  - Of the pairs where the floor leads as registered, two change sign across specifications: scANVI (−.0639 on whole
+    slides to +.0051 at a matched call rate on whole slides; +.0015 with depth held fixed) and LightGBM (−.0268 to
+    +.0167). Cellina (both F4 metrics) is above zero in every specification except the mouse units (−.0010, −.0012).
+- **Common scale and meta-analysis over studies** (`results/reports/X_meta.md`; added after `results-v1.1`). D as a
+  percentage of the floor's above-chance score, and a random-effects model with studies (data releases) as the random
+  factor (REML, one within-study variance; 2–8 studies per pair).
+  - Registered D on the common scale: scVI −3.6%, scANVI −6.6%, CPA −12.0%, Nicheformer −15.7%, LightGBM −21.3%,
+    CellCharter −21.8%, Novae −26.1%, NCEM −48.9%, Tangram −51.8%, Cellina +1.1% (F4: official metric). The margins
+    are 3.4–11.6% on this scale.
+  - The mean over studies keeps the floor non-inferior in 10 of 12 pairs; the two that fail (CPA on the official
+    metric, Cellina on the spike-free metric) have three studies.
+  - The 95% prediction interval for a new study lies below the margin for scVI, LightGBM and Tangram only; with the
+    unweighted study means, for scVI and CPA on the spike-free metric only. Round 1 has too few studies to predict a
+    new one; this is what the replication round is for.
+- **Baseline ladder and assay sensitivity** (`results/reports/X_ladder.md`; added after `results-v1.1`). Naive
+  baselines below each floor; three of them are new CPU runs on the confirmation crops (F1 log-normalised PCA 50, F2 a
+  GMM on expression PCA 50 without any neighbourhood, F3 a ridge on the neighbourhood's type mix only; the three
+  single-lineage F3 crops fail as in round 1).
+  - The floor is ahead (lower bound > 0) of every naive baseline in all five families, so the benchmark can separate
+    methods: the floors are not at a ceiling shared with trivial methods.
+  - Only Cellina is also ahead of every naive rung. The other learned models tie or trail at least one: scVI and
+    Nicheformer trail log-normalised PCA (D −.0021 and −.0313); CellCharter and Novae do not beat k-means on the
+    coordinates; LightGBM ties the floor without rings and NCEM trails the type-mix ridge (−.0027); scANVI trails
+    InSituType without the spatial prior (−.0100); CPA does not beat L3–L5.
 
 ## Reproducing the analysis
 

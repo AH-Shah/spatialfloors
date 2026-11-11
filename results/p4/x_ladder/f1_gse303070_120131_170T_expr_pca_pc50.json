@@ -1,0 +1,19 @@
+{
+ "unit": "gse303070_120131_170T",
+ "model": "expr_pca",
+ "config": "pc50",
+ "n_cells": 39545,
+ "n_panel": 989,
+ "fit_s": 0.8,
+ "info": {},
+ "scores": {
+  "pc50": {
+   "score": 0.08149349108961779,
+   "chance": -0.10285661571880622,
+   "finite": true,
+   "dim": 50
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "ed85d08f8bb3904132593d26707db3d10de52776-dirty"
+}

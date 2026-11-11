@@ -1,0 +1,696 @@
+{
+ "commit": "ed85d08f8bb3904132593d26707db3d10de52776-dirty",
+ "families": {
+  "F1": {
+   "rungs": [
+    {
+     "label": "log-normalised PCA 50",
+     "role": "naive",
+     "n_units": 25,
+     "mean": 0.15689268311905225
+    },
+    {
+     "label": "floor (Pearson-residual PCA 50)",
+     "role": "floor",
+     "n_units": 25,
+     "mean": 0.163470771728987
+    },
+    {
+     "label": "scVI",
+     "role": "learned",
+     "n_units": 25,
+     "mean": 0.1547504134927614
+    },
+    {
+     "label": "Nicheformer",
+     "role": "learned",
+     "n_units": 25,
+     "mean": 0.1255536069048107
+    }
+   ],
+   "tests": [
+    {
+     "n_units": 25,
+     "mean_first": 0.163470771728987,
+     "mean_second": 0.15689268311905225,
+     "est": 0.006578088609934776,
+     "lower": 0.0035830257879679635,
+     "upper": 0.009573151431901588,
+     "ahead": true,
+     "first": "floor (Pearson-residual PCA 50)",
+     "second": "log-normalised PCA 50",
+     "role": "floor"
+    },
+    {
+     "n_units": 25,
+     "mean_first": 0.1547504134927614,
+     "mean_second": 0.15689268311905225,
+     "est": -0.0021422696262908387,
+     "lower": -0.003781615877829745,
+     "upper": -0.0005029233747519321,
+     "ahead": false,
+     "first": "scVI",
+     "second": "log-normalised PCA 50",
+     "role": "learned"
+    },
+    {
+     "n_units": 25,
+     "mean_first": 0.1255536069048107,
+     "mean_second": 0.15689268311905225,
+     "est": -0.03133907621424154,
+     "lower": -0.03502668277993622,
+     "upper": -0.027651469648546863,
+     "ahead": false,
+     "first": "Nicheformer",
+     "second": "log-normalised PCA 50",
+     "role": "learned"
+    }
+   ],
+   "floor_ahead_of_every_naive": true,
+   "learned_ahead_of_every_naive": {
+    "scVI": false,
+    "Nicheformer": false
+   }
+  },
+  "F2": {
+   "rungs": [
+    {
+     "label": "k-means on coordinates",
+     "role": "naive",
+     "n_units": 10,
+     "mean": 0.31692448532737594
+    },
+    {
+     "label": "GMM on expression PCA 50 (no neighbourhood)",
+     "role": "naive",
+     "n_units": 10,
+     "mean": 0.14817975704375125
+    },
+    {
+     "label": "floor (expression + neighbourhood mean)",
+     "role": "floor",
+     "n_units": 10,
+     "mean": 0.46059199863660344
+    },
+    {
+     "label": "CellCharter",
+     "role": "learned",
+     "n_units": 10,
+     "mean": 0.3602449482833863
+    },
+    {
+     "label": "Novae zero-shot (mouse units)",
+     "role": "learned",
+     "n_units": 4,
+     "mean": 0.324483036618084
+    }
+   ],
+   "tests": [
+    {
+     "n_units": 10,
+     "mean_first": 0.46059199863660344,
+     "mean_second": 0.31692448532737594,
+     "est": 0.14366751330922753,
+     "lower": 0.014659216032243877,
+     "upper": 0.27267581058621115,
+     "ahead": true,
+     "first": "floor (expression + neighbourhood mean)",
+     "second": "k-means on coordinates",
+     "role": "floor"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.3602449482833863,
+     "mean_second": 0.31692448532737594,
+     "est": 0.04332046295601036,
+     "lower": -0.056365712534595824,
+     "upper": 0.14300663844661654,
+     "ahead": false,
+     "first": "CellCharter",
+     "second": "k-means on coordinates",
+     "role": "learned"
+    },
+    {
+     "n_units": 4,
+     "mean_first": 0.324483036618084,
+     "mean_second": 0.34846656628910494,
+     "est": -0.023983529671020958,
+     "lower": -0.11363617922646821,
+     "upper": 0.06566911988442631,
+     "ahead": false,
+     "first": "Novae zero-shot (mouse units)",
+     "second": "k-means on coordinates",
+     "role": "learned"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.46059199863660344,
+     "mean_second": 0.14817975704375125,
+     "est": 0.3124122415928522,
+     "lower": 0.22216134577822252,
+     "upper": 0.40266313740748183,
+     "ahead": true,
+     "first": "floor (expression + neighbourhood mean)",
+     "second": "GMM on expression PCA 50 (no neighbourhood)",
+     "role": "floor"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.3602449482833863,
+     "mean_second": 0.14817975704375125,
+     "est": 0.21206519123963502,
+     "lower": 0.17579117199773736,
+     "upper": 0.24833921048153268,
+     "ahead": true,
+     "first": "CellCharter",
+     "second": "GMM on expression PCA 50 (no neighbourhood)",
+     "role": "learned"
+    },
+    {
+     "n_units": 4,
+     "mean_first": 0.324483036618084,
+     "mean_second": 0.19113242018781362,
+     "est": 0.13335061643027035,
+     "lower": 0.06844562246502484,
+     "upper": 0.19825561039551587,
+     "ahead": true,
+     "first": "Novae zero-shot (mouse units)",
+     "second": "GMM on expression PCA 50 (no neighbourhood)",
+     "role": "learned"
+    }
+   ],
+   "floor_ahead_of_every_naive": true,
+   "learned_ahead_of_every_naive": {
+    "CellCharter": false,
+    "Novae zero-shot (mouse units)": false
+   }
+  },
+  "F3": {
+   "rungs": [
+    {
+     "label": "ridge on the type mix only",
+     "role": "naive",
+     "n_units": 22,
+     "mean": 0.039823944585102154
+    },
+    {
+     "label": "floor without rings (v2)",
+     "role": "naive",
+     "n_units": 22,
+     "mean": 0.05764822490518502
+    },
+    {
+     "label": "floor (v3)",
+     "role": "floor",
+     "n_units": 22,
+     "mean": 0.07262488527488956
+    },
+    {
+     "label": "LightGBM",
+     "role": "learned",
+     "n_units": 22,
+     "mean": 0.057157368327463806
+    },
+    {
+     "label": "NCEM",
+     "role": "learned",
+     "n_units": 22,
+     "mean": 0.037075915484508996
+    }
+   ],
+   "tests": [
+    {
+     "n_units": 22,
+     "mean_first": 0.07262488527488956,
+     "mean_second": 0.039823944585102154,
+     "est": 0.0328009406897874,
+     "lower": 0.028093212130690964,
+     "upper": 0.03750866924888384,
+     "ahead": true,
+     "first": "floor (v3)",
+     "second": "ridge on the type mix only",
+     "role": "floor"
+    },
+    {
+     "n_units": 22,
+     "mean_first": 0.057157368327463806,
+     "mean_second": 0.039823944585102154,
+     "est": 0.017333423742361655,
+     "lower": 0.013355121125056123,
+     "upper": 0.021311726359667188,
+     "ahead": true,
+     "first": "LightGBM",
+     "second": "ridge on the type mix only",
+     "role": "learned"
+    },
+    {
+     "n_units": 22,
+     "mean_first": 0.037075915484508996,
+     "mean_second": 0.039823944585102154,
+     "est": -0.002748029100593164,
+     "lower": -0.005199675979735197,
+     "upper": -0.0002963822214511317,
+     "ahead": false,
+     "first": "NCEM",
+     "second": "ridge on the type mix only",
+     "role": "learned"
+    },
+    {
+     "n_units": 22,
+     "mean_first": 0.07262488527488956,
+     "mean_second": 0.05764822490518502,
+     "est": 0.014976660369704528,
+     "lower": 0.012020252968324999,
+     "upper": 0.017933067771084058,
+     "ahead": true,
+     "first": "floor (v3)",
+     "second": "floor without rings (v2)",
+     "role": "floor"
+    },
+    {
+     "n_units": 22,
+     "mean_first": 0.057157368327463806,
+     "mean_second": 0.05764822490518502,
+     "est": -0.0004908565777212144,
+     "lower": -0.0034036691882510413,
+     "upper": 0.002421956032808613,
+     "ahead": false,
+     "first": "LightGBM",
+     "second": "floor without rings (v2)",
+     "role": "learned"
+    },
+    {
+     "n_units": 22,
+     "mean_first": 0.037075915484508996,
+     "mean_second": 0.05764822490518502,
+     "est": -0.020572309420676033,
+     "lower": -0.024553631419132877,
+     "upper": -0.016590987422219188,
+     "ahead": false,
+     "first": "NCEM",
+     "second": "floor without rings (v2)",
+     "role": "learned"
+    }
+   ],
+   "floor_ahead_of_every_naive": true,
+   "learned_ahead_of_every_naive": {
+    "LightGBM": false,
+    "NCEM": false
+   }
+  },
+  "F4": {
+   "rungs": [
+    {
+     "label": "control mean",
+     "role": "naive",
+     "n_units": 10,
+     "mean": 0.48226130055605265
+    },
+    {
+     "label": "L1 shared shift",
+     "role": "naive",
+     "n_units": 10,
+     "mean": 0.44714443689022476
+    },
+    {
+     "label": "L2 contamination",
+     "role": "naive",
+     "n_units": 10,
+     "mean": 0.5687860322503487
+    },
+    {
+     "label": "L3 niche ridge",
+     "role": "naive",
+     "n_units": 10,
+     "mean": 0.7155406819499056
+    },
+    {
+     "label": "L4 niche match",
+     "role": "naive",
+     "n_units": 10,
+     "mean": 0.6986427108869797
+    },
+    {
+     "label": "L5 pooled ridge",
+     "role": "naive",
+     "n_units": 10,
+     "mean": 0.780992938260573
+    },
+    {
+     "label": "floor (L6 two-way pseudobulk)",
+     "role": "floor",
+     "n_units": 10,
+     "mean": 0.8727276426519023
+    },
+    {
+     "label": "Cellina",
+     "role": "learned",
+     "n_units": 10,
+     "mean": 0.8822559400745463
+    },
+    {
+     "label": "CPA",
+     "role": "learned",
+     "n_units": 10,
+     "mean": 0.7682636464293269
+    }
+   ],
+   "tests": [
+    {
+     "n_units": 10,
+     "mean_first": 0.8727276426519023,
+     "mean_second": 0.48226130055605265,
+     "est": 0.3904663420958495,
+     "lower": 0.33620999218874664,
+     "upper": 0.4447226920029524,
+     "ahead": true,
+     "first": "floor (L6 two-way pseudobulk)",
+     "second": "control mean",
+     "role": "floor"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.8822559400745463,
+     "mean_second": 0.48226130055605265,
+     "est": 0.39999463951849357,
+     "lower": 0.34409531791682785,
+     "upper": 0.4558939611201593,
+     "ahead": true,
+     "first": "Cellina",
+     "second": "control mean",
+     "role": "learned"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.7682636464293269,
+     "mean_second": 0.48226130055605265,
+     "est": 0.2860023458732741,
+     "lower": 0.24269044060755435,
+     "upper": 0.3293142511389939,
+     "ahead": true,
+     "first": "CPA",
+     "second": "control mean",
+     "role": "learned"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.8727276426519023,
+     "mean_second": 0.44714443689022476,
+     "est": 0.4255832057616775,
+     "lower": 0.3667892870097946,
+     "upper": 0.48437712451356046,
+     "ahead": true,
+     "first": "floor (L6 two-way pseudobulk)",
+     "second": "L1 shared shift",
+     "role": "floor"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.8822559400745463,
+     "mean_second": 0.44714443689022476,
+     "est": 0.4351115031843216,
+     "lower": 0.3729900701595857,
+     "upper": 0.49723293620905756,
+     "ahead": true,
+     "first": "Cellina",
+     "second": "L1 shared shift",
+     "role": "learned"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.7682636464293269,
+     "mean_second": 0.44714443689022476,
+     "est": 0.3211192095391021,
+     "lower": 0.24833252322111704,
+     "upper": 0.3939058958570872,
+     "ahead": true,
+     "first": "CPA",
+     "second": "L1 shared shift",
+     "role": "learned"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.8727276426519023,
+     "mean_second": 0.5687860322503487,
+     "est": 0.30394161040155343,
+     "lower": 0.23867535944756862,
+     "upper": 0.36920786135553824,
+     "ahead": true,
+     "first": "floor (L6 two-way pseudobulk)",
+     "second": "L2 contamination",
+     "role": "floor"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.8822559400745463,
+     "mean_second": 0.5687860322503487,
+     "est": 0.3134699078241974,
+     "lower": 0.25060682829715,
+     "upper": 0.3763329873512449,
+     "ahead": true,
+     "first": "Cellina",
+     "second": "L2 contamination",
+     "role": "learned"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.7682636464293269,
+     "mean_second": 0.5687860322503487,
+     "est": 0.19947761417897794,
+     "lower": 0.12664862812619632,
+     "upper": 0.27230660023175957,
+     "ahead": true,
+     "first": "CPA",
+     "second": "L2 contamination",
+     "role": "learned"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.8727276426519023,
+     "mean_second": 0.7155406819499056,
+     "est": 0.15718696070199661,
+     "lower": 0.09224310552153758,
+     "upper": 0.22213081588245565,
+     "ahead": true,
+     "first": "floor (L6 two-way pseudobulk)",
+     "second": "L3 niche ridge",
+     "role": "floor"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.8822559400745463,
+     "mean_second": 0.7155406819499056,
+     "est": 0.1667152581246407,
+     "lower": 0.10812476217011047,
+     "upper": 0.22530575407917092,
+     "ahead": true,
+     "first": "Cellina",
+     "second": "L3 niche ridge",
+     "role": "learned"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.7682636464293269,
+     "mean_second": 0.7155406819499056,
+     "est": 0.05272296447942118,
+     "lower": -0.016383622878844956,
+     "upper": 0.12182955183768732,
+     "ahead": false,
+     "first": "CPA",
+     "second": "L3 niche ridge",
+     "role": "learned"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.8727276426519023,
+     "mean_second": 0.6986427108869797,
+     "est": 0.17408493176492254,
+     "lower": 0.0812986925596542,
+     "upper": 0.26687117097019086,
+     "ahead": true,
+     "first": "floor (L6 two-way pseudobulk)",
+     "second": "L4 niche match",
+     "role": "floor"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.8822559400745463,
+     "mean_second": 0.6986427108869797,
+     "est": 0.18361322918756665,
+     "lower": 0.09581825993666446,
+     "upper": 0.27140819843846886,
+     "ahead": true,
+     "first": "Cellina",
+     "second": "L4 niche match",
+     "role": "learned"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.7682636464293269,
+     "mean_second": 0.6986427108869797,
+     "est": 0.06962093554234712,
+     "lower": -0.03285470643831309,
+     "upper": 0.17209657752300733,
+     "ahead": false,
+     "first": "CPA",
+     "second": "L4 niche match",
+     "role": "learned"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.8727276426519023,
+     "mean_second": 0.780992938260573,
+     "est": 0.09173470439132919,
+     "lower": 0.05132892588689748,
+     "upper": 0.1321404828957609,
+     "ahead": true,
+     "first": "floor (L6 two-way pseudobulk)",
+     "second": "L5 pooled ridge",
+     "role": "floor"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.8822559400745463,
+     "mean_second": 0.780992938260573,
+     "est": 0.10126300181397327,
+     "lower": 0.06398319330229865,
+     "upper": 0.13854281032564789,
+     "ahead": true,
+     "first": "Cellina",
+     "second": "L5 pooled ridge",
+     "role": "learned"
+    },
+    {
+     "n_units": 10,
+     "mean_first": 0.7682636464293269,
+     "mean_second": 0.780992938260573,
+     "est": -0.012729291831246235,
+     "lower": -0.040929195472010044,
+     "upper": 0.015470611809517577,
+     "ahead": false,
+     "first": "CPA",
+     "second": "L5 pooled ridge",
+     "role": "learned"
+    }
+   ],
+   "floor_ahead_of_every_naive": true,
+   "learned_ahead_of_every_naive": {
+    "Cellina": true,
+    "CPA": false
+   }
+  },
+  "F5": {
+   "rungs": [
+    {
+     "label": "logistic regression on the reference",
+     "role": "naive",
+     "n_units": 20,
+     "mean": 0.6297278250151603
+    },
+    {
+     "label": "InSituType without the spatial prior",
+     "role": "naive",
+     "n_units": 20,
+     "mean": 0.7142713816483349
+    },
+    {
+     "label": "floor (InSituType with the spatial prior)",
+     "role": "floor",
+     "n_units": 20,
+     "mean": 0.718558423630206
+    },
+    {
+     "label": "scANVI",
+     "role": "learned",
+     "n_units": 20,
+     "mean": 0.7042362515826833
+    },
+    {
+     "label": "Tangram",
+     "role": "learned",
+     "n_units": 20,
+     "mean": 0.6053645772647025
+    }
+   ],
+   "tests": [
+    {
+     "n_units": 20,
+     "mean_first": 0.718558423630206,
+     "mean_second": 0.6297278250151603,
+     "est": 0.08883059861504555,
+     "lower": 0.07522698688848146,
+     "upper": 0.10243421034160964,
+     "ahead": true,
+     "first": "floor (InSituType with the spatial prior)",
+     "second": "logistic regression on the reference",
+     "role": "floor"
+    },
+    {
+     "n_units": 20,
+     "mean_first": 0.7042362515826833,
+     "mean_second": 0.6297278250151603,
+     "est": 0.0745084265675229,
+     "lower": 0.06396982136839392,
+     "upper": 0.08504703176665189,
+     "ahead": true,
+     "first": "scANVI",
+     "second": "logistic regression on the reference",
+     "role": "learned"
+    },
+    {
+     "n_units": 20,
+     "mean_first": 0.6053645772647025,
+     "mean_second": 0.6297278250151603,
+     "est": -0.024363247750458037,
+     "lower": -0.045403396748077876,
+     "upper": -0.003323098752838198,
+     "ahead": false,
+     "first": "Tangram",
+     "second": "logistic regression on the reference",
+     "role": "learned"
+    },
+    {
+     "n_units": 20,
+     "mean_first": 0.718558423630206,
+     "mean_second": 0.7142713816483349,
+     "est": 0.004287041981871145,
+     "lower": 0.0031899978373137383,
+     "upper": 0.005384086126428552,
+     "ahead": true,
+     "first": "floor (InSituType with the spatial prior)",
+     "second": "InSituType without the spatial prior",
+     "role": "floor"
+    },
+    {
+     "n_units": 20,
+     "mean_first": 0.7042362515826833,
+     "mean_second": 0.7142713816483349,
+     "est": -0.010035130065651517,
+     "lower": -0.01772791220342064,
+     "upper": -0.0023423479278823958,
+     "ahead": false,
+     "first": "scANVI",
+     "second": "InSituType without the spatial prior",
+     "role": "learned"
+    },
+    {
+     "n_units": 20,
+     "mean_first": 0.6053645772647025,
+     "mean_second": 0.7142713816483349,
+     "est": -0.10890680438363243,
+     "lower": -0.1381142547958998,
+     "upper": -0.07969935397136504,
+     "ahead": false,
+     "first": "Tangram",
+     "second": "InSituType without the spatial prior",
+     "role": "learned"
+    }
+   ],
+   "floor_ahead_of_every_naive": true,
+   "learned_ahead_of_every_naive": {
+    "scANVI": false,
+    "Tangram": false
+   }
+  }
+ }
+}

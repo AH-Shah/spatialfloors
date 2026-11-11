@@ -1,0 +1,20 @@
+{
+ "unit": "allen_yao638850_C57BL6J-638850.36",
+ "grid": {
+  "floor_feats": {
+   "unit": 0.136820124001745,
+   "n_receivers": 21,
+   "rounds_median": 41.0,
+   "rounds_at_cap": 0.0,
+   "s": 101.6
+  },
+  "all_feats": {
+   "unit": 0.13883434304155198,
+   "n_receivers": 21,
+   "rounds_median": 42.0,
+   "rounds_at_cap": 0.0,
+   "s": 134.6
+  }
+ },
+ "spatialfloors_commit": "ed85d08f8bb3904132593d26707db3d10de52776"
+}

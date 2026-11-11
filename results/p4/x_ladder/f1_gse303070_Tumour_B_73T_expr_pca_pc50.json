@@ -1,0 +1,19 @@
+{
+ "unit": "gse303070_Tumour_B_73T",
+ "model": "expr_pca",
+ "config": "pc50",
+ "n_cells": 13611,
+ "n_panel": 952,
+ "fit_s": 0.6,
+ "info": {},
+ "scores": {
+  "pc50": {
+   "score": 0.04380034267974253,
+   "chance": -0.09230751277266003,
+   "finite": true,
+   "dim": 50
+  }
+ },
+ "L": "filtered genes",
+ "spatialfloors_commit": "ed85d08f8bb3904132593d26707db3d10de52776-dirty"
+}

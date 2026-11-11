@@ -1,0 +1,20 @@
+{
+ "unit": "gse303070_Tumour_B_64T",
+ "grid": {
+  "floor_feats": {
+   "unit": 0.04593287609957824,
+   "n_receivers": 12,
+   "rounds_median": 6.0,
+   "rounds_at_cap": 0.0,
+   "s": 57.5
+  },
+  "all_feats": {
+   "unit": 0.04328956781239227,
+   "n_receivers": 12,
+   "rounds_median": 6.0,
+   "rounds_at_cap": 0.0,
+   "s": 89.8
+  }
+ },
+ "spatialfloors_commit": "ed85d08f8bb3904132593d26707db3d10de52776"
+}

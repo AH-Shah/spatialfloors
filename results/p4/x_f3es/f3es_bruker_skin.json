@@ -1,0 +1,20 @@
+{
+ "unit": "bruker_skin",
+ "grid": {
+  "floor_feats": {
+   "unit": 0.05814002752672775,
+   "n_receivers": 14,
+   "rounds_median": 11.0,
+   "rounds_at_cap": 0.0,
+   "s": 91.0
+  },
+  "all_feats": {
+   "unit": 0.06828511559727425,
+   "n_receivers": 14,
+   "rounds_median": 12.0,
+   "rounds_at_cap": 0.0,
+   "s": 114.6
+  }
+ },
+ "spatialfloors_commit": "ed85d08f8bb3904132593d26707db3d10de52776"
+}

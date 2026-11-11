@@ -1,0 +1,19 @@
+crop	unit	role	families	stratum	platform	source	tissue	cancer	n_cells	status	crop_manifest_sha256
+cervilla_breast	cervilla_breast	confirmation_v2	F1,F3,F5	Xenium 5K	Xenium Prime 5K	Cervilla 2026	breast	carcinoma	50000	prepared	25b1197d08f16d6763cf58fe6454ee1f60478bb56be76f1923598e5a365d46a5
+cervilla_crc	cervilla_crc	confirmation_v2	F1,F3,F5	Xenium 5K	Xenium Prime 5K	Cervilla 2026	colon	carcinoma	50000	prepared	39139ca71904717ee83f8ca93acebb0c3f05d087cc732863aefb6ca06170937e
+cervilla_lung	cervilla_lung	confirmation_v2	F1,F3,F5	Xenium 5K	Xenium Prime 5K	Cervilla 2026	lung	carcinoma	50000	prepared	09e132bbaac07eb8a3b70aa11f97a99673f414589dbb0112df9a367b76595922
+cervilla_lymphoma	cervilla_lymphoma	confirmation_v2	F1,F3	Xenium 5K	Xenium Prime 5K	Cervilla 2026	lymph node	lymphoma	50000	prepared	ff7c2c2b3fe1fa3eaea005c3fb557533dbddab15e00dd80bd72068655061025a
+cervilla_ovarian	cervilla_ovarian	confirmation_v2	F1,F3,F5	Xenium 5K	Xenium Prime 5K	Cervilla 2026	ovary	carcinoma	50000	prepared	872a9d4fa21e74f933e7f159837215679140009179dc315251e2fb41f38e1fe9
+tenx_skin	tenx_skin	confirmation_v2	F1,F3	Xenium 5K	Xenium Prime 5K	10x Genomics	skin	melanoma		awaiting regions (F2 candidate; crop set by the regions)	
+tenx_prostate	tenx_prostate	confirmation_v2	F1,F3,F5	Xenium 5K	Xenium Prime 5K	10x Genomics	prostate	carcinoma		awaiting regions (F2 candidate; crop set by the regions)	
+tenx_ovarian	tenx_ovarian	confirmation_v2	F1,F3,F5	Xenium 5K	Xenium Prime 5K	10x Genomics	ovary	carcinoma		awaiting regions (F2 candidate; crop set by the regions)	
+tenx_breast	tenx_breast	confirmation_v2	F1,F3,F5	Xenium 5K	Xenium Prime 5K	10x Genomics	breast	carcinoma		awaiting regions (F2 candidate; crop set by the regions)	
+tenx_lung	tenx_lung	confirmation_v2	F1,F3,F5	Xenium 5K	Xenium Prime 5K	10x Genomics	lung	carcinoma		awaiting regions (F2 candidate; crop set by the regions)	
+nsclc_lung5_rep1	nsclc_lung5	confirmation_v2	F1,F3,F5	CosMx 1k	CosMx 960-plex	He 2022 (NanoString NSCLC)	lung	carcinoma	50000	prepared	d0c3f70d05984232b48e6e12f73c5c65e85c904c1d9e0dac6d9b653c6c826f48
+nsclc_lung5_rep2	nsclc_lung5	confirmation_v2	F1,F3,F5	CosMx 1k	CosMx 960-plex	He 2022 (NanoString NSCLC)	lung	carcinoma	50000	prepared	924be84cca6ea928899ce16adc59deaa34da9ff9f19357f38c7ff0c7ad731824
+nsclc_lung5_rep3	nsclc_lung5	confirmation_v2	F1,F3,F5	CosMx 1k	CosMx 960-plex	He 2022 (NanoString NSCLC)	lung	carcinoma	50000	prepared	03d1ba4bfca2a12d44b1fb0ac746dbb9fca8b2a45eab67b0bae07cb9911f9cff
+nsclc_lung6	nsclc_lung6	confirmation_v2	F1,F3,F5	CosMx 1k	CosMx 960-plex	He 2022 (NanoString NSCLC)	lung	carcinoma	50000	prepared	9747993bae90bbf70379cba91c0a3260ebf2f3ec6793489e44de39b749f649a2
+nsclc_lung9_rep1	nsclc_lung9	confirmation_v2	F1,F3,F5	CosMx 1k	CosMx 960-plex	He 2022 (NanoString NSCLC)	lung	carcinoma	50000	prepared	456641862031a444abbc879cf0c00b08df55f61794fcf142107a12d3c88c9d77
+nsclc_lung9_rep2	nsclc_lung9	confirmation_v2	F1,F3,F5	CosMx 1k	CosMx 960-plex	He 2022 (NanoString NSCLC)	lung	carcinoma	50000	prepared	85bd993d95bd02490c877e5ac7e37abff366ce7325fcf9a61558a79cad13fb8b
+nsclc_lung12	nsclc_lung12	confirmation_v2	F1,F3,F5	CosMx 1k	CosMx 960-plex	He 2022 (NanoString NSCLC)	lung	carcinoma	50000	prepared	127416d9a28541543bfddabe472794627b345885deb5cc3301780a0f07efdce7
+nsclc_lung13	nsclc_lung13	confirmation_v2	F1,F3,F5	CosMx 1k	CosMx 960-plex	He 2022 (NanoString NSCLC)	lung	carcinoma	50000	prepared	522df4d0a826651ee4f384b3ae3ef36b4d6dc7a00adb1435f43e31f1d022480c

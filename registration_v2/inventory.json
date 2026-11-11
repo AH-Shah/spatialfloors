@@ -1,0 +1,800 @@
+{
+ "cervilla2026_xenium5k/xenium5K_Breast": {
+  "platform": "Xenium Prime 5K",
+  "cells": 185901,
+  "features": {
+   "Gene Expression": 5001,
+   "Negative Control Probe": 40,
+   "Genomic Control": 21,
+   "Negative Control Codeword": 609,
+   "Unassigned Codeword": 1067,
+   "Deprecated Codeword": 3291
+  },
+  "genes": 5001,
+  "control_features": 5028,
+  "panel": "Xenium Human 5K Pan Tissue & Pathways Panel",
+  "panel_design": "hAtlas_v1.1",
+  "base_panel": null,
+  "cell_columns": [
+   "cell_id",
+   "x_centroid",
+   "y_centroid",
+   "transcript_counts",
+   "control_probe_counts",
+   "genomic_control_counts",
+   "control_codeword_counts",
+   "unassigned_codeword_counts",
+   "deprecated_codeword_counts",
+   "total_counts",
+   "cell_area",
+   "nucleus_area",
+   "nucleus_count",
+   "segmentation_method"
+  ],
+  "coordinate_unit": "\u00b5m (x_centroid, y_centroid)",
+  "extent_mm": [
+   5.33,
+   9.65
+  ],
+  "segmentation": {
+   "Segmented by interior stain (18S)": 100861,
+   "Segmented by boundary stain (ATP1A1+CD45+E-Cadherin)": 83472,
+   "Segmented by nucleus expansion of 5.0\u00b5m": 1568
+  }
+ },
+ "cervilla2026_xenium5k/xenium5K_Colorectal": {
+  "platform": "Xenium Prime 5K",
+  "cells": 321648,
+  "features": {
+   "Gene Expression": 5001,
+   "Negative Control Probe": 40,
+   "Genomic Control": 21,
+   "Negative Control Codeword": 609,
+   "Unassigned Codeword": 1067,
+   "Deprecated Codeword": 3291
+  },
+  "genes": 5001,
+  "control_features": 5028,
+  "panel": "Xenium Human 5K Pan Tissue & Pathways Panel",
+  "panel_design": "hAtlas_v1.1",
+  "base_panel": null,
+  "cell_columns": [
+   "cell_id",
+   "x_centroid",
+   "y_centroid",
+   "transcript_counts",
+   "control_probe_counts",
+   "genomic_control_counts",
+   "control_codeword_counts",
+   "unassigned_codeword_counts",
+   "deprecated_codeword_counts",
+   "total_counts",
+   "cell_area",
+   "nucleus_area",
+   "nucleus_count",
+   "segmentation_method"
+  ],
+  "coordinate_unit": "\u00b5m (x_centroid, y_centroid)",
+  "extent_mm": [
+   6.65,
+   9.4
+  ],
+  "segmentation": {
+   "Segmented by interior stain (18S)": 188454,
+   "Segmented by boundary stain (ATP1A1+CD45+E-Cadherin)": 125800,
+   "Segmented by nucleus expansion of 5.0\u00b5m": 7394
+  }
+ },
+ "cervilla2026_xenium5k/xenium5K_Lung": {
+  "platform": "Xenium Prime 5K",
+  "cells": 225682,
+  "features": {
+   "Gene Expression": 5001,
+   "Negative Control Probe": 40,
+   "Genomic Control": 21,
+   "Negative Control Codeword": 609,
+   "Unassigned Codeword": 1067,
+   "Deprecated Codeword": 3291
+  },
+  "genes": 5001,
+  "control_features": 5028,
+  "panel": "Xenium Human 5K Pan Tissue & Pathways Panel",
+  "panel_design": "hAtlas_v1.1",
+  "base_panel": null,
+  "cell_columns": [
+   "cell_id",
+   "x_centroid",
+   "y_centroid",
+   "transcript_counts",
+   "control_probe_counts",
+   "genomic_control_counts",
+   "control_codeword_counts",
+   "unassigned_codeword_counts",
+   "deprecated_codeword_counts",
+   "total_counts",
+   "cell_area",
+   "nucleus_area",
+   "nucleus_count",
+   "segmentation_method"
+  ],
+  "coordinate_unit": "\u00b5m (x_centroid, y_centroid)",
+  "extent_mm": [
+   6.65,
+   7.13
+  ],
+  "segmentation": {
+   "Segmented by interior stain (18S)": 181094,
+   "Segmented by boundary stain (ATP1A1+CD45+E-Cadherin)": 40727,
+   "Segmented by nucleus expansion of 5.0\u00b5m": 3861
+  }
+ },
+ "cervilla2026_xenium5k/xenium5K_Lymphoma": {
+  "platform": "Xenium Prime 5K",
+  "cells": 667028,
+  "features": {
+   "Gene Expression": 5001,
+   "Negative Control Probe": 40,
+   "Genomic Control": 21,
+   "Negative Control Codeword": 609,
+   "Unassigned Codeword": 1067,
+   "Deprecated Codeword": 3291
+  },
+  "genes": 5001,
+  "control_features": 5028,
+  "panel": "Xenium Human 5K Pan Tissue & Pathways Panel",
+  "panel_design": "hAtlas_v1.1",
+  "base_panel": null,
+  "cell_columns": [
+   "cell_id",
+   "x_centroid",
+   "y_centroid",
+   "transcript_counts",
+   "control_probe_counts",
+   "genomic_control_counts",
+   "control_codeword_counts",
+   "unassigned_codeword_counts",
+   "deprecated_codeword_counts",
+   "total_counts",
+   "cell_area",
+   "nucleus_area",
+   "nucleus_count",
+   "segmentation_method"
+  ],
+  "coordinate_unit": "\u00b5m (x_centroid, y_centroid)",
+  "extent_mm": [
+   7.24,
+   8.62
+  ],
+  "segmentation": {
+   "Segmented by interior stain (18S)": 422243,
+   "Segmented by boundary stain (ATP1A1+CD45+E-Cadherin)": 238941,
+   "Segmented by nucleus expansion of 5.0\u00b5m": 5844
+  }
+ },
+ "cervilla2026_xenium5k/xenium5K_Ovarian": {
+  "platform": "Xenium Prime 5K",
+  "cells": 192819,
+  "features": {
+   "Gene Expression": 5001,
+   "Negative Control Probe": 40,
+   "Genomic Control": 21,
+   "Negative Control Codeword": 609,
+   "Unassigned Codeword": 1067,
+   "Deprecated Codeword": 3291
+  },
+  "genes": 5001,
+  "control_features": 5028,
+  "panel": "Xenium Human 5K Pan Tissue & Pathways Panel",
+  "panel_design": "hAtlas_v1.1",
+  "base_panel": null,
+  "cell_columns": [
+   "cell_id",
+   "x_centroid",
+   "y_centroid",
+   "transcript_counts",
+   "control_probe_counts",
+   "genomic_control_counts",
+   "control_codeword_counts",
+   "unassigned_codeword_counts",
+   "deprecated_codeword_counts",
+   "total_counts",
+   "cell_area",
+   "nucleus_area",
+   "nucleus_count",
+   "segmentation_method"
+  ],
+  "coordinate_unit": "\u00b5m (x_centroid, y_centroid)",
+  "extent_mm": [
+   3.65,
+   9.03
+  ],
+  "segmentation": {
+   "Segmented by interior stain (18S)": 147611,
+   "Segmented by boundary stain (ATP1A1+CD45+E-Cadherin)": 39975,
+   "Segmented by nucleus expansion of 5.0\u00b5m": 5233
+  }
+ },
+ "tenx_xenium5k/Xenium_Prime_Breast_Cancer_FFPE": {
+  "platform": "Xenium Prime 5K",
+  "cells": 699110,
+  "features": {
+   "Gene Expression": 5101,
+   "Negative Control Probe": 40,
+   "Genomic Control": 21,
+   "Negative Control Codeword": 609,
+   "Unassigned Codeword": 410,
+   "Deprecated Codeword": 3294
+  },
+  "genes": 5101,
+  "control_features": 4374,
+  "panel": "Xenium Human 5K with Cell Typing + HPV-16/18 and SNV Add-on",
+  "panel_design": "N/A",
+  "base_panel": "Xenium Human 5K Pan Tissue & Pathways Panel",
+  "cell_columns": [
+   "cell_id",
+   "x_centroid",
+   "y_centroid",
+   "transcript_counts",
+   "control_probe_counts",
+   "genomic_control_counts",
+   "control_codeword_counts",
+   "unassigned_codeword_counts",
+   "deprecated_codeword_counts",
+   "total_counts",
+   "cell_area",
+   "nucleus_area",
+   "nucleus_count",
+   "segmentation_method"
+  ],
+  "coordinate_unit": "\u00b5m (x_centroid, y_centroid)",
+  "extent_mm": [
+   10.75,
+   15.9
+  ],
+  "segmentation": {
+   "Segmented by interior stain (18S)": 555829,
+   "Segmented by boundary stain (ATP1A1+CD45+E-Cadherin)": 100621,
+   "Segmented by nucleus expansion of 5.0\u00b5m": 42660
+  }
+ },
+ "tenx_xenium5k/Xenium_Prime_Human_Lung_Cancer_FFPE": {
+  "platform": "Xenium Prime 5K",
+  "cells": 278328,
+  "features": {
+   "Gene Expression": 5001,
+   "Negative Control Probe": 40,
+   "Genomic Control": 21,
+   "Negative Control Codeword": 609,
+   "Unassigned Codeword": 1067,
+   "Deprecated Codeword": 3291
+  },
+  "genes": 5001,
+  "control_features": 5028,
+  "panel": "Xenium Human 5K Pan Tissue & Pathways Panel",
+  "panel_design": "hAtlas_v1.1",
+  "base_panel": null,
+  "cell_columns": [
+   "cell_id",
+   "x_centroid",
+   "y_centroid",
+   "transcript_counts",
+   "control_probe_counts",
+   "genomic_control_counts",
+   "control_codeword_counts",
+   "unassigned_codeword_counts",
+   "deprecated_codeword_counts",
+   "total_counts",
+   "cell_area",
+   "nucleus_area",
+   "nucleus_count",
+   "segmentation_method"
+  ],
+  "coordinate_unit": "\u00b5m (x_centroid, y_centroid)",
+  "extent_mm": [
+   11.48,
+   7.81
+  ],
+  "segmentation": {
+   "Segmented by interior stain (18S)": 228200,
+   "Segmented by boundary stain (ATP1A1+CD45+E-Cadherin)": 43888,
+   "Segmented by nucleus expansion of 5.0\u00b5m": 6240
+  }
+ },
+ "tenx_xenium5k/Xenium_Prime_Human_Prostate_FFPE": {
+  "platform": "Xenium Prime 5K",
+  "cells": 193000,
+  "features": {
+   "Gene Expression": 5006,
+   "Negative Control Probe": 40,
+   "Genomic Control": 21,
+   "Negative Control Codeword": 609,
+   "Unassigned Codeword": 4031,
+   "Deprecated Codeword": 310
+  },
+  "genes": 5006,
+  "control_features": 5011,
+  "panel": "Xenium Human 5K Pan Tissue & Pathways Panel",
+  "panel_design": "hAtlas_v1",
+  "base_panel": null,
+  "cell_columns": [
+   "cell_id",
+   "x_centroid",
+   "y_centroid",
+   "transcript_counts",
+   "control_probe_counts",
+   "genomic_control_counts",
+   "control_codeword_counts",
+   "unassigned_codeword_counts",
+   "deprecated_codeword_counts",
+   "total_counts",
+   "cell_area",
+   "nucleus_area",
+   "nucleus_count",
+   "segmentation_method"
+  ],
+  "coordinate_unit": "\u00b5m (x_centroid, y_centroid)",
+  "extent_mm": [
+   11.5,
+   6.42
+  ],
+  "segmentation": {
+   "Segmented by interior stain (18S)": 120571,
+   "Segmented by boundary stain (ATP1A1+CD45+E-Cadherin)": 66417,
+   "Segmented by nucleus expansion of 5.0\u00b5m": 6012
+  }
+ },
+ "tenx_xenium5k/Xenium_Prime_Human_Skin_FFPE": {
+  "platform": "Xenium Prime 5K",
+  "cells": 112551,
+  "features": {
+   "Gene Expression": 5006,
+   "Negative Control Probe": 40,
+   "Genomic Control": 21,
+   "Negative Control Codeword": 609,
+   "Unassigned Codeword": 4031,
+   "Deprecated Codeword": 310
+  },
+  "genes": 5006,
+  "control_features": 5011,
+  "panel": "Xenium Human 5K Pan Tissue & Pathways Panel",
+  "panel_design": "hAtlas_v1",
+  "base_panel": null,
+  "cell_columns": [
+   "cell_id",
+   "x_centroid",
+   "y_centroid",
+   "transcript_counts",
+   "control_probe_counts",
+   "genomic_control_counts",
+   "control_codeword_counts",
+   "unassigned_codeword_counts",
+   "deprecated_codeword_counts",
+   "total_counts",
+   "cell_area",
+   "nucleus_area",
+   "nucleus_count",
+   "segmentation_method"
+  ],
+  "coordinate_unit": "\u00b5m (x_centroid, y_centroid)",
+  "extent_mm": [
+   9.06,
+   4.28
+  ],
+  "segmentation": {
+   "Segmented by interior stain (18S)": 83894,
+   "Segmented by boundary stain (ATP1A1+CD45+E-Cadherin)": 23609,
+   "Segmented by nucleus expansion of 5.0\u00b5m": 5048
+  }
+ },
+ "tenx_xenium5k/Xenium_Prime_Ovarian_Cancer_FFPE_XRrun": {
+  "platform": "Xenium Prime 5K",
+  "cells": 407124,
+  "features": {
+   "Gene Expression": 5101,
+   "Negative Control Probe": 40,
+   "Genomic Control": 21,
+   "Negative Control Codeword": 609,
+   "Unassigned Codeword": 410,
+   "Deprecated Codeword": 3294
+  },
+  "genes": 5101,
+  "control_features": 4374,
+  "panel": "Xenium Human 5K with Cell Typing + HPV-16/18 and SNV Add-on",
+  "panel_design": "N/A",
+  "base_panel": "Xenium Human 5K Pan Tissue & Pathways Panel",
+  "cell_columns": [
+   "cell_id",
+   "x_centroid",
+   "y_centroid",
+   "transcript_counts",
+   "control_probe_counts",
+   "genomic_control_counts",
+   "control_codeword_counts",
+   "unassigned_codeword_counts",
+   "deprecated_codeword_counts",
+   "total_counts",
+   "cell_area",
+   "nucleus_area",
+   "nucleus_count",
+   "segmentation_method"
+  ],
+  "coordinate_unit": "\u00b5m (x_centroid, y_centroid)",
+  "extent_mm": [
+   11.47,
+   7.96
+  ],
+  "segmentation": {
+   "Segmented by interior stain (18S)": 282548,
+   "Segmented by boundary stain (ATP1A1+CD45+E-Cadherin)": 116333,
+   "Segmented by nucleus expansion of 5.0\u00b5m": 8243
+  }
+ },
+ "cosmx_nsclc/Lung12": {
+  "platform": "CosMx SMI 960-plex (NSCLC FFPE release)",
+  "cells": 73997,
+  "expr_rows": 74025,
+  "expr_rows_outside_cells": 28,
+  "features": {
+   "gene": 960,
+   "NegPrb": 20
+  },
+  "genes": 960,
+  "control_features": 20,
+  "fovs": 28,
+  "fov_positions_rows": 28,
+  "fov_position_columns": [
+   "fov",
+   "x_global_px",
+   "y_global_px"
+  ],
+  "cell_columns": [
+   "fov",
+   "cell_ID",
+   "Area",
+   "AspectRatio",
+   "CenterX_local_px",
+   "CenterY_local_px",
+   "CenterX_global_px",
+   "CenterY_global_px",
+   "Width",
+   "Height",
+   "Mean.MembraneStain",
+   "Max.MembraneStain",
+   "Mean.PanCK",
+   "Max.PanCK",
+   "Mean.CD45",
+   "Max.CD45",
+   "Mean.CD3",
+   "Max.CD3",
+   "Mean.DAPI",
+   "Max.DAPI"
+  ],
+  "coordinate_unit": "pixels (CenterX_global_px, CenterY_global_px); 0.18 \u00b5m per pixel (README)",
+  "extent_mm": [
+   3.94,
+   4.6
+  ]
+ },
+ "cosmx_nsclc/Lung13": {
+  "platform": "CosMx SMI 960-plex (NSCLC FFPE release)",
+  "cells": 82843,
+  "expr_rows": 82863,
+  "expr_rows_outside_cells": 20,
+  "features": {
+   "gene": 960,
+   "NegPrb": 20
+  },
+  "genes": 960,
+  "control_features": 20,
+  "fovs": 20,
+  "fov_positions_rows": 20,
+  "fov_position_columns": [
+   "fov",
+   "x_global_px",
+   "y_global_px"
+  ],
+  "cell_columns": [
+   "fov",
+   "cell_ID",
+   "Area",
+   "AspectRatio",
+   "CenterX_local_px",
+   "CenterY_local_px",
+   "CenterX_global_px",
+   "CenterY_global_px",
+   "Width",
+   "Height",
+   "Mean.MembraneStain",
+   "Max.MembraneStain",
+   "Mean.PanCK",
+   "Max.PanCK",
+   "Mean.CD45",
+   "Max.CD45",
+   "Mean.CD3",
+   "Max.CD3",
+   "Mean.DAPI",
+   "Max.DAPI"
+  ],
+  "coordinate_unit": "pixels (CenterX_global_px, CenterY_global_px); 0.18 \u00b5m per pixel (README)",
+  "extent_mm": [
+   3.94,
+   3.28
+  ]
+ },
+ "cosmx_nsclc/Lung5_Rep1": {
+  "platform": "CosMx SMI 960-plex (NSCLC FFPE release)",
+  "cells": 100292,
+  "expr_rows": 100322,
+  "expr_rows_outside_cells": 30,
+  "features": {
+   "gene": 960,
+   "NegPrb": 20
+  },
+  "genes": 960,
+  "control_features": 20,
+  "fovs": 30,
+  "fov_positions_rows": 32,
+  "fov_position_columns": [
+   "fov",
+   "x_global_px",
+   "y_global_px"
+  ],
+  "cell_columns": [
+   "fov",
+   "cell_ID",
+   "Area",
+   "AspectRatio",
+   "CenterX_local_px",
+   "CenterY_local_px",
+   "CenterX_global_px",
+   "CenterY_global_px",
+   "Width",
+   "Height",
+   "Mean.MembraneStain",
+   "Max.MembraneStain",
+   "Mean.PanCK",
+   "Max.PanCK",
+   "Mean.CD45",
+   "Max.CD45",
+   "Mean.CD3",
+   "Max.CD3",
+   "Mean.DAPI",
+   "Max.DAPI"
+  ],
+  "coordinate_unit": "pixels (CenterX_global_px, CenterY_global_px); 0.18 \u00b5m per pixel (README)",
+  "extent_mm": [
+   4.92,
+   3.94
+  ]
+ },
+ "cosmx_nsclc/Lung5_Rep2": {
+  "platform": "CosMx SMI 960-plex (NSCLC FFPE release)",
+  "cells": 106660,
+  "expr_rows": 106689,
+  "expr_rows_outside_cells": 29,
+  "features": {
+   "gene": 960,
+   "NegPrb": 20
+  },
+  "genes": 960,
+  "control_features": 20,
+  "fovs": 30,
+  "fov_positions_rows": 32,
+  "fov_position_columns": [
+   "fov",
+   "x_global_px",
+   "y_global_px"
+  ],
+  "cell_columns": [
+   "fov",
+   "cell_ID",
+   "Area",
+   "AspectRatio",
+   "CenterX_local_px",
+   "CenterY_local_px",
+   "CenterX_global_px",
+   "CenterY_global_px",
+   "Width",
+   "Height",
+   "Mean.MembraneStain",
+   "Max.MembraneStain",
+   "Mean.PanCK",
+   "Max.PanCK",
+   "Mean.CD45",
+   "Max.CD45",
+   "Mean.CD3",
+   "Max.CD3",
+   "Mean.DAPI",
+   "Max.DAPI"
+  ],
+  "coordinate_unit": "pixels (CenterX_global_px, CenterY_global_px); 0.18 \u00b5m per pixel (README)",
+  "extent_mm": [
+   4.92,
+   3.94
+  ]
+ },
+ "cosmx_nsclc/Lung5_Rep3": {
+  "platform": "CosMx SMI 960-plex (NSCLC FFPE release)",
+  "cells": 100264,
+  "expr_rows": 100294,
+  "expr_rows_outside_cells": 30,
+  "features": {
+   "gene": 960,
+   "NegPrb": 20
+  },
+  "genes": 960,
+  "control_features": 20,
+  "fovs": 30,
+  "fov_positions_rows": 32,
+  "fov_position_columns": [
+   "fov",
+   "x_global_px",
+   "y_global_px"
+  ],
+  "cell_columns": [
+   "fov",
+   "cell_ID",
+   "Area",
+   "AspectRatio",
+   "CenterX_local_px",
+   "CenterY_local_px",
+   "CenterX_global_px",
+   "CenterY_global_px",
+   "Width",
+   "Height",
+   "Mean.MembraneStain",
+   "Max.MembraneStain",
+   "Mean.PanCK",
+   "Max.PanCK",
+   "Mean.CD45",
+   "Max.CD45",
+   "Mean.CD3",
+   "Max.CD3",
+   "Mean.DAPI",
+   "Max.DAPI"
+  ],
+  "coordinate_unit": "pixels (CenterX_global_px, CenterY_global_px); 0.18 \u00b5m per pixel (README)",
+  "extent_mm": [
+   4.92,
+   3.94
+  ]
+ },
+ "cosmx_nsclc/Lung6": {
+  "platform": "CosMx SMI 960-plex (NSCLC FFPE release)",
+  "cells": 93795,
+  "expr_rows": 93825,
+  "expr_rows_outside_cells": 30,
+  "features": {
+   "gene": 960,
+   "NegPrb": 20
+  },
+  "genes": 960,
+  "control_features": 20,
+  "fovs": 30,
+  "fov_positions_rows": 30,
+  "fov_position_columns": [
+   "fov",
+   "x_global_px",
+   "y_global_px"
+  ],
+  "cell_columns": [
+   "fov",
+   "cell_ID",
+   "Area",
+   "AspectRatio",
+   "CenterX_local_px",
+   "CenterY_local_px",
+   "CenterX_global_px",
+   "CenterY_global_px",
+   "Width",
+   "Height",
+   "Mean.MembraneStain",
+   "Max.MembraneStain",
+   "Mean.PanCK",
+   "Max.PanCK",
+   "Mean.CD45",
+   "Max.CD45",
+   "Mean.CD3",
+   "Max.CD3",
+   "Mean.DAPI",
+   "Max.DAPI"
+  ],
+  "coordinate_unit": "pixels (CenterX_global_px, CenterY_global_px); 0.18 \u00b5m per pixel (README)",
+  "extent_mm": [
+   4.92,
+   3.94
+  ]
+ },
+ "cosmx_nsclc/Lung9_Rep1": {
+  "platform": "CosMx SMI 960-plex (NSCLC FFPE release)",
+  "cells": 91972,
+  "expr_rows": 91992,
+  "expr_rows_outside_cells": 20,
+  "features": {
+   "gene": 960,
+   "NegPrb": 20
+  },
+  "genes": 960,
+  "control_features": 20,
+  "fovs": 20,
+  "fov_positions_rows": 20,
+  "fov_position_columns": [
+   "fov",
+   "x_global_px",
+   "y_global_px"
+  ],
+  "cell_columns": [
+   "fov",
+   "cell_ID",
+   "Area",
+   "AspectRatio",
+   "CenterX_local_px",
+   "CenterY_local_px",
+   "CenterX_global_px",
+   "CenterY_global_px",
+   "Width",
+   "Height",
+   "Mean.MembraneStain",
+   "Max.MembraneStain",
+   "Mean.PanCK",
+   "Max.PanCK",
+   "Mean.CD45",
+   "Max.CD45",
+   "Mean.CD3",
+   "Max.CD3",
+   "Mean.DAPI",
+   "Max.DAPI"
+  ],
+  "coordinate_unit": "pixels (CenterX_global_px, CenterY_global_px); 0.18 \u00b5m per pixel (README)",
+  "extent_mm": [
+   3.94,
+   3.28
+  ]
+ },
+ "cosmx_nsclc/Lung9_Rep2": {
+  "platform": "CosMx SMI 960-plex (NSCLC FFPE release)",
+  "cells": 150504,
+  "expr_rows": 150549,
+  "expr_rows_outside_cells": 45,
+  "features": {
+   "gene": 960,
+   "NegPrb": 20
+  },
+  "genes": 960,
+  "control_features": 20,
+  "fovs": 45,
+  "fov_positions_rows": 45,
+  "fov_position_columns": [
+   "fov",
+   "x_global_px",
+   "y_global_px"
+  ],
+  "cell_columns": [
+   "fov",
+   "cell_ID",
+   "Area",
+   "AspectRatio",
+   "CenterX_local_px",
+   "CenterY_local_px",
+   "CenterX_global_px",
+   "CenterY_global_px",
+   "Width",
+   "Height",
+   "Mean.MembraneStain",
+   "Max.MembraneStain",
+   "Mean.PanCK",
+   "Max.PanCK",
+   "Mean.CD45",
+   "Max.CD45",
+   "Mean.CD3",
+   "Max.CD3",
+   "Mean.DAPI",
+   "Max.DAPI"
+  ],
+  "coordinate_unit": "pixels (CenterX_global_px, CenterY_global_px); 0.18 \u00b5m per pixel (README)",
+  "extent_mm": [
+   4.92,
+   5.91
+  ]
+ }
+}

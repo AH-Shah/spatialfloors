@@ -1,0 +1,20 @@
+{
+ "unit": "bruker_mobreast",
+ "grid": {
+  "floor_feats": {
+   "unit": 0.036229078451415334,
+   "n_receivers": 13,
+   "rounds_median": 5.0,
+   "rounds_at_cap": 0.0,
+   "s": 72.7
+  },
+  "all_feats": {
+   "unit": 0.0390535721719478,
+   "n_receivers": 13,
+   "rounds_median": 8.0,
+   "rounds_at_cap": 0.0,
+   "s": 98.1
+  }
+ },
+ "spatialfloors_commit": "ed85d08f8bb3904132593d26707db3d10de52776"
+}
