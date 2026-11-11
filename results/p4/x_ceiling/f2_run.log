@@ -1,0 +1,11 @@
+allen_animal1_C57BL6J-1.086 0.8743 {'floor': 0.4, 'cellcharter': 0.3666, 'novae': 0.2962}
+allen_animal2_C57BL6J-2.039 0.8573 {'floor': 0.3893, 'cellcharter': 0.3592, 'novae': 0.3042}
+allen_animal3_C57BL6J-3.003 0.8551 {'floor': 0.5424, 'cellcharter': 0.4899, 'novae': 0.4084}
+allen_yao638850_C57BL6J-638850.36 0.9146 {'floor': 0.425, 'cellcharter': 0.3768, 'novae': 0.2891}
+gse1_110 0.7926 {'floor': 0.5018, 'cellcharter': 0.3323}
+gse1_120 0.8591 {'floor': 0.2575, 'cellcharter': 0.2998}
+gse1_210 0.9861 {'floor': 0.4506, 'cellcharter': 0.3614}
+gse1_221 0.8843 {'floor': 0.323, 'cellcharter': 0.3206}
+gse1_222 0.9236 {'floor': 0.6623, 'cellcharter': 0.2144}
+gse1_242 0.9057 {'floor': 0.6541, 'cellcharter': 0.4815}
+X_CEILING_F2_DONE

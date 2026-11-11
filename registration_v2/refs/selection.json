@@ -1,0 +1,175 @@
+{
+ "index": "/Users/Hemato/project_3/data/raw/refs/cellxgene_index_2026-11-11/datasets.json",
+ "index_sha256": "0afa42ac7f490bf02b84fbeb167be1375a075846b61162fb1d01db80f09ba864",
+ "rule": "F5 references for the replication round (registration v2): one CELLxGENE dataset per new tissue, chosen by a fixed rule\nfrom a saved CELLxGENE Discover dataset index, standardised as scripts/ref_prep.py does (layout read by\nfloors.f5.reference: X = log1p CP10k csr, raw.X = integer counts, var.feature_name, obs.ClusterMidway = fine label,\nobs.coarse), with held-out markers by the ref_prep.py rule on the tissue's platform gene list.\nSelection: Homo sapiens only; is_primary_data all true; suspension type cell only; every assay a 10x Chromium assay\n(label starts with \"10x\", multiome excluded); not spatial; at least one tissue label containing the organ word (ORGAN);\nevery disease \"normal\" or in the tissue's carcinoma list (CARCINOMA). Largest cell_count; ties: earliest published_at.\nCells kept: tissue label containing the organ word and disease in the carcinoma list. Raw counts must be integers\n(raw.X, else X); a dataset that fails is replaced by the next one in the ranking.",
+ "tissues": {
+  "lung": [
+   {
+    "dataset_id": "01ff5cf0-730f-4ddc-b1be-7b407211f544",
+    "title": "scRNA-seq of Lung adenocarcinoma with histological subtypes",
+    "collection": "Defining the cellular and molecular identities of histologic subtypes in lung adenocarcinoma",
+    "citation": "Publication: https://doi.org/10.1186/s40164-025-00740-6",
+    "cell_count": 117266,
+    "published_at": "2026-01-26T17:57:14+00:00",
+    "diseases": [
+     "lung adenocarcinoma"
+    ],
+    "tissues": [
+     "lung parenchyma"
+    ],
+    "h5ad": "https://datasets.cellxgene.cziscience.com/229e74ee-9b3e-4ab2-bddb-9eccbac85b48.h5ad",
+    "h5ad_bytes": 670537560
+   },
+   {
+    "dataset_id": "d41f45c1-1b7b-4573-a998-ac5c5acb1647",
+    "title": "Transcriptional connectivity of regulatory T cells in the tumor microenvironment informs novel combination cancer therapy strategies",
+    "collection": "HTAN MSK - Transcriptional connectivity of regulatory T cells in the tumor microenvironment informs novel combination cancer therapy strategies",
+    "citation": "Publication: https://doi.org/10.1038/s41590-023-01504-2",
+    "cell_count": 82991,
+    "published_at": "2023-05-01T21:27:56+00:00",
+    "diseases": [
+     "lung adenocarcinoma"
+    ],
+    "tissues": [
+     "left lung",
+     "lower lobe of left lung",
+     "lower lobe of right lung",
+     "middle lobe of right lung",
+     "right lung",
+     "upper lobe of left lung",
+     "upper lobe of right lung"
+    ],
+    "h5ad": "https://datasets.cellxgene.cziscience.com/3e1c5296-5c2d-49df-8423-268bcb01f175.h5ad",
+    "h5ad_bytes": 626624817
+   },
+   {
+    "dataset_id": "1e4214ce-7347-4ec7-97b3-fcf7c1938e8b",
+    "title": "Lung cancer 4 patients archival FFPE samples profiling with Chromium FLEX",
+    "collection": "Transcriptome Analysis of Archived Tumor Tissues by Visium, GeoMx DSP, and Chromium Methods Reveals Inter- and Intra-Patient Heterogeneity",
+    "citation": "Publication: https://doi.org/10.1101/2024.11.01.621259",
+    "cell_count": 35954,
+    "published_at": "2024-11-08T14:29:11+00:00",
+    "diseases": [
+     "lung adenocarcinoma",
+     "squamous cell lung carcinoma"
+    ],
+    "tissues": [
+     "lung parenchyma"
+    ],
+    "h5ad": "https://datasets.cellxgene.cziscience.com/4ca422ae-e4ad-4884-9073-7c3799cd9143.h5ad",
+    "h5ad_bytes": 502582278
+   }
+  ],
+  "ovary": [
+   {
+    "dataset_id": "b252b015-b488-4d5c-b16e-968c13e48a2c",
+    "title": "MSK SPECTRUM \u2013 All cells",
+    "collection": "MSK SPECTRUM \u2013 Ovarian cancer mutational processes drive site-specific immune evasion",
+    "citation": "Publication: https://doi.org/10.1038/s41586-022-05496-1",
+    "cell_count": 927205,
+    "published_at": "2022-12-20T19:49:19+00:00",
+    "diseases": [
+     "malignant ovarian serous tumor"
+    ],
+    "tissues": [
+     "abdomen",
+     "abdominal wall",
+     "adnexa of uterus",
+     "ascitic fluid",
+     "caecum",
+     "diaphragm",
+     "fallopian tube",
+     "intestine",
+     "large intestine",
+     "left ovary",
+     "liver",
+     "lymph node",
+     "omentum",
+     "paracolic gutter",
+     "parietal peritoneum",
+     "peritoneum",
+     "right ovary",
+     "transverse colon",
+     "urinary bladder"
+    ],
+    "h5ad": "https://datasets.cellxgene.cziscience.com/f8f7f2b0-b8a5-4087-8048-8d3f5b6a49dd.h5ad",
+    "h5ad_bytes": 11407955923
+   }
+  ],
+  "prostate": [
+   {
+    "dataset_id": "881e0e6b-a185-45f1-9b56-81606e91e7ff",
+    "title": "Single-cell atlas of 24 hormone therapy naive localised prostate cancers",
+    "collection": "Profiling of epithelial functional states and fibroblast phenotypes in hormone therapy-na\u00efve localised prostate cancer",
+    "citation": "Publication: https://doi.org/10.1101/2024.10.23.619925",
+    "cell_count": 68322,
+    "published_at": "2025-10-07T23:58:13+00:00",
+    "diseases": [
+     "prostatic acinar adenocarcinoma"
+    ],
+    "tissues": [
+     "prostate gland"
+    ],
+    "h5ad": "https://datasets.cellxgene.cziscience.com/68b23fda-7191-46a5-8870-819feca3e66e.h5ad",
+    "h5ad_bytes": 734490686
+   }
+  ],
+  "breast": [
+   {
+    "dataset_id": "6f9de485-58cd-4342-bfc4-b3d3dd223aa8",
+    "title": "Single-cell RNA-seq data from untreated tissue samples of treatment-naive triple-negative breast cancer patients",
+    "collection": "Single-cell atlas of untreated human triple negative breast cancer",
+    "citation": "Dataset Version: https://datasets.cellxgene.cziscience.com/e94bd3cc-6271-424a-baac-12f8eb320a0e.h5ad curated and distributed by CZ CELLxGENE Discover in Collection: https://cellxgene.cziscience.com/collections/ceef2841-5333-46ac-92ef-ccbe0c20fe55",
+    "cell_count": 427823,
+    "published_at": "2026-03-10T20:12:26+00:00",
+    "diseases": [
+     "triple-negative breast carcinoma"
+    ],
+    "tissues": [
+     "breast"
+    ],
+    "h5ad": "https://datasets.cellxgene.cziscience.com/e94bd3cc-6271-424a-baac-12f8eb320a0e.h5ad",
+    "h5ad_bytes": 4522982499
+   },
+   {
+    "dataset_id": "6c87755e-a671-41a8-9c7e-4e43b850a57b",
+    "title": "Fresh samples (single cell)",
+    "collection": "HTAN/HTAPP Broad - Spatio-molecular dissection of the breast cancer metastatic microenvironment",
+    "citation": "Publication: https://doi.org/10.1038/s41591-024-03215-z",
+    "cell_count": 157531,
+    "published_at": "2024-10-02T22:24:18+00:00",
+    "diseases": [
+     "breast cancer"
+    ],
+    "tissues": [
+     "axilla",
+     "bone spine",
+     "breast",
+     "liver",
+     "lung",
+     "neck"
+    ],
+    "h5ad": "https://datasets.cellxgene.cziscience.com/173f9d7a-d6db-4b59-9041-ef8342fb5404.h5ad",
+    "h5ad_bytes": 1624209890
+   },
+   {
+    "dataset_id": "9fddb063-056d-4202-8b8a-4b0ee531d3ce",
+    "title": "A single-cell and spatially-resolved atlas of human breast cancers",
+    "collection": "A single-cell and spatially resolved atlas of human breast cancers",
+    "citation": "Publication: https://doi.org/10.1038/s41588-021-00911-1",
+    "cell_count": 100064,
+    "published_at": "2023-11-30T14:58:46+00:00",
+    "diseases": [
+     "breast carcinoma",
+     "invasive ductal breast carcinoma",
+     "invasive lobular breast carcinoma"
+    ],
+    "tissues": [
+     "breast"
+    ],
+    "h5ad": "https://datasets.cellxgene.cziscience.com/a9e2497a-0600-4bbd-8095-0e1271b10b1d.h5ad",
+    "h5ad_bytes": 847792908
+   }
+  ]
+ }
+}

@@ -13,7 +13,9 @@ floor and the learned models are scored against (SELECTION.md, rule point 7).
 
 The five 10x Genomics Xenium Prime 5K FFPE sections with a post-run H&E of the same section: skin (melanoma),
 prostate adenocarcinoma, ovarian carcinoma, breast carcinoma, lung carcinoma. Files per section:
-`<name>_he_image.ome.tif` and `<name>_he_imagealignment.csv` (3 × 3 affine from H&E pixels to Xenium µm), fetched by
+`<name>_he_image.ome.tif` and `<name>_he_imagealignment.csv` (3 × 3 affine from H&E pixels to Xenium morphology-image
+pixels of 0.2125 µm; prostate check: 98.7% of 20,000 cell centroids fall on tissue pixels of the H&E, 58.7% of 20,000
+uniform points in the cells' bounding box), fetched by
 `scripts/v2_fetch_he.sh`, checksums in `data_sha256.tsv`. One pilot section first (prostate, the smallest tumour
 image after skin) to time the work and fix the protocol; the protocol is frozen after the pilot and before the rest.
 
@@ -50,8 +52,11 @@ is drawn only where it is present.
 
 ## From polygons to cells
 
-`scripts/v2_annot_to_cells.py` (to write): H&E pixel polygons → Xenium µm with the alignment matrix; each cell takes
-the class of the polygon that contains its centroid; cells in no polygon or in "Exclude" are unlabelled.
+`scripts/v2_annot_to_cells.py` (`data.annotations`, tests `tests/test_annotations.py`): cell centroids (µm) → H&E
+pixels with the inverse of the alignment matrix; each cell takes the class of the smallest polygon that contains its
+centroid (a region drawn inside another keeps its own class); "Exclude" overrides every other class; cells in no
+polygon or in "Exclude" are unlabelled. Class names are matched case-insensitively (US spellings accepted); any other
+name stops the script.
 
 ## Agreement and consensus
 

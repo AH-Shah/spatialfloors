@@ -1,0 +1,10 @@
+{
+ "unit": "gse303070_Tumour_B_64T",
+ "ceiling": 0.09660555302050222,
+ "scores": {
+  "floor": 0.0706495831541871,
+  "scvi": 0.0734258862645248,
+  "nicheformer": 0.0668378643694808
+ },
+ "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+}

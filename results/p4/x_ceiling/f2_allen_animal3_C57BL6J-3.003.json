@@ -1,0 +1,14 @@
+{
+ "unit": "allen_animal3_C57BL6J-3.003",
+ "n_scored": 46671,
+ "k": 11,
+ "ceiling": 0.8551325216666033,
+ "ceiling_ari": 0.9155638486858084,
+ "ceiling_quadrant_folds": 0.19457011398581153,
+ "scores": {
+  "floor": 0.542418572011097,
+  "cellcharter": 0.48989458235381617,
+  "novae": 0.40841851798201556
+ },
+ "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+}

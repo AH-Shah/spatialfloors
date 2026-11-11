@@ -1,0 +1,10 @@
+{
+ "unit": "allen_animal2_C57BL6J-2.039",
+ "ceiling": 0.3842546829275838,
+ "scores": {
+  "floor": 0.3933355959668101,
+  "scvi": 0.3904978875542655,
+  "nicheformer": 0.3851754574930863
+ },
+ "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+}

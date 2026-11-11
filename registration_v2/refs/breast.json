@@ -1,0 +1,85 @@
+{
+ "tissue": "breast",
+ "source": "CELLxGENE 9fddb063-056d-4202-8b8a-4b0ee531d3ce",
+ "ref": "/Users/Hemato/project_3/data/raw/refs/breast_wu2021/ref.h5ad",
+ "h5ad": "data/raw/refs/breast_wu2021/wu2021.h5ad",
+ "n_cells": 100064,
+ "class_counts": {
+  "epithelial": 28844,
+  "immune_nonmyeloid": 41944,
+  "myeloid": 8257,
+  "other": 21019
+ },
+ "qc_pass": true,
+ "coarse_map": {
+  "endothelial cell": "other",
+  "fibroblast of breast": "other",
+  "pericyte": "other",
+  "endothelial cell of lymphatic vessel": "other",
+  "memory B cell": "immune_nonmyeloid",
+  "naive B cell": "immune_nonmyeloid",
+  "CD8-positive, alpha-beta T cell": "immune_nonmyeloid",
+  "CD4-positive, alpha-beta T cell": "immune_nonmyeloid",
+  "natural killer cell": "immune_nonmyeloid",
+  "T cell": "immune_nonmyeloid",
+  "mature NK T cell": "immune_nonmyeloid",
+  "macrophage": "myeloid",
+  "monocyte": "myeloid",
+  "myeloid cell": "other",
+  "basal-myoepithelial cell of mammary gland": "epithelial",
+  "luminal epithelial cell of mammary gland": "epithelial",
+  "plasma cell": "immune_nonmyeloid",
+  "mammary gland epithelial cell": "epithelial"
+ },
+ "gene_list": "units:cervilla_breast,tenx_breast",
+ "n_genes_in_list": 4914,
+ "heldout_markers": {
+  "epithelial": [
+   "EPCAM",
+   "CLDN7",
+   "TSPAN13",
+   "ALDOA",
+   "CRNDE"
+  ],
+  "immune_nonmyeloid": [
+   "CXCR4",
+   "CD3E",
+   "IL2RG",
+   "RHOH",
+   "CD2"
+  ],
+  "myeloid": [
+   "CD68",
+   "PLAUR",
+   "SPI1",
+   "GRN",
+   "CYBB"
+  ]
+ },
+ "marker_auroc_in_reference": {
+  "epithelial": {
+   "EPCAM": 0.8168501475039641,
+   "CLDN7": 0.8030361729465567,
+   "TSPAN13": 0.7724391511953159,
+   "ALDOA": 0.7623542415473685,
+   "CRNDE": 0.7552199120040548
+  },
+  "immune_nonmyeloid": {
+   "CXCR4": 0.7804577721387068,
+   "CD3E": 0.721371644203291,
+   "IL2RG": 0.717152051870464,
+   "RHOH": 0.7069764507574398,
+   "CD2": 0.696504795846443
+  },
+  "myeloid": {
+   "CD68": 0.9150460279316468,
+   "PLAUR": 0.8812164249764796,
+   "SPI1": 0.8657195383636299,
+   "GRN": 0.8632254812190848,
+   "CYBB": 0.861990249633083
+  }
+ },
+ "rule": "F5 references for the replication round (registration v2): one CELLxGENE dataset per new tissue, chosen by a fixed rule\nfrom a saved CELLxGENE Discover dataset index, standardised as scripts/ref_prep.py does (layout read by\nfloors.f5.reference: X = log1p CP10k csr, raw.X = integer counts, var.feature_name, obs.ClusterMidway = fine label,\nobs.coarse), with held-out markers by the ref_prep.py rule on the tissue's platform gene list.\nSelection: Homo sapiens only; is_primary_data all true; suspension type cell only; every assay a 10x Chromium assay\n(label starts with \"10x\", multiome excluded); not spatial; at least one tissue label containing the organ word (ORGAN);\nevery disease \"normal\" or in the tissue's carcinoma list (CARCINOMA). Largest cell_count; ties: earliest published_at.\nCells kept: tissue label containing the organ word and disease in the carcinoma list. Raw counts must be integers\n(raw.X, else X); a dataset that fails is replaced by the next one in the ranking.\nClasses (Cell Ontology, CL basic): epithelial = descendant of CL:0000066, or CL:0001064 / CL:0001061; immune non-myeloid =\ndescendant of CL:0000542; myeloid = descendant of CL:0000766 except mast cells CL:0000097; everything else other.\nHeld-out markers per class = top 5 by one-vs-rest AUROC (log1p CP10k, stratified <= 80k / <= 4k per fine type, seed 0)\namong the 200 genes with the largest mean log-fold change, detected in >= 10% of the class's cells, on the gene list,\nnot in another class's top-20 list. QC: >= 500 cells per class.\nGene list (--genes): \"wtx\" = CosMx WTx list (GSE1 panel, the round-1 rule); \"units:<u1,u2,...>\" = genes measured on every\nlisted round-2 unit (Gene Expression features of its cache, else of its raw cell_feature_matrix.h5).",
+ "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty",
+ "ref_note": "round-1 breast reference file; rebuilt by this script identical in X, raw.X, obs, var (11-11 check); markers on the Xenium 5K list (user decision 11-11)"
+}

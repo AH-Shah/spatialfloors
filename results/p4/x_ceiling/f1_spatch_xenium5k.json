@@ -1,0 +1,10 @@
+{
+ "unit": "spatch_xenium5k",
+ "ceiling": 0.0798655177237978,
+ "scores": {
+  "floor": 0.071481228059454,
+  "scvi": 0.0643461716202178,
+  "nicheformer": 0.069225627785314
+ },
+ "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+}

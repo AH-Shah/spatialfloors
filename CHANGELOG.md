@@ -1,5 +1,14 @@
 # Changes since `results-v1`
 
+## Unreleased
+
+- Exploratory: ceilings and headroom share for F1 (reference), F2, F3, F5 (`results/reports/X_ceiling.md`, per-crop
+  outputs `results/p4/x_ceiling/`, `scripts/x_ceiling*.py`).
+- `registration_v2/`: analysis script `scripts/v2_analyze.py` (reproduces `P5_corrected` on the round-1 unit table);
+  F5 references for lung, ovary, prostate and breast markers on the Xenium 5K gene list (`scripts/v2_ref_prep.py`,
+  `registration_v2/refs/`); annotation-to-cell mapping `scripts/v2_annot_to_cells.py` with
+  `src/spatialfloors/data/annotations.py` and tests. No model has been run on its units.
+
 ## `results-v1.2`
 
 2026-11-11, DOI 10.5281/zenodo.24135678. The registered verdicts and every tier-1 and tier-2 number are unchanged.

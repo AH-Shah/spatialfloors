@@ -1,0 +1,12 @@
+{
+ "unit": "toy",
+ "n_scored": 40000,
+ "k": 2,
+ "ceiling": 0.988024990441259,
+ "ceiling_ari": 0.9860486511533502,
+ "ceiling_quadrant_folds": 0.9731552251582475,
+ "scores": {
+  "floor": 0.9830600479085824
+ },
+ "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+}

@@ -1,0 +1,96 @@
+{
+ "tissue": "lung",
+ "source": "CELLxGENE 01ff5cf0-730f-4ddc-b1be-7b407211f544",
+ "ref": "data/raw/refs/lung_01ff5cf0-730f-4ddc-b1be-7b407211f544/ref.h5ad",
+ "h5ad": "data/raw/refs/lung_01ff5cf0-730f-4ddc-b1be-7b407211f544/229e74ee-9b3e-4ab2-bddb-9eccbac85b48.h5ad",
+ "n_cells": 117266,
+ "class_counts": {
+  "epithelial": 37048,
+  "immune_nonmyeloid": 50720,
+  "myeloid": 17035,
+  "other": 12463
+ },
+ "qc_pass": true,
+ "coarse_map": {
+  "B cell": "immune_nonmyeloid",
+  "fibroblast of lung": "other",
+  "plasma cell": "immune_nonmyeloid",
+  "naive thymus-derived CD4-positive, alpha-beta T cell": "immune_nonmyeloid",
+  "CD4-positive, CD25-positive, alpha-beta regulatory T cell": "immune_nonmyeloid",
+  "CD4-positive, alpha-beta T cell": "immune_nonmyeloid",
+  "CD8-positive, alpha-beta T cell": "immune_nonmyeloid",
+  "epithelial cell of lung": "epithelial",
+  "activated CD4-positive, alpha-beta T cell, human": "immune_nonmyeloid",
+  "naive thymus-derived CD8-positive, alpha-beta T cell": "immune_nonmyeloid",
+  "CD141-positive myeloid dendritic cell": "myeloid",
+  "CD8-positive, alpha-beta cytotoxic T cell": "immune_nonmyeloid",
+  "macrophage": "myeloid",
+  "mast cell": "other",
+  "lung macrophage": "myeloid",
+  "CD4-positive type I NK T cell secreting interferon-gamma": "immune_nonmyeloid",
+  "innate lymphoid cell": "immune_nonmyeloid",
+  "mature NK T cell": "immune_nonmyeloid",
+  "neutrophil": "myeloid",
+  "conventional dendritic cell": "other",
+  "natural killer cell": "immune_nonmyeloid",
+  "CD14-positive monocyte": "myeloid",
+  "CD14-positive, CD16-positive monocyte": "myeloid",
+  "cycling mononuclear phagocyte": "other",
+  "plasmacytoid dendritic cell": "other",
+  "endothelial cell": "other",
+  "gamma-delta T cell": "immune_nonmyeloid",
+  "lymphocyte": "immune_nonmyeloid",
+  "lung pericyte": "other",
+  "CD38-positive naive B cell": "immune_nonmyeloid"
+ },
+ "gene_list": "units:cervilla_lung,tenx_lung,nsclc_lung5_rep1,nsclc_lung5_rep2,nsclc_lung5_rep3,nsclc_lung6,nsclc_lung9_rep1,nsclc_lung9_rep2,nsclc_lung12,nsclc_lung13",
+ "n_genes_in_list": 580,
+ "heldout_markers": {
+  "epithelial": [
+   "EPCAM",
+   "CDH1",
+   "EGFR",
+   "GDF15",
+   "ITGA3"
+  ],
+  "immune_nonmyeloid": [
+   "CXCR4",
+   "CD2",
+   "CD3E",
+   "CD3G",
+   "ETS1"
+  ],
+  "myeloid": [
+   "CD68",
+   "CD14",
+   "OLR1",
+   "FCGR3A",
+   "CLEC7A"
+  ]
+ },
+ "marker_auroc_in_reference": {
+  "epithelial": {
+   "EPCAM": 0.9353468414340003,
+   "CDH1": 0.8808382476704436,
+   "EGFR": 0.8097268215655313,
+   "GDF15": 0.7998262246438425,
+   "ITGA3": 0.7974060390601954
+  },
+  "immune_nonmyeloid": {
+   "CXCR4": 0.8464475329356179,
+   "CD2": 0.7823652666471438,
+   "CD3E": 0.7628143320093447,
+   "CD3G": 0.7263702650886447,
+   "ETS1": 0.6959906462767357
+  },
+  "myeloid": {
+   "CD68": 0.9197133033470665,
+   "CD14": 0.8833232260011971,
+   "OLR1": 0.8807513406694254,
+   "FCGR3A": 0.8613300457919728,
+   "CLEC7A": 0.8497263657011733
+  }
+ },
+ "rule": "F5 references for the replication round (registration v2): one CELLxGENE dataset per new tissue, chosen by a fixed rule\nfrom a saved CELLxGENE Discover dataset index, standardised as scripts/ref_prep.py does (layout read by\nfloors.f5.reference: X = log1p CP10k csr, raw.X = integer counts, var.feature_name, obs.ClusterMidway = fine label,\nobs.coarse), with held-out markers by the ref_prep.py rule on the tissue's platform gene list.\nSelection: Homo sapiens only; is_primary_data all true; suspension type cell only; every assay a 10x Chromium assay\n(label starts with \"10x\", multiome excluded); not spatial; at least one tissue label containing the organ word (ORGAN);\nevery disease \"normal\" or in the tissue's carcinoma list (CARCINOMA). Largest cell_count; ties: earliest published_at.\nCells kept: tissue label containing the organ word and disease in the carcinoma list. Raw counts must be integers\n(raw.X, else X); a dataset that fails is replaced by the next one in the ranking.\nClasses (Cell Ontology, CL basic): epithelial = descendant of CL:0000066, or CL:0001064 / CL:0001061; immune non-myeloid =\ndescendant of CL:0000542; myeloid = descendant of CL:0000766 except mast cells CL:0000097; everything else other.\nHeld-out markers per class = top 5 by one-vs-rest AUROC (log1p CP10k, stratified <= 80k / <= 4k per fine type, seed 0)\namong the 200 genes with the largest mean log-fold change, detected in >= 10% of the class's cells, on the gene list,\nnot in another class's top-20 list. QC: >= 500 cells per class.\nGene list (--genes): \"wtx\" = CosMx WTx list (GSE1 panel, the round-1 rule); \"units:<u1,u2,...>\" = genes measured on every\nlisted round-2 unit (Gene Expression features of its cache, else of its raw cell_feature_matrix.h5).",
+ "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+}

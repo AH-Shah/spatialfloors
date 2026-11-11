@@ -1,0 +1,14 @@
+{
+ "unit": "allen_yao638850_C57BL6J-638850.36",
+ "n_scored": 47727,
+ "k": 9,
+ "ceiling": 0.9145545642250219,
+ "ceiling_ari": 0.91889434153958,
+ "ceiling_quadrant_folds": 0.27256974736389805,
+ "scores": {
+  "floor": 0.4250271877073223,
+  "cellcharter": 0.3767573929634406,
+  "novae": 0.28911938012035543
+ },
+ "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+}

@@ -1,0 +1,10 @@
+{
+ "unit": "bruker_mobreast",
+ "ceiling": 0.12757526770948213,
+ "scores": {
+  "floor": 0.1365614125141,
+  "scvi": 0.1180870447481415,
+  "nicheformer": 0.0777043470364711
+ },
+ "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+}

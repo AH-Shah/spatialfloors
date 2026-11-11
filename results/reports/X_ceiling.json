@@ -1,0 +1,1060 @@
+{
+ "F5": {
+  "crops": {
+   "bruker_kidney": {
+    "half_b": {
+     "floor": 0.6486504998716082,
+     "scanvi": 0.6796534705851482,
+     "tangram": 0.6407521920096417,
+     "oracle_floor": 0.7579415735019975,
+     "oracle_scanvi": 0.7664864318486281,
+     "oracle_tangram": 0.7940669209909242
+    },
+    "exceeds_ceiling": {
+     "floor": false,
+     "scanvi": false,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "bruker_mobreast": {
+    "half_b": {
+     "floor": 0.7422414384527369,
+     "scanvi": 0.7297715755813305,
+     "tangram": 0.6289108265868828,
+     "oracle_floor": 0.7820903248007632,
+     "oracle_scanvi": 0.7787984737143735,
+     "oracle_tangram": 0.7431232146564108
+    },
+    "exceeds_ceiling": {
+     "floor": false,
+     "scanvi": false,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "bruker_skin": {
+    "half_b": {
+     "floor": 0.812557831784732,
+     "scanvi": 0.8107140384542756,
+     "tangram": 0.639125842485629,
+     "oracle_floor": 0.8687676090520995,
+     "oracle_scanvi": 0.8668503301509265,
+     "oracle_tangram": 0.8458785468000937
+    },
+    "exceeds_ceiling": {
+     "floor": false,
+     "scanvi": false,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "gse1_110": {
+    "half_b": {
+     "floor": 0.68517973372473,
+     "scanvi": 0.7094402268868405,
+     "tangram": 0.5889148688917485,
+     "oracle_floor": 0.7549217255707422,
+     "oracle_scanvi": 0.7458164509534618,
+     "oracle_tangram": 0.7255934808988674
+    },
+    "exceeds_ceiling": {
+     "floor": false,
+     "scanvi": false,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "gse1_120": {
+    "half_b": {
+     "floor": 0.7175768895256065,
+     "scanvi": 0.7040125780497395,
+     "tangram": 0.6066393896351787,
+     "oracle_floor": 0.7615613419083685,
+     "oracle_scanvi": 0.742944094584346,
+     "oracle_tangram": 0.7236542776858144
+    },
+    "exceeds_ceiling": {
+     "floor": false,
+     "scanvi": false,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "gse1_210": {
+    "half_b": {
+     "floor": 0.648884294130493,
+     "scanvi": 0.640971508413502,
+     "tangram": 0.5940273009809343,
+     "oracle_floor": 0.6593574939986743,
+     "oracle_scanvi": 0.6622728083012791,
+     "oracle_tangram": 0.6652995003215918
+    },
+    "exceeds_ceiling": {
+     "floor": false,
+     "scanvi": false,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "gse1_221": {
+    "half_b": {
+     "floor": 0.6085014974053957,
+     "scanvi": 0.6160438593771329,
+     "tangram": 0.6008356805738811,
+     "oracle_floor": 0.6475011990226617,
+     "oracle_scanvi": 0.6659333686405039,
+     "oracle_tangram": 0.6284534903520008
+    },
+    "exceeds_ceiling": {
+     "floor": false,
+     "scanvi": false,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "gse1_222": {
+    "half_b": {
+     "floor": 0.5947133519685442,
+     "scanvi": 0.6147240456168713,
+     "tangram": 0.5825207492498172,
+     "oracle_floor": 0.6601430190363914,
+     "oracle_scanvi": 0.6667230659472648,
+     "oracle_tangram": 0.6613951524534831
+    },
+    "exceeds_ceiling": {
+     "floor": false,
+     "scanvi": false,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "gse1_242": {
+    "half_b": {
+     "floor": 0.6849538559783775,
+     "scanvi": 0.6793011060675449,
+     "tangram": 0.5854406224185658,
+     "oracle_floor": 0.7746203320086243,
+     "oracle_scanvi": 0.7614934411620128,
+     "oracle_tangram": 0.7535514163776003
+    },
+    "exceeds_ceiling": {
+     "floor": false,
+     "scanvi": false,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "gse303070_10501A_130T": {
+    "half_b": {
+     "floor": 0.8187104801264006,
+     "scanvi": 0.7642042167264425,
+     "tangram": 0.5485362206832441,
+     "oracle_floor": 0.730667712525015,
+     "oracle_scanvi": 0.7305567250354544,
+     "oracle_tangram": 0.6297725672906151
+    },
+    "exceeds_ceiling": {
+     "floor": true,
+     "scanvi": true,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "gse303070_10501A_74T": {
+    "half_b": {
+     "floor": 0.6957820929693217,
+     "scanvi": 0.6712078493837633,
+     "tangram": 0.595798988608177,
+     "oracle_floor": 0.7450851363293907,
+     "oracle_scanvi": 0.7427779760980306,
+     "oracle_tangram": 0.7096713773848431
+    },
+    "exceeds_ceiling": {
+     "floor": false,
+     "scanvi": false,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "gse303070_10501A_92T": {
+    "half_b": {
+     "floor": 0.7125688913285392,
+     "scanvi": 0.7098509580676835,
+     "tangram": 0.6437927419310383,
+     "oracle_floor": 0.7237076455785242,
+     "oracle_scanvi": 0.7175685023341707,
+     "oracle_tangram": 0.7202025256443234
+    },
+    "exceeds_ceiling": {
+     "floor": false,
+     "scanvi": false,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "gse303070_120131_170T": {
+    "half_b": {
+     "floor": 0.6800514996775394,
+     "scanvi": 0.6557870078797288,
+     "tangram": 0.5808642853188346,
+     "oracle_floor": 0.6913690439010071,
+     "oracle_scanvi": 0.6906624846824917,
+     "oracle_tangram": 0.6250780831906069
+    },
+    "exceeds_ceiling": {
+     "floor": false,
+     "scanvi": false,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "gse303070_120131_280N": {
+    "half_b": {
+     "floor": 0.6943594240281596,
+     "scanvi": 0.6881559809601862,
+     "tangram": 0.6164685886227472,
+     "oracle_floor": 0.673717961400576,
+     "oracle_scanvi": 0.6699593676708134,
+     "oracle_tangram": 0.6579233742075988
+    },
+    "exceeds_ceiling": {
+     "floor": true,
+     "scanvi": true,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "gse303070_120131_280T": {
+    "half_b": {
+     "floor": 0.8477280072608065,
+     "scanvi": 0.824788287725579,
+     "tangram": 0.5797220554156584,
+     "oracle_floor": 0.8224643064617094,
+     "oracle_scanvi": 0.8071855495130403,
+     "oracle_tangram": 0.7071439378543649
+    },
+    "exceeds_ceiling": {
+     "floor": true,
+     "scanvi": true,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "gse303070_3461G_137T": {
+    "half_b": {
+     "floor": 0.5447789551282364,
+     "scanvi": 0.5457426290182963,
+     "tangram": 0.5454140449117766,
+     "oracle_floor": 0.5814646667116259,
+     "oracle_scanvi": 0.5549645396829586,
+     "oracle_tangram": 0.5515373859357913
+    },
+    "exceeds_ceiling": {
+     "floor": false,
+     "scanvi": false,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "gse303070_3461G_142T": {
+    "half_b": {
+     "floor": 0.5511105421315754,
+     "scanvi": 0.5516811757898153,
+     "tangram": 0.555917788769965,
+     "oracle_floor": 0.6114881422686251,
+     "oracle_scanvi": 0.583565264589024,
+     "oracle_tangram": 0.576290121824669
+    },
+    "exceeds_ceiling": {
+     "floor": false,
+     "scanvi": false,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "gse303070_3461G_7T": {
+    "half_b": {
+     "floor": 0.7818517774163944,
+     "scanvi": 0.7473151482387592,
+     "tangram": 0.6387298624205429,
+     "oracle_floor": 0.7464540447663474,
+     "oracle_scanvi": 0.7442775008101274,
+     "oracle_tangram": 0.7096011636638387
+    },
+    "exceeds_ceiling": {
+     "floor": true,
+     "scanvi": true,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "gse303070_Tumour_A_150T": {
+    "half_b": {
+     "floor": 0.7538817284270156,
+     "scanvi": 0.7416075616113924,
+     "tangram": 0.6652092764152683,
+     "oracle_floor": 0.7483732796196142,
+     "oracle_scanvi": 0.7464563005039322,
+     "oracle_tangram": 0.7246570824376235
+    },
+    "exceeds_ceiling": {
+     "floor": true,
+     "scanvi": false,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "gse303070_Tumour_B_64T": {
+    "half_b": {
+     "floor": 0.6741079464397297,
+     "scanvi": 0.6571466309231971,
+     "tangram": 0.6294509473927643,
+     "oracle_floor": 0.7222193064867529,
+     "oracle_scanvi": 0.7243952895828895,
+     "oracle_tangram": 0.6861698060436685
+    },
+    "exceeds_ceiling": {
+     "floor": false,
+     "scanvi": false,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   },
+   "gse303070_Tumour_B_73T": {
+    "half_b": {
+     "floor": 0.6081464041661542,
+     "scanvi": 0.601105475079071,
+     "tangram": 0.5523073360899575,
+     "oracle_floor": 0.6364618384499569,
+     "oracle_scanvi": 0.6026582469711732,
+     "oracle_tangram": 0.6306845761608708
+    },
+    "exceeds_ceiling": {
+     "floor": false,
+     "scanvi": false,
+     "tangram": false
+    },
+    "full_equals_registered": true
+   }
+  },
+  "pairs": {
+   "F5|scanvi": {
+    "n_units": 20,
+    "floor_half_b": 0.6867646713148806,
+    "learned_half_b": 0.6793376598046709,
+    "ceiling_half_b": 0.7116886877092489,
+    "ceiling_at_floor_rate_half_b": 0.7176143284734162,
+    "headroom_share": -0.24074859153353062,
+    "crops_learned_above_ceiling": 4,
+    "crops_floor_above_ceiling": 5,
+    "n_crops": 21
+   },
+   "F5|tangram": {
+    "n_units": 20,
+    "floor_half_b": 0.6867646713148806,
+    "learned_half_b": 0.6010642143696525,
+    "ceiling_half_b": 0.6893607173072309,
+    "ceiling_at_floor_rate_half_b": 0.7176143284734162,
+    "headroom_share": -2.7780035448956735,
+    "crops_learned_above_ceiling": 0,
+    "crops_floor_above_ceiling": 5,
+    "n_crops": 21
+   }
+  },
+  "full_scores_equal_registered": true
+ },
+ "F2": {
+  "crops": {
+   "allen_animal1_C57BL6J-1.086": {
+    "ceiling": 0.8742545610913878,
+    "ceiling_quadrant_folds": 0.32750856955801855,
+    "scores": {
+     "floor": 0.39997779477630246,
+     "cellcharter": 0.36663727592121165,
+     "novae": 0.2962293331067501
+    }
+   },
+   "allen_animal2_C57BL6J-2.039": {
+    "ceiling": 0.8572962177042218,
+    "ceiling_quadrant_folds": 0.23842989371439433,
+    "scores": {
+     "floor": 0.38927457455964304,
+     "cellcharter": 0.35916300985951166,
+     "novae": 0.3041649152632148
+    }
+   },
+   "allen_animal3_C57BL6J-3.003": {
+    "ceiling": 0.8551325216666033,
+    "ceiling_quadrant_folds": 0.19457011398581153,
+    "scores": {
+     "floor": 0.542418572011097,
+     "cellcharter": 0.48989458235381617,
+     "novae": 0.40841851798201556
+    }
+   },
+   "allen_yao638850_C57BL6J-638850.36": {
+    "ceiling": 0.9145545642250219,
+    "ceiling_quadrant_folds": 0.27256974736389805,
+    "scores": {
+     "floor": 0.4250271877073223,
+     "cellcharter": 0.3767573929634406,
+     "novae": 0.28911938012035543
+    }
+   },
+   "gse1_110": {
+    "ceiling": 0.7925582814699522,
+    "ceiling_quadrant_folds": 0.3112541698940269,
+    "scores": {
+     "floor": 0.5017500545808236,
+     "cellcharter": 0.33230759805478755
+    }
+   },
+   "gse1_120": {
+    "ceiling": 0.8590716383284823,
+    "ceiling_quadrant_folds": 0.3115661546034124,
+    "scores": {
+     "floor": 0.25746827701226654,
+     "cellcharter": 0.2998239526354868
+    }
+   },
+   "gse1_210": {
+    "ceiling": 0.9860761302405295,
+    "ceiling_quadrant_folds": 0.5838277873047087,
+    "scores": {
+     "floor": 0.450592417908001,
+     "cellcharter": 0.3613917382495356
+    }
+   },
+   "gse1_221": {
+    "ceiling": 0.8842634025270322,
+    "ceiling_quadrant_folds": 0.4297467447989374,
+    "scores": {
+     "floor": 0.3230182995095229,
+     "cellcharter": 0.3206419264186013
+    }
+   },
+   "gse1_222": {
+    "ceiling": 0.9235935527857844,
+    "ceiling_quadrant_folds": 0.6046434841401379,
+    "scores": {
+     "floor": 0.6622801769863782,
+     "cellcharter": 0.21437614637431873
+    }
+   },
+   "gse1_242": {
+    "ceiling": 0.9057073473661286,
+    "ceiling_quadrant_folds": 0.42696142816361976,
+    "scores": {
+     "floor": 0.6541126313146777,
+     "cellcharter": 0.48145586000315294
+    }
+   }
+  },
+  "pairs": {
+   "F2|cellcharter": {
+    "n_units": 10,
+    "floor": 0.46059199863660344,
+    "learned": 0.3602449482833863,
+    "ceiling": 0.8852508217405145,
+    "ceiling_quadrant_folds": 0.37010780935269655,
+    "headroom_share": -0.2363004013899009,
+    "units_learned_above_ceiling": 0,
+    "units_floor_above_ceiling": 0
+   },
+   "F2|novae": {
+    "n_units": 4,
+    "floor": 0.43917453226359116,
+    "learned": 0.324483036618084,
+    "ceiling": 0.8753094661718088,
+    "ceiling_quadrant_folds": 0.25826958115553067,
+    "headroom_share": -0.2629725039857582,
+    "units_learned_above_ceiling": 0,
+    "units_floor_above_ceiling": 0
+   }
+  },
+  "floor_equals_registered": true
+ },
+ "F3": {
+  "crops": {
+   "allen_animal1_C57BL6J-1.086": {
+    "ceiling": 0.6869783867133887,
+    "scores": {
+     "floor": 0.14203901434397384,
+     "lightgbm": 0.1300009869938678,
+     "ncem": 0.074604181813039
+    }
+   },
+   "allen_animal2_C57BL6J-2.039": {
+    "ceiling": 0.763636955008125,
+    "scores": {
+     "floor": 0.17762699105193536,
+     "lightgbm": 0.1435675121343623,
+     "ncem": 0.07724283391574395
+    }
+   },
+   "allen_animal3_C57BL6J-3.003": {
+    "ceiling": 0.7078546145762658,
+    "scores": {
+     "floor": 0.12677476003041196,
+     "lightgbm": 0.10445700568639517,
+     "ncem": 0.05819738413645626
+    }
+   },
+   "allen_yao638850_C57BL6J-638850.36": {
+    "ceiling": 0.7806169576249017,
+    "scores": {
+     "floor": 0.17023978028141476,
+     "lightgbm": 0.13126047134159174,
+     "ncem": 0.057160889127970016
+    }
+   },
+   "bruker_kidney": {
+    "ceiling": 0.7591586181403988,
+    "scores": {
+     "floor": 0.06936144558742507,
+     "lightgbm": 0.05117573304492994,
+     "ncem": 0.046853667143213595
+    }
+   },
+   "bruker_mobreast": {
+    "ceiling": 0.7813593749922592,
+    "scores": {
+     "floor": 0.05710462244065627,
+     "lightgbm": 0.04539745868098552,
+     "ncem": 0.042225945735315636
+    }
+   },
+   "bruker_skin": {
+    "ceiling": 0.8580285680431748,
+    "scores": {
+     "floor": 0.09284328747748084,
+     "lightgbm": 0.07807913887781003,
+     "ncem": 0.05540919670975758
+    }
+   },
+   "gse1_110": {
+    "ceiling": 0.6411554376895892,
+    "scores": {
+     "floor": 0.046189796529478605,
+     "lightgbm": 0.029566800440898044,
+     "ncem": 0.018702235950730246
+    }
+   },
+   "gse1_120": {
+    "ceiling": 0.6823907503197542,
+    "scores": {
+     "floor": 0.07313592198157166,
+     "lightgbm": 0.06191108028721504,
+     "ncem": 0.03870495911689439
+    }
+   },
+   "gse1_210": {
+    "ceiling": 0.6515046155540514,
+    "scores": {
+     "floor": 0.04753229589003577,
+     "lightgbm": 0.03776629863638517,
+     "ncem": 0.0342882072250311
+    }
+   },
+   "gse1_221": {
+    "ceiling": 0.6108352412292052,
+    "scores": {
+     "floor": 0.03646540531195896,
+     "lightgbm": 0.016742539041956765,
+     "ncem": 0.01784020662571586
+    }
+   },
+   "gse1_222": {
+    "ceiling": 0.6372716119192021,
+    "scores": {
+     "floor": 0.028200354467060745,
+     "lightgbm": 0.018208378329819596,
+     "ncem": 0.022883308523709116
+    }
+   },
+   "gse1_242": {
+    "ceiling": 0.6754565063017657,
+    "scores": {
+     "floor": 0.04366952827415616,
+     "lightgbm": 0.03539141856640339,
+     "ncem": 0.036081617208913626
+    }
+   },
+   "gse303070_10501A_130T": {
+    "ceiling": 0.7211586840929315,
+    "scores": {
+     "floor": 0.07293691882186829,
+     "lightgbm": 0.06541437031820971,
+     "ncem": 0.04268125048551451
+    }
+   },
+   "gse303070_10501A_74T": {
+    "ceiling": 0.7327970746453539,
+    "scores": {
+     "floor": 0.06890672004557423,
+     "lightgbm": 0.0575998092093093,
+     "ncem": 0.029906039716854356
+    }
+   },
+   "gse303070_10501A_92T": {
+    "ceiling": 0.7297512642702625,
+    "scores": {
+     "floor": 0.06778623361660575,
+     "lightgbm": 0.0597005428431612,
+     "ncem": 0.030586822250044325
+    }
+   },
+   "gse303070_120131_170T": {
+    "ceiling": 0.721697878548358,
+    "scores": {}
+   },
+   "gse303070_120131_280N": {
+    "ceiling": 0.5817121001420118,
+    "scores": {
+     "floor": 0.057815882622180625,
+     "lightgbm": 0.042198481181214144,
+     "ncem": 0.030622799641978688
+    }
+   },
+   "gse303070_120131_280T": {
+    "ceiling": 0.8011648393577913,
+    "scores": {}
+   },
+   "gse303070_3461G_137T": {
+    "ceiling": 0.48985491732296677,
+    "scores": {
+     "floor": 0.013245540137725628,
+     "lightgbm": 0.012492101806906436,
+     "ncem": 0.012614523988116898
+    }
+   },
+   "gse303070_3461G_142T": {
+    "ceiling": 0.5111130699392953,
+    "scores": {
+     "floor": 0.02379870848507687,
+     "lightgbm": 0.0159354383472675,
+     "ncem": 0.0025985981767259335
+    }
+   },
+   "gse303070_3461G_7T": {
+    "ceiling": 0.784397557816118,
+    "scores": {}
+   },
+   "gse303070_Tumour_A_150T": {
+    "ceiling": 0.6735322086565276,
+    "scores": {
+     "floor": 0.08266989893474433,
+     "lightgbm": 0.059444803699134754,
+     "ncem": 0.03265968964184377
+    }
+   },
+   "gse303070_Tumour_B_64T": {
+    "ceiling": 0.5170438390801433,
+    "scores": {
+     "floor": 0.07230561759884821,
+     "lightgbm": 0.047529929227239275,
+     "ncem": 0.03493751070907738
+    }
+   },
+   "gse303070_Tumour_B_73T": {
+    "ceiling": 0.5056038971561724,
+    "scores": {
+     "floor": 0.027098752117386295,
+     "lightgbm": 0.013621804509141027,
+     "ncem": 0.01886827281655155
+    }
+   }
+  },
+  "pairs": {
+   "F3|lightgbm": {
+    "n_units": 22,
+    "floor": 0.07262488527488956,
+    "learned": 0.057157368327463806,
+    "ceiling": 0.6681279406098976,
+    "headroom_share": -0.025973866647458755,
+    "units_learned_above_ceiling": 0,
+    "units_floor_above_ceiling": 0
+   },
+   "F3|ncem": {
+    "n_units": 22,
+    "floor": 0.07262488527488956,
+    "learned": 0.037075915484508996,
+    "ceiling": 0.6681279406098976,
+    "headroom_share": -0.05969569672548871,
+    "units_learned_above_ceiling": 0,
+    "units_floor_above_ceiling": 0
+   }
+  }
+ },
+ "F1": {
+  "crops": {
+   "allen_animal1_C57BL6J-1.086": {
+    "ceiling": 0.3358938728970009,
+    "scores": {
+     "floor": 0.3443732710410923,
+     "scvi": 0.3371729492648082,
+     "nicheformer": 0.333280476023863
+    }
+   },
+   "allen_animal2_C57BL6J-2.039": {
+    "ceiling": 0.3842546829275838,
+    "scores": {
+     "floor": 0.3933355959668101,
+     "scvi": 0.3904978875542655,
+     "nicheformer": 0.3851754574930863
+    }
+   },
+   "allen_animal3_C57BL6J-3.003": {
+    "ceiling": 0.35708852211251263,
+    "scores": {
+     "floor": 0.3629902946948727,
+     "scvi": 0.3619294409931648,
+     "nicheformer": 0.3519426085255609
+    }
+   },
+   "allen_yao638850_C57BL6J-638850.36": {
+    "ceiling": 0.5106945914755183,
+    "scores": {
+     "floor": 0.5283187693150083,
+     "scvi": 0.5303822700630321,
+     "nicheformer": 0.5119970345507878
+    }
+   },
+   "bruker_kidney": {
+    "ceiling": 0.2447761439888121,
+    "scores": {
+     "floor": 0.2532760255861126,
+     "scvi": 0.2340564547023094,
+     "nicheformer": 0.1550173196318965
+    }
+   },
+   "bruker_mobreast": {
+    "ceiling": 0.12757526770948213,
+    "scores": {
+     "floor": 0.1365614125141,
+     "scvi": 0.1180870447481415,
+     "nicheformer": 0.0777043470364711
+    }
+   },
+   "bruker_skin": {
+    "ceiling": 0.28404751110356474,
+    "scores": {
+     "floor": 0.2891989538723388,
+     "scvi": 0.2750649641234783,
+     "nicheformer": 0.2284105760490499
+    }
+   },
+   "gse1_110": {
+    "ceiling": 0.09454541610837763,
+    "scores": {
+     "floor": 0.0913043589480586,
+     "scvi": 0.0818587544473937,
+     "nicheformer": 0.0337584110681281
+    }
+   },
+   "gse1_120": {
+    "ceiling": 0.12358835633865684,
+    "scores": {
+     "floor": 0.1298719466378719,
+     "scvi": 0.1152660444422819,
+     "nicheformer": 0.0701426117092165
+    }
+   },
+   "gse1_210": {
+    "ceiling": 0.1893592343711974,
+    "scores": {
+     "floor": 0.1795697531102349,
+     "scvi": 0.1609308051305603,
+     "nicheformer": 0.0964961926074176
+    }
+   },
+   "gse1_221": {
+    "ceiling": 0.12503252036971868,
+    "scores": {
+     "floor": 0.0934390564383083,
+     "scvi": 0.0940883007867573,
+     "nicheformer": 0.0466788175615973
+    }
+   },
+   "gse1_222": {
+    "ceiling": 0.1254568515007286,
+    "scores": {
+     "floor": 0.1187404560131969,
+     "scvi": 0.1083595987563768,
+     "nicheformer": 0.0159572676817703
+    }
+   },
+   "gse1_242": {
+    "ceiling": 0.17003779105641081,
+    "scores": {
+     "floor": 0.1771871558231051,
+     "scvi": 0.1586982092440032,
+     "nicheformer": 0.0871807904675597
+    }
+   },
+   "gse303070_10501A_130T": {
+    "ceiling": 0.07645876616133229,
+    "scores": {
+     "floor": 0.0844463277799432,
+     "scvi": 0.0769841619247633,
+     "nicheformer": 0.0598659199135473
+    }
+   },
+   "gse303070_10501A_74T": {
+    "ceiling": 0.09586147728543559,
+    "scores": {
+     "floor": 0.1066578946438315,
+     "scvi": 0.0932856329481029,
+     "nicheformer": 0.0752580571900953
+    }
+   },
+   "gse303070_10501A_92T": {
+    "ceiling": 0.09397392693358186,
+    "scores": {
+     "floor": 0.1033725030931893,
+     "scvi": 0.087797869872658,
+     "nicheformer": 0.0712350524478354
+    }
+   },
+   "gse303070_120131_170T": {
+    "ceiling": 0.08733665998860918,
+    "scores": {
+     "floor": 0.0857673171452844,
+     "scvi": 0.0836452959760666,
+     "nicheformer": 0.0653347643918964
+    }
+   },
+   "gse303070_120131_280N": {
+    "ceiling": 0.09100306717708251,
+    "scores": {
+     "floor": 0.1025888227711945,
+     "scvi": 0.0852375242180208,
+     "nicheformer": 0.0662977034639701
+    }
+   },
+   "gse303070_120131_280T": {
+    "ceiling": 0.15208472634690717,
+    "scores": {
+     "floor": 0.169937870865215,
+     "scvi": 0.1623533922145177,
+     "nicheformer": 0.131082060621322
+    }
+   },
+   "gse303070_3461G_137T": {
+    "ceiling": 0.024563740297272152,
+    "scores": {
+     "floor": 0.0145661744893451,
+     "scvi": 0.0125864607666883,
+     "nicheformer": 0.0059850376117661
+    }
+   },
+   "gse303070_3461G_142T": {
+    "ceiling": 0.024180446860995408,
+    "scores": {
+     "floor": 0.0116870653390437,
+     "scvi": 0.0107456997144098,
+     "nicheformer": 0.0008496399489742
+    }
+   },
+   "gse303070_3461G_7T": {
+    "ceiling": 0.1375407307162294,
+    "scores": {
+     "floor": 0.1511913291859132,
+     "scvi": 0.1337592951393664,
+     "nicheformer": 0.1146360295910157
+    }
+   },
+   "gse303070_Tumour_A_150T": {
+    "ceiling": 0.10961796991769068,
+    "scores": {
+     "floor": 0.1157119823251414,
+     "scvi": 0.0988864889132514,
+     "nicheformer": 0.0890433649380351
+    }
+   },
+   "gse303070_Tumour_B_64T": {
+    "ceiling": 0.09660555302050222,
+    "scores": {
+     "floor": 0.0706495831541871,
+     "scvi": 0.0734258862645248,
+     "nicheformer": 0.0668378643694808
+    }
+   },
+   "gse303070_Tumour_B_73T": {
+    "ceiling": 0.06185669736345978,
+    "scores": {
+     "floor": 0.0368074912300271,
+     "scvi": 0.0431091917061434,
+     "nicheformer": 0.0281370219832561
+    }
+   },
+   "spatch_xenium5k": {
+    "ceiling": 0.0798655177237978,
+    "scores": {
+     "floor": 0.071481228059454,
+     "scvi": 0.0643461716202178,
+     "nicheformer": 0.069225627785314
+    }
+   }
+  },
+  "pairs": {
+   "F1|scvi": {
+    "n_units": 25,
+    "floor": 0.163470771728987,
+    "learned": 0.1547504134927614,
+    "reference": 0.16327024579961866,
+    "share_of_reference_gap": null,
+    "units_learned_above_reference": 6,
+    "units_floor_above_reference": 15
+   },
+   "F1|nicheformer": {
+    "n_units": 25,
+    "floor": 0.163470771728987,
+    "learned": 0.1255536069048107,
+    "reference": 0.16327024579961866,
+    "share_of_reference_gap": null,
+    "units_learned_above_reference": 2,
+    "units_floor_above_reference": 15
+   }
+  }
+ },
+ "checks": {
+  "f1_gse1_232": {
+   "unit": "gse1_232",
+   "ceiling": 0.08448184832834071,
+   "scores": {
+    "nicheformer": 0.0120879510592317
+   },
+   "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+  },
+  "f2_gse1_232": {
+   "unit": "gse1_232",
+   "n_scored": 44376,
+   "k": 2,
+   "ceiling": 0.9910199946586058,
+   "ceiling_ari": 0.98768882963698,
+   "ceiling_quadrant_folds": 0.8009126466516726,
+   "scores": {
+    "floor": 0.9291927309070077,
+    "cellcharter": 0.43843865442179375
+   },
+   "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+  },
+  "f2_toy": {
+   "unit": "toy",
+   "n_scored": 40000,
+   "k": 2,
+   "ceiling": 0.988024990441259,
+   "ceiling_ari": 0.9860486511533502,
+   "ceiling_quadrant_folds": 0.9731552251582475,
+   "scores": {
+    "floor": 0.9830600479085824
+   },
+   "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+  },
+  "f3_gse1_232": {
+   "unit": "gse1_232",
+   "receivers": {
+    "0": 0.6292186541047917,
+    "1": 0.6659898795962711,
+    "2": 0.7306243246951316,
+    "3": 0.6298149897177867,
+    "4": 0.6069300897042184,
+    "5": 0.3663350925063811,
+    "6": 0.6915399840107692,
+    "7": 0.6039781451899229,
+    "8": 0.506100571291014,
+    "9": 0.6190957985056418,
+    "10": 0.5627817144714792,
+    "11": 0.29363690269968057,
+    "12": 0.5706990548985846,
+    "13": 0.3369565008576222,
+    "14": 0.39551430456120484
+   },
+   "ceiling": 0.5472810671206999,
+   "scores": {
+    "lightgbm": 0.019355410212171124
+   },
+   "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+  },
+  "f5_gse1_232": {
+   "unit": "gse1_232",
+   "n_cells": 50000,
+   "markers_on_platform": {
+    "epithelial": [
+     "EPCAM",
+     "KRT8",
+     "KRT18",
+     "KRT19",
+     "CDH1"
+    ],
+    "immune_nonmyeloid": [
+     "CD3E",
+     "CD2",
+     "MS4A1",
+     "CD79A",
+     "MZB1"
+    ],
+    "myeloid": [
+     "CD68",
+     "CD163",
+     "C1QC",
+     "CD14",
+     "LYZ"
+    ]
+   },
+   "cfg": [
+    "floor=runs/p3/relabel/labels/f5_gse1_232_floors:insitutype",
+    "scanvi=scanvi:nl30_nb",
+    "tangram=runs/p3/relabel/labels/f5_gse1_232_tangram:uniform"
+   ],
+   "full": {
+    "floor": 0.6148579701522215,
+    "scanvi": 0.6570808186705478,
+    "tangram": 0.598591511669857
+   },
+   "half_b_mean": {
+    "floor": 0.5954578151584478,
+    "scanvi": 0.6327729921798062,
+    "tangram": 0.5961942646533409,
+    "oracle_floor": 0.6455254637918955,
+    "oracle_scanvi": 0.6596613755153907,
+    "oracle_tangram": 0.6333918816676495
+   },
+   "half_b_sd": {
+    "floor": 0.0005362088287234961,
+    "scanvi": 0.0014650179176105469,
+    "tangram": 0.0007709612186403399,
+    "oracle_floor": 0.0007096591822478844,
+    "oracle_scanvi": 0.000668870431708737,
+    "oracle_tangram": 0.0019449185781652463
+   },
+   "call_share": {
+    "floor": {
+     "epithelial": 0.32648,
+     "immune_nonmyeloid": 0.18114,
+     "myeloid": 0.1778,
+     "other": 0.31458
+    },
+    "scanvi": {
+     "epithelial": 0.24154,
+     "immune_nonmyeloid": 0.4917,
+     "myeloid": 0.04678,
+     "other": 0.21998
+    },
+    "tangram": {
+     "epithelial": 0.06742,
+     "immune_nonmyeloid": 0.48526,
+     "myeloid": 0.19976,
+     "other": 0.24756
+    }
+   },
+   "headroom_share": {
+    "scanvi": 0.5812010551113181,
+    "tangram": 0.01941393482595684
+   },
+   "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+  }
+ }
+}

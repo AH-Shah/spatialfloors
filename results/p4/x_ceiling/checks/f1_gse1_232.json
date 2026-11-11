@@ -1,0 +1,8 @@
+{
+ "unit": "gse1_232",
+ "ceiling": 0.08448184832834071,
+ "scores": {
+  "nicheformer": 0.0120879510592317
+ },
+ "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+}

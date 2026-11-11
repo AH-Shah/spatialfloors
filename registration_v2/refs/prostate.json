@@ -1,0 +1,93 @@
+{
+ "tissue": "prostate",
+ "source": "CELLxGENE 881e0e6b-a185-45f1-9b56-81606e91e7ff",
+ "ref": "data/raw/refs/prostate_881e0e6b-a185-45f1-9b56-81606e91e7ff/ref.h5ad",
+ "h5ad": "data/raw/refs/prostate_881e0e6b-a185-45f1-9b56-81606e91e7ff/68b23fda-7191-46a5-8870-819feca3e66e.h5ad",
+ "n_cells": 68322,
+ "class_counts": {
+  "epithelial": 21002,
+  "immune_nonmyeloid": 19872,
+  "myeloid": 1884,
+  "other": 25564
+ },
+ "qc_pass": true,
+ "coarse_map": {
+  "fibroblast of connective tissue of prostate": "other",
+  "pericyte": "other",
+  "vascular associated smooth muscle cell": "other",
+  "smooth muscle cell of prostate": "other",
+  "luminal cell of prostate epithelium": "epithelial",
+  "basal cell of prostate epithelium": "epithelial",
+  "club-like cell of the urethral epithelium": "epithelial",
+  "epithelial cell of prostate": "epithelial",
+  "ciliated epithelial cell": "epithelial",
+  "prostate neuroendocrine cell": "epithelial",
+  "cytotoxic T cell": "immune_nonmyeloid",
+  "regulatory T cell": "immune_nonmyeloid",
+  "natural killer cell": "immune_nonmyeloid",
+  "T cell": "immune_nonmyeloid",
+  "monocyte": "myeloid",
+  "myeloid cell": "other",
+  "mast cell": "other",
+  "macrophage": "myeloid",
+  "plasmacytoid dendritic cell": "other",
+  "B cell": "immune_nonmyeloid",
+  "myelinating Schwann cell": "other",
+  "glial cell": "other",
+  "vein endothelial cell": "other",
+  "endothelial cell": "other",
+  "endothelial cell of lymphatic vessel": "other",
+  "plasma cell": "immune_nonmyeloid",
+  "unknown": "other"
+ },
+ "gene_list": "units:tenx_prostate",
+ "n_genes_in_list": 4974,
+ "heldout_markers": {
+  "epithelial": [
+   "EPCAM",
+   "NEDD4L",
+   "EHF",
+   "FOXA1",
+   "CXADR"
+  ],
+  "immune_nonmyeloid": [
+   "CXCR4",
+   "CD2",
+   "CD3E",
+   "STK4",
+   "CD7"
+  ],
+  "myeloid": [
+   "FCGR2A",
+   "C5AR1",
+   "PLAUR",
+   "CLEC7A",
+   "CD68"
+  ]
+ },
+ "marker_auroc_in_reference": {
+  "epithelial": {
+   "EPCAM": 0.8290346310755945,
+   "NEDD4L": 0.8187684714183717,
+   "EHF": 0.8179129699385869,
+   "FOXA1": 0.8127238712788402,
+   "CXADR": 0.7888732872300254
+  },
+  "immune_nonmyeloid": {
+   "CXCR4": 0.9472324747225738,
+   "CD2": 0.8434466794338695,
+   "CD3E": 0.8077317425800453,
+   "STK4": 0.7965194734147573,
+   "CD7": 0.7724838909083306
+  },
+  "myeloid": {
+   "FCGR2A": 0.9029922679588617,
+   "C5AR1": 0.9026496638978795,
+   "PLAUR": 0.8983007885108389,
+   "CLEC7A": 0.8874535730572976,
+   "CD68": 0.8854333398953786
+  }
+ },
+ "rule": "F5 references for the replication round (registration v2): one CELLxGENE dataset per new tissue, chosen by a fixed rule\nfrom a saved CELLxGENE Discover dataset index, standardised as scripts/ref_prep.py does (layout read by\nfloors.f5.reference: X = log1p CP10k csr, raw.X = integer counts, var.feature_name, obs.ClusterMidway = fine label,\nobs.coarse), with held-out markers by the ref_prep.py rule on the tissue's platform gene list.\nSelection: Homo sapiens only; is_primary_data all true; suspension type cell only; every assay a 10x Chromium assay\n(label starts with \"10x\", multiome excluded); not spatial; at least one tissue label containing the organ word (ORGAN);\nevery disease \"normal\" or in the tissue's carcinoma list (CARCINOMA). Largest cell_count; ties: earliest published_at.\nCells kept: tissue label containing the organ word and disease in the carcinoma list. Raw counts must be integers\n(raw.X, else X); a dataset that fails is replaced by the next one in the ranking.\nClasses (Cell Ontology, CL basic): epithelial = descendant of CL:0000066, or CL:0001064 / CL:0001061; immune non-myeloid =\ndescendant of CL:0000542; myeloid = descendant of CL:0000766 except mast cells CL:0000097; everything else other.\nHeld-out markers per class = top 5 by one-vs-rest AUROC (log1p CP10k, stratified <= 80k / <= 4k per fine type, seed 0)\namong the 200 genes with the largest mean log-fold change, detected in >= 10% of the class's cells, on the gene list,\nnot in another class's top-20 list. QC: >= 500 cells per class.\nGene list (--genes): \"wtx\" = CosMx WTx list (GSE1 panel, the round-1 rule); \"units:<u1,u2,...>\" = genes measured on every\nlisted round-2 unit (Gene Expression features of its cache, else of its raw cell_feature_matrix.h5).",
+ "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+}

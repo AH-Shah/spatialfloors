@@ -1,0 +1,10 @@
+{
+ "unit": "bruker_skin",
+ "ceiling": 0.28404751110356474,
+ "scores": {
+  "floor": 0.2891989538723388,
+  "scvi": 0.2750649641234783,
+  "nicheformer": 0.2284105760490499
+ },
+ "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+}

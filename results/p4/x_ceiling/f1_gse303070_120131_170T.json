@@ -1,0 +1,10 @@
+{
+ "unit": "gse303070_120131_170T",
+ "ceiling": 0.08733665998860918,
+ "scores": {
+  "floor": 0.0857673171452844,
+  "scvi": 0.0836452959760666,
+  "nicheformer": 0.0653347643918964
+ },
+ "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+}

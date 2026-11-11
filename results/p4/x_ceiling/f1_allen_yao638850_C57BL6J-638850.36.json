@@ -1,0 +1,10 @@
+{
+ "unit": "allen_yao638850_C57BL6J-638850.36",
+ "ceiling": 0.5106945914755183,
+ "scores": {
+  "floor": 0.5283187693150083,
+  "scvi": 0.5303822700630321,
+  "nicheformer": 0.5119970345507878
+ },
+ "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+}

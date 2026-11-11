@@ -1,0 +1,10 @@
+{
+ "unit": "bruker_kidney",
+ "ceiling": 0.2447761439888121,
+ "scores": {
+  "floor": 0.2532760255861126,
+  "scvi": 0.2340564547023094,
+  "nicheformer": 0.1550173196318965
+ },
+ "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+}

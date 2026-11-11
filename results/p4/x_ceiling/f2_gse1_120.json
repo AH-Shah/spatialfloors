@@ -1,0 +1,13 @@
+{
+ "unit": "gse1_120",
+ "n_scored": 47363,
+ "k": 3,
+ "ceiling": 0.8590716383284823,
+ "ceiling_ari": 0.8894777963938248,
+ "ceiling_quadrant_folds": 0.3115661546034124,
+ "scores": {
+  "floor": 0.25746827701226654,
+  "cellcharter": 0.2998239526354868
+ },
+ "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+}

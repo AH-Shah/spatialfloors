@@ -1,0 +1,75 @@
+{
+ "tissue": "ovary",
+ "source": "CELLxGENE b252b015-b488-4d5c-b16e-968c13e48a2c",
+ "ref": "data/raw/refs/ovary_b252b015-b488-4d5c-b16e-968c13e48a2c/ref.h5ad",
+ "h5ad": "data/raw/refs/ovary_b252b015-b488-4d5c-b16e-968c13e48a2c/f8f7f2b0-b8a5-4087-8048-8d3f5b6a49dd.h5ad",
+ "n_cells": 140682,
+ "class_counts": {
+  "epithelial": 38943,
+  "immune_nonmyeloid": 36480,
+  "myeloid": 33723,
+  "other": 31536
+ },
+ "qc_pass": true,
+ "coarse_map": {
+  "fibroblast": "other",
+  "endothelial cell": "other",
+  "fallopian tube secretory epithelial cell": "epithelial",
+  "monocyte": "myeloid",
+  "T cell": "immune_nonmyeloid",
+  "B cell": "immune_nonmyeloid",
+  "plasma cell": "immune_nonmyeloid",
+  "dendritic cell": "other",
+  "mast cell": "other"
+ },
+ "gene_list": "units:cervilla_ovarian,tenx_ovarian",
+ "n_genes_in_list": 4961,
+ "heldout_markers": {
+  "epithelial": [
+   "EPCAM",
+   "MSLN",
+   "MUC1",
+   "BCAM",
+   "FOLR1"
+  ],
+  "immune_nonmyeloid": [
+   "CXCR4",
+   "IKZF3",
+   "CD2",
+   "ACAP1",
+   "IL2RG"
+  ],
+  "myeloid": [
+   "CD68",
+   "CD14",
+   "FCGR3A",
+   "FCGR2A",
+   "CSF1R"
+  ]
+ },
+ "marker_auroc_in_reference": {
+  "epithelial": {
+   "EPCAM": 0.92550837113127,
+   "MSLN": 0.8699845117395945,
+   "MUC1": 0.8675986259338315,
+   "BCAM": 0.8497760205442902,
+   "FOLR1": 0.8481362593383136
+  },
+  "immune_nonmyeloid": {
+   "CXCR4": 0.7997804802442947,
+   "IKZF3": 0.7489813824556643,
+   "CD2": 0.7419814428473307,
+   "ACAP1": 0.7398404614246427,
+   "IL2RG": 0.727049601135756
+  },
+  "myeloid": {
+   "CD68": 0.9499427361259338,
+   "CD14": 0.9450441768943436,
+   "FCGR3A": 0.938700673692636,
+   "FCGR2A": 0.9354195837780149,
+   "CSF1R": 0.922300667022412
+  }
+ },
+ "rule": "F5 references for the replication round (registration v2): one CELLxGENE dataset per new tissue, chosen by a fixed rule\nfrom a saved CELLxGENE Discover dataset index, standardised as scripts/ref_prep.py does (layout read by\nfloors.f5.reference: X = log1p CP10k csr, raw.X = integer counts, var.feature_name, obs.ClusterMidway = fine label,\nobs.coarse), with held-out markers by the ref_prep.py rule on the tissue's platform gene list.\nSelection: Homo sapiens only; is_primary_data all true; suspension type cell only; every assay a 10x Chromium assay\n(label starts with \"10x\", multiome excluded); not spatial; at least one tissue label containing the organ word (ORGAN);\nevery disease \"normal\" or in the tissue's carcinoma list (CARCINOMA). Largest cell_count; ties: earliest published_at.\nCells kept: tissue label containing the organ word and disease in the carcinoma list. Raw counts must be integers\n(raw.X, else X); a dataset that fails is replaced by the next one in the ranking.\nClasses (Cell Ontology, CL basic): epithelial = descendant of CL:0000066, or CL:0001064 / CL:0001061; immune non-myeloid =\ndescendant of CL:0000542; myeloid = descendant of CL:0000766 except mast cells CL:0000097; everything else other.\nHeld-out markers per class = top 5 by one-vs-rest AUROC (log1p CP10k, stratified <= 80k / <= 4k per fine type, seed 0)\namong the 200 genes with the largest mean log-fold change, detected in >= 10% of the class's cells, on the gene list,\nnot in another class's top-20 list. QC: >= 500 cells per class.\nGene list (--genes): \"wtx\" = CosMx WTx list (GSE1 panel, the round-1 rule); \"units:<u1,u2,...>\" = genes measured on every\nlisted round-2 unit (Gene Expression features of its cache, else of its raw cell_feature_matrix.h5).",
+ "spatialfloors_commit": "70984ffb7f7b8f7fd01bda1d5f92f2e27e8227f4-dirty"
+}
