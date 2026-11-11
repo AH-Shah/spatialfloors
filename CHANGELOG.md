@@ -1,15 +1,16 @@
 # Changes since `results-v1`
 
-## Unreleased
+## `results-v1.2`
 
-The registered verdicts and every tier-1 and tier-2 number are unchanged.
+2026-11-11, DOI 10.5281/zenodo.24135678. The registered verdicts and every tier-1 and tier-2 number are unchanged.
 
 - Exploratory analyses added: F3 LightGBM with early stopping, F5 Tangram on normalised input, specification curve,
   common-scale meta-analysis over studies, baseline ladder (`RESULTS.md`, `results/DEVIATIONS.md`); their per-crop
   outputs in `results/p4/x_*`.
 - `RESULTS.md` reports methods and numbers only.
 - `registration_v2/`: replication round in preparation (dataset selection, data checksums and inventory, unit table,
-  predicted power, annotation protocol); loaders `src/spatialfloors/data/units_v2.py` with tests.
+  predicted power, annotation protocol); loaders `src/spatialfloors/data/units_v2.py` with tests. No model has been run
+  on its units.
 
 ## `results-v1.1`
 

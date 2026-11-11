@@ -1,11 +1,12 @@
 # Results: closed-form floors versus learned models in spatial omics
 
 Confirmatory results of the protocol registered as DOI [10.5281/zenodo.23931264](https://doi.org/10.5281/zenodo.23931264)
-(`registration/PROTOCOL.md`, tag `registration-v1`). Release `results-v1.1`, 2026-11-10, deposited on Zenodo as version 3
-of the registration record, DOI [10.5281/zenodo.24109807](https://doi.org/10.5281/zenodo.24109807); the first results release `results-v1`
-(2026-11-08) is version 2, DOI [10.5281/zenodo.24044400](https://doi.org/10.5281/zenodo.24044400), and the
+(`registration/PROTOCOL.md`, tag `registration-v1`). Release `results-v1.2`, 2026-11-11, deposited on Zenodo as version 4
+of the registration record, DOI [10.5281/zenodo.24135678](https://doi.org/10.5281/zenodo.24135678). Earlier releases:
+`results-v1.1` (2026-11-10, version 3, DOI [10.5281/zenodo.24109807](https://doi.org/10.5281/zenodo.24109807)) and
+`results-v1` (2026-11-08, version 2, DOI [10.5281/zenodo.24044400](https://doi.org/10.5281/zenodo.24044400)); the
 registration (version 1) is unchanged. The registered verdicts and every tier-1 and tier-2 number are the same in
-both releases (`CHANGELOG.md`). Every number below is read from
+all releases (`CHANGELOG.md`). Every number below is read from
 the reports in [`results/reports/`](results/reports/); events and deviations after registration are in
 [`results/DEVIATIONS.md`](results/DEVIATIONS.md).
 

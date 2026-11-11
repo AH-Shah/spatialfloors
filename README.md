@@ -6,8 +6,10 @@ counterfactuals (F4) and label transfer (F5).
 
 - Protocol: [`registration/PROTOCOL.md`](registration/PROTOCOL.md); registration DOI
   [10.5281/zenodo.23931264](https://doi.org/10.5281/zenodo.23931264), tag `registration-v1`.
-- Results: [`RESULTS.md`](RESULTS.md); release `results-v1.1`, DOI [10.5281/zenodo.24109807](https://doi.org/10.5281/zenodo.24109807) (first release
-  `results-v1`: DOI [10.5281/zenodo.24044400](https://doi.org/10.5281/zenodo.24044400)).
+- Results: [`RESULTS.md`](RESULTS.md); release `results-v1.2`, DOI [10.5281/zenodo.24135678](https://doi.org/10.5281/zenodo.24135678)
+  (earlier: `results-v1.1`, DOI [10.5281/zenodo.24109807](https://doi.org/10.5281/zenodo.24109807); `results-v1`, DOI
+  [10.5281/zenodo.24044400](https://doi.org/10.5281/zenodo.24044400)). All versions:
+  [10.5281/zenodo.23931263](https://doi.org/10.5281/zenodo.23931263).
 - Deviations and additions after registration: [`results/DEVIATIONS.md`](results/DEVIATIONS.md).
 - Data sources: [`DATA.md`](DATA.md).
 

@@ -13,7 +13,7 @@ for t in Breast Colorectal Lung Lymphoma Ovarian; do
 done
 X=https://cf.10xgenomics.com/samples/xenium/3.0.0
 for n in Xenium_Prime_Human_Skin_FFPE Xenium_Prime_Human_Prostate_FFPE Xenium_Prime_Ovarian_Cancer_FFPE_XRrun Xenium_Prime_Breast_Cancer_FFPE Xenium_Prime_Human_Lung_Cancer_FFPE; do
-  for s in cell_feature_matrix.h5 cells.parquet gene_panel.json; do
+  for s in cell_feature_matrix.h5 cells.parquet gene_panel.json he_imagealignment.csv he_image.ome.tif; do
     $=PY size $X/$n/${n}_$s $RAW/tenx_xenium5k/$n/$s | tee -a $LOG || echo "FAILED 10x $n $s" | tee -a $LOG
     row tenx_xenium5k/$n/$s $X/$n/${n}_$s
   done
