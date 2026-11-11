@@ -1,6 +1,6 @@
-# X_ladder: baseline ladder and assay sensitivity (exploratory)
+# X_ladder: baseline ladder (exploratory)
 
-Naive baselines below each floor. D = first − second per unit, one-sided 95% bounds; ahead = lower bound > 0.
+Naive baselines per family. D = first − second per unit, one-sided 95% bounds; ahead = lower bound > 0.
 
 ## F1
 
@@ -109,7 +109,7 @@ Naive baselines below each floor. D = first − second per unit, one-sided 95% b
 | scANVI − InSituType without the spatial prior | 20 | -0.0100 | -0.0177, -0.0023 | no |
 | Tangram − InSituType without the spatial prior | 20 | -0.1089 | -0.1381, -0.0797 | no |
 
-## Assay sensitivity
+## Summary
 
 | Family | Floor ahead of every naive rung | Learned models ahead of every naive rung |
 |---|---|---|

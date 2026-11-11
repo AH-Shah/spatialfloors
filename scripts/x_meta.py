@@ -1,8 +1,7 @@
 """Exploratory: the round-1 differences on one scale, and a random-effects meta-analysis over studies.
 Common scale: D = learned - floor as a percentage of the floor's above-chance score A (mean over the pair's units of
-floor - chance; chance: F1 the permutation chance of each crop, F2 0, F3 0, F4 0, F5 0.5). The locked margins were set
-on the same idea (10% of the development floor's above-chance score, capped), so D and the margin are comparable across
-families in these units.
+floor - chance; chance: F1 the permutation chance of each crop, F2 0, F3 0, F4 0, F5 0.5). The locked margin is
+reported on the same scale.
 Meta-analysis: units are nested in studies (data releases; the study map of x_levels.py). One-stage random-intercept
 model D_us = mu + b_s + e_us, b_s ~ N(0, tau^2), e_us ~ N(0, sigma^2), fitted by REML; one within-study variance for
 all studies, because five studies have one unit. Reported: mu with one-sided 95% bounds (t, studies - 1 df), tau, and

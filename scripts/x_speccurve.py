@@ -1,5 +1,5 @@
 """Exploratory: specification curve of the round-1 comparison. For each registered pair, every estimate of
-D = learned - floor that was already computed under a different defensible choice, collected from the saved reports
+D = learned - floor that was already computed under another analysis choice, collected from the saved reports
 (no model is run, no cell is re-scored). Choices: units (leave one cancer out, one platform, subsets), aggregation
 (slide, study), tuning (both sides at their best confirmation-unit configuration), metric (distance, call rate, depth,
 scoring region, protein-gated F1), floor (earlier or stronger floor versions), model (other configurations of the

@@ -34,7 +34,7 @@ whole small samples, PROTOCOL §3).
 - **H1, per pair:** the floor is non-inferior on all 12 pairs.
 - **H1, joint (intersection-union):** met.
 - **H2:** no learned model is superior after Holm. Before correction, Cellina's lower bound on the official metric is
-  above 0 (one-sided p = .035); its lead is inside the margin on both F4 metrics (equivalent).
+  above 0 (one-sided p = .035).
 - **Floor superiority** (upper bound < 0; no decision weight) holds on 10 of 12 pairs.
 - **Units:** F3 lost 3 of 25 crops before scoring. Their label-free receiver identities form a single lineage, so no
   model has an other-lineage context (`results/DEVIATIONS.md`). Donors 7 and 170 are therefore missing, and donor 280
@@ -66,10 +66,7 @@ whole small samples, PROTOCOL §3).
   analysis code labelled it "tissue unverified" and so left it out as a group of its own; the label is corrected
   (`results/DEVIATIONS.md`, `results/reports/P5_loco_crc.md`). This changes only F1 without CRC (7 units; upper
   bound scVI −.0061, Nicheformer −.0269; with the registered label 8 units, −.0060, −.0232) and removes the SPATCH
-  split. Every F1 split is non-inferior with either label. The failures are in splits of 2–6 units. F4 non-inferiority for Cellina rests on the mouse
-  sections, where D ≈ 0. On the six CRC slides Cellina leads by +.017 (official), close to the .03 margin. F5
-  non-inferiority rests on the CRC units. On the three Bruker units (kidney, skin, breast) scANVI is level with the
-  floor (D +.002, upper +.0525).
+  split. Every F1 split is non-inferior with either label.
 - **Nicheformer without the Yao animal** (in its pretraining material): D −.0388, upper −.0333.
 - **Novae collapse rule** (effective rank < 5, or > 50% of cells in one domain): no mouse run collapsed (effective rank
   7.6–8.7, largest domain ≤ 39%). 5 of the 6 human zero-shot runs met the rule; human Novae is not a test pair.
@@ -77,8 +74,7 @@ whole small samples, PROTOCOL §3).
 ## Tier 2: tuning transfer and capacity (diagnostic, no decision weight)
 
 The transfer gap T = best configuration on the unit − locked configuration (≥ 0). The capacity gap C = best learned − best
-floor. Models trained on the unit ran on the seeded subset (PROTOCOL §5). Selection on the scored unit makes the best
-scores optimistic.
+floor. Models trained on the unit ran on the seeded subset (PROTOCOL §5).
 
 | Model | Units | T | Upper | Locked = best | Reading |
 |---|---|---|---|---|---|
@@ -106,11 +102,8 @@ scores optimistic.
 | F5 scANVI | 11 | −.0170 | −.0166 | −.0297, −.0036 | +.0022 | +.0021 | floor holds at best tuning |
 | F5 Tangram | 11 | −.1196 | −.1183 | −.1575, −.0791 | +.0045 | +.0021 | floor holds at best tuning |
 
-- **Development tuning did not handicap the learned models.** Their mean transfer gaps are at most .0034 outside F2,
-  and .024 for CellCharter.
-- **The F2 floor is the one under-tuned model.** The multi-scale secondary floor is best on 8 of 10 units. At best
-  tuning the floor's lead grows in every F2 pair.
-- **Fine-tuned Novae** scored below zero-shot on all four animals (balanced ARI .08–.20 against .29–.41).
+- F2 floor: the multi-scale secondary floor is the best configuration on 8 of 10 units.
+- Fine-tuned Novae, balanced ARI .08–.20 on the four animals; zero-shot .29–.41.
 
 ## Secondary outputs (no decision weight)
 
@@ -142,130 +135,98 @@ second, with one-sided 95% bounds.
 | scANVI | .709 | .605 | .83 / .45 / .47 | .47 / .24 / .11 / .18 |
 | Tangram | .605 | .260 | .20 / .62 / .32 | .11 / .51 / .16 / .22 |
 
-- **F3:** LightGBM matches the v2 floor (other lineages only). The floor's F3 lead over LightGBM comes from the
-  same-lineage rings added in v3, which carry tissue-scale gradients of the receiver's own state (PROTOCOL §2, F3).
-  NCEM is below a ridge on its own inputs.
-- **F5:** the floor assigns fewer cells to the immune non-myeloid class than scANVI (10% against 24%) and recovers fewer
-  immune marker-positive cells (.26 against .45). Its AUROC lead comes with a more conservative immune call. Recall is
-  undefined on crops where another class's 90th percentile is 0: it is defined on 19, 21 and 19 of the 21 F5 crops.
-- **F2 geometry reference:** k-means on x, y alone scores .317 on average against the floor's .461. It is at or above
-  the floor on GSE1 210 and 221.
+- F3: the v2 floor uses other lineages only; v3 adds same-lineage rings (PROTOCOL §2, F3).
+- F5 marker-positive recall is undefined on crops where another class's 90th percentile is 0: it is defined on 19, 21
+  and 19 of the 21 F5 crops.
+- F2 geometry reference: k-means on x, y alone, mean balanced ARI .317 (floor .461); at or above the floor on GSE1 210
+  and 221.
 
 ## Exploratory analyses (run after the tier-1 report; no decision weight)
 
-- **Interior-only re-score** (`results/reports/X_interior.md`): with cells within 100–500 µm of a crop's cut edge left
-  unscored, D stays within .03 of the full-crop value for F2 and within .003 for F5.
-  - CellCharter: −.100 (full crop), −.093 (100 µm), −.095 (250 µm), −.073 (500 µm).
-  - Novae: −.115 to −.130.
-  - scANVI: −.014 to −.015.
-  - Tangram: −.111 to −.113.
-- **Unit size** (`results/reports/X_moderators.md`): no association between D and the cells scored, except F5 scANVI
-  (Spearman ρ = +.53, p = .017, no multiplicity correction). Unit size is confounded with platform there: the CosMx 1k
-  samples are the small units and carry the floor's lead.
-- **F5 at a matched call rate** (`results/reports/X_f5_matched.md`; added after `results-v1`). The
-  held-out-marker AUROC can rise when a model calls fewer cells of a class. Here the floor calls, per class, as many
-  cells as the comparator: its top cells by class posterior. Nothing is refitted.
-  - scANVI − floor at scANVI's call rate: D −.0040 (one-sided 95% bounds −.0075, −.0005), against −.0143 registered.
-    About 70% of the floor's lead over scANVI comes from its more conservative calling.
-  - By class: immune non-myeloid +.025 (+.019, +.031; scANVI ranks these cells better), epithelial −.012, myeloid
-    −.025.
+D = learned − floor with one-sided 95% bounds unless stated; the report of each analysis is in `results/reports/`.
+
+- **Interior-only re-score** (`X_interior`): cells within R µm of a crop's cut edge left unscored.
+  - CellCharter: −.100 (R = 0), −.093 (100 µm), −.095 (250 µm), −.073 (500 µm).
+  - Novae: −.115 to −.130. scANVI: −.014 to −.015. Tangram: −.111 to −.113.
+- **Unit size** (`X_moderators`): Spearman ρ of D against log cells scored; F5 scANVI ρ = +.53 (p = .017, uncorrected);
+  other pairs |ρ| ≤ .36, p ≥ .12.
+- **F5 at a matched call rate** (`X_f5_matched`; added after `results-v1`): the floor's calls per class re-made at the
+  comparator's call rate (its top cells by class posterior); nothing refitted.
+  - scANVI − floor at scANVI's call rate: −.0040 (−.0075, −.0005); registered −.0143.
+  - By class: immune non-myeloid +.025 (+.019, +.031), epithelial −.012, myeloid −.025.
   - By stratum: CosMx 1k +.002, CosMx WTx −.011.
   - Tangram at its own call rate: −.035 (−.048, −.022).
-  - Ranking by class posterior raises the floor at its own call rate from .723 to .741, so matching does not handicap
-    the floor. The reading is that scANVI and the floor are level on F5.
-- **F5 with depth held fixed** (`results/reports/X_f5_depth.md`; F5 stress panel on the confirmation units, PROTOCOL
-  §6). The held-out-marker score is log1p CP10k, so calling deep cells can raise it. The same AUROC computed within
-  each library-size quintile (mean over quintiles; registered scores recomputed exactly on every crop):
-  - scANVI − floor: D +.0015 (one-sided 95% bounds −.0044, +.0074), against −.0143 registered: level, and still
-    non-inferior. The floor's registered lead over scANVI is a depth effect.
-  - Tangram − floor: −.1526 (−.1798, −.1253); Tangram calls 70% of its epithelial cells from the deepest quintile
-    (floor 31%, scANVI 34%).
-- **F1 with Euclidean k-NN** (`results/reports/X_f1_euclid.md`; added 2026-11-09). Every saved locked embedding was
-  re-scored with Euclidean instead of cosine neighbours.
+  - Floor ranked by class posterior at its own call rate: AUROC .741 (registered .723).
+- **F5 with depth held fixed** (`X_f5_depth`; F5 stress panel, PROTOCOL §6): the held-out-marker AUROC computed within
+  each library-size quintile, mean over quintiles; registered scores recomputed exactly on every crop.
+  - scANVI − floor: +.0015 (−.0044, +.0074); registered −.0143.
+  - Tangram − floor: −.1526 (−.1798, −.1253).
+  - Share of epithelial calls in the deepest quintile: Tangram 70%, scANVI 34%, floor 31%.
+- **F1 with Euclidean k-NN** (`X_f1_euclid`; added 2026-11-09): every saved locked embedding re-scored with Euclidean
+  instead of cosine neighbours.
   - Crop means, cosine → Euclidean: scVI .154 → .111; floor .162 → .149.
-  - D with Euclidean for both: scVI −.0376, Nicheformer −.0256; registered (cosine): −.0087 and −.0379.
-  - The registered cosine metric is the more favourable choice for scVI.
-- **Whole-slide arm** (`results/WHOLESLIDE_PLAN.md`; report `results/reports/X_wholeslide.md`): the six GSE1
-  confirmation slides as whole slides (141k–741k cells), for the four pairs whose learned model trains on the unit. The
-  plan was committed before any whole-slide output existed. All 68 jobs ran; none failed.
-  - All four pairs are non-inferior on whole slides and no learned model is ahead after Holm.
-  - D on whole slides vs crops of the same slides: scVI −.0076 vs −.0118; CellCharter −.155 vs −.140; LightGBM −.0071
-    vs −.0126; scANVI −.0639 vs −.0015.
-  - The F1 and F3 floor leads shrink at slide scale, as on the validation slide (PROTOCOL Appendix A).
-  - LightGBM − v2 floor (no rings): +.0167 (one-sided 95% bounds +.0036, +.0297). On whole slides LightGBM beats the
-    floor without the same-lineage rings.
-- **F5 at slide scale** (`results/reports/X_f5_scale.md`; diagnostic added after the arm). scANVI's whole-slide loss
-  comes from the ratio of query to reference cells, not from the model's capacity.
-  - On GSE1 221, training for the crop's number of epochs on every cell changed nothing (.588).
-  - Training on the reference plus 50,000 random cells of the slide, then labelling every cell, restores scANVI:
-    D −.0106 (−.0253, +.0041) over the six slides, against −.0639 for the registered recipe and −.0015 on the crops.
-  - The registered recipe (joint model of reference and the whole query) degrades when the query outnumbers the
-    reference 6–11 to 1.
-- **F4 by cancer and provenance** (`results/reports/X_f4_split.md`; subsets chosen after tier 1).
-  - Cellina, official metric, CRC (6 slides): +.0165 (+.0017, +.0314). Ahead on 5 of 6 slides, above the .03 margin
-    on 2 (110 +.044, run here; 120 +.031, the authors' run).
-  - Mouse (4 animals): −.0010 (−.0051, +.0031).
-  - CPA is below the floor in every subset.
-- **Replication levels** (`results/reports/X_levels.md`): tier-1 D re-aggregated per slide (GSE303070's 11 donors sit
-  on 5 slides) and per study. Every pair stays non-inferior at both levels except Cellina spike-free at study level
-  (3 studies, upper +.0311 against .03). The two Allen sources (Zhuang lab, Yao et al.) count as separate studies.
-- **Positive controls** (`results/reports/X_posctl.md`; run 2026-10-28 to 11-02, before registration). scVI,
-  CellCharter, Novae, LightGBM, scANVI and Tangram pass. The locked NCEM configuration (linear NCEM) fails the
-  planted-composition control; the ED-NCEM variant passes.
-- **Development effort** (`results/reports/X_effort.md`): configurations evaluated on development units per model.
-  Floor grids: F1 48, F2 225 (+ 173 in reference and k sweeps), F3 144, F5 84. Learned models: 2–6 each. The floors
-  were tuned far more than the learned models before the lock; tier 2 (above) measures what tuning on the scored unit
-  would add.
-- **F3 LightGBM with early stopping** (`results/reports/X_f3_lgbm_es.md`; added after `results-v1.1`). The registered
-  LightGBM runs a fixed 100 rounds on a superset of the floor's features. With early stopping (up to 1,000 rounds,
-  patience 30, validation on held-out FOVs or tiles) it scores lower, not higher, on the same 22 units:
-  - all v3 feature groups: D −.0211 (one-sided 95% bounds −.0234, −.0188);
-  - exactly the floor's features: D −.0237 (−.0265, −.0209);
-  - registered: D −.0155.
-  - Early stopping halts after a median of 5–6 rounds, so the validation loss stops improving almost at once: the
-    signal a tree model can add here is small. The fixed 100 rounds did not handicap LightGBM.
-- **F5 Tangram on normalised input** (`results/reports/X_f5_tangram_norm.md`; added after `results-v1.1`). The
-  registered Tangram run maps on raw counts. With both sides normalised first, everything else as registered:
-  - counts per 10,000: D −.1044 (one-sided 95% bounds −.1290, −.0798);
-  - log1p counts per 10,000: D −.1094 (−.1391, −.0796);
-  - registered (raw counts): D −.1132.
-  - Tangram still calls about half of the cells immune non-myeloid and about a tenth epithelial with either input.
-    The raw-count input does not explain its result.
-- **Specification curve** (`results/reports/X_speccurve.md`; added after `results-v1.1`). Every estimate of D already
-  computed under another defensible choice, collected from the reports above without a new run: other units (leave one
-  cancer out, one platform, subsets), slide and study level, both sides at their best configuration, other metrics,
-  other floors, other configurations of the learned model, whole slides. Rows of one pair share units, so the curve
-  is descriptive.
-  - 146 specifications on the registered scale over the 12 pairs: D < 0 in 131, floor non-inferior in 135, floor
-    ahead (upper bound < 0) in 117.
-  - The learned model is ahead (lower bound > 0) in 3: Cellina as registered, Cellina on the six CRC units, and
-    LightGBM against the floor without ring features on whole slides.
-  - The 11 specifications where the floor is not non-inferior all have six units or fewer (wide bounds); 7 of them are
-    in F4.
-  - Of the pairs where the floor leads as registered, two change sign across specifications: scANVI (−.0639 on whole
-    slides to +.0051 at a matched call rate on whole slides; +.0015 with depth held fixed) and LightGBM (−.0268 to
-    +.0167). Cellina (both F4 metrics) is above zero in every specification except the mouse units (−.0010, −.0012).
-- **Common scale and meta-analysis over studies** (`results/reports/X_meta.md`; added after `results-v1.1`). D as a
-  percentage of the floor's above-chance score, and a random-effects model with studies (data releases) as the random
-  factor (REML, one within-study variance; 2–8 studies per pair).
-  - Registered D on the common scale: scVI −3.6%, scANVI −6.6%, CPA −12.0%, Nicheformer −15.7%, LightGBM −21.3%,
-    CellCharter −21.8%, Novae −26.1%, NCEM −48.9%, Tangram −51.8%, Cellina +1.1% (F4: official metric). The margins
-    are 3.4–11.6% on this scale.
-  - The mean over studies keeps the floor non-inferior in 10 of 12 pairs; the two that fail (CPA on the official
-    metric, Cellina on the spike-free metric) have three studies.
-  - The 95% prediction interval for a new study lies below the margin for scVI, LightGBM and Tangram only; with the
-    unweighted study means, for scVI and CPA on the spike-free metric only. Round 1 has too few studies to predict a
-    new one; this is what the replication round is for.
-- **Baseline ladder and assay sensitivity** (`results/reports/X_ladder.md`; added after `results-v1.1`). Naive
-  baselines below each floor; three of them are new CPU runs on the confirmation crops (F1 log-normalised PCA 50, F2 a
-  GMM on expression PCA 50 without any neighbourhood, F3 a ridge on the neighbourhood's type mix only; the three
-  single-lineage F3 crops fail as in round 1).
-  - The floor is ahead (lower bound > 0) of every naive baseline in all five families, so the benchmark can separate
-    methods: the floors are not at a ceiling shared with trivial methods.
-  - Only Cellina is also ahead of every naive rung. The other learned models tie or trail at least one: scVI and
-    Nicheformer trail log-normalised PCA (D −.0021 and −.0313); CellCharter and Novae do not beat k-means on the
-    coordinates; LightGBM ties the floor without rings and NCEM trails the type-mix ridge (−.0027); scANVI trails
-    InSituType without the spatial prior (−.0100); CPA does not beat L3–L5.
+  - Euclidean for both: scVI −.0376, Nicheformer −.0256 (registered, cosine: −.0087, −.0379).
+- **Whole-slide arm** (`X_wholeslide`; plan `results/WHOLESLIDE_PLAN.md`, committed before any whole-slide output):
+  the six GSE1 confirmation slides whole (141k–741k cells), for the four pairs whose learned model trains on the unit.
+  68 jobs, none failed.
+  - All four pairs non-inferior; no learned model superior after Holm.
+  - D whole slide vs crop of the same slides: scVI −.0076 vs −.0118; CellCharter −.155 vs −.140; LightGBM −.0071 vs
+    −.0126; scANVI −.0639 vs −.0015.
+  - LightGBM − v2 floor: +.0167 (+.0036, +.0297).
+- **F5 at slide scale** (`X_f5_scale`; diagnostic after the arm). Query-to-reference cell ratio on the whole slides:
+  6–11 to 1.
+  - GSE1 221, the crop's number of training epochs on every cell: AUROC .588 (registered recipe .588).
+  - scANVI trained on the reference plus 50,000 random cells of the slide, then labelling every cell: D −.0106
+    (−.0253, +.0041) over the six slides (registered recipe −.0639; crops −.0015).
+- **F4 by cancer and provenance** (`X_f4_split`; subsets chosen after tier 1).
+  - Cellina, official metric, CRC (6 slides): +.0165 (+.0017, +.0314); D > 0 on 5 of 6 slides, > .03 on 2 (110
+    +.044, run here; 120 +.031, the authors' run).
+  - Cellina, mouse (4 animals): −.0010 (−.0051, +.0031).
+  - CPA: D < 0 in every subset.
+- **Replication levels** (`X_levels`): tier-1 D re-aggregated per slide (GSE303070's 11 donors sit on 5 slides) and
+  per study (the two Allen sources counted separately). Non-inferior at both levels in every pair except Cellina
+  spike-free at study level (3 studies, upper +.0311, δ .03).
+- **Positive controls** (`X_posctl`; run 2026-10-28 to 11-02, before registration): scVI, CellCharter, Novae,
+  LightGBM, scANVI and Tangram pass; linear NCEM (the locked configuration) fails the planted-composition control;
+  ED-NCEM passes.
+- **Development effort** (`X_effort`): configurations evaluated on development units. Floor grids: F1 48, F2 225 (+ 173
+  in reference and k sweeps), F3 144, F5 84. Learned models: 2–6 each.
+- **F3 LightGBM with early stopping** (`X_f3_lgbm_es`; added after `results-v1.1`): up to 1,000 rounds, patience 30,
+  validation on held-out FOVs or tiles; registered: fixed 100 rounds. Same 22 units.
+  - All v3 feature groups: −.0211 (−.0234, −.0188).
+  - The floor's features only: −.0237 (−.0265, −.0209).
+  - Registered: −.0155. Median stopping round: 5–6.
+- **F5 Tangram on normalised input** (`X_f5_tangram_norm`; added after `results-v1.1`): both sides normalised before
+  mapping, everything else as registered (registered: raw counts).
+  - Counts per 10,000: −.1044 (−.1290, −.0798).
+  - log1p counts per 10,000: −.1094 (−.1391, −.0796).
+  - Registered: −.1132. Predicted share immune non-myeloid / epithelial: .51 / .11 (raw), .49 / .10 (counts per
+    10,000), .51 / .09 (log1p).
+- **Specification curve** (`X_speccurve`; added after `results-v1.1`): every estimate of D already computed in the
+  reports above under another choice of units, aggregation level, tuning, metric, floor, learned-model configuration or
+  scale; no new run. Rows of one pair share units; no test across rows.
+  - 146 specifications on the registered scale: D < 0 in 131; non-inferior in 135; upper bound < 0 in 117; lower bound
+    > 0 in 3 (Cellina registered; Cellina, six CRC units; LightGBM − v2 floor on whole slides).
+  - Not non-inferior: 11 specifications, each with 6 units or fewer; 7 in F4.
+- **Common scale and meta-analysis over studies** (`X_meta`; added after `results-v1.1`): D as a percentage of the
+  floor's above-chance score A; random-effects model with studies (data releases) as the random factor (REML, one
+  within-study variance; 2–8 studies per pair).
+  - Registered D, % of A: scVI −3.6, scANVI −6.6, CPA −12.0, Nicheformer −15.7, LightGBM −21.3, CellCharter −21.8,
+    Novae −26.1, NCEM −48.9, Tangram −51.8, Cellina +1.1 (F4 official metric). Margins: 3.4–11.6.
+  - Mean over studies non-inferior in 10 of 12 pairs; not non-inferior: CPA official, Cellina spike-free (3 studies
+    each).
+  - 95% prediction interval for a new study below the margin: scVI, LightGBM, Tangram; with unweighted study means:
+    scVI, CPA spike-free.
+- **Baseline ladder** (`X_ladder`; added after `results-v1.1`): naive baselines per family. New CPU runs on the
+  confirmation crops: F1 log-normalised PCA 50, F2 GMM on expression PCA 50 without a neighbourhood term, F3 ridge on
+  the neighbourhood type mix only (the three single-lineage F3 crops fail as in tier 1). Existing: F2 k-means on
+  coordinates, F3 v2 floor, F4 rungs L1–L5 and the control mean, F5 logistic regression and InSituType without the
+  spatial prior.
+  - Floor − each naive baseline: lower bound > 0 in all five families.
+  - Learned model − each naive baseline, lower bound > 0 against all: Cellina only. Lower bound ≤ 0 against at least
+    one: scVI and Nicheformer vs log-normalised PCA (−.0021, −.0313); CellCharter and Novae vs k-means on coordinates;
+    LightGBM vs v2 floor (−.0005); NCEM vs type-mix ridge (−.0027); scANVI vs InSituType without the prior (−.0100);
+    CPA vs L3–L5; Tangram vs logistic regression and InSituType without the prior.
 
 ## Reproducing the analysis
 

@@ -1,6 +1,6 @@
-"""Exploratory: baseline ladder and assay sensitivity on the round-1 confirmation units. Each family gets one or more
-naive baselines below the floor; the comparison can only be read as "learned ≈ floor" if it separates both from them.
-  F1  log-normalised PCA 50 (f1_fit.py expr_pca pc50; new run)        < floor (Pearson-residual PCA), scVI, Nicheformer
+"""Exploratory: baseline ladder on the round-1 confirmation units. Naive baselines per family; the floor and each
+learned model are compared with every naive baseline.
+  F1  log-normalised PCA 50 (f1_fit.py expr_pca pc50; new run)
   F2  k-means on coordinates (tier-1 report); GMM on expression PCA 50 without any neighbourhood (new run, mode f2)
   F3  ridge on the neighbourhood's type mix only (p3_f3.py T:ell25:pc10:a1000; new run); the floor without rings (v2)
   F4  the simpler rungs of the floor's own ladder (control mean, L1-L5; saved with the L6 runs)
@@ -146,9 +146,9 @@ assert abs(test(f5["scanvi"], f5["floor"])["est"] - T1["pairs"]["F5|scanvi"]["es
 
 out = dict(commit=commit(), families={})
 md = [
-    "# X_ladder: baseline ladder and assay sensitivity (exploratory)",
+    "# X_ladder: baseline ladder (exploratory)",
     "",
-    "Naive baselines below each floor. D = first − second per unit, one-sided 95% bounds; ahead = lower bound > 0.",
+    "Naive baselines per family. D = first − second per unit, one-sided 95% bounds; ahead = lower bound > 0.",
 ]
 for f, rungs in fam.items():
     floor = next(s for _, role, s in rungs if role == "floor")
@@ -173,7 +173,7 @@ for f, rungs in fam.items():
         lab: all(t["ahead"] for t in o["tests"] if t["first"] == lab) for lab, role, _ in rungs if role == "learned"
     }
     out["families"][f] = o
-md += ["", "## Assay sensitivity", "", "| Family | Floor ahead of every naive rung | Learned models ahead of every naive rung |", "|---|---|---|"]  # fmt: skip
+md += ["", "## Summary", "", "| Family | Floor ahead of every naive rung | Learned models ahead of every naive rung |", "|---|---|---|"]  # fmt: skip
 for f, o in out["families"].items():
     le = "; ".join(f"{k}: {'yes' if v else 'no'}" for k, v in o["learned_ahead_of_every_naive"].items())
     md.append(f"| {f} | {'yes' if o['floor_ahead_of_every_naive'] else 'no'} | {le} |")

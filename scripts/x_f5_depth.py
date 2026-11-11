@@ -1,6 +1,5 @@
-"""Exploratory (PROTOCOL §6, F5 stress panel on the confirmation units): is the F5 result a sequencing-depth effect?
-The held-out-marker score is log1p CP10k, so a model that calls deep cells as class c could win the AUROC without typing
-cells better. Per crop and locked configuration (floor, scANVI, Tangram): the registered AUROC (recomputed and checked
+"""Exploratory (PROTOCOL §6, F5 stress panel on the confirmation units): the F5 score with library size held fixed.
+Per crop and locked configuration (floor, scANVI, Tangram): the registered AUROC (recomputed and checked
 against the registered score), the depth-stratified AUROC (the same AUROC within each library-size quintile, mean over
 quintiles: depth is held fixed) and the share of each class's calls in the deepest quintile. Then D = learned - floor
 per unit and the registered test (stats.family_test, platform strata, F5 margin) on the depth-stratified score.
