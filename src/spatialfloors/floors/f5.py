@@ -182,7 +182,7 @@ def insitutype(Xq, profiles, names, neg=None, workdir=None):
     np.savetxt(d / "neg.txt", np.full(Xq.shape[0], 0.05) if neg is None else np.asarray(neg, float))
     root = Path(__file__).resolve().parents[3]
     subprocess.run(
-        ["pixi", "run", "--frozen", "-e", "r", "Rscript", str(root / "scripts/insitutype_ml.R"), str(d)],
+        ["pixi", "run", "--frozen", "-e", "r", "Rscript", str(root / "scripts/insitutype_ml.R"), str(Path(d).resolve())],
         check=True,
         cwd=root,
     )

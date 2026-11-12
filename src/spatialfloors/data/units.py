@@ -1,10 +1,11 @@
 """Load one crop (manifests/crops/<name>.csv.gz) as AnnData: X = raw counts (csr), var_names = gene symbols,
 obs = x_um, y_um, region (or NA), IF means where measured. Usage: load_crop("gse1_110")."""
-import json
+import json, os
 from pathlib import Path
 import numpy as np, pandas as pd, scipy.sparse as sp, anndata as ad
 
-SF = Path(__file__).resolve().parents[3]; MAN = SF / "manifests/crops"
+SF = Path(__file__).resolve().parents[3]
+MAN = Path(os.environ["SF_CROPS"]) if os.environ.get("SF_CROPS") else SF / "manifests/crops"  # SF_CROPS: other runs root
 from spatialfloors.paths import RAW, PROC
 COSMX_UM = 0.12028  # um per CosMx px
 ALLEN = {"animal1": RAW / "allen_zhuang/WB_MERFISH_animal1_coronal.h5ad", "animal2": RAW / "allen_zhuang/WB_MERFISH_animal2_coronal.h5ad",
