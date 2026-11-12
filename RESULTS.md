@@ -228,6 +228,27 @@ D = learned − floor with one-sided 95% bounds unless stated; the report of eac
     one: scVI and Nicheformer vs log-normalised PCA (−.0021, −.0313); CellCharter and Novae vs k-means on coordinates;
     LightGBM vs v2 floor (−.0005); NCEM vs type-mix ridge (−.0027); scANVI vs InSituType without the prior (−.0100);
     CPA vs L3–L5; Tangram vs logistic regression and InSituType without the prior.
+- **Ceilings and headroom** (`X_ceiling`; added after `results-v1.2`): headroom share = (learned − floor) / (ceiling −
+  floor) on unit means; checked on a simulation and on development unit gse1_232 first.
+  - F5 (held-out markers split by binomial thinning; ceiling = marker oracle at the floor's call rates, half B): floor
+    .6868, scANVI .6793, Tangram .6011, ceiling .7176; share scANVI −.241, Tangram −2.78. Above the oracle at their own
+    call rates: scANVI 4 of 21 crops, floor 5 of 21.
+  - F2 (out-of-fold logistic regression from the floor's features, 5 random folds): ceiling .8853 (CellCharter units),
+    .8753 (Novae units); share CellCharter −.236, Novae −.263. With 4 spatial-quadrant folds the ceiling is .3701 and
+    lies below the floor on 7 of 10 crops; the random-fold version was chosen after this.
+  - F3 (split-half reliability of the receiver state PCs, Spearman–Brown, square root): ceiling .6681; share LightGBM
+    −.0260, NCEM −.0597.
+  - F1 (oracle reference, not a bound: neighbours from the held-out count half): reference .1633, floor .1635; floor
+    above the reference in 15 of 25 units; share not computed (reference − floor < .01).
+  - F4 not run.
+- **Scale curves** (`X_scale`; added after `results-v1.2`): the six GSE1 confirmation slides cut into windows of
+  12,500–400,000 cells by the registered crop rule (windows with more than 1/1.1 of a slide's cells not cut), gene panel
+  and count split of the whole slide, locked configurations; 303 jobs, none failed. Mean D over slides (12.5k / 50k /
+  400k / whole slide) and slope of D per log10 cells (mean over slides, 95% CI):
+  - F1 scVI: −.0134 / −.0125 / −.0089 / −.0076; slope +.0036 (+.0001, +.0072).
+  - F2 CellCharter: −.0670 / −.1464 / −.0931 / −.1553; slope −.0541 (−.1163, +.0081).
+  - F3 LightGBM: −.0123 / −.0093 / −.0060 / −.0071; slope +.0029 (−.0041, +.0099).
+  - F5 scANVI: −.0093 / −.0012 / −.0876 / −.0639; slope −.0415 (−.0723, −.0108).
 
 ## Reproducing the analysis
 

@@ -4,6 +4,10 @@
 
 - Exploratory: ceilings and headroom share for F1 (reference), F2, F3, F5 (`results/reports/X_ceiling.md`, per-crop
   outputs `results/p4/x_ceiling/`, `scripts/x_ceiling*.py`).
+- Exploratory: scale curves on windows of the six GSE1 confirmation slides, 12,500–400,000 cells
+  (`results/reports/X_scale.md`, `scripts/x_scale_*.py`). `data.units` reads crop manifests from `SF_CROPS` when set;
+  the InSituType work directory is passed as an absolute path.
+- `RESULTS.md` and `results/DEVIATIONS.md` list both analyses.
 - `registration_v2/`: analysis script `scripts/v2_analyze.py` (reproduces `P5_corrected` on the round-1 unit table);
   F5 references for lung, ovary, prostate and breast markers on the Xenium 5K gene list (`scripts/v2_ref_prep.py`,
   `registration_v2/refs/`); annotation-to-cell mapping `scripts/v2_annot_to_cells.py` with
